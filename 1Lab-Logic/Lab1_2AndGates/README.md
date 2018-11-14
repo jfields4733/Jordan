@@ -1,7 +1,11 @@
-# Lab1_1Buffers  
-## Start with testing the bit file in the RTL folder. Write about your test steps and the result. 
-## All future labs will have just the RTL folders amd empty digtial, VerilogRTL and VerilogDigital folders.
-## Pick up again at step 5 as described for all the labs in 1Lab-Logic folder.   
-## These are your additional instructions:  
-### How many LED's can one switch drive before the LED's dim?
-### What error messages do you get when you try to drive one LED with two switches?
+# Lab1_2AndGates   
+## Start with testing the bit file in the RTL folder. Write about your test steps and the result.   
+## Proceed through the steps. Use individually named inputs and outputs in the digital software.   
+  
+## These are your additional instructions/questions:  
+### What are the vivado warnings all about in either the RTL project or Digital project?
+### What is the difference between inputs of [1:0] SW and input switches named a and b seen in the RTL schematics and
+the Synthesize schematics of the digital and RTL project ?
+### What does the tiny circle on the noise of the buffer mean?
+### Can you make a nand with just an and?
+### Can you make an add from just a nand?
