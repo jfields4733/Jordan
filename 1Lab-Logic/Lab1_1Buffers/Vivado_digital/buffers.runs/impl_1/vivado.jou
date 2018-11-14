@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed Nov 14 15:52:07 2018
+# Process ID: 8100
+# Current directory: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Logic/Lab1_1Buffers/Vivado_digital/buffers.runs/impl_1
+# Command line: vivado.exe -log Lab1_1Buffers.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab1_1Buffers.tcl -notrace
+# Log file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Logic/Lab1_1Buffers/Vivado_digital/buffers.runs/impl_1/Lab1_1Buffers.vdi
+# Journal file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Logic/Lab1_1Buffers/Vivado_digital/buffers.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Lab1_1Buffers.tcl -notrace
