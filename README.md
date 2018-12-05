@@ -12,8 +12,8 @@ Create a single electronic file containing the tiny vivado project, and a word d
 a) RTL, Synthesis and Implementation schematic (and others) screen shots of the tiny project  
 b) Port interface, FSM and ASM drawings for the tiny project   
 c) Discuss testing in terms of 2^n, and how to test the insipred project using the hardware of the Nexys4DDR boards   
-
-
+  
+Look at the README.md in each lab folder for tiny project instructions.
 
 
 
