@@ -12,7 +12,7 @@ What possible departments is this math class offered in?
 
 ## TinyProjectb can build AND with two NAND gates
 First create a not gate using one NAND gate. Then not the output of the original NAND gate.   
-So the verilog code is going to have two NAND gates in it.   
+The final verilog code is going to have two NAND gates in it.   
 
 ## Deliverables
 Submit a word file answering the TinyProjecta questions, the vivado project files for TinyProjectb and a word document with screen shots for TinyProjectb similar to the example. In the word document, comment on how the symbols in the RTL analysis, the Sythesis schematic and Implementation schematic differ from the circuit visualized in the verilog code. 
