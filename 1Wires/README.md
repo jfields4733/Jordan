@@ -3,16 +3,17 @@
  Open the vivado project and go through synthesis, implementation and generation of the bit file.  
  Send the bit file to the Nexys4DDR board and test the switches.  
 
-## TinyProjecta Two switches can not drive one LED
-Look at the verilog code and the constraints file.   
-Make modifications so that two switches try to drive multiple LED's.
+## TinyProjecta Two switches can not drive one LED  
+Look at the verilog code and the constraints file.    
+Make modifications so that two switches try to drive multiple LED's.  
 What are the vivado error messages?  
-Does vivado fail at RTL Analysis, Synthesis, Implementation or Bit File Generation?
+Does vivado fail at RTL Analysis, Synthesis, Implementation or Bit File Generation?  
 
-## TinyProjectb One switch can drive multiple LED's
+## TinyProjectb One switch can drive multiple LED's  
 Look at the verilog code and the constraints file.  
 Make modifications so that one switch drives mutliple LED's.  
-How many LED"s can one switch drive ... what fails ... do the LED"s go dim or does vivado eventually generate an error message?  
+How many LED"s can one switch drive? .. all 16?  
+If vivado fails, where does it fail (RTL. Syntehsis, Implementation or Bit File Generation), what is the error message?  
 
 ## Deliverables
 Submit a word file answering the TinyProjecta questions, the vivado project files for TinyProjectb and a word document with screen shots for TinyProjectb similar to the example.
