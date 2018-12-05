@@ -6,12 +6,13 @@
 ### Final goal is to write RTL code looking at port interface, FSM, and ASM diagrams, separating data from control.  
 
 # Deliverables:   
-#### Write in lab notebooks when ever frustrated for more than 10 minutes attempting to do something.   
-and create single electronic file of vivado screen shots plus specific new files generated.   
-#### Turn one frustration per week into an entry in a knowledge database (formatted as a spreadsheet).  
-#### Create a word document containing RTL, Sythesis and Implementation screens captured from example extensions  
-#### Create port interface, FSM and ASM drawings for the example extensions  
-#### Discuss testing in terms of 2^n, and how to test the insipred project using the hardware of the Nexys4DDR boards  
+Write in lab notebooks in the goingToDo, Doing, Rant style keeping track of time.
+Rant and whenever frustrated for more than 10 minutes attempting to do something.
+Turn one frustration per week into an entry in a knowledge database (formatted as a spreadsheet).   
+Create a single electronic file of vivado screen shots plus specific new files generated.   
+Create a word document containing RTL, Sythesis and Implementation screens captured from example extensions  
+Create port interface, FSM and ASM drawings for the example extensions  
+Discuss testing in terms of 2^n, and how to test the insipred project using the hardware of the Nexys4DDR boards  
 
 
 
