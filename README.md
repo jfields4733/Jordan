@@ -1,18 +1,19 @@
 # ENES246 Digital Electronics at Howard Community College
-## contains labs that are done with verilog, vivado and nexys4ddr boards
-### The overall workflow is start with some examples, get inspired, create something. 
-### Along the deliverables are vivado projects, port interface diagrams, FiniteStateMachine (FSM) diagrams and Algorithmic State Machine (ASM) diagrams
-### Writing testing code is not the focus of this class. Testing itself will start off manual, and the gradually turn into a discussion so the issues are well known and are prepared for a testing class.  
+## Contains programming exercises that are done with verilog, vivado and Nexys4DDR boards
+### Workflow starts with examples. You are then asked various things to do with the examples in the form of tiny project. 
+### Writing testing code is not the focus of this class. Testing itself will start off manual, move through some generic, simple testing verilog code and the gradually turn into a discussion so the issues are well known and are prepared for a testing class.  
 ### Will learn to work with modules both creating them and using them.  
-### Final goal is to be able to look at port interface diagrams.  
+### Final goal is to write RTL code looking at port interface diagrams and FSM and ASM diagrams, separating data from control.  
 
-Lab Deliverables: Students write in lab notebooks when ever frustrated for more than 10 minutes attempting to do something. 
+#Deliverables: 
+####Write in lab notebooks when ever frustrated for more than 10 minutes attempting to do something. 
 and create single electronic file of vivado screen shots plus specific new files generated. 
+####Turn one frustration per week into an entry in a knowledge database (formatted as a spreadsheet).
+####Create a word document containing RTL, Sythesis and Implementation screens captured from example extensions
+####Create port interface, FSM and ASM drawings for the example extensions
+####Discuss testing in terms of 2^n, and how to test the insipred project using the hardware of the Nexys4DDR boards
 
-Labs start by following the outline of ![digital](https://github.com/hneemann/Digital) component library.  
-This means the labs start with gates, move through wires, plexers, flipflops, arithmetic and like digital end in miscellaneous projects.
 
-There are readme files in each of the folders, and within these folders. Get Started!
 
 
 
