@@ -7,8 +7,7 @@
 Look at the verilog code and the constraints file.   
 Make modifications so that two switches try to drive multiple LED's.
 What are the vivado error messages?  
-Where does vivado fail?  
-Synthesis, Implementation or Bit File Generation?  
+Does vivado fail at RTL Analysis, Synthesis, Implementation or Bit File Generation?
 
 ## TinyProjectb One switch can drive multiple LED's
 Look at the verilog code and the constraints file.  
