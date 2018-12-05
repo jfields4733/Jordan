@@ -7,7 +7,7 @@
 ### Final goal is to write RTL code looking at port interface, FSM, and ASM diagrams, separating data from control.  
 
 # Deliverables:   
-Write in lab notebooks in the goingToDo, Doing, Rant style keeping track of time. Rant whenever frustrated for more than 10 minutes attempting to do something. Turn one frustration per week into an entry in a knowledge database (formatted as a spreadsheet).   
+Write in lab notebooks in the goingToDo, Doing, Rant style keeping track of time. Rant whenever frustrated for more than 10 minutes. Turn one frustration per week into an entry in a knowledge database (formatted as a spreadsheet).   
 
 Create a single electronic file containing the tiny vivado project, and a word document containing the following:  
 a) RTL, Synthesis and Implementation schematic (and others) screen shots of the tiny project  
