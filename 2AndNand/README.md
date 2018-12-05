@@ -8,7 +8,7 @@ A Nand gate's output is the negative of an And gate.
 Switch the NAND gate to an AND gate.  Test.  
 Try to build a Nand gate with And gates.  
 What is the name of the math class that will prove this is impossible?
-What possible departments is this math class offered in? 
+What possible university departments is this math class offered in? 
 
 ## TinyProjectb can build AND with two NAND gates
 First create a not gate using one NAND gate. Then not the output of the original NAND gate.   
