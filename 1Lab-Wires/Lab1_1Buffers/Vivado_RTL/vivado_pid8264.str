@@ -1,0 +1,257 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 8264
+License: Customer
+
+Current time: 	Wed Dec 05 10:05:02 EST 2018
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 49 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	SET253-14U
+User home directory: C:/Users/SET253-14U.HCCMAIN
+User working directory: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Wires/Lab1_1Buffers/Vivado_RTL
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/SET253-14U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/SET253-14U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/SET253-14U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Wires/Lab1_1Buffers/Vivado_RTL/vivado.log
+Vivado journal file location: 	C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Wires/Lab1_1Buffers/Vivado_RTL/vivado.jou
+Engine tmp dir: 	C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Wires/Lab1_1Buffers/Vivado_RTL/.Xil/Vivado-8264-SET253-14C
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	183 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 488 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\SET253-14U.HCCMAIN\Documents\GitHub\ENES246\1Lab-Wires\Lab1_1Buffers\Vivado_RTL\buffers.xpr. Version: Vivado v2018.2.1 
+// [GUI Memory]: 61 MB (+61318kb) [00:00:06]
+// [Engine Memory]: 463 MB (+334187kb) [00:00:06]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Wires/Lab1_1Buffers/Vivado_RTL/buffers.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Wires/Lab1_1Buffers/Vivado_RTL' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Wires/Lab1_1Buffers/Vivado_RTL/buffers.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Wires/Lab1_1Buffers/Vivado_RTL' INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Logic/Lab1_1Buffers/Vivado_RTL' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 64 MB (+374kb) [00:00:10]
+// [Engine Memory]: 581 MB (+98808kb) [00:00:10]
+// [Engine Memory]: 615 MB (+5985kb) [00:00:12]
+// [GUI Memory]: 69 MB (+1521kb) [00:00:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 38 MB. Current time: 12/5/18 10:05:07 AM EST
+// Project name: buffers; location: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Wires/Lab1_1Buffers/Vivado_RTL; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 839.293 ; gain = 155.477 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a (ck): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 245 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bi (ck): Implementation is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a (bi)
+// bx (ck):  Open Implemented Design : addNotify
+dismissDialog("Implementation is Out-of-date"); // bi (ck)
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 640 MB. GUI used memory: 38 MB. Current time: 12/5/18 10:09:25 AM EST
+// [Engine Memory]: 751 MB (+109884kb) [00:04:34]
+// [Engine Memory]: 926 MB (+144280kb) [00:04:39]
+// [Engine Memory]: 978 MB (+6015kb) [00:04:44]
+// [Engine Memory]: 1,071 MB (+46195kb) [00:04:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,335 MB. GUI used memory: 38 MB. Current time: 12/5/18 10:09:45 AM EST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,376 MB. GUI used memory: 37 MB. Current time: 12/5/18 10:09:45 AM EST
+// [Engine Memory]: 1,377 MB (+264871kb) [00:04:51]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 78 MB (+6330kb) [00:04:52]
+// [Engine Memory]: 1,478 MB (+33778kb) [00:04:52]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2.1 INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1651.559 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1651.559 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 83 MB (+292kb) [00:04:54]
+// [GUI Memory]: 89 MB (+1865kb) [00:04:54]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1760.063 ; gain = 918.707 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dP' command handler elapsed time: 29 seconds
+// Elapsed time: 27 seconds
+dismissDialog("Open Implemented Design"); // bx (ck)
+// Device view-level: 0.5
+// [GUI Memory]: 106 MB (+13891kb) [00:04:57]
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Device_zoom_fit"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// [GUI Memory]: 120 MB (+8935kb) [00:05:05]
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 126311, 253670); // D (I, ck)
+// Device view-level: 2.7
+selectButton(RDIResource.GraphicalView_PREVIOUS, "Device_previousview"); // B (f, ck)
+// Device view-level: 0.5
+// HMemoryUtils.trashcanNow. Engine heap size: 1,550 MB. GUI used memory: 77 MB. Current time: 12/5/18 10:10:08 AM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, -1174, 292696); // D (I, ck)
+// Device view-level: 1.8
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 15837, 304742); // D (I, ck)
+// Device view-level: 3.4
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // u (f, ck): TRUE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 3.3
+// Device view-level: 4.4
+selectButton(PAResourceCommand.PACommandNames_SELECT_AREA, "Device_select_area"); // u (f, ck): TRUE
+// Run Command: PAResourceCommand.PACommandNames_SELECT_AREA
+selectButton(PAResourceCommand.PACommandNames_SELECT_AREA, "Device_select_area"); // u (f, ck): FALSE
+// Run Command: PAResourceCommand.PACommandNames_SELECT_AREA
+// [Engine Memory]: 1,553 MB (+919kb) [00:05:35]
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 4.0
+// HMemoryUtils.trashcanNow. Engine heap size: 1,565 MB. GUI used memory: 84 MB. Current time: 12/5/18 10:10:34 AM EST
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // u (f, ck): FALSE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 4.3
+// Device view-level: 5.2
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // u (f, ck): TRUE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 4.6
+// Device view-level: 4.4
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 4.0
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.6
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.1
+// HMemoryUtils.trashcanNow. Engine heap size: 1,567 MB. GUI used memory: 84 MB. Current time: 12/5/18 10:10:50 AM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.7
+// Elapsed time: 13 seconds
+floatView(PAResourceOtoP.PAViews_DEVICE, "Device"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_DEVICE: Device: float view
+maximizeFrame(PAResourceOtoP.PAViews_DEVICE, "Device"); // aw (aE, aG)
+// [GUI Memory]: 131 MB (+4619kb) [00:06:13]
+// [GUI Memory]: 138 MB (+1076kb) [00:06:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,581 MB. GUI used memory: 99 MB. Current time: 12/5/18 10:11:10 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,582 MB. GUI used memory: 128 MB. Current time: 12/5/18 10:11:10 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,617 MB. GUI used memory: 97 MB. Current time: 12/5/18 10:11:10 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,617 MB. GUI used memory: 98 MB. Current time: 12/5/18 10:11:10 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,617 MB. GUI used memory: 97 MB. Current time: 12/5/18 10:11:11 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,620 MB. GUI used memory: 104 MB. Current time: 12/5/18 10:11:12 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,620 MB. GUI used memory: 104 MB. Current time: 12/5/18 10:11:12 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,620 MB. GUI used memory: 97 MB. Current time: 12/5/18 10:11:12 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,620 MB. GUI used memory: 97 MB. Current time: 12/5/18 10:11:13 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,620 MB. GUI used memory: 131 MB. Current time: 12/5/18 10:11:13 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,620 MB. GUI used memory: 98 MB. Current time: 12/5/18 10:11:13 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,620 MB. GUI used memory: 135 MB. Current time: 12/5/18 10:11:18 AM EST
+// [GUI Memory]: 154 MB (+9464kb) [00:06:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,620 MB. GUI used memory: 152 MB. Current time: 12/5/18 10:11:18 AM EST
+// [GUI Memory]: 173 MB (+12063kb) [00:06:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,630 MB. GUI used memory: 190 MB. Current time: 12/5/18 10:11:18 AM EST
+// [Engine Memory]: 1,637 MB (+6622kb) [00:06:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,637 MB. GUI used memory: 134 MB. Current time: 12/5/18 10:11:18 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,637 MB. GUI used memory: 97 MB. Current time: 12/5/18 10:11:18 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,638 MB. GUI used memory: 104 MB. Current time: 12/5/18 10:11:19 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,638 MB. GUI used memory: 97 MB. Current time: 12/5/18 10:11:20 AM EST
+// PAResourceOtoP.PAViews_DEVICE: Device: close view
+// Elapsed time: 27 seconds
+closeFrame(PAResourceOtoP.PAViews_DEVICE, "Device"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_DEVICE, "Device"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_DEVICE, "Device"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+// HMemoryUtils.trashcanNow. Engine heap size: 1,642 MB. GUI used memory: 87 MB. Current time: 12/5/18 10:14:05 AM EST
+// Elapsed time: 196 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 29, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true, false, false, false, false, true); // u (O, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ck) - Node
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true, false, false, false, false, true); // u (O, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 16, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Constraints Wizard]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+selectButton("PAResourceTtoZ.TimingConstraintsWizardHandler_THERE_NO_DESIGNATED_TARGET_CONSTRAINTS_Cancel", "Cancel"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 25, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ck): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (a)
+dismissDialog("Report Utilization"); // a (ck)
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, switchLED (Lab1-1Buffers.v)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, switchLED (Lab1-1Buffers.v)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Lab1-1Buffers.v", 1, 197); // ce (w, ck)
+typeControlKey((HResource) null, "Lab1-1Buffers.v", 'c'); // ce (w, ck)
