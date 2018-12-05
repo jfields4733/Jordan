@@ -2,11 +2,11 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Wed Nov 14 15:36:55 2018
-# Process ID: 6512
-# Current directory: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Logic/Lab1_1Buffers/Vivado_RTL/buffers.runs/synth_1
+# Start of session at: Wed Dec  5 13:56:11 2018
+# Process ID: 3224
+# Current directory: C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES246/1Wires/Vivado_RTL/buffers.runs/synth_1
 # Command line: vivado.exe -log switchLED.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source switchLED.tcl
-# Log file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Logic/Lab1_1Buffers/Vivado_RTL/buffers.runs/synth_1/switchLED.vds
-# Journal file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Logic/Lab1_1Buffers/Vivado_RTL/buffers.runs/synth_1\vivado.jou
+# Log file: C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES246/1Wires/Vivado_RTL/buffers.runs/synth_1/switchLED.vds
+# Journal file: C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES246/1Wires/Vivado_RTL/buffers.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source switchLED.tcl -notrace

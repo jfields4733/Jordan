@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1542227859">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1544036219">
   <File Type="BITSTR-BMM" Name="switchLED_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="switchLED_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="switchLED_timing_summary_init.rpt"/>
@@ -88,8 +88,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../RTL/Lab1-1Buffers.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/Vivado_RTL/buffers.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/buffers.xdc"/>
+        <Attr Name="ImportTime" Val="1544035881"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -99,9 +101,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

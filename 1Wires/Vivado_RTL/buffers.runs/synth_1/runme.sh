@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/1Lab-Logic/Lab1_1Buffers/Vivado_RTL/buffers.runs/synth_1'
+HD_PWD='C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES246/1Wires/Vivado_RTL/buffers.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -16,4 +16,13 @@ How many LED"s can one switch drive? .. all 16?
 If vivado fails, where does it fail (RTL. Syntehsis, Implementation or Bit File Generation), what is the error message?  
 
 ## Deliverables
-Submit a word file answering the TinyProjecta questions, the vivado project files for TinyProjectb and a word document with screen shots for TinyProjectb similar to the example.
+Submit a word file answering the TinyProjecta questions, the vivado project files for TinyProjectb 
+and a word document with screen shots for TinyProjectb similar to the example. Answer these questions
+associated with the screen shots, underneath the appropriate screen shot:
+What is a net?
+What is a cell?
+What is an IOport?
+What do the yellow trangles labeled OBUF do?
+
+
+
