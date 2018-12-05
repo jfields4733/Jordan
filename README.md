@@ -8,7 +8,7 @@
 # Deliverables:   
 Write in lab notebooks in the goingToDo, Doing, Rant style keeping track of time. Rant and whenever frustrated for more than 10 minutes attempting to do something. Turn one frustration per week into an entry in a knowledge database (formatted as a spreadsheet).   
 
-Create a single electronic file containing the tiny vivado project, and a word document containing the following:
+Create a single electronic file containing the tiny vivado project, and a word document containing the following:  
 a) RTL, Synthesis and Implementation schematic (and others) screen shots of the tiny project  
 b) Port interface, FSM and ASM drawings for the example extensions   
 c) Discuss testing in terms of 2^n, and how to test the insipred project using the hardware of the Nexys4DDR boards   
