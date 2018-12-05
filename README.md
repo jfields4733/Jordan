@@ -1,6 +1,7 @@
-# ENES246 Digital Electronics at Howard Community College
+# ENES246 Digital Design at Howard Community College, a first course in digital electronics
+
 ## Contains programming exercises that are done with verilog, vivado and Nexys4DDR boards
-### Workflow starts with examples. You are then asked various things to do with the examples in the form of tiny project. 
+### Workflow starts with examples. You are then asked various things to do with the examples in the form of a tiny project. 
 ### Writing testing code is not the focus of this class. Testing itself will start off manual, move through some generic, simple sv testing and the gradually turn into a discussion so testing issues are well known. 
 ### Will learn to work with modules both creating them and using them.  
 ### Final goal is to write RTL code looking at port interface, FSM, and ASM diagrams, separating data from control.  
