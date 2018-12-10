@@ -12,7 +12,7 @@ Write in lab notebooks in the goingToDo, Doing, Rant style keeping track of time
 Create a single electronic file containing the tiny vivado project, and a word document containing the following:  
 a) RTL, Synthesis and Implementation schematic (and others) screen shots of the tiny project  
 b) Port interface, FSM and ASM drawings for the tiny project   
-c) Discuss testing in terms of 2^n, and how to test the insipred project using the hardware of the Nexys4DDR boards   
+c) Discuss testing in terms of 2^n, and how to test the inspired project using the hardware of the Nexys4DDR boards   
   
 Look at the README.md in each lab folder for tiny project instructions.
 
