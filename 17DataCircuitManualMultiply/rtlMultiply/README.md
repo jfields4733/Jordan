@@ -16,11 +16,11 @@ Utilization Summary
 
 ![1544639313670](1544639313670.png)
 
+Implementation
+
+![1544644534161](1544644534161.png)
+
 Manual Testing
 
-​		Can see a pattern of when ask to multiply by 2,4,8,16 ... just shifts the other number	 
-
-​		Just eliminated the absolute path to the graphics.
-
-
+​	Can see a pattern of when ask to multiply by 2,4,8,16 ... just shifts the other number left	 
 
