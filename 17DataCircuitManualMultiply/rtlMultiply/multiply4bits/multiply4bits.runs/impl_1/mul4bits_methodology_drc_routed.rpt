@@ -1,0 +1,45 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date         : Wed Dec 12 13:19:11 2018
+| Host         : SET253-17C running 64-bit major release  (build 9200)
+| Command      : report_methodology -file mul4bits_methodology_drc_routed.rpt -pb mul4bits_methodology_drc_routed.pb -rpx mul4bits_methodology_drc_routed.rpx
+| Design       : mul4bits
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 2
++---------+----------+------------------+------------+
+| Rule    | Severity | Description      | Violations |
++---------+----------+------------------+------------+
+| SYNTH-9 | Warning  | Small multiplier | 2          |
++---------+----------+------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at x_OBUF[3]_inst_i_1 of size 4x4, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at x_OBUF[7]_inst_i_1 of size 4x4, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+
