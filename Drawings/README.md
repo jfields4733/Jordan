@@ -6,7 +6,6 @@ The purpose of drawings is to create the documents that explain the verilog code
  [State Diagrams](https://en.wikipedia.org/wiki/State_diagram)  
 Finite State Machines (FSM):  [Moore](https://en.wikipedia.org/wiki/Moore_machine) and [Mealy](https://en.wikipedia.org/wiki/Mealy_machine)  
 [Algorithmic State Machines ](https://en.wikipedia.org/wiki/Algorithmic_state_machine) (ASM)   
- 
 
 In this class, you will be asked to make drawings of different types. What follows are svg graphics of xml drawings that can be uploaded and edited at [draw.io](https://www.draw.io/).
 
@@ -20,6 +19,6 @@ Asynchronous is how the world works. Events drive what happens, not a clock. Syn
 
 
 
-The Mealy causes inputs to bypass the registers and directly influence the output. This is used primarily in serial communications such as USB, Ethernet, CanBus, wifi, xbee, bluetooth, etc. Without this there would be more video with sound out of sync with the video because of different compression and error correction techniques. 
+The Mealy causes inputs to bypass the registers and directly influence the output. This is used primarily in serial communications such as USB, Ethernet, CanBus, wifi, xbee, bluetooth, etc. Without this there would be more video with out of sync sound caused by splitting video into picture and sound with different sending and receiving, different compression and error correction techniques. 
 
 ![MealyPortInterface](MealyPortInterface.svg)
