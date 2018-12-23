@@ -22,3 +22,9 @@ Asynchronous is how the world works. Events drive what happens, not a clock. Syn
 The Mealy causes inputs to bypass the registers and directly influence the output. This is used primarily in serial communications such as USB, Ethernet, CanBus, wifi, xbee, bluetooth, etc. Without this there would be more video with out of sync sound caused by splitting video into picture and sound with different sending and receiving, different compression and error correction techniques. 
 
 ![MealyPortInterface](MealyPortInterface.svg)
+
+Next would be a port interface of a project such as the $15 gum machine that has a control module , sync data module, and async data module. The trouble with this is that the port interface is not the starting point of a project .  A state diagram is the starting point.  So we start with a $15 gum machine generic state diagram and then move onto a $15 gum machine port interface.  
+
+
+
+The [linked](http://www.sunburst-design.com/papers/CummingsSNUG1998SJ_FSM.pdf) paper is out of date, but modern in it's understanding of how Vivado interprets case commands. May be useful in the transition labs between flipflops and IP. It certainly has good state diagrams  whose interpretation could be test questions. 
