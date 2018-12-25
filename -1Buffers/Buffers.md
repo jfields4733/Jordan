@@ -55,4 +55,17 @@ Show your instructor the manual testing of this modification with your hands tou
 Show your instructor your verilog code in vivado. 
 Push the code into your personal, GITHub course repository.
 
- 
+## Questions
+
+Need to answer these questions by modifying the verilog code in vivado:
+
+What is a net?
+What is a cell?
+What is an IO port?
+Under what conditions could two switches driving one LED damage the Nexys4DDR?
+How many LED's can one switch drive?
+
+
+
+
+
