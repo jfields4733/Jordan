@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec 27 17:24:10 2018
+# Process ID: 4688
+# Current directory: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffer_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2656 C:\Users\scott\Documents\GitHub\ENES246\-1Buffers\buffer_project\buffers.xpr
+# Log file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffer_project/vivado.log
+# Journal file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffer_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffer_project/buffers.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES246/1Wires/Vivado_RTL' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'buffers.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 674.031 ; gain = 84.930
+update_compile_order -fileset sources_1

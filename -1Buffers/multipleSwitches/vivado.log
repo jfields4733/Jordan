@@ -1,0 +1,135 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec 27 18:10:44 2018
+# Process ID: 5792
+# Current directory: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6420 C:\Users\scott\Documents\GitHub\ENES246\-1Buffers\multipleSwitches\buffers.xpr
+# Log file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/vivado.log
+# Journal file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffer_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: switchLED
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 830.805 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'switchLED' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'switchLED' (1#1) [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+WARNING: [Synth 8-3330] design switchLED has an empty top module
+WARNING: [Synth 8-3917] design switchLED has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[8] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[7] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[6] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[5] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[4] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[3] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[2] driven by constant 0
+WARNING: [Synth 8-3917] design switchLED has port LED[1] driven by constant 0
+WARNING: [Synth 8-3331] design switchLED has unconnected port SW[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 856.258 ; gain = 25.453
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin SW[0] with 1st driver pin 'SW[0]' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin SW[0] with 2nd driver pin 'SW[1]' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 856.258 ; gain = 25.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 856.258 ; gain = 25.453
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+WARNING: [Vivado 12-584] No ports matched ']'. [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc:33]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc:33]
+Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1166.578 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1249.262 ; gain = 418.457
+8 Infos, 18 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1249.262 ; gain = 418.457
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1255.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'switchLED' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'switchLED' (1#1) [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+WARNING: [Synth 8-3330] design switchLED has an empty top module
+WARNING: [Synth 8-3331] design switchLED has unconnected port SW[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1255.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin SW[0] with 1st driver pin 'SW[0]' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin SW[0] with 2nd driver pin 'SW[1]' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1255.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1255.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+WARNING: [Vivado 12-584] No ports matched ']'. [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc:33]
+Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleSwitches/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1282.277 ; gain = 26.887
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 27 20:20:37 2018...

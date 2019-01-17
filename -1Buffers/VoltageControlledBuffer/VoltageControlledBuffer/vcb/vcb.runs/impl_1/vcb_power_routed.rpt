@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Wed Oct  3 13:58:57 2018
-| Host             : SET253-INS1C running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Thu Dec 27 20:43:59 2018
+| Host             : DESKTOP-SI013V8 running 64-bit major release  (build 9200)
 | Command          : report_power -file vcb_power_routed.rpt -pb vcb_power_summary_routed.pb -rpx vcb_power_routed.rpx
 | Design           : vcb
 | Device           : xc7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.483        |
+| Total On-Chip Power (W)  | 0.636        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.385        |
-| Device Static (W)        | 0.098        |
+| Dynamic (W)              | 0.537        |
+| Device Static (W)        | 0.099        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 82.8         |
-| Junction Temperature (C) | 27.2         |
+| Max Ambient (C)          | 82.1         |
+| Junction Temperature (C) | 27.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.001 |        1 |       --- |             --- |
-|   LUT as Logic |     0.001 |        1 |     63400 |           <0.01 |
-| Signals        |     0.012 |        3 |       --- |             --- |
-| I/O            |     0.372 |        3 |       210 |            1.43 |
-| Static Power   |     0.098 |          |           |                 |
-| Total          |     0.483 |          |           |                 |
+| Slice Logic    |     0.003 |        2 |       --- |             --- |
+|   LUT as Logic |     0.003 |        2 |     63400 |           <0.01 |
+| Signals        |     0.014 |        4 |       --- |             --- |
+| I/O            |     0.520 |        3 |       210 |            1.43 |
+| Static Power   |     0.099 |          |           |                 |
+| Total          |     0.636 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +67,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.037 |       0.021 |      0.016 |
-| Vccaux    |       1.800 |     0.032 |       0.013 |      0.018 |
-| Vcco33    |       3.300 |     0.107 |       0.103 |      0.004 |
+| Vccint    |       1.000 |     0.041 |       0.024 |      0.016 |
+| Vccaux    |       1.800 |     0.037 |       0.019 |      0.018 |
+| Vcco33    |       3.300 |     0.149 |       0.145 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -134,7 +134,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| vcb  |     0.385 |
+| vcb  |     0.537 |
 +------+-----------+
 
 

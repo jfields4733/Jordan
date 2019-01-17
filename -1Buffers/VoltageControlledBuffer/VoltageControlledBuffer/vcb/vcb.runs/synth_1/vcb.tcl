@@ -17,20 +17,22 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/VoltageControlledBuffer/VoltageControlledBuffer/vcb/.Xil/Vivado-9084-DESKTOP-SI013V8/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/VoltageControlledBuffer/vcb/vcb.cache/wt [current_project]
-set_property parent.project_path C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/VoltageControlledBuffer/vcb/vcb.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/VoltageControlledBuffer/VoltageControlledBuffer/vcb/vcb.cache/wt [current_project]
+set_property parent.project_path C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/VoltageControlledBuffer/VoltageControlledBuffer/vcb/vcb.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/VoltageControlledBuffer/vcb/vcb.cache/ip [current_project]
+set_property ip_output_repo c:/Users/scott/Documents/GitHub/ENES246/-1Buffers/VoltageControlledBuffer/VoltageControlledBuffer/vcb/vcb.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/VoltageControlledBuffer/vcb/vcb.srcs/sources_1/new/vcb.v
+read_verilog -library xil_defaultlib C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/VoltageControlledBuffer/VoltageControlledBuffer/vcb/vcb.srcs/sources_1/new/vcb.v
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -39,10 +41,10 @@ read_verilog -library xil_defaultlib C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivad
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/VoltageControlledBuffer/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/VoltageControlledBuffer/Nexys4DDR_Master.xdc]
+read_xdc C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/VoltageControlledBuffer/VoltageControlledBuffer/vcb/vcb.srcs/constrs_1/imports/VoltageControlledBuffer/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/VoltageControlledBuffer/VoltageControlledBuffer/vcb/vcb.srcs/constrs_1/imports/VoltageControlledBuffer/Nexys4DDR_Master.xdc]
 
-set_param ips.enableIPCacheLiteLoad 0
+set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 synth_design -top vcb -part xc7a100tcsg324-1

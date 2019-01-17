@@ -1,8 +1,11 @@
 `timescale 1ns / 1ps
 
-module vcb(in,control,shared_output);
-   input  in,control;
-   output shared_output;
-   tri shared_output;
-   bufif1 b1(shared_output,in,control);
+module vcb(
+   input  sw0,
+   input  sw1,
+   output LED
+   );
+   tri LED;
+   bufif1 b1(LED, sw0, sw0);
+   bufif1 b2(LED, sw1, sw1);
 endmodule
