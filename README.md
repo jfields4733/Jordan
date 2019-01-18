@@ -49,7 +49,7 @@ This course is primarily about Electronic Design Automation [EDA](https://en.wik
 ​	Questions must flow initially through the instructor.
 ​	For those who exhibit independent work, [pair programming](https://en.wikipedia.org/wiki/Pair_programming) will be allowed.
 ​	Is self_paced, competency based meaning classroom attendance is not required for those working ahead of schedule.
-​	For those falling behind, attendance is mandatory.  Those not attending will have their work penalized 20% per day 	late. 
+​	For those falling behind, attendance is mandatory.  Those not attending will have their work penalized 20% per day late. 
 
 ​	The official syllabus and schedule is in Canvas. 
 
@@ -59,19 +59,19 @@ Lab instructions are in the README.md file in the lab folder.  Within the lab fo
 
 There may be multiple vivado projects already designed you are to look at and multiple vivado projects for you to design in one lab.  
 
-You are to create an electronic **LabWriteUp** file containing circuit design drawings and screenshots, plus answers to the questions associated with the existing vivado projects. 
-
 You are required to **demonstrate** each circuit physically to the instructor (no video) at which time your **notebook** will be inspected. This can be done all at once or after each circuit has been physically implemented in the Nexys4 DDR. 
 
 ## LabWriteUp  
 
-Lab write up has to be done electronically in markDown (md) format. Suggest using the Typora editor to create this. Must write in this as you do the lab. Is going to contain screen shots from vivado.  The following must be done for each circuit/vivado project and put into one electronic file. 
+Lab write up is to electronically modify the README.md file. You have to answer the questions in italics and add some drawings you draw by hand (using draw.io) and Vivado screen shots.  Suggest using the Typora editor to do this. Must write as you do the lab. The following must be done for each circuit/vivado project (whether looking at, modifying an instructor project or making your own project) and put into one electronic file. 
 
 LabWriteUp Grading is done after the lab is due. The grade is merely about completeness. Have the necessary drawings been made? Have the screenshots been captured and comments made about them? Do both the questions and answers exist? Do they look original? How many GITHub commits were made?
 
+
+
 ### Drawings  
 
-The design documents are diagrams. Within the one LabWriteUp.md file, each vivado project or circuit has to start with a port interface diagram.  Other diagrams will be added later. Draw diagrams with a package that produces svg files to put in the md format. Save the files in a format that you can edit later. Suggest using draw.io and saving in xml format. Look in the drawing folder for more extensive examples of these diagrams.
+The design documents are diagrams. Within the one LabWriteUp.md file, each vivado project or circuit has to start with a port interface diagram.  Other diagrams will be added later. Draw diagrams with a package that produces svg files (suggest [draw.io](www.draw.io)) to put in the md format. Save the files in a format that you can edit later. Suggest using draw.io and saving in xml format. Look in the drawing folder for more extensive examples of these diagrams.
 
 ### Screenshots  
 
@@ -79,11 +79,11 @@ Continue in the LabWriteUp for each project or circuit by adding a RTL, Synthesi
 
 ### Questions  
 
-Existing circuits have questions associated with them. Copy and paste the questions into your LabWriteUp and then answer them. Your notebook will or a description of the circuit to build. Questions are found in the lab itself. 
+Existing circuits have questions associated with them. Copy and paste the questions into your LabWriteUp README.md and then answer them. Your notebook will or a description of the circuit to build. Questions are found in the lab itself. 
 
 ### Testing  
 
-The LabWriteUp for each project or circuit ends with a section on testing. This will always include the manual testing you did do, the manual testing you did not do but could have, suggested testing that can be automated by writing scripts, and testing that will be impossible. 
+The LabWriteUp README.md for each project or circuit ends with a section on testing. This will always include the manual testing you did do, the manual testing you did not do but could have, suggested testing that can be automated by writing scripts, and testing that will be impossible. 
 
 ## Demonstration-Notebook  
 
@@ -101,4 +101,4 @@ They all have to be done by the lab due date at the time at the end of lab. Labs
 
 Each lab results in a demo-notebook grade. Circuits are graded. There is no partial credit per circuit. Either you demonstrate the circuit or you don't. Either you are using your notebook appropriately to work through frustrations, or you are not. Either you use your frustrations to improve the world (entry in knowledge base) or you don't. The knowledge base entries will be graded by counting them at the end of the semester and dividing by 24 .. the number of labs. 
 
-You can't redo or make up labs after the due date. If you don't demonstrate all the circuits, you will get partial credit for the lab. At the beginning, most of the circuits already exist. Towards the end, there may be no existing circuits to demonstrate.  
+You can't redo or make up labs after the due date. If you don't demonstrate all the circuits, you will get partial credit for the lab. At the beginning, most of the circuits already exist as starting points that you demonstrate and then modify and demonstrate. Towards the end, may have to start from scratch.
