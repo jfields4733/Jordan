@@ -18,11 +18,11 @@ Send the bit file to the Nexys4DDR board and show it working to your instructor.
 
 #### Port Diagram
 
-#### RTL Screen Shot
+#### RTL Schematic Screen shot
 
-#### Synthesis Screen Shot
+#### Synthesis Schematic Screen shot
 
-#### Implementations Screen shot
+#### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
 
@@ -37,11 +37,11 @@ Make modifications so that one switch drives mutliple LED's.
 
 #### Port Diagram
 
-#### RTL Screen Shot
+#### RTL Schematic Screen shot
 
-#### Synthesis Screen Shot
+#### Synthesis Schematic Screen shot
 
-#### Implementations Screen shot
+#### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
 
@@ -59,11 +59,11 @@ This project or circuit fails. Two switches can not drive one LED.
 
 #### Port Diagram
 
-#### RTL Screen Shot
+#### RTL Schematic Screen shot
 
-#### Synthesis Screen Shot
+#### Synthesis Schematic Screen shot
 
-#### Implementations Screen shot
+#### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
 
@@ -75,10 +75,10 @@ Hook the switches to the LED's in some creative way of your choice using the con
 
 #### Port Diagram
 
-#### RTL Screen Shot
+#### RTL Schematic Screen shot
 
-#### Synthesis Screen Shot
+#### Synthesis Schematic Screen shot
 
-#### Implementations Screen shot
+#### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing

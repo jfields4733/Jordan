@@ -23,11 +23,11 @@ Nothing means not hooked up. Nothing means the tristate  buffer output wire is l
 
 #### Port Diagram
 
-#### RTL Screen Shot
+#### RTL Schematic Screen shot
 
-#### Synthesis Screen Shot
+#### Synthesis Schematic Screen shot
 
-#### Implementations Screen shot
+#### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
 
@@ -43,10 +43,10 @@ There is a transition, a business opportunity, a standards opportunity here.  Co
 
 #### Port Diagram
 
-#### RTL Screen Shot
+#### RTL Schematic Screen shot
 
-#### Synthesis Screen Shot
+#### Synthesis Schematic Screen shot
 
-#### Implementations Screen shot
+#### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
