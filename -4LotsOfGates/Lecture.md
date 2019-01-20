@@ -1,72 +1,24 @@
-# AndNand
+# Lots of Gates
 
 ## Digital Design Goals
 
-Anything that can be done in hardware can be done in software. *Why build hardware?*
+Digital design goals in the 1970 and 80's involved reducing chip count (number of gates) to reduce cost,  reduce power consumed and increase speed. 
 
-​	better manage power
-​	faster
+#### Wires
 
-Fortunately, lower power circuits are typically faster. Unfortunately, digital design in the last 40 years has explored all the tips and tricks to making faster circuits. Most design software will not allow you to make mistakes. Vivado will complain if you tell it to build a slow circuit and then redesign the circuit (using the accumulated knowledge and rules in the last 40 years) so it is fast. And you may not recognize the design.
+Today wires are the focus. How long wires are, how close they are to each other has evolved into a set of electrical engineering design rules called "[microstrip](https://en.wikipedia.org/wiki/Microstrip)." Fortunately, the wires are permanently placed in the FPGA and the design rules are built into Vivado Implement.  So like all the other detail that develops rules/standards and grows very slowly if at all, this knowledge has become part of the technical expertise world. Because engineers focus on "the" one of a kind " or "the rapidly changing world", a modern digital design class doesn't focus on this. 
 
-## Verilog Abstraction Levels
+#### 5 building blocks: LUts, muxes, xor, adders and D flip flops
 
-Previous digital courses have focused on Boolean Algebra,  designed with gates and sprinkled with a few algorithms such as error correction.  These are the  names  in history that contributed to the evolution of this discipline:
+Everything use to be about gates: software that simulate gates, algorithms and math that reduce gate counts, typical circuits that are built with gates, drawings of gates, gate testing, etc. 
 
-[George Boole](https://en.wikipedia.org/wiki/George_Boole), 1854, English, Boolean Algebra  
-[Ada Lovelace](https://www.youtube.com/watch?v=EUkgMTLjSPI), 1854, English first programmer  
-[Augustus De Morgan](https://en.wikipedia.org/wiki/Augustus_De_Morgan), 1854, English   Logician
-[Claude Shannon](https://en.wikipedia.org/wiki/Claude_Shannon), 1938, MIT, Gates  
-[Richard Hamming](https://en.wikipedia.org/wiki/Richard_Hamming), 1950, Bell Labs, Error Correction  
-[Sophie Wilson](https://en.wikipedia.org/wiki/Sophie_Wilson), 1985, English .. ARM CPU (Raspberry Pi, Cell phones, 60 billion sold)  
+Today in RTL verilog coding of gates looks like a math equation or the logic of loops, if, while , case or other programming constructs. The Vivado code may display pictures of gates in the RTL analysis, but synthesis and implementation describe the circuit in terms of the CLB, slices, and contents of slices in terms of just these gates: LUTs, muxes, xor, adders and D flip flops.  
 
-Originally drawings on paper used Shannon's Gate symbols which by now it is assumed most of you have played with:
+#### Workflow .. code .. test .. deploy
 
-![1547916411499](1547916411499.png)
+Digital design has been simplified. What now consumes an engineers time is an enlarged workflow that includes testing and deployment. Today "firmware" upgrades can include reprogramming FPGA chips and redesigning circuits. Satellites are remotely repaired by reprograming FPGA chips to use spare parts that are launched with the satellite.  This is why the rapidly changing agile software development techniques today impact circuit design.
 
-These gates could be turned into boolean algebra that looked something like this:
+#### Programming in Parallel
 
-![Image result for boolean algebra](https://cramster-image.s3.amazonaws.com/definitions/DC-1719V1.png)
-
-This has turned into a geometry type class called Discrete Algebra. It can be found in computer science, engineering or math departments in various colleges. 
-
-A third way circuits are/were designed used truth tables:
-
-![1547916529946](1547916529946.png)
-
-Vivado can understand gates, truth tables and boolean expressions if they are translated into verilog first.  
-
-![1547917255336](C:\Users\Scott Foerster\Documents\GitHub\ENES246\-3AndNand\1547917255336.png)
-
-This is a truth table written in verilog: 
-
-![1547917174602](C:\Users\Scott Foerster\Documents\GitHub\ENES246\-3AndNand\1547917174602.png)
-
-Boolean expressions are done with the **assign** command. 
-
-Truth tables are used still used to capture project requirements. Gates have turned into symbols of what Vivado software did in RTL, Synthesis and Implementation schematics. Boolean expressions are called "data path" abstractions and decorate the more important "control path" abstractions as we will found out in the second half of this course. 
-
-Today the design symbols are found in port interface drawings, and what look like modified traditional computer science flow charts. From these drawings and charts, Verilog RTL code is written.  Then Vivado looks at the verilog code and builds a circuit. 
-
-Finally Vivado will finish off the project by creating a bit file that activates (switches) wires in a configurable logic block (CLB).
-
-![1547917776033](C:\Users\Scott Foerster\Documents\GitHub\ENES246\-3AndNand\1547917776033.png)
-
-Each slice contains circuit symbols, only one of which is an xor gate:
-
-![1547917938163](C:\Users\Scott Foerster\Documents\GitHub\ENES246\-3AndNand\1547917938163.png)
-
-Vivado no longer lets us program the LUTs, the Muxes, or the flip flops directly. *Why?* Most likely engineers make mistakes and hurt the FPGA chips that contain these CLBs. Or maybe we make mistakes that slow the Xilinix FPGA chips down and make the company look bad. In any case, Vivado no longer contains the tools to program the CLBs or Slices directly.  Nor does it let us program switches or analog devices. 
-
-But Vivado does let us see how it implements our verilog code inside the CLBs. *Why?* Vivado is a bunch of rules that are rapidly evolving.  For example sometimes Vivado will say "you can not do that" and will delete part of your circuit.  Your goal is to figure out why, and adjust your design strategy. Looking at how Vivado is trying to synthesize and implement your circuit helps inspire this process along with decoding error messages. 
-
-Verilog's abstraction levels include:
-
-​	Analog .. capacitors, resistors, power supplies, diodes, inductors
-​	Switch   .. transistors
-​	Slice .. configurable logic block (CLB)
-​	Primitive .. truth table
-​	Structural, Gate … and,or, nand, nor, xor, nxor gates
-​	Data flow … boolean math assign command
-​	RTL … behavioral, algorithmic level, control flow
+What makes programming an FPGA different than C is that the learning curve starts off assuming all lines of code execute in parallel. Learning to read music and play a song on the piano where four notes are played at once while another note is held and two fingers trill as fast as possible is more similar to FPGA programming . Csound , a python based synthesizer from MIT multimedia labs uses the term "Non-blocking" in exactly the same context as Verilog.  More on this later.
 

@@ -19,7 +19,7 @@ Nothing means not hooked up. Nothing means the tristate  buffer output wire is l
 
 *What does a designer have to worry about when working with tri-state?* 
 
-*What kind of gate (and, nand, or, nor, xor, xnor, not) is the above circuit?*
+*What kind of gate (and, nand, or, nor, xor, xnor, not) is this circuit?*
 
 #### Port Diagram
 

@@ -36,11 +36,11 @@ A third way circuits are/were designed used truth tables:
 
 Vivado can understand gates, truth tables and boolean expressions if they are translated into verilog first.  
 
-![1547917255336](C:\Users\Scott Foerster\Documents\GitHub\ENES246\-3AndNand\1547917255336.png)
+![1547917255336](1547917255336.png)
 
 This is a truth table written in verilog: 
 
-![1547917174602](C:\Users\Scott Foerster\Documents\GitHub\ENES246\-3AndNand\1547917174602.png)
+![1547917174602](1547917174602.png)
 
 Boolean expressions are done with the **assign** command. 
 
@@ -50,11 +50,11 @@ Today the design symbols are found in port interface drawings, and what look lik
 
 Finally Vivado will finish off the project by creating a bit file that activates (switches) wires in a configurable logic block (CLB).
 
-![1547917776033](C:\Users\Scott Foerster\Documents\GitHub\ENES246\-3AndNand\1547917776033.png)
+![1547917776033](1547917776033.png)
 
 Each slice contains circuit symbols, only one of which is an xor gate:
 
-![1547917938163](C:\Users\Scott Foerster\Documents\GitHub\ENES246\-3AndNand\1547917938163.png)
+![1547917938163](1547917938163.png)
 
 Vivado no longer lets us program the LUTs, the Muxes, or the flip flops directly. *Why?* Most likely engineers make mistakes and hurt the FPGA chips that contain these CLBs. Or maybe we make mistakes that slow the Xilinix FPGA chips down and make the company look bad. In any case, Vivado no longer contains the tools to program the CLBs or Slices directly.  Nor does it let us program switches or analog devices. 
 
