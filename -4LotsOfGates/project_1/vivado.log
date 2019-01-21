@@ -197,3 +197,18 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SW[0]'; it is not accessible from the fabric routing.
 CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SW[1]'; it is not accessible from the fabric routing.
 close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/project_1.srcs/constrs_1/imports/-4LotsOfGates/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/project_1.srcs/constrs_1/imports/-4LotsOfGates/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3041.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 21 14:57:44 2019...

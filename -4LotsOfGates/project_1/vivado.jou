@@ -39,3 +39,5 @@ wait_on_run impl_1
 current_design synth_1
 refresh_design
 close_design
+open_run synth_1 -name synth_1
+close_project
