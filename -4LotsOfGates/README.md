@@ -7,7 +7,9 @@ Then look at how Vivado deals with identical circuits.
 
 ## Project_1
 
+Here is a gate diagram done in [logisim](https://sourceforge.net/projects/circuit/) that builds two identical circuits .. one is efficient ... and one uses lots of gates.  This is what was being stared at when the verilog code for project one was written. 
 
+![1548098400293](1548098400293.png)
 
 #### Port Diagram
 
@@ -24,3 +26,8 @@ Then look at how Vivado deals with identical circuits.
 ## Project_2
 
 Develop two identical circuits with 3 inputs, 2 outputs and at least 5 gates. The second circuit can be the most simple version of the first.  Then repeat the instructions of project 1. 
+
+## Ethics
+
+EDIM captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Read this wikipedia article on [EDIF](https://en.wikipedia.org/wiki/EDIF) and summarize in less than 200 words:*
+

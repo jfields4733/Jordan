@@ -67,13 +67,18 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache {C:/Users/Scott Foerster/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9996-LabSet332/incrSyn}
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/project_1.runs/impl_1/vcb.dcp}
+  set_param synth.incrementalSynthesisCache {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/.Xil/Vivado-4040-LabSet332/incrSyn}
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/project_1.cache/wt} [current_project]
   set_property parent.project_path {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/project_1.xpr} [current_project]
   set_property ip_output_repo {{C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/project_1.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet {{C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/project_1.runs/synth_1/vcb.dcp}}
+  read_xdc {{C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/project_1.srcs/constrs_1/imports/-4LotsOfGates/Nexys4DDR_Master.xdc}}
+  link_design -top vcb -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

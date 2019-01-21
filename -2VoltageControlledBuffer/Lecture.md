@@ -20,19 +20,26 @@ Either of the two tristate buffers can drive the LED.
 
 ![1545961610045](1545961610045.png)
 
-How is the above different from the two state situation? 
+*How is the above different from the two state situation?*   
+When sw0 is 0, the tristate buffer doesn't try to ground the LED. It outputs nothing.    
 
-When sw0 is 0, the tristate buffer doesn't try to ground the LED. It outputs nothing. What is the difference between 0 (false) and nothing? 
-
+*What is the difference between 0 (false) and nothing?*  
 Nothing means not hooked up. Nothing means the tristate  buffer output wire is logically cut.  Open. Infinite output impedance.  Off.  If sw=0 and sw1=1 there will not be a fight.  Switch1 (sw1)  will win. Switch2 (sw2) has checked out of the game.   
 
-So what is the difference between 0 and off? There is not difference in a two state circuit. There is a difference in a tristate buffer circuit. Off means disconnected. 0 means remove all energy from the wire. 
+*So what is the difference between 0 and off?*    
+There is not difference in a two state circuit. There is a difference in a tristate buffer circuit. Off means disconnected. 0 means remove all energy from the wire. 
 
-What is the difference between 0 and 1? 0 means remove all energy from the wire. Stop it from acting like an  antenna. 1 means flood the wire with energy. Build up the pressure.
+*What is the difference between 0 and 1?* 0 means remove all energy from the wire. Stop it from acting like an  antenna. 1 means flood the wire with energy. Build up the pressure.
 
-So what if both sw1 and sw2 are both 0?  Can a blue tooth wireless transmission cause the wire to fill up with electromotive force EMF and cause the LED to glow? Yes! This is the drawback.  
+*So what if both sw1 and sw2 are both 0?*  Can a blue tooth wireless transmission cause the wire to fill up with electromotive force EMF and cause the LED to glow? Yes! This is the drawback.  
 
-Is this something a designer should be worried about? Yes! When working with tristate wires, have to make sure that the wire is driven by some input at all times. Could be driven to 1 or driven to a 0.
+*Is this something a designer should be worried about?* Yes! When working with tristate wires, have to make sure that the wire is driven by some input at all times. Could be driven to 1 or driven to a 0.
+
+*How is the wire to the LED driven if both SW0 and SW1 are both zero?* This is done through a pull down resistor. Prior to the LED input, a large resistor is connected to ground. This drives the input to the LED to ground so leakage from other components, bluetooth or wifi signals are not picked up by the dangling wire into the LED and strong enough to cause the LED to glow.  
+
+*Why didn't you put a pull down resistor in the circuit?* Vivado does it automatically.
+
+![1548093709133](1548093709133.png)
 
 Why emphasis on tristate in this lab? 
 

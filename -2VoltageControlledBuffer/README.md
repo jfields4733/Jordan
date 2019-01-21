@@ -11,8 +11,6 @@ Here is the above different from the two state situation from the first lab.  Wh
 
 *What happens when both switches are zero (false)? What could happen?*
 
-Nothing means not hooked up. Nothing means the tristate  buffer output wire is logically cut.  Open. Infinite output impedance.  Off.  If sw=0 and sw1=1 there will not be a fight.  Switch1 (sw1)  will win. Switch2 (sw2) has checked out of the game.   
-
 *So what is the difference between 0 and off?* 
 
 *What is the difference between 0 and 1?* 
@@ -27,7 +25,9 @@ Nothing means not hooked up. Nothing means the tristate  buffer output wire is l
 
 #### Synthesis Schematic Screen shot
 
-#### Implementation Device screen shot zoomed in on something interesting
+#### Implementation Device screen shot zoomed in on something interesting  
+
+*Zoom in on a pull down resistor*
 
 #### Testing
 
@@ -39,7 +39,9 @@ Many people are replacing light bulbs with LED's that last forever. Most are 12 
 
 ​	[wikipedia Multiway_Switching Traveler_system_2](https://en.wikipedia.org/wiki/Multiway_switching#Traveler_system_2)
 
-There is a transition, a business opportunity, a standards opportunity here.  Compare the "3-way" and "4-way switches" at Home Depot or Lowes.  *Does the voltage controlled buffer reduce the amount of copper needed?*
+There is a transition, a business opportunity, a standards opportunity here.  Compare the "3-way" and "4-way switches" at Home Depot or Lowes.  
+
+*Can a voltage controlled buffer reduce the amount of copper needed?*
 
 #### Port Diagram
 
