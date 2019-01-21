@@ -70,3 +70,11 @@ Verilog's abstraction levels include:
 ​	Data flow … boolean math assign command
 ​	RTL … behavioral, algorithmic level, control flow
 
+## XOR gates
+
+[XOR gates](https://en.wikipedia.org/wiki/XOR_gate) can be used to build an entire computer, but not like the [Von Neumann computer](https://en.wikipedia.org/wiki/Von_Neumann_architecture) in our cell phone, in our laptops or desktops. The computer built using XOR gates is dependent upon the passage of time. Yes we use clocks in our purchased,  Von Neumann computers. But not theoretically. Von Neumann computers can be entirely [event driven](https://en.wikipedia.org/wiki/Event-driven_architecture). They are called [Asynchronous Sequential Network CPU computers](https://en.wikipedia.org/wiki/Asynchronous_circuit#Asynchronous_CPU).  
+
+XOR gates decorate the Von Neumann computer like rounding an edge when working in CAD.  If you round too early, the CAD software starts generating error message or crashes. It causes the CAD math to work with infinities. They are used in the final simplification. They are used in the last step. 
+
+XOR gates can be built with NAND or NOR, but something is lost.  XOR gates are a difference detector. When the inputs disagree, the output is a 1.  With more than two inputs, the XOR gate turns into an odd detector. XOR gates can be thought of as a binary multiplier. XOR gates are the basic design element of [quantum computers](https://en.wikipedia.org/wiki/Quantum_computing), models of the [biological computer](https://en.wikipedia.org/wiki/Biological_computing) and encryption/error detection.  The [design process](https://docs.google.com/spreadsheets/d/1cwsQAgU61m5rsnaMliihcQ-5ZX-rM0yRnYyswaF9eyM/edit?usp=sharing) can be thought of as similar to long division. 
+

@@ -4,15 +4,17 @@
 
 Digital design goals in the 1970 and 80's involved reducing chip count (number of gates) to reduce cost,  reduce power consumed and increase speed. 
 
+The second digital design goal was to reuse circuits. Is this still the case? The goal is to see if Vivado randomly sprinkles circuits within an FPGA or reuses circuits. 
+
 #### Wires
 
 Today wires are the focus. How long wires are, how close they are to each other has evolved into a set of electrical engineering design rules called "[microstrip](https://en.wikipedia.org/wiki/Microstrip)." Fortunately, the wires are permanently placed in the FPGA and the design rules are built into Vivado Implement.  So like all the other detail that develops rules/standards and grows very slowly if at all, this knowledge has become part of the technical expertise world. Because engineers focus on "the" one of a kind " or "the rapidly changing world", a modern digital design class doesn't focus on this. 
 
-#### 5 building blocks: LUts, muxes, xor, adders and D flip flops
+#### 5 building blocks: LUTs, muxes, xor, adders and D flip flops
 
 Everything use to be about gates: software that simulate gates, algorithms and math that reduce gate counts, typical circuits that are built with gates, drawings of gates, gate testing, etc. 
 
-Today in RTL verilog coding of gates looks like a math equation or the logic of loops, if, while , case or other programming constructs. The Vivado code may display pictures of gates in the RTL analysis, but synthesis and implementation describe the circuit in terms of the CLB, slices, and contents of slices in terms of just these gates: LUTs, muxes, xor, adders and D flip flops.  
+Today in RTL verilog coding of gates looks like a math equation or the logic of loops, if, while , case or other programming constructs. The Vivado code may display pictures of gates in the RTL analysis, but synthesis and implementation describe the circuit in terms of the CLB, slices, and contents of slices in terms of just these devices: LUTs, muxes, xor, adders and D flip flops. 
 
 #### Workflow .. code .. test .. deploy
 
