@@ -31,7 +31,7 @@ To see Vivado LUT's truth tables, click on schematic, right click on the LUT and
 
 ## Project_2
 
-Develop two identical circuits. The first circuit build with 3 inputs, 2 outputs and at least 5 gates. The second circuit can be a simple version of the first.  Then repeat the instructions of project 1.  Just answer this  one question: *Does anything change?*
+Develop two identical circuits. Build the first circuit with 3 inputs, 2 outputs and at least 5 gates. The second circuit can be a simple version of the first.  Then repeat the instructions of project 1.  Just answer this  one question: *Does anything change?*
 
 #### Port Diagram
 
