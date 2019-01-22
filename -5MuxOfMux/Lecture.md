@@ -12,7 +12,7 @@ A Mux select line is **control**led. The select line(s) select the ones and zero
 
 ![1548183810359](1548183810359.png)
 
-The **control** path opens and closes a valve. A BJT [transistor](https://en.wikipedia.org/wiki/Transistor#Bipolar_junction_transistor_(BJT)) has a wire called the "base" which **control**s the **data** flow between an input called collector and output called emitter.  A FET transistor has a wire called "gate" which **control**s the **data** flow between an input called Source and output called Drain.  Transistors are used to build [NAND](https://en.wikipedia.org/wiki/NAND_gate)  gates. 
+Think of the **control** path as opening or closing a water pipe's valve. A BJT [transistor](https://en.wikipedia.org/wiki/Transistor#Bipolar_junction_transistor_(BJT)) has a wire called the "base" which **control**s the **data** flow between an input called collector and output called emitter.  A FET transistor has a wire called "gate" which **control**s the **data** flow between an input called Source and output called Drain.  Transistors are used to build [NAND](https://en.wikipedia.org/wiki/NAND_gate)  gates. 
 
 A [voltage controlled buffer](https://en.wikipedia.org/wiki/Digital_buffer#Tri-State_Digital_Buffer) has a wire called **control** that connects or disconnects a **data** input to an **output**. A voltage **control**led buffer is a generic transistor. The not version of a voltage **control**led buffer can be used to create a NAND gate:
 
@@ -28,11 +28,11 @@ The most simple **mux** has a four port diagram:
 
 ![4portMuxVoltageControlledBuffer](4portMuxVoltageControlledBuffer.png)
 
-The above 4 port diagram contains a mux built with voltage controlled buffers.  This one shows one built with gates:
+The above 4 port diagram contains a mux built with [voltage controlled buffers](https://github.com/ENES-246DigitalElectronics/ENES246/blob/master/-5MuxOfMux/muxFromVoltageControlledBuffers.circ).  This one shows one built with [gates](https://github.com/ENES-246DigitalElectronics/ENES246/blob/master/-5MuxOfMux/muxFromGates.circ):
 
 ![muxFromGates](muxFromGates.png)
 
-In complicated circuits the insides of a port diagram are often so complex, that how the circuit is built is not displayed. 
+In complicated circuits the insides of a port diagram are sometimes so complex, that nothing is displayed inside the box. 
 
 The circuit symbol is a triangle with the nose chopped off. The big flat side of the triangle has all the data inputs. The chopped off nose has the the data outputs. Control  wires are attached to the sides of the triangle.  Often the output of a mux turns into control for another circuit. 
 
@@ -44,9 +44,7 @@ The data inputs are on the left and outputs are on the right. Control starts off
 
 This is a picture of the carry forward configuration of an FPGA. Any math operation or comparison (greater than, less than, equal to, not) results in carries like those taught in elementary math. These carries are control lines. When there are many control lines, they have to be co-ordinated. This coordination is what results in a physical FPGA geometry.  Clocks enable coordination among multiple control lines.
 
-#### Many Mux
-
-There are many Mux in a FPGA configuration block. 
+#### Everything is a Mux
 
 Almost all other boxes you see in a building wiring closet, mainframe shop or IT center with many wires attached are one form or another of a mux. The data coming in can be analog or digital. The control is always digital. The control can look at the data coming in and control based upon whether it is streaming video, compressed video, text/graphics, keyboard/mouse, file transfer, etc.  They have different types of data paths and different control mechanisms. They have names like [stat mux](https://en.wikipedia.org/wiki/Statistical_time-division_multiplexing), [Front-End Processors](https://en.wikipedia.org/wiki/Front-end_processor) , [MAUs](https://en.wikipedia.org/wiki/Media_access_unit),  Switches, Bridges, etc. Today they have all turned into routers of the IP protocol. 
 

@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2018.2.1 (64-bit)
-# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
-# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Wed Oct  3 14:23:19 2018
-# Process ID: 3212
-# Current directory: C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.runs/synth_1
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jan 22 14:59:30 2019
+# Process ID: 10600
+# Current directory: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.runs/synth_1
 # Command line: vivado.exe -log m4x2Mux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source m4x2Mux.tcl
-# Log file: C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.runs/synth_1/m4x2Mux.vds
-# Journal file: C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.runs/synth_1\vivado.jou
+# Log file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.runs/synth_1/m4x2Mux.vds
+# Journal file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source m4x2Mux.tcl -notrace
 Command: synth_design -top m4x2Mux -part xc7a100tcsg324-1
@@ -15,16 +15,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7768 
+INFO: Helper process launched with PID 8352 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 368.516 ; gain = 98.453
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 363.125 ; gain = 101.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'm4x2Mux' [C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.srcs/sources_1/new/m4x2Mux.v:3]
-INFO: [Synth 8-6157] synthesizing module 'm2x1Mux' [C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.srcs/sources_1/imports/new/m2x1mux.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'm2x1Mux' (1#1) [C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.srcs/sources_1/imports/new/m2x1mux.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'm4x2Mux' (2#1) [C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.srcs/sources_1/new/m4x2Mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm4x2Mux' [C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.srcs/sources_1/new/m4x2Mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm2x1Mux' [C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.srcs/sources_1/imports/new/m2x1mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'm2x1Mux' (1#1) [C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.srcs/sources_1/imports/new/m2x1mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'm4x2Mux' (2#1) [C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.srcs/sources_1/new/m4x2Mux.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 423.211 ; gain = 153.148
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 418.711 ; gain = 156.586
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -37,44 +37,47 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 423.211 ; gain = 153.148
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 418.711 ; gain = 156.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 423.211 ; gain = 153.148
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 418.711 ; gain = 156.586
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/m4x2Mux_propImpl.xdc].
+Parsing XDC File [C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.srcs/constrs_1/imports/m4x2Mux/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/m4x2Mux_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/m4x2Mux_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 722.441 ; gain = 0.000
 Completed Processing XDC Constraints
 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 722.441 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 728.492 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 722.441 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 722.441 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 728.492 ; gain = 458.430
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 722.441 ; gain = 460.316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 728.492 ; gain = 458.430
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 722.441 ; gain = 460.316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 728.492 ; gain = 458.430
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 722.441 ; gain = 460.316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 728.492 ; gain = 458.430
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 722.441 ; gain = 460.316
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -110,7 +113,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 728.492 ; gain = 458.430
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 722.441 ; gain = 460.316
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -122,13 +125,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 749.352 ; gain = 479.289
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 745.531 ; gain = 483.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 749.352 ; gain = 479.289
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 745.531 ; gain = 483.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -140,7 +143,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 749.352 ; gain = 479.289
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 755.063 ; gain = 492.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -164,7 +167,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 750.477 ; gain = 480.414
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 755.063 ; gain = 492.938
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -177,7 +180,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 750.477 ; gain = 480.414
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 755.063 ; gain = 492.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -189,25 +192,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 750.477 ; gain = 480.414
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 755.063 ; gain = 492.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 750.477 ; gain = 480.414
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 755.063 ; gain = 492.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 750.477 ; gain = 480.414
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 755.063 ; gain = 492.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 750.477 ; gain = 480.414
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 755.063 ; gain = 492.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -236,25 +239,25 @@ Report Instance Areas:
 |2     |  I3     |m2x1Mux |     1|
 +------+---------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 750.477 ; gain = 480.414
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 755.063 ; gain = 492.938
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 750.480 ; gain = 175.137
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 750.480 ; gain = 480.418
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 755.063 ; gain = 189.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 755.063 ; gain = 492.938
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 766.875 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 772.160 ; gain = 514.922
-WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux/m4x2Mux.runs/synth_1/m4x2Mux.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 766.895 ; gain = 516.969
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 766.895 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.runs/synth_1/m4x2Mux.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file m4x2Mux_utilization_synth.rpt -pb m4x2Mux_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 772.480 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Oct  3 14:23:51 2018...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 22 14:59:57 2019...

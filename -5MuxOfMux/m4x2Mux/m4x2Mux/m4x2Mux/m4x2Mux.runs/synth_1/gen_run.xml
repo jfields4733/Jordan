@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1538590996">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1548187167">
   <File Type="PA-TCL" Name="m4x2Mux.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="m4x2Mux_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="m4x2Mux_reports.tcl"/>
   <File Type="RDS-RDS" Name="m4x2Mux.vds"/>
   <File Type="RDS-UTIL" Name="m4x2Mux_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="m4x2Mux_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="m4x2Mux.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="m4x2Mux_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="m4x2Mux_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/m2x1mux.v">
@@ -41,6 +44,12 @@
     </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
