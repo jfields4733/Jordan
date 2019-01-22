@@ -1,27 +1,9 @@
-# LotsOfGates
-Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry-logic, xor gates, d flip flops. Understanding these is the goal of this course. We have covered XOR gates.  The goal of this lab is to understand LUTs. 
+# MuxOfMux
+Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry-logic, xor gates, d flip flops. Understanding these is the goal of this course. We have covered XOR gates and LUTs. The goal now is to cover muxes. 
 
-The goal here is to predict [LookUpTables](https://en.wikipedia.org/wiki/Lookup_table) (LUTS) values.
-Then find their contents in Vivado and compare.
-Then look at how Vivado deals with identical circuits. 
+## triStateMux
 
-## Project_1
-
-Here is a gate diagram done in [logisim](https://sourceforge.net/projects/circuit/) that builds [two identical circuits](https://github.com/ENES-246DigitalElectronics/ENES246/blob/master/-4LotsOfGates/TwoIdenticalCircuits.circ) .. one is efficient ... and one uses lots of gates.  This is what was being stared at when the verilog code for project one was written. 
-
-![1548098400293](1548098400293.png)
-
-One might expect that Vivado would reduce these to a single circuit and reuse the circuit. There have been software packages that do this.  In logisim, go to project, analyze the circuit, minimize, set as expression for output x, set as expression for output y, ok, yes sure. *What happens?*
-
-*Add screen shot of logisim of the resulting circuit.*  
-
-Now explore what Vivado does. Clearly Vivado could see two identical circuits. *What does Vivado do instead?*
-
-To see Vivado LUT's truth tables, click on schematic, right click on the LUT and choose cell properties, move the tab from General to truth table. *Add screen shots of the Vivado LUT truth tables.* 
-
-Obviously Vivado understands the verilog code. *How are the truth tables the same?* 
-
-*How are the truth tables different? What did Vivado do to make the circuits different?* 
+There are 5 projects in this lab. The goal is to see what Vivado does with the verilog code for a mux.  
 
 #### Port Diagram
 
@@ -33,9 +15,9 @@ Obviously Vivado understands the verilog code. *How are the truth tables the sam
 
 #### Testing
 
-## Project_2
+## m2x1Mux
 
-Develop two identical circuits. Build the first circuit with 3 inputs, 2 outputs and at least 5 gates. The second circuit can be a simple version of the first.  Then repeat the instructions of project 1.  Just answer this  one question: *Does anything change?*
+This mux is made out of gates. Does it do anything different than the triStateMux?
 
 #### Port Diagram
 
@@ -46,6 +28,112 @@ Develop two identical circuits. Build the first circuit with 3 inputs, 2 outputs
 #### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
+
+## m4x2Mux
+
+#### Port Diagram
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+## m16x4Mux
+
+#### Port Diagram
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+## mux7_7
+
+#### Port Diagram
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+## mux32x5Mux
+
+Design a 32 data input, 5 select line mux.
+
+#### Port Diagram
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+## Ethics
+
+Muxes were a central digital design device in digital engineering.  And the symbol for them can be found in the explanation of CLB's and Slices. However we can't directly tell Vivado to use them.  Vivado often takes our request for a mux and puts it in a LUT. Here is the ethical question. 
+
+How much of the old ways need to be taught .. given the new (RTL) is so much better?
+
+
+
+
+
+
+
+
+
+
+
+## 
+
+
+
+
+
+
+
+
+
+## 
+
+
+
+
+
+
+
+
+
+## 
+
+
+
+
+
+
+
+
+
+## 
+
+
+
+
+
+
+
+
 
 ## Ethics
 
