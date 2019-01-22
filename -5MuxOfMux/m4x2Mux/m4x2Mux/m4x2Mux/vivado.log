@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jan 22 11:28:53 2019
+# Process ID: 13044
+# Current directory: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9828 C:\Users\Scott Foerster\Documents\GitHub\ENES246\-5MuxOfMux\m4x2Mux\m4x2Mux\m4x2Mux\m4x2Mux.xpr
+# Log file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/vivado.log
+# Journal file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux/m4x2Mux.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux/m4x2Mux'
+INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m4x2Mux/m4x2Mux' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'm4x2Mux.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
