@@ -32,13 +32,15 @@ The above 4 port diagram contains a mux built with voltage controlled buffers.  
 
 ![muxFromGates](muxFromGates.png)
 
+In complicated circuits the insides of a port diagram are often so complex, that how the circuit is built is not displayed. 
+
 The circuit symbol is a triangle with the nose chopped off. The big flat side of the triangle has all the data inputs. The chopped off nose has the the data outputs. Control  wires are attached to the sides of the triangle.  Often the output of a mux turns into control for another circuit. 
 
-A port diagram is the single big box made of dash marks below. It represents a carry logic path control path. This diagram is different in that some detail explaining the carry logic path port in terms of CLB primitives is inside the port diagram. 
-
-The data inputs are on the left and outputs are on the right. Control starts off as data going left to right and then turns a corner and moves from bottom to top. This can actually be seen physically inside the FPGA's  [fast_carry_logic_path](https://www.xilinx.com/support/documentation/user_guides/ug474_7Series_CLB.pdf):
+A port diagram of a Carray Chain Block is below. The dashed line outlines the port diagram. There are arrow heads that describe inputs and outputs.  The insides of the port diagram represents a carry logic path control path. Inside the port diagram are muxes and xor gates. 
 
 ![1548167884385](1548167884385.png)
+
+The data inputs are on the left and outputs are on the right. Control starts off as data going left to right and then turns a corner and moves from bottom to top. This can actually be seen physically inside the FPGA's  [fast_carry_logic_path](https://www.xilinx.com/support/documentation/user_guides/ug474_7Series_CLB.pdf):
 
 This is a picture of the carry forward configuration of an FPGA. Any math operation or comparison (greater than, less than, equal to, not) results in carries like those taught in elementary math. These carries are control lines. When there are many control lines, they have to be co-ordinated. This coordination is what results in a physical FPGA geometry.  Clocks enable coordination among multiple control lines.
 
@@ -70,11 +72,17 @@ You can see that m2x1Mux refers to primitive (built in to Verilog) modules calle
 
 A top level module gets its inputs and sends its outputs to the constraints or XDC file. Modules that are not top level can trace all their inputs and outputs back to the top level module.  There may be intermediary modules in between.  Vivado automatically determines the top level module by checking variable names. 
 
+#### Always use different wire names in the XDC file than the defaults
+
 Here is the XDC file for the project m4x2Mux:
 
 ![1548175287961](1548175287961.png)
 
 SW[3:0] has been renamed b[3:0]. SW[5:4] has been renamed select[1:0]. LED[0] has been renamed segOut.
+
+This is best practice. This is because any top level, end of project module could instantly loose it's status and another module be put on top of it. The goal is to change nothing about the modules used including wire names.  This way the tested module can be retested in the future when debugging what is going wrong.
+
+#### No Top Level Module
 
 When there is just one module, Vivado sometimes complains that there is no top level module.   A top level module has a special symbol put their automatically by Vivado.
 
