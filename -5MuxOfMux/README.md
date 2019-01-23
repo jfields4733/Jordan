@@ -31,6 +31,38 @@ This mux is implemented both with gates, tristate and RTL.
 
 College Park discussion: https://ece.umd.edu/class/enee245.S2015/Lab7.pdf
 
+#### Port Diagram
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+## m16x4Mux
+
+Develop this project from scratch.  Look at testing below to see how to use the Nexys4DDR board LED's and switches. 
+
+#### Port Diagram
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+Use [15:8] SW for mux inputs and [15:8] for LED reflection of these switches. 
+Use SW[5] to switch [15:8] SW and LED between high and low halfs of the 16 inputs to this mux. 
+Choose LED[5] to be on when SW[5] is on when looking at the high half of the 16 inputs.
+Choose LED[5] to be off when SW[5] is off when looking at the lower half of the 16 inputs.
+Choose [3:0] SW to be the 4 selection lines into this mux.
+
+Choose LED[4] to represent the output of the mux.
+
 #### Ethics
 
 The simplicity of the RTL versions of the mux command raises the question of what is possible with the assign command? Where is the manual that goes over all this? Where can we discover what is possible? The problem is that there are many manuals with complete backwards compatibility to the dawn of verilog history in the 1980's.  These are the official Verilog standards.  They are all supersets .. meaning some vendors (Vivado) **don't** implement everything. 
