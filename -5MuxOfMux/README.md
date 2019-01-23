@@ -41,9 +41,34 @@ College Park discussion: https://ece.umd.edu/class/enee245.S2015/Lab7.pdf
 
 #### Testing
 
-## m16x4Mux
 
-Develop this project from scratch.  Look at testing below to see how to use the Nexys4DDR board LED's and switches. 
+
+## m16x4MuxRTL
+
+*Go through each line of the code and comment on it .. explain the variables .. explain what is happening.*  
+
+*This is the first program to use registers. Why are registers needed?* 
+
+*What drives [15:8] LED?*
+
+*MuxInput gets information from where?*
+
+*Why is enter necessary?*
+
+*What is the difference between initial and reset?*
+
+*Why is initial and reset necessary for muxInput, but not LED?*
+
+*How many lines of verilog code were necessary to create the 16x4 mux?*
+
+*How many lines of verilog code were necessary to manually test the 16x4 mux with the nexys4ddr board?*
+
+*How many verilog modules were used in this Vivado project?*
+
+*Where is the original documentation for this command that creates muxes?* 
+Exhaust 10 minutes trying to find it. List off the keywords you used to search for an explanation and URL's that you find that are closer than these:
+
+This presentation from [Standford](https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/tools/verilog_tips.pdf) talks about how to build arrays of wires but not this command.  This is a lab from [University of Maryland College Park](https://ece.umd.edu/class/enee245.S2015/Lab7.pdf) very similar to this lab, but doesn't mention this technique.  This is a [link](http://electrosofts.com/verilog/mux.html) that inspired the instructor to start playing around with this command. 
 
 #### Port Diagram
 
@@ -54,14 +79,6 @@ Develop this project from scratch.  Look at testing below to see how to use the 
 #### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
-
-Use [15:8] SW for mux inputs and [15:8] for LED reflection of these switches. 
-Use SW[5] to switch [15:8] SW and LED between high and low halfs of the 16 inputs to this mux. 
-Choose LED[5] to be on when SW[5] is on when looking at the high half of the 16 inputs.
-Choose LED[5] to be off when SW[5] is off when looking at the lower half of the 16 inputs.
-Choose [3:0] SW to be the 4 selection lines into this mux.
-
-Choose LED[4] to represent the output of the mux.
 
 #### Ethics
 
