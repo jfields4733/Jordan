@@ -19,17 +19,13 @@ There are 5 projects in this lab. The goal is to see what Vivado does with the v
 
 This mux is made out of gates. Does it do anything different than the triStateMux?
 
-#### Port Diagram
+Add assign x = a ? b : c;
 
-#### RTL Schematic Screen shot
+In above case a, b, c are monitored continuously and whenever any of the three signals changes, x gets updated instantaneously (Above assign will synthesize to a 2x1 Multiplexer with “b, c” as inputs, “a” as select signal and “x” as output). Ask questions about ? and : after the assign command. Can they be replaced by if else? Is this too cryptic? Look up in [ut](https://www.utdallas.edu/~akshay.sridharan/index_files/Page5212.htm) manual. 
 
-#### Synthesis Schematic Screen shot
 
-#### Implementation Device screen shot zoomed in on something interesting
 
-#### Testing
-
-## m4x2Mux
+College Park discussion: https://ece.umd.edu/class/enee245.S2015/Lab7.pdf
 
 #### Port Diagram
 
@@ -41,23 +37,44 @@ This mux is made out of gates. Does it do anything different than the triStateMu
 
 #### Testing
 
-## m16x4Mux
-
-#### Port Diagram
-
-#### RTL Schematic Screen shot
-
-#### Synthesis Schematic Screen shot
-
-#### Implementation Device screen shot zoomed in on something interesting
-
-#### Testing
+Add mux7_7 to 4by2Mux so one file. 
 
 ## mux7_7
 
-#### Port Diagram
+#### Ethics
 
-#### RTL Schematic Screen shot
+The simplicity of this mux command raises the question of what is possible with the assign command? Where is the manual that goes over all this? Where can we discover what is possible? The problem is that there are many manuals with complete backwards compatibility to the dawn of verilog history in the 1980's.  These are the official Verilog standards.  They are all supersets .. meaning some vendors (Vivado) **don't** implement everything. 
+
+​	IEEE 1364-1995 (Verilog 1995)  
+​	IEEE  1364-2001 (Verilog 2001)   
+​	IEEE  1364-2005 (Verilog 2005)  
+​	IEEE  1800-2005 (SystemVerilog)  
+​	IEEE  1800-2009 (SystemVerilog)  
+​	IEEE  1800-2012 (SystemVerilog)   
+​	IEEE  1364-2014 ([Verilog-AMS 2.4](http://www.accellera.org/downloads/standards/v-ams))    
+
+#### System Verilog
+
+The first problem is that verilog testing (testing manually 10M possibilities is impossible) ends up requiring writing a separate program that turns out to be more complicated than the circuit. At first, the goal was to create a separate circuit that tested the DUT (device under test) .. one circuit testing another. Eventually a boundary evolved between verilog code that is synthesizable and verilog code that is **not** synthesizable. 
+
+​	IEEE 1364-1995 (Verilog 1995)
+​	IEEE  1364-2001 (Verilog 2001)
+​	IEEE  1364-2005 (Verilog 2005)
+​	IEEE  1800-2005 (SystemVerilog)
+​	IEEE  1800-2009 (SystemVerilog)
+​	IEEE  1800-2012 (SystemVerilog) 
+
+Test Circuits in the FPGA or Testing during Simulation?
+
+In 2005 an attempt was made to create a new version of verilog called SystemVerilog. This was a failure. Engineers stopped using verilog for testing and began using VHDL (a competitor of verilog), and other languages such as [python](https://forums.xilinx.com/t5/Simulation-and-Verification/cocotb-Anyone-hear-of-it/td-p/837551).  This represented a significant departure from building test circuits inside the FPGA for testing in the real hardware and software tests using python before RTL, synthesis, and implementation. 
+
+This is the current situation. In 2014, Verilog was officially expanded to handle [FPAAs](http://www.rh.gatech.edu/news/508791/configurable-analog-chip-computes-1000-times-less-power-digital) (Field Programmable Analog Arrays) when the IEEE announced the 1364-2014 standard.  
+
+Combing through Verilog Manuals
+
+The IEEE standards document is difficult to read. All other manuals have been developed based upon it. Viviado describes some does and don'ts  in [ch3](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2016_3/ug901-vivado-synthesis.pdf) of this pdf for all languages. 
+
+RTL Schematic Screen shot
 
 #### Synthesis Schematic Screen shot
 
