@@ -18,19 +18,21 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m2x1Mux/m2x1Mux/m2x1Mux.cache/wt [current_project]
-set_property parent.project_path C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m2x1Mux/m2x1Mux/m2x1Mux.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m2x1Mux/m2x1Mux.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m2x1Mux/m2x1Mux.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m2x1Mux/m2x1Mux/m2x1Mux.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m2x1Mux/m2x1Mux.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m2x1Mux/m2x1Mux/m2x1Mux.srcs/sources_1/new/m2x1mux.v
+read_verilog -library xil_defaultlib {{C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m2x1Mux/m2x1Mux.srcs/sources_1/new/m2x1mux.v}}
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -39,10 +41,10 @@ read_verilog -library xil_defaultlib C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivad
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m2x1Mux/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m2x1Mux/Nexys4DDR_Master.xdc]
+read_xdc {{C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m2x1Mux/m2x1Mux.srcs/constrs_1/imports/m2x1Mux/Nexys4DDR_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m2x1Mux/m2x1Mux.srcs/constrs_1/imports/m2x1Mux/Nexys4DDR_Master.xdc}}]
 
-set_param ips.enableIPCacheLiteLoad 0
+set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 synth_design -top m2x1Mux -part xc7a100tcsg324-1

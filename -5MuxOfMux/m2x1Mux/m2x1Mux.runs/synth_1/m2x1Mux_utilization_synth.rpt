@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Wed Oct  3 14:04:17 2018
-| Host         : SET253-INS1C running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jan 23 11:18:28 2019
+| Host         : LabSet332 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file m2x1Mux_utilization_synth.rpt -pb m2x1Mux_utilization_synth.pb
 | Design       : m2x1Mux
 | Device       : 7a100tcsg324-1
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |    1 |     0 |     63400 | <0.01 |
-|   LUT as Logic          |    1 |     0 |     63400 | <0.01 |
+| Slice LUTs*             |    4 |     0 |     63400 | <0.01 |
+|   LUT as Logic          |    4 |     0 |     63400 | <0.01 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |    0 |     0 |    126800 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |    126800 |  0.00 |
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    4 |     0 |       210 |  1.90 |
+| Bonded IOB                  |    6 |     0 |       210 |  2.86 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -147,8 +147,12 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | IBUF     |    3 |                  IO |
-| OBUF     |    1 |                  IO |
-| LUT3     |    1 |                 LUT |
+| OBUF     |    2 |                  IO |
+| LUT3     |    2 |                 LUT |
+| LUT1     |    2 |                 LUT |
+| OBUFT    |    1 |                  IO |
+| LUT4     |    1 |                 LUT |
+| LUT2     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

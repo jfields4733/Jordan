@@ -49,7 +49,7 @@ Develop two identical circuits. Build the first circuit with 3 inputs, 2 outputs
 
 ## Ethics
 
-EDIM captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Read this wikipedia article on [EDIF](https://en.wikipedia.org/wiki/EDIF) and summarize in less than 200 words:*
+EDIF (Electric Design Interchange Format)  captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Read this wikipedia article on [EDIF](https://en.wikipedia.org/wiki/EDIF) and summarize in less than 200 words:*
 
 This course is asking you to document circuits first with the port diagram and then screen shots of Vivado and finally a discussion of testing. You are in the role of an engineering using Vivado on a project. *Which verilog version of the project_1 circuit (simple or complex) should be entered into Vivado?  When is a more complex circuit a good thing and a simplified, reduced circuit a bad thing?*
 

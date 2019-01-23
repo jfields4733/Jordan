@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Wed Oct  3 14:05:41 2018
-| Host             : SET253-INS1C running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Wed Jan 23 11:19:29 2019
+| Host             : LabSet332 running 64-bit major release  (build 9200)
 | Command          : report_power -file m2x1Mux_power_routed.rpt -pb m2x1Mux_power_summary_routed.pb -rpx m2x1Mux_power_routed.rpx
 | Design           : m2x1Mux
 | Device           : xc7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.132        |
+| Total On-Chip Power (W)  | 3.162        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.032        |
-| Device Static (W)        | 0.101        |
+| Dynamic (W)              | 3.052        |
+| Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 79.8         |
-| Junction Temperature (C) | 30.2         |
+| Max Ambient (C)          | 70.6         |
+| Junction Temperature (C) | 39.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.002 |        1 |       --- |             --- |
-|   LUT as Logic |     0.002 |        1 |     63400 |           <0.01 |
-| Signals        |     0.016 |        4 |       --- |             --- |
-| I/O            |     1.014 |        4 |       210 |            1.90 |
-| Static Power   |     0.101 |          |           |                 |
-| Total          |     1.132 |          |           |                 |
+| Slice Logic    |     0.009 |        4 |       --- |             --- |
+|   LUT as Logic |     0.009 |        2 |     63400 |           <0.01 |
+|   Others       |     0.000 |        1 |       --- |             --- |
+| Signals        |     0.026 |        6 |       --- |             --- |
+| I/O            |     3.018 |        6 |       210 |            2.86 |
+| Static Power   |     0.110 |          |           |                 |
+| Total          |     3.162 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.048 |       0.030 |      0.018 |
-| Vccaux    |       1.800 |     0.055 |       0.037 |      0.018 |
-| Vcco33    |       3.300 |     0.288 |       0.284 |      0.004 |
+| Vccint    |       1.000 |     0.072 |       0.046 |      0.026 |
+| Vccaux    |       1.800 |     0.129 |       0.110 |      0.019 |
+| Vcco33    |       3.300 |     0.855 |       0.851 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -92,7 +93,7 @@ Table of Contents
 | Design implementation state | High       | Design is routed                                       |                                                                                                            |
 | Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
-| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Internal nodes activity     | Medium     | User specified more than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
 | Device models               | High       | Device models are Production                           |                                                                                                            |
 |                             |            |                                                        |                                                                                                            |
 | Overall confidence level    | Low        |                                                        |                                                                                                            |
@@ -134,7 +135,7 @@ Table of Contents
 +---------+-----------+
 | Name    | Power (W) |
 +---------+-----------+
-| m2x1Mux |     1.032 |
+| m2x1Mux |     3.052 |
 +---------+-----------+
 
 

@@ -1,9 +1,21 @@
 # MuxOfMux
 Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry-logic, xor gates, d flip flops. Understanding these is the goal of this course. We have covered XOR gates and LUTs. The goal now is to cover muxes. 
 
-## triStateMux
+## m2x1Mux
 
-There are 5 projects in this lab. The goal is to see what Vivado does with the verilog code for a mux.  
+This mux is implemented both with gates, tristate and RTL. 
+
+*What are the differences between the three at the RTL Level?*
+
+*What are the differences after synthesis in the schematic?*
+
+*What happened in the Device implementation to these three? are they all the same or different?*
+
+*Is the RTL implementation in your opinion too cryptic?* 
+
+*Harmonize the ? : with the description of these assign conditional symbols in this  [ut](https://www.utdallas.edu/~akshay.sridharan/index_files/Page5212.htm) manual.* 
+
+*Can you leverage any of these to make a m4x2 mux? Describe what you tried here before looking at the m4x2 mux project.* 
 
 #### Port Diagram
 
@@ -15,35 +27,13 @@ There are 5 projects in this lab. The goal is to see what Vivado does with the v
 
 #### Testing
 
-## m2x1Mux
-
-This mux is made out of gates. Does it do anything different than the triStateMux?
-
-Add assign x = a ? b : c;
-
-In above case a, b, c are monitored continuously and whenever any of the three signals changes, x gets updated instantaneously (Above assign will synthesize to a 2x1 Multiplexer with “b, c” as inputs, “a” as select signal and “x” as output). Ask questions about ? and : after the assign command. Can they be replaced by if else? Is this too cryptic? Look up in [ut](https://www.utdallas.edu/~akshay.sridharan/index_files/Page5212.htm) manual. 
-
-
+## m4x2Mux
 
 College Park discussion: https://ece.umd.edu/class/enee245.S2015/Lab7.pdf
 
-#### Port Diagram
-
-#### RTL Schematic Screen shot
-
-#### Synthesis Schematic Screen shot
-
-#### Implementation Device screen shot zoomed in on something interesting
-
-#### Testing
-
-Add mux7_7 to 4by2Mux so one file. 
-
-## mux7_7
-
 #### Ethics
 
-The simplicity of this mux command raises the question of what is possible with the assign command? Where is the manual that goes over all this? Where can we discover what is possible? The problem is that there are many manuals with complete backwards compatibility to the dawn of verilog history in the 1980's.  These are the official Verilog standards.  They are all supersets .. meaning some vendors (Vivado) **don't** implement everything. 
+The simplicity of the RTL versions of the mux command raises the question of what is possible with the assign command? Where is the manual that goes over all this? Where can we discover what is possible? The problem is that there are many manuals with complete backwards compatibility to the dawn of verilog history in the 1980's.  These are the official Verilog standards.  They are all supersets .. meaning some vendors (Vivado) **don't** implement everything. 
 
 ​	IEEE 1364-1995 (Verilog 1995)  
 ​	IEEE  1364-2001 (Verilog 2001)   
@@ -53,116 +43,40 @@ The simplicity of this mux command raises the question of what is possible with 
 ​	IEEE  1800-2012 (SystemVerilog)   
 ​	IEEE  1364-2014 ([Verilog-AMS 2.4](http://www.accellera.org/downloads/standards/v-ams))    
 
-#### System Verilog
+It is impossible to test thousands inputs combinations and state transitions by hand. This problem coupled with the chaos of subsets of a superset make searching the internet for verilog solutions problematic. The reasons for this chaos emerge when looking at the three was circuits are tested. 
 
-The first problem is that verilog testing (testing manually 10M possibilities is impossible) ends up requiring writing a separate program that turns out to be more complicated than the circuit. At first, the goal was to create a separate circuit that tested the DUT (device under test) .. one circuit testing another. Eventually a boundary evolved between verilog code that is synthesizable and verilog code that is **not** synthesizable. 
+##### Testing during Simulation
 
-​	IEEE 1364-1995 (Verilog 1995)
-​	IEEE  1364-2001 (Verilog 2001)
-​	IEEE  1364-2005 (Verilog 2005)
-​	IEEE  1800-2005 (SystemVerilog)
-​	IEEE  1800-2009 (SystemVerilog)
-​	IEEE  1800-2012 (SystemVerilog) 
+Vivado supports **VHDL** or **System Verilog** for testing. See the Run Simulation tab. In general, no engineer is happy with these tools. Some Verilog engineers began using VHDL rather than System Verilog for testing. 
 
-Test Circuits in the FPGA or Testing during Simulation?
+There are commands that run in Vivado "Run Simulation" yet cause error messages in RTL Analysis, Synthesis, or Implementation. These are called [Verilog Constructs Not Supported in Synthesis](https://www.google.com/search?q=verilog+Constructs+Not+Supported+in+Synthesis&rlz=1C1CHBF_enUS809US809&oq=verilog+Constructs+Not+Supported+in+Synthesis&aqs=chrome..69i57.1895j0j7&sourceid=chrome&ie=UTF-8).  The problem is that there are no standards, and different FPGA vendors Synthesize a different subset of Verilog commands. 
 
-In 2005 an attempt was made to create a new version of verilog called SystemVerilog. This was a failure. Engineers stopped using verilog for testing and began using VHDL (a competitor of verilog), and other languages such as [python](https://forums.xilinx.com/t5/Simulation-and-Verification/cocotb-Anyone-hear-of-it/td-p/837551).  This represented a significant departure from building test circuits inside the FPGA for testing in the real hardware and software tests using python before RTL, synthesis, and implementation. 
+Some engineers built their own testing framework ouside of Vivado in languages such as [python](https://forums.xilinx.com/t5/Simulation-and-Verification/cocotb-Anyone-hear-of-it/td-p/837551). Today testing distinguishes digital design companies.  These companies (and their engineers) compete with in house designed test tools. Time is money. The more efficient your testing, the lower your engineering design costs. The commercial world, by itself, has no incentive to Standardized Testing. 
 
-This is the current situation. In 2014, Verilog was officially expanded to handle [FPAAs](http://www.rh.gatech.edu/news/508791/configurable-analog-chip-computes-1000-times-less-power-digital) (Field Programmable Analog Arrays) when the IEEE announced the 1364-2014 standard.  
+There are many companies and open source products ([EDAplayground](https://www.edaplayground.com/)) that stop after simulation testing.  Using one of these tools can falsely make you think that there are testing standards. It falsely makes the education community think that when physically implemented in a vendors FPGA that the code will work.  But code that passed simulation testing,  often **fails**. 
 
-Combing through Verilog Manuals
+Vivado describes some does and don'ts  in [ch3](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2016_3/ug901-vivado-synthesis.pdf) of this pdf for all HDL languages, not specifically Verilog. So the [catch22](https://en.wikipedia.org/wiki/Catch-22_(logic)) is having to know verilog well enough to read this chapter to know what not to use. This is why there are so many completed projects that you are looking at in these labs. 
 
-The IEEE standards document is difficult to read. All other manuals have been developed based upon it. Viviado describes some does and don'ts  in [ch3](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2016_3/ug901-vivado-synthesis.pdf) of this pdf for all languages. 
+##### Testing with second test circuit
 
-RTL Schematic Screen shot
+Putting a special test circuit in the FPGA along with the primary circuit is possible without any special tools. We will do that soon. This is why there is no clear boundary between verilog used for testing during simulation and verilog used for building circuits.
 
-#### Synthesis Schematic Screen shot
+##### Testing with data collected in FPGA's RAM
 
-#### Implementation Device screen shot zoomed in on something interesting
+In the 1980's it was easy to purchase a logic analyzer. They were expensive and ran faster than any circuit you wanted to test. Now the circuits run faster than any external piece of equipment with logic probes attached to the circuit. 
 
-#### Testing
+Vivado allows you to place logic probes inside your FPGA with an Xilinx intellectual property (IP) core called  [ILA](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2015_4/ug936-vivado-tutorial-programming-debugging.pdf) "Integrated Logic Analyzer." Data collected from ILA logic probes is stored in the FPGA. 
 
-## mux32x5Mux
+There are three groups of Engineers with different objectives:
 
-Design a 32 data input, 5 select line mux.
+1. Engineers working for vendors .. example Engineers working to Improve Xilinx hardware FPGAs and Xilinx Vivado software to use them.
 
-#### Port Diagram
+2. Engineers working for competing commercial/defense companies using the Xilinx hardware in competition with other engineers in other companies.
+3. Engineers teaching, training, and creating open source, public, free tools
 
-#### RTL Schematic Screen shot
+*Describe one aspect where these objectives conflict between all three.* 
 
-#### Synthesis Schematic Screen shot
+*Describe where the vendors and open source world conflict.*
 
-#### Implementation Device screen shot zoomed in on something interesting
-
-#### Testing
-
-## Ethics
-
-Muxes were a central digital design device in digital engineering.  And the symbol for them can be found in the explanation of CLB's and Slices. However we can't directly tell Vivado to use them.  Vivado often takes our request for a mux and puts it in a LUT. Here is the ethical question. 
-
-How much of the old ways need to be taught .. given the new (RTL) is so much better?
-
-
-
-
-
-
-
-
-
-
-
-## 
-
-
-
-
-
-
-
-
-
-## 
-
-
-
-
-
-
-
-
-
-## 
-
-
-
-
-
-
-
-
-
-## 
-
-
-
-
-
-
-
-
-
-## Ethics
-
-EDIM captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Read this wikipedia article on [EDIF](https://en.wikipedia.org/wiki/EDIF) and summarize in less than 200 words:*
-
-This course is asking you to document circuits first with the port diagram and then screen shots of Vivado and finally a discussion of testing. You are in the role of an engineering using Vivado on a project. *Which verilog version of the project_1 circuit (simple or complex) should be entered into Vivado?  When is a more complex circuit a good thing and a simplified, reduced circuit a bad thing?*
-
-Suppose you are engineer designing the Vivado software. You get the question from a customer, a fellow engineer using Vivado: "Why doesn't Vivado see one circuit?" Read this [forum post](https://forums.xilinx.com/t5/Synthesis/Question-about-LUT-usage-in-a-very-very-simple-combinatorial/td-p/221143).  *What is your answer to this question?*
-
-You are student at a university. *Why would professors demand in the first course on digital circuit design that you learn  [Karnaugh Maps,](https://en.wikipedia.org/wiki/Karnaugh_map)  [Quine McCluskey Algorithm](https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm), and  [Petrick Cover](https://en.wikipedia.org/wiki/Petrick%27s_method)* ?
-
-Engineers develop conspiracy theories when trying to predict the future. *Given the above chaos, what do you expect to happen as you try to cram larger and larger circuits into an FPGA?* 
-
-
+*In what way do standards form a motivation for all three to start cooperating and working together?*
 
