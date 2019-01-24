@@ -130,7 +130,9 @@ Technicians, nurses and paralegals & judges are the anchors, the experts, the pe
 
 This part of society works. But there is a down side. A barrier, a Catch22 starts growing for those trying to become Engineers or Technicians, Doctors or Nurses. Specialization, complexity, pre-requisite knowledge starts growing. A new generation has trouble getting a job. They ask "How can I get the experience the job says I need without getting the job?" An old generation creates a bubble around themselves. The younger generation sees this as a barrier to entry. The older generation retires. Society in general get's scared.  Standing still, repeating success is a disaster for any organization. 
 
-*So how does a younger generation pop a generation bubble or climb over the experience barrier and get a job? What does the younger generation have to do on their resume, while in college where the complexity, the accumulated knowledge, the expertise, the experience required seems not-humanly possible?* 
+*So how does a younger generation pop a generation bubble or climb over the experience barrier and get a job?*
+
+*What does the younger generation have to do on their resume, while in college where the complexity, the accumulated knowledge, the expertise, the experience required seems not-humanly possible?* 
 
 *How does a young generation serve the world, the human species by their choices popping this bubble?*
 
@@ -142,13 +144,13 @@ There are commands that run in Vivado "Run Simulation" yet cause error messages 
 
 Some engineers built their own testing framework outside of Vivado in languages such as [python](https://forums.xilinx.com/t5/Simulation-and-Verification/cocotb-Anyone-hear-of-it/td-p/837551). Today testing distinguishes digital design companies.  These companies (and their engineers) compete with in-house designed test tools (software). Time is money. The more efficient your testing, the lower your engineering design costs. The commercial world, by itself, has no incentive to Standardized Testing. 
 
-There are many companies and open source products ([EDAplayground](https://www.edaplayground.com/)) that stop after simulation testing.  Using one of these tools can falsely make you think that there are testing standards. It falsely makes the education community think that simulation test passing code, when physically implemented in FPGA vendors hardware will work.  But code that passed simulation testing,  often **fails**. 
+There are many companies and open source products ([EDAplayground](https://www.edaplayground.com/)) that stop after simulation testing.  Using one of these tools can falsely make you think that there are testing standards. It falsely makes the education community think that after passing a simulation test, the physical implementation in FPGA vendors hardware will work.  But code that passed simulation testing, often **fails**. 
 
-Vivado describes some does and don'ts in [ch3](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2016_3/ug901-vivado-synthesis.pdf) of this pdf for all HDL languages, not specifically Verilog. So the [catch22](https://en.wikipedia.org/wiki/Catch-22_(logic)) is having to know verilog well enough to read this chapter to know what not to use. This is why there are so many completed projects that you are looking at in these labs. 
+Vivado describes some does and don'ts in [ch3](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2016_3/ug901-vivado-synthesis.pdf) of this pdf for all HDL languages, not specifically Verilog. So the [catch22](https://en.wikipedia.org/wiki/Catch-22_(logic)) is having to know verilog well enough to read this chapter to know what part of Verilog not to use.  
 
 ##### Testing with second test circuit
 
-Putting a special test circuit in the FPGA along with the primary circuit is possible without any special tools. This is why there is no clear boundary between verilog used for testing during simulation and verilog used for building circuits.
+Putting a special test circuit in the FPGA along with the primary circuit is possible without any special tools. This is why there was no clear boundary between the original, 1980's verilog used for testing during simulation and verilog used for building circuits.
 
 ##### Testing with data collected in FPGA's RAM
 
@@ -158,9 +160,19 @@ The biggest logic analyzers were custom built for a circuit. They had probes for
 
 Now the circuits run faster than any external piece of equipment with logic probes attached to the circuit.  But all is not lost. 
 
-Vivado allows you to place virtual logic probes inside your FPGA with an Xilinx intellectual property (IP) core called  [ILA](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2015_4/ug936-vivado-tutorial-programming-debugging.pdf) "Integrated Logic Analyzer." Data collected from ILA logic probes is stored in the FPGA. 
+Vivado allows you to place virtual logic probes inside your FPGA with an Xilinx intellectual property (IP) core called  [ILA](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2015_4/ug936-vivado-tutorial-programming-debugging.pdf) "Integrated Logic Analyzer." Data collected from ILA logic probes is stored in the FPGA and analyzed after the real circuit is physically operated. 
 
-*Here is the ethical question. What is the solution to an internet collecting bad, not-modern, not-useful verilog code?  How is root cause of this related to testing? What solutions do you predict will emerge from the [DARPA Electronics Resurgence Initiative](https://www.darpa.mil/news-events/2018-07-24a)? How will this impact your career? How will it impact this course?*
+*What is the best way to teach a digital design course when most of the verilog code, advice and guides found on the internet seem inconsistent, contradictory, and generate nothing but error messages?*
+
+*What is a solution to the internet collecting bad, not-modern, misleading, not-useful verilog code?*  
+
+*How is root cause of this verilog chaos related to testing?* 
+
+*What solutions do you predict will emerge from the [DARPA Electronics Resurgence Initiative](https://www.darpa.mil/news-events/2018-07-24a)?* 
+
+*How will this impact your career?* 
+
+*How will it impact this course?*
 
 ### Ethics of Different Institutional Objectives
 
@@ -175,9 +187,13 @@ There are three groups of Engineers with different objectives:
 
 *Describe where the FPGA companies like Xilinx and the open source world conflict.*
 
-*In what way do standards (like Verilog) form a motivation for all three groups of engineers to start cooperating and working together?*
+*In what way are engineers removed from their employer's competing goals and more free to work together in standards committees?*
 
-*In what way are engineers removed from their employers competing goals and more free to work together in IEEE standards committees? Why has the [US supreme court](https://supreme.justia.com/cases/federal/us/435/679/) ruled that doing this is **not** [anti-competitive collusion](https://caselaw.findlaw.com/us-supreme-court/435/679.html)?* 
+*What does an engineer represent ... like a lawyer representing clients, doctors representing patients?*
+
+*What motivates all three groups of engineers to start cooperating and working together building a common standard such as the next version of Verilog?*
+
+*Why has the [US supreme court](https://supreme.justia.com/cases/federal/us/435/679/) ruled that engineers from competing companies meeting and forming organizations is not price fixing, is **not** [anti-competitive collusion](https://caselaw.findlaw.com/us-supreme-court/435/679.html)?* 
 
 
 
