@@ -132,9 +132,9 @@ This part of society works. But there is a down side. A barrier, a Catch22 start
 
 *So how does a younger generation pop a generation bubble or climb over the experience barrier and get a job?*
 
-*What does the younger generation have to do on their resume, while in college where the complexity, the accumulated knowledge, the expertise, the experience required seems not-humanly possible?* 
+*What does the younger generation have to do on their resume and while in college ... when the complexity, the accumulated knowledge, the expertise, the experience required seems impossible to accumulate?*
 
-*How does a young generation serve the world, the human species by their choices popping this bubble?*
+*How does a young generation serve the world, the human species popping this generational bubble?*
 
 #### Ethics of Testing
 
