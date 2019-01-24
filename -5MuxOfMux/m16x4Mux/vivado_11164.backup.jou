@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jan 24 05:07:43 2019
+# Process ID: 11164
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6444 C:\Users\FoersterGame\Documents\GitHub\ENES246\-5MuxOfMux\m16x4Mux\m16x4Mux.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux/m16x4Mux.xpr
+update_compile_order -fileset sources_1

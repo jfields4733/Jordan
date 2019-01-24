@@ -3,7 +3,15 @@ There are three folders containing three vivado projects.  In this lab and all o
 
 ## Buffers
 
-Create a markdown file with Typora with screen shots of the RTL, Synthesis and Implementation schematics. 
+#### Port Diagram
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
 
 *What is a net?*     
 *What is a cell?*  
@@ -14,8 +22,7 @@ Create a markdown file with Typora with screen shots of the RTL, Synthesis and I
 *What physically is a one?*  
 *What logically is a one?*   
 
-Send the bit file to the Nexys4DDR board and show it working to your instructor.
-
+## MultipleLEDs  
 #### Port Diagram
 
 #### RTL Schematic Screen shot
@@ -26,7 +33,6 @@ Send the bit file to the Nexys4DDR board and show it working to your instructor.
 
 #### Testing
 
-## MultipleLEDs  
 Look at the verilog code and the constraints file.  
 Make modifications so that one switch drives mutliple LED's.  
 *How many LED's can one switch drive?*  
@@ -35,6 +41,10 @@ Make modifications so that one switch drives mutliple LED's.
 
 *Instead of 16 lines of verilog code, everything can be put in one line. What is this one line?*
 
+## MultipleSwitches
+
+This project or circuit fails. Two switches can not drive one LED.  Take screen shots until you reach an error message:
+
 #### Port Diagram
 
 #### RTL Schematic Screen shot
@@ -44,10 +54,6 @@ Make modifications so that one switch drives mutliple LED's.
 #### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
-
-## MultipleSwitches
-
-This project or circuit fails. Two switches can not drive one LED.  
 
 *What are the vivado error messages?  Guess what each means in your own words.* 
 
@@ -56,16 +62,6 @@ This project or circuit fails. Two switches can not drive one LED.
 *Does vivado fail during RTL Analysis, Synthesis, Implementation or Bit File Generation?* 
 
 *What does the error message multi-driven net mean? What would you look for as an error in your circuit design? What is a multi-driven net?*
-
-#### Port Diagram
-
-#### RTL Schematic Screen shot
-
-#### Synthesis Schematic Screen shot
-
-#### Implementation Device screen shot zoomed in on something interesting
-
-#### Testing
 
 ****
 
@@ -82,3 +78,4 @@ Hook the switches to the LED's in some creative way of your choice using the con
 #### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
+

@@ -11,6 +11,16 @@ Here is a gate diagram done in [logisim](https://sourceforge.net/projects/circui
 
 ![1548098400293](1548098400293.png)
 
+#### Port Diagram
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
 One might expect that Vivado would reduce these to a single circuit and reuse the circuit. There have been software packages that do this.  In logisim, go to project, analyze the circuit, minimize, set as expression for output x, set as expression for output y, ok, yes sure. *What happens?*
 
 *Add screen shot of logisim of the resulting circuit.*  
@@ -23,6 +33,8 @@ Obviously Vivado understands the verilog code. *How are the truth tables the sam
 
 *How are the truth tables different? What did Vivado do to make the circuits different?* 
 
+## Project_2
+
 #### Port Diagram
 
 #### RTL Schematic Screen shot
@@ -32,28 +44,16 @@ Obviously Vivado understands the verilog code. *How are the truth tables the sam
 #### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
-
-## Project_2
 
 Develop two identical circuits. Build the first circuit with 3 inputs, 2 outputs and at least 5 gates. The second circuit can be a simple version of the first.  Then repeat the instructions of project 1.  Just answer this  one question: *Does anything change?*
 
-#### Port Diagram
-
-#### RTL Schematic Screen shot
-
-#### Synthesis Schematic Screen shot
-
-#### Implementation Device screen shot zoomed in on something interesting
-
-#### Testing
-
 ## Ethics
 
-EDIF (Electric Design Interchange Format)  captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Read this wikipedia article on [EDIF](https://en.wikipedia.org/wiki/EDIF) and summarize in less than 200 words:*
+EDIF (Electric Design Interchange Format)  captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Summarize this wikipedia article  on the death of [EDIF](https://en.wikipedia.org/wiki/EDIF) standards in less than 200 words:*
 
 This course is asking you to document circuits first with the port diagram and then screen shots of Vivado and finally a discussion of testing. You are in the role of an engineering using Vivado on a project. *Which verilog version of the project_1 circuit (simple or complex) should be entered into Vivado?  When is a more complex circuit a good thing and a simplified, reduced circuit a bad thing?*
 
-Suppose you are engineer designing the Vivado software. You get the question from a customer, a fellow engineer using Vivado: "Why doesn't Vivado see one circuit?" Read this [forum post](https://forums.xilinx.com/t5/Synthesis/Question-about-LUT-usage-in-a-very-very-simple-combinatorial/td-p/221143).  *What is your answer to this question?*
+Suppose you are engineer designing the Vivado software. You get the question from a customer, a fellow engineer using your companies product and paying your salary: "Why doesn't Vivado see one circuit?" Read this [forum post](https://forums.xilinx.com/t5/Synthesis/Question-about-LUT-usage-in-a-very-very-simple-combinatorial/td-p/221143).  *What is your answer to this question?*
 
 You are student at a university. *Why would professors demand in the first course on digital circuit design that you learn  [Karnaugh Maps,](https://en.wikipedia.org/wiki/Karnaugh_map)  [Quine McCluskey Algorithm](https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm), and  [Petrick Cover](https://en.wikipedia.org/wiki/Petrick%27s_method)* ?
 

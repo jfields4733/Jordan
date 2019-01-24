@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jan 24 05:07:43 2019
+# Process ID: 11164
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6444 C:\Users\FoersterGame\Documents\GitHub\ENES246\-5MuxOfMux\m16x4Mux\m16x4Mux.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux/m16x4Mux.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-INS1U.HCCMAIN/Desktop/vivado/m16x4Mux/m16x4Mux' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [Project 1-230] Project 'm16x4Mux.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 24 05:09:23 2019...
