@@ -5,6 +5,8 @@ There are three folders containing three vivado projects.  In this lab and all o
 
 #### Port Diagram
 
+#### Verilog Code
+
 #### RTL Schematic Screen shot
 
 #### Synthesis Schematic Screen shot
@@ -24,6 +26,8 @@ There are three folders containing three vivado projects.  In this lab and all o
 
 ## MultipleLEDs  
 #### Port Diagram
+
+#### Verilog Code
 
 #### RTL Schematic Screen shot
 
@@ -46,6 +50,8 @@ Make modifications so that one switch drives mutliple LED's.
 This project or circuit fails. Two switches can not drive one LED.  Take screen shots until you reach an error message:
 
 #### Port Diagram
+
+#### Verilog Code
 
 #### RTL Schematic Screen shot
 
@@ -70,6 +76,8 @@ This project or circuit fails. Two switches can not drive one LED.  Take screen 
 Hook the switches to the LED's in some creative way of your choice using the concepts you learned in this lab.
 
 #### Port Diagram
+
+#### Verilog Code
 
 #### RTL Schematic Screen shot
 

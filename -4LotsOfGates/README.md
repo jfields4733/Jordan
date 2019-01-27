@@ -13,6 +13,8 @@ Below is a diagram of a circuit with two outputs. The outputs are identical. The
 
 #### Port Diagram
 
+#### Verilog Code
+
 #### RTL Schematic Screen shot
 
 #### Synthesis Schematic Screen shot
@@ -39,6 +41,8 @@ Repeat project_1 with your own design. Develop two identical circuits. Build the
 
 #### Port Diagram
 
+#### Verilog Code
+
 #### RTL Schematic Screen shot
 
 #### Synthesis Schematic Screen shot
@@ -49,23 +53,11 @@ Repeat project_1 with your own design. Develop two identical circuits. Build the
 
 *Is anything different?* 
 
-## Ethics
-
-The ethics questions below are more important than your answers. The goal in answering them is to remember the question. So the best answers are a non-trivial, thoughtful, relevant hypothesis. 
-
-#### Ethics of EDIF
-
-EDIF (Electric Design Interchange Format)  captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Summarize this wikipedia article  on the death of [EDIF](https://en.wikipedia.org/wiki/EDIF) standards in less than 200 words:*
-
-This course is asking you to document circuits first with the port diagram and then screen shots of Vivado and finally a discussion of testing. You are in the role of an engineering using Vivado on a project. *Which verilog version of the project_1 circuit (simple or complex) should be entered into Vivado?  When is a more complex circuit a good thing and a simplified, reduced circuit a bad thing?*
-
-#### Ethics of choosing which Algorithms to Teach
+# Ethics of choosing which Algorithms to Teach
 
 You are student at a university. *Why would professors demand in the first course on digital circuit design that you learn  [Karnaugh Maps,](https://en.wikipedia.org/wiki/Karnaugh_map)  [Quine McCluskey Algorithm](https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm), and  [Petrick Cover](https://en.wikipedia.org/wiki/Petrick%27s_method), which seems unrelated to the labs, doesn't predict Vivado behavior and is at best buried in the Vivado software?*
 
 Suppose you are engineer designing the Vivado software. You get the question from a customer, a fellow engineer using your companies product and paying your salary: "Why doesn't Vivado see one circuit?" Read this [forum post](https://forums.xilinx.com/t5/Synthesis/Question-about-LUT-usage-in-a-very-very-simple-combinatorial/td-p/221143).  *What is your answer to this question?*
 
 Engineers develop conspiracy theories when trying to predict the future. *Given the above chaos discovered in Vivado while doing the labs above, what do you expect to happen as you try to cram larger and larger circuits into an FPGA?* 
-
-
 

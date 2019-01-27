@@ -11,6 +11,8 @@ This is solved by moving from two states of on or off to three states or "triSta
 
 #### Port Diagram
 
+#### Verilog Code
+
 #### RTL Schematic Screen shot
 
 #### Synthesis Schematic Screen shot
@@ -39,6 +41,8 @@ Hook the switches to the LED's in some creative way of your choice using the con
 
 #### Port Diagram
 
+#### Verilog Code
+
 #### RTL Schematic Screen shot
 
 #### Synthesis Schematic Screen shot
@@ -55,4 +59,3 @@ There is a transition, a business opportunity, a standards opportunity here.  Co
 
 *Can a voltage controlled buffer reduce the amount of copper needed?*
 
-#### 

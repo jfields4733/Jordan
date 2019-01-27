@@ -11,9 +11,11 @@ The goals of this lab are to begin looking at the ways **Vivado** modifies our c
 
 Project_1 is playing with voltage controlled buffers just like the previous lab, except it is using constants.
 
-![1547913933708](1547913933708.png)
-
 #### Port Diagram
+
+#### Verilog Code
+
+![1547913933708](1547913933708.png)
 
 #### RTL Schematic Screen shot
 
@@ -50,6 +52,8 @@ In this project an "And" gate is created four different ways. Test it. Show your
 
 #### Port Diagram
 
+#### Verilog Code
+
 #### RTL Schematic Screen shot
 
 #### Synthesis Schematic Screen shot
@@ -82,6 +86,8 @@ Use the "[assign](https://www.utdallas.edu/~akshay.sridharan/index_files/Page521
 
 #### Port Diagram
 
+#### Verilog Code
+
 #### RTL Schematic Screen shot
 
 #### Synthesis Schematic Screen shot
@@ -91,6 +97,16 @@ Use the "[assign](https://www.utdallas.edu/~akshay.sridharan/index_files/Page521
 #### Testing
 
 *XOR gates have evolved with [two different implementations](https://en.wikipedia.org/wiki/XOR_gate#More_than_two_inputs) with three or more inputs.  Which does the verilog assign command implement?*
+
+## Ethics
+
+The ethics questions below are more important than your answers. The goal in answering them is to remember the question. So the best answers are a non-trivial, thoughtful, relevant hypothesis. 
+
+#### Ethics of EDIF
+
+EDIF (Electric Design Interchange Format)  captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Summarize this wikipedia article  on the death of [EDIF](https://en.wikipedia.org/wiki/EDIF) standards in less than 200 words:*
+
+This course is asking you to document circuits first with the port diagram and then screen shots of Vivado and finally a discussion of testing. You are in the role of an engineering using Vivado on a project. *Which verilog version of the project_1 circuit (simple or complex) should be entered into Vivado?  When is a more complex circuit a good thing and a simplified, reduced circuit a bad thing?*
 
 
 
