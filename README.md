@@ -55,50 +55,22 @@ This course is primarily about Electronic Design Automation [EDA](https://en.wik
 
 ## General Instructions For all Labs
 
-Lab instructions are in the README.md file in the lab folder.  Within the lab folder, there are folders for each vivado project or circuit. Each must be self contained meaning that all files necessary for the vivado project have been copied into the that project. Projects don't contain links to files in other project folders. 
+Lab instructions are in the README.md file in the lab folder.  Within the lab folder, there are folders for each vivado project or circuit. 
 
-There may be multiple vivado projects already designed you are to look at and multiple vivado projects for you to design in one lab.  
+The README.md file will ask questions about the existing project in italics that are to be answered within the README.md file.
+
+You will document existing projects and create projects with in the same README.md file. Each project is to be documented in the following pattern: 
+
+​	Verilog Code
+​	Drawings starting with Port Interface, then FSM, ASM and ASMD
+​	Simulation screen shot
+​	RTL Schematic screen shot
+​	Synthesis screen shot
+​	Implementation Device zoom on something interesting screen shot
+​	Manual Testing Instructions
+
+Suggest using the drawings.io site for creating the drawings. Suggest using typora to edit the README.md file. Screen shots must be properly cropped. 
 
 You are required to **demonstrate** each circuit physically to the instructor (no video) at which time your **notebook** will be inspected. This can be done all at once or after each circuit has been physically implemented in the Nexys4 DDR. 
 
-## LabWriteUp  
 
-Lab write up is to electronically modify the README.md file. You have to answer the questions in italics and add some drawings you draw by hand (using draw.io) and Vivado screen shots.  Suggest using the Typora editor to do this. Must write as you do the lab. The following must be done for each circuit/vivado project (whether looking at, modifying an instructor project or making your own project) and put into one electronic file. 
-
-LabWriteUp Grading is done after the lab is due. The grade is merely about completeness. Have the necessary drawings been made? Have the screenshots been captured and comments made about them? Do both the questions and answers exist? Do they look original? How many GITHub commits were made?
-
-
-
-### Drawings  
-
-The design documents are diagrams. Within the one LabWriteUp.md file, each vivado project or circuit has to start with a port interface diagram.  Other diagrams will be added later. Draw diagrams with a package that produces svg files (suggest [draw.io](www.draw.io)) to put in the md format. Save the files in a format that you can edit later. Suggest using draw.io and saving in xml format. Look in the drawing folder for more extensive examples of these diagrams.
-
-### Screenshots  
-
-Continue in the LabWriteUp for each project or circuit by adding a RTL, Synthesis and Implementation screenshot of something new you have figured out.  Screenshots must be cropped. Suggest using paint. Next to each diagram, write in english something new you figured out.  Often it is vivado interpreting your verilog code and building a circuit completely different than you intended. 
-
-### Questions  
-
-Existing circuits have questions associated with them. Copy and paste the questions into your LabWriteUp README.md and then answer them. Your notebook will or a description of the circuit to build. Questions are found in the lab itself. 
-
-### Testing  
-
-The LabWriteUp README.md for each project or circuit ends with a section on testing. This will always include the manual testing you did do, the manual testing you did not do but could have, suggested testing that can be automated by writing scripts, and testing that will be impossible. 
-
-## Demonstration-Notebook  
-
-Notebook should describe conceptual failures including web search keywords that didn't work, xlinix documentation that wasn't relevant, experimental circuits that failed, and vivado messages that you are trying to guess the meaning of.  Notebook should continue the goingToDo, Doing, RANT style learned in ENES-100. Your notebook should describe what you did to arrive at the answers, not the questions and answers themselves. 
-
-Each lab demonstration will be accompanied by an inspection of the notebook. After the last circuit is demonstrated, your instructor will pick a frustration from your notebook and ask that you post it in the knowledge base. 
-
-If a lab has 5 circuits already made and 1 to be built, then you will need to physically demonstrate all 6 to your instructor. Labs can be done at home, but have to be physically demonstrated to your instructor.  Video of the labs working will not be allowed.
-
-The physical demonstration is documented in the testing section of the labwriteup. 
-
-They all have to be done by the lab due date at the time at the end of lab. Labs can be done at home.
-
-### Demo-Notebook Grading
-
-Each lab results in a demo-notebook grade. Circuits are graded. There is no partial credit per circuit. Either you demonstrate the circuit or you don't. Either you are using your notebook appropriately to work through frustrations, or you are not. Either you use your frustrations to improve the world (entry in knowledge base) or you don't. The knowledge base entries will be graded by counting them at the end of the semester and dividing by 24 .. the number of labs. 
-
-You can't redo or make up labs after the due date. If you don't demonstrate all the circuits, you will get partial credit for the lab. At the beginning, most of the circuits already exist as starting points that you demonstrate and then modify and demonstrate. Towards the end, may have to start from scratch.
