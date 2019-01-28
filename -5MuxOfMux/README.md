@@ -17,6 +17,8 @@ Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry
 
 This mux is implemented both with gates, tristate and RTL. 
 
+*How is the RTL example related to a tri-state buffer?*
+
 *What are the differences between the three at after RTL Analysis?* 
 
 *What are the differences between the three when implemented in the FPGA?*
@@ -108,9 +110,16 @@ How is manually testing this circuit different?*
 *How many verilog modules were used in this Vivado project?*
 
 *Where is the original documentation for this command that creates muxes?* 
-Exhaust 10 minutes trying to find it. List off the keywords you used to search for an explanation and URL's that you find that are closer than these:
+It is impossible to prove a negative, such as "it is impossible" .. "It is not on the internet." The appropriate response is to **document exhaustion**.  This means writing a list of places tried, URL's tried, experiments performed that were close but not answer the question. The goal of  **documented exhaustion** is to provide a starting point for someone else to take a stab at answering the question.  Read the below and either answer the question or add to the **documented exhaustion**. 
 
-This presentation from [Standford](https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/tools/verilog_tips.pdf) talks about how to build arrays of wires but not this command.  This is a lab from [University of Maryland College Park](https://ece.umd.edu/class/enee245.S2015/Lab7.pdf) very similar to this lab, but doesn't mention this technique.  This is a [link](http://electrosofts.com/verilog/mux.html) that inspired the instructor to start playing around with this command.  [Cliff Cummings](http://www.sunburst-design.com/papers/)  is an engineer that has been at the forefront of driving Verilog and System Verilog evolution.
+Search terms tried: verilog bit width
+
+URL's read that are close but don't answer the question:
+This stackexchange article talks about [verilog width concatenation](https://electronics.stackexchange.com/questions/282357/what-is-supposed-to-happen-in-verilog-if-a-signal-of-one-width-is-assigned-to-an) ... which is a similar topic.    
+This presentation from [Standford](https://web.stanford.edu/class/archive/ee/ee371/ee371.1066/tools/verilog_tips.pdf) talks about how to build arrays of wires but not this command.    
+This is a lab from [University of Maryland College Park](https://ece.umd.edu/class/enee245.S2015/Lab7.pdf) very similar to this lab, but doesn't mention this technique.    
+This is the [link](http://electrosofts.com/verilog/mux.html) that inspired playing around with this command.    
+[Cliff Cummings](http://www.sunburst-design.com/papers/)  is an engineer that has been at the forefront of driving Verilog and System Verilog evolution and maybe in his writing somewhere there is an answer. 
 
 ## Ethics
 
