@@ -2,42 +2,29 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Dec 27 17:26:39 2018
-# Process ID: 9992
-# Current directory: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8328 C:\Users\scott\Documents\GitHub\ENES246\-1Buffers\multipleLEDs\buffers.xpr
-# Log file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/vivado.log
-# Journal file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs\vivado.jou
+# Start of session at: Sat Dec 29 09:46:51 2018
+# Process ID: 9656
+# Current directory: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7736 C:\Users\scott\Documents\GitHub\ENES246\-1Buffers\buffers\buffers.xpr
+# Log file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/vivado.log
+# Journal file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.xpr
+open_project C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.xpr
 update_compile_order -fileset sources_1
 synth_design -rtl -name rtl_1
-refresh_design
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
 reset_run synth_1
 launch_runs synth_1 -jobs 6
 wait_on_run synth_1
 close_design
 open_run synth_1 -name synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-close_design
-open_run impl_1
-close_design
+report_utilization -name utilization_1
 synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
 reset_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-reset_run impl_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-close_design
-open_run impl_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
 close_project

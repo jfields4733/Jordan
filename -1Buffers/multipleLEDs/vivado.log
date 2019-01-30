@@ -2,21 +2,22 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Dec 27 17:26:39 2018
-# Process ID: 9992
-# Current directory: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8328 C:\Users\scott\Documents\GitHub\ENES246\-1Buffers\multipleLEDs\buffers.xpr
-# Log file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/vivado.log
-# Journal file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs\vivado.jou
+# Start of session at: Sat Dec 29 09:46:51 2018
+# Process ID: 9656
+# Current directory: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7736 C:\Users\scott\Documents\GitHub\ENES246\-1Buffers\buffers\buffers.xpr
+# Log file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/vivado.log
+# Journal file: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.xpr
+open_project C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.xpr
 INFO: [Project 1-313] Project file moved from 'C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffer_project' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 674.340 ; gain = 82.391
 update_compile_order -fileset sources_1
 synth_design -rtl -name rtl_1
 Command: synth_design -rtl -name rtl_1
@@ -24,13 +25,13 @@ Starting synth_design
 Using part: xc7a100tcsg324-1
 Top: switchLED
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 812.117 ; gain = 43.730
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 834.453 ; gain = 46.996
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'switchLED' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'switchLED' (1#1) [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+INFO: [Synth 8-6157] synthesizing module 'switchLED' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'switchLED' (1#1) [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
 WARNING: [Synth 8-3330] design switchLED has an empty top module
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 864.188 ; gain = 95.801
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 853.406 ; gain = 65.949
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -43,152 +44,62 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 864.188 ; gain = 95.801
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 853.406 ; gain = 65.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 864.188 ; gain = 95.801
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 853.406 ; gain = 65.949
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-140] Inserted 16 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
-Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1159.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1154.625 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1243.336 ; gain = 474.949
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1197.629 ; gain = 410.172
 8 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1243.336 ; gain = 474.949
-refresh_design
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1250.270 ; gain = 0.000
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'switchLED' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'switchLED' (1#1) [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
-WARNING: [Synth 8-3330] design switchLED has an empty top module
-WARNING: [Synth 8-3917] design switchLED has port LED[15] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[14] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[13] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[12] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[11] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[10] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[9] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[8] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[7] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[6] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[5] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[4] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[3] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[2] driven by constant 0
-WARNING: [Synth 8-3917] design switchLED has port LED[1] driven by constant 0
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1250.270 ; gain = 0.000
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1250.270 ; gain = 0.000
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1250.270 ; gain = 0.000
----------------------------------------------------------------------------------
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
-INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
-Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
-Completed Processing XDC Constraints
-
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1267.531 ; gain = 17.262
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1197.629 ; gain = 410.172
 reset_run synth_1
 launch_runs synth_1 -jobs 6
-[Thu Dec 27 17:33:51 2018] Launched synth_1...
-Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Thu Dec 27 17:34:14 2018] Launched synth_1...
-Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.runs/synth_1/runme.log
+[Sat Dec 29 09:56:31 2018] Launched synth_1...
+Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.runs/synth_1/runme.log
 close_design
 open_run synth_1 -name synth_1
 Design is defaulting to impl run constrset: constrs_1
 Design is defaulting to synth run part: xc7a100tcsg324-1
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
-Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1366.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1205.500 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-launch_runs impl_1 -jobs 6
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1806.852 ; gain = 0.000
-INFO: [Timing 38-480] Writing timing data to binary archive.
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1809.414 ; gain = 2.563
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1812.418 ; gain = 0.000
-[Thu Dec 27 17:38:46 2018] Launched impl_1...
-Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Dec 27 17:39:53 2018] Launched impl_1...
-Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.runs/impl_1/runme.log
-close_design
-open_run impl_1
-INFO: [Project 1-479] Netlist was created with Vivado 2018.3
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1848.258 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1848.258 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1848.258 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
-close_design
+report_utilization -name utilization_1
 synth_design -rtl -name rtl_1
 Command: synth_design -rtl -name rtl_1
 Starting synth_design
 Using part: xc7a100tcsg324-1
 Top: switchLED
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2142.543 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1684.500 ; gain = 2.465
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'switchLED' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'switchLED' (1#1) [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+INFO: [Synth 8-6157] synthesizing module 'switchLED' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'switchLED' (1#1) [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:12]
 WARNING: [Synth 8-3330] design switchLED has an empty top module
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2142.543 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1718.527 ; gain = 36.492
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -201,61 +112,103 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2142.543 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1718.527 ; gain = 36.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2142.543 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1718.527 ; gain = 36.492
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-140] Inserted 16 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
-Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2142.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1826.895 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2142.543 ; gain = 0.000
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1828.172 ; gain = 146.137
 7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-[Thu Dec 27 17:46:17 2018] Launched synth_1...
-Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.runs/synth_1/runme.log
-[Thu Dec 27 17:46:17 2018] Launched impl_1...
-Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.runs/impl_1/runme.log
-reset_run impl_1
-launch_runs impl_1 -jobs 6
-[Thu Dec 27 17:48:58 2018] Launched impl_1...
-Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-[Thu Dec 27 17:50:03 2018] Launched impl_1...
-Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.runs/impl_1/runme.log
-close_design
-open_run impl_1
-INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+refresh_design
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2281.426 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2281.426 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2281.426 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
 
-WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 'current_fileset' is not supported in the xdc constraint file. [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc:5]
+Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc:5]
+Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2165.262 ; gain = 0.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'switchLED' [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'switchLED' (1#1) [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/sources_1/imports/RTL/Lab1-1Buffers.v:11]
+WARNING: [Synth 8-3330] design switchLED has an empty top module
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2193.875 ; gain = 29.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2193.875 ; gain = 29.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2193.875 ; gain = 29.340
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 16 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Finished Parsing XDC File [C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.srcs/constrs_1/imports/Vivado_RTL/buffers.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2206.332 ; gain = 41.797
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Sat Dec 29 10:53:08 2018] Launched synth_1...
+Run output will be captured here: C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.runs/synth_1/runme.log
 close_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 27 18:10:35 2018...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 29 11:14:35 2018...
