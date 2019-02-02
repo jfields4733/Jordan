@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/buffers/buffers.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/FoersterGame/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="b5b2469ccf534f599610d9ad95d68b36"/>

@@ -8,9 +8,11 @@
 // Module Name: switchLED
 //////////////////////////////////////////////////////////////////////////////////
 
+
 module switchLED(
-    input [15:0] SW,
+    input SW,
     output [15:0] LED
     );
     assign LED = SW;
+
 endmodule
