@@ -192,9 +192,28 @@ Hook the switches to the LED's in some creative way of your choice using the con
 
 #### Port Diagram
 
+![1549159704577](1549159704577.png)
+
 ![1549151869789](1549151869789.png)
 
 #### Verilog Code
+
+module hw1(
+    input a,
+    input b,
+    input c,
+    output x,
+    output y
+    );
+    wire A,Ab,cb,cbb;
+    assign A = ~a;
+    assign Ab= A|b;
+    assign cb= b^c;
+    assign cbb = b&cb;
+    assign x = Ab;
+    assign y = Ab|cbb;
+    
+endmodule
 
 module switchLED(
     input [1:0] SW,
@@ -207,13 +226,19 @@ endmodule
 
 #### RTL Schematic Screen shot
 
+![1549159281191](1549159281191.png)
+
 ![1549151743085](1549151743085.png)
 
 #### Synthesis Schematic Screen shot
 
+![1549159339667](1549159339667.png)
+
 ![1549153230476](1549153230476.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1549159419282](1549159419282.png)
 
 ![1549153389645](1549153389645.png)
 
