@@ -13,6 +13,6 @@ module switchLED(
     input SW,
     output [15:0] LED
     );
-    assign LED = SW;
+    assign LED[15:0] = SW;
 
 endmodule

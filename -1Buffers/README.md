@@ -5,26 +5,50 @@ There are three folders containing three vivado projects.  In this lab and all o
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+
 
 #### RTL Schematic Screen shot
 
+
+
 #### Synthesis Schematic Screen shot
 
+
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+
 
 #### Testing
 
 #### Prompts
 
 What is a net?     
+
+A net is a wire in a circuit.
+
 *What is a cell?*  
 *What is an IO port?*  
 *What do the yellow triangles labeled OBUF do?*  
-*What physically is a zero?*  
-*What logically is a zero?*  
-*What physically is a one?*  
-*What logically is a one?*   
+*What physically is a zero?*
+
+A lack of voltage flowing into the input of  circuit.
+
+*What logically is a zero?* 
+
+That is when the circuit pin is considered off.
+
+*What physically is a one?*
+
+One is typically assess as 5V flowing into the input of a circuit.
+
+*What logically is a one?* 
+
+One symbolizes  the circuit pin being on.  
 
 ## MultipleLEDs  
 #### Port Diagram

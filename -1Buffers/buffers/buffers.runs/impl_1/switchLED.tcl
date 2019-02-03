@@ -67,9 +67,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/.Xil/Vivado-9992-DESKTOP-SI013V8/incrSyn
   open_checkpoint switchLED_routed.dcp
-  set_property webtalk.parent_dir C:/Users/scott/Documents/GitHub/ENES246/-1Buffers/multipleLEDs/buffers.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/SET165-02U/Documents/GitHub/Jordan-s-ENES246/-1Buffers/buffers/buffers.cache/wt [current_project]
   catch { write_mem_info -force switchLED.mmi }
   write_bitstream -force switchLED.bit 
   catch {write_debug_probes -quiet -force switchLED}
