@@ -48,7 +48,7 @@ An IO port controls the inputs and outputs of a circuit respectively. The circui
 
 Those yellow triangles are output buffers that regulate the amount of voltage going to the LED, so that it is not overwhelmed and damaged.
 
-*What physically is a zero?*
+ *What physically is a zero?*
 
 A lack of voltage flowing into the input of circuit, which happens when the relevant switch on the circuit is in the down position.
 
@@ -97,7 +97,7 @@ endmodule
 
 Look at the verilog code and the constraints file.  *Describe the changes to the constraints file from the first project.* 
 
-The number of switches commented out.
+The number of switches commented out changes from the first file. The only switch not commented out in the second file is switch 0. File 1 does not comment out any of the 16 switches.
 
 A typical circuit built has power flowing through the switch and then a bunch of LED's fan out from the switch, splitting up the current and getting dimmer and dimmer. *Is that happening in this project?*
 
@@ -107,7 +107,11 @@ LED=SW
 
 as in the first project. But this time there is only one switch. *What happens?* 
 
+This only causes 1 of the LEDs to turn on with the 1 switch instead of all 16 LEDs turning on with the one switch.
+
 The bigger question is why? 
+
+This happens because the larger amount of LEDs is truncated to match the amount of switches.
 
 A deep dive into the detail requires finding confirmation of the stack exchange article. Confirmation was found on slides 14 and 15 of this [Stu Sutherland article](http://www.sutherland-hdl.com/papers/2006-SNUG-Boston_standard_gotchas_presentation.pdf).  Information in the article describes what happens. 
 
