@@ -117,9 +117,13 @@ A deep dive into the detail requires finding confirmation of the stack exchange 
 
 The next step is to ask "Why this chaos?" which requires diving into even more detail. This was found  [here](https://www.electronics-tutorials.ws/binary/signed-binary-numbers.html) comparing unsigned and signed with 1's compliment and 2's complement.  This is traditional, old school digital design information. 
 
-The most relevant information was found in the [IEEE 2012 System Verilog standard](https://drive.google.com/open?id=0B65fOszQEMiVU2d1NXBqcmVPSFk) on page 222, but  confusing information is scattered everywhere. This is just math! Verilog does math. Why all this chaos? 
+The most relevant information was found in the [IEEE 2012 System Verilog standard](https://drive.google.com/open?id=0B65fOszQEMiVU2d1NXBqcmVPSFk) on page 222, but  confusing information is scattered everywhere. This is just math! Verilog does math. Why all this chaos?
+
+There is a lot of chaos because all of the event expressions are reevaluated when any change occurs to the data elements. This program does not make it easy on the programmer to differentiate between signed and unsigned binary numbers relative to other common programming languages because everything needs to be explicitly written. Also it becomes hard to differentiate truncated signed numbers and truncated unsigned numbers, adding to the chaos.
 
 This leads to searching [Xilinx vivado](https://forums.xilinx.com/t5/Synthesis/verilog-math/td-p/205895) for advice on math.  Summarize this. *Why does the Xilinx representative dance around the ignorance of the person answering the question?* 
+
+The Xilinx representative does this because there is no real answer to the person's question. The way Xilinx operates causes the user to do the math in an explicit form that makes it hard to use predetermined functions like the one's the user gave in their question. The Xilinx representative then pokes fun at the person and tells them to get a smarter computer if they don't want to explicitly do the math.
 
 This is your instructor diving deeper and trying to hit bottom of a detail well. But is no bottom, just underground tunnels. 
 
