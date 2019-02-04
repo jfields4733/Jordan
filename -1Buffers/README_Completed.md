@@ -178,11 +178,15 @@ The first error message says there was a problem during the construction of the 
 
 *How do the net, cell, IO ports change?* 
 
+The nets from each cell connect to each other before connecting to the LED.
+
 *Does vivado fail during RTL Analysis, Synthesis, Implementation or Bit File Generation?*
 
 Vivado fails during implementation. 
 
 *What does the error message **multi-driven net** mean? What would you look for as an error in your circuit design? What is a **multi-driven net**?*
+
+The error message multi-driven net means that somewhere in the circuit two inputs are connected to the same wire. I would look in the circuit design for which switches were assigned to which LEDs and to see if there were multiple switches assigned to 1 LED. A multi-driven net is a net that gets its on/off status from multiple inputs.
 
 ****
 
