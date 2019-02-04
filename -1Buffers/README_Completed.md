@@ -194,8 +194,6 @@ Hook the switches to the LED's in some creative way of your choice using the con
 
 ![1549159704577](1549159704577.png)
 
-![1549151869789](1549151869789.png)
-
 #### Verilog Code
 
 module hw1(
@@ -215,32 +213,17 @@ module hw1(
     
 endmodule
 
-module switchLED(
-    input [1:0] SW,
-    output [15:0] LED
-    );
-    assign LED[15:8] = SW[0];
-    assign LED[7:0] = SW[1];
-    
-endmodule
-
 #### RTL Schematic Screen shot
 
 ![1549159281191](1549159281191.png)
-
-![1549151743085](1549151743085.png)
 
 #### Synthesis Schematic Screen shot
 
 ![1549159339667](1549159339667.png)
 
-![1549153230476](1549153230476.png)
-
 #### Implementation Device screen shot zoomed in on something interesting
 
 ![1549159419282](1549159419282.png)
-
-![1549153389645](1549153389645.png)
 
 #### Testing
 
