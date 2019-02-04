@@ -11,19 +11,40 @@ This is solved by moving from two states of on or off to three states or "triSta
 
 #### Port Diagram
 
+![1549311043956](1549311043956.png)
+
 #### Verilog Code
+
+`timescale 1ns / 1ps
+
+module vcb(
+   input  sw0,
+   input  sw1,
+   output tri LED
+   );
+   bufif1 b1(LED, sw0, sw0);
+   bufif1 b2(LED, sw1, sw1);
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1549311201494](1549311201494.png)
+
 #### Synthesis Schematic Screen shot
 
+![1549311330592](1549311330592.png)
+
 #### Implementation Device screen shot zoomed in on something interesting  
+
+![1549311561336](1549311561336.png)
 
 #### Testing
 
 Here is the above different from the two state situation from the first lab.  When sw0 is 0, the tristate buffer doesn't try to ground the LED. It outputs nothing. *What is the difference between 0 (false) and nothing .. don't care .. high input impedance... etc?* 
 
 *What happens when both switches are zero (false)? What could happen?*
+
+The LED is off.
 
 *So what is the difference between 0 and off?* 
 
@@ -33,7 +54,11 @@ Here is the above different from the two state situation from the first lab.  Wh
 
 *What kind of gate (and, nand, or, nor, xor, xnor, not) is this circuit?*
 
+The circuit is an OR gate.
+
 *Zoom in on a pull down resistor*
+
+![1549313612950](1549313612950.png)
 
 ## BeCreative!
 
@@ -41,13 +66,37 @@ Hook the switches to the LED's in some creative way of your choice using the con
 
 #### Port Diagram
 
+![1549315253173](1549315253173.png)
+
 #### Verilog Code
+
+`timescale 1ns / 1ps
+
+module vcb(
+   input  sw0,
+   input  sw1,
+   input  sw2,
+   input  sw3,
+   output tri LED,
+   output tri LED1
+   );
+   bufif1 b1(LED, sw0, sw0);
+   bufif1 b2(LED, sw1, sw1);
+   bufif1 b3(LED1, sw2, sw2);
+   bufif1 b4(LED1, sw3, sw3);
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1549315605058](1549315605058.png)
+
 #### Synthesis Schematic Screen shot
 
+![1549315741618](1549315741618.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1549315901755](1549315901755.png)
 
 #### Testing
 

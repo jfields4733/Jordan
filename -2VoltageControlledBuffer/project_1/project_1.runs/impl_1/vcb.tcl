@@ -67,9 +67,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache {C:/Users/Scott Foerster/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-12032-LabSet332/incrSyn}
   open_checkpoint vcb_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-2VoltageControlledBuffer/project_1/project_1.cache/wt} [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.cache/wt [current_project]
   catch { write_mem_info -force vcb.mmi }
   write_bitstream -force vcb.bit 
   catch {write_debug_probes -quiet -force vcb}
