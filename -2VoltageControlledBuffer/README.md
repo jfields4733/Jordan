@@ -42,15 +42,23 @@ endmodule
 
 Here is the above different from the two state situation from the first lab.  When sw0 is 0, the tristate buffer doesn't try to ground the LED. It outputs nothing. *What is the difference between 0 (false) and nothing .. don't care .. high input impedance... etc?* 
 
+When the output is nothing, it makes it seem as though the wire has been removed from the circuit. This means that whatever other outputs are connected to the circuit will have sole decision-making power in the overall output of the circuit.
+
 *What happens when both switches are zero (false)? What could happen?*
 
-The LED is off.
+The wire is drained of energy and not driven by anything. A bluetooth wireless transmission can cause the wire to fill up with EMF and cause the LED to glow. 
 
 *So what is the difference between 0 and off?* 
 
+In a tristate buffer circuit, when the switch sends 0, it removes all energy from the wire. In the same circuit, an off switch is synonomous with the switch sending nothing. In a two-state buffer circuit, there is no difference between 0 and off.
+
 *What is the difference between 0 and 1?* 
 
+1 fills the wire with energy while 0 removes all the energy from the wire.
+
 *What does a designer have to worry about when working with tri-state?* 
+
+The designer has to worry about whether the wire is driven by some input at all times.
 
 *What kind of gate (and, nand, or, nor, xor, xnor, not) is this circuit?*
 
