@@ -116,3 +116,4 @@ There is a transition, a business opportunity, a standards opportunity here.  Co
 
 *Can a voltage controlled buffer reduce the amount of copper needed?*
 
+Yes that type of buffer can reduce the amount of copper needed.
