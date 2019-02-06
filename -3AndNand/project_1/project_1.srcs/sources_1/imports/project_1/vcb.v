@@ -6,7 +6,7 @@ module vcb(
    output tri LED
    );
    tri w;
-   bufif1 b1(w, 1, sw0);
-   bufif1 b2(w, 1, sw1);
+   bufif1 b1(w, sw0, 1);
+   bufif1 b2(w, sw1, 1);
    assign LED=w;
 endmodule

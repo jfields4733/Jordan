@@ -1,14 +1,332 @@
 #-----------------------------------------------------------
-# Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Jan 20 10:15:25 2019
-# Process ID: 8932
-# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/-3AndNand/project_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9960 C:\Users\FoersterGame\Documents\GitHub\ENES246\-3AndNand\project_2\project_2.xpr
-# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-3AndNand/project_2/vivado.log
-# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-3AndNand/project_2\vivado.jou
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb  6 16:13:55 2019
+# Process ID: 14036
+# Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7700 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\-3AndNand\project_2\project_2.xpr
+# Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/vivado.log
+# Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Scott Foerster/Documents/GitHub/ENES246/-3AndNand/project_2' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.ip_user_files', nor could it be found using path 'C:/Users/Scott Foerster/Documents/GitHub/ENES246/-3AndNand/project_2/project_2.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 698.207 ; gain = 108.824
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: vcb
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 830.785 ; gain = 67.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vcb' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vcb' (1#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 863.379 ; gain = 100.086
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 863.379 ; gain = 100.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 863.379 ; gain = 100.086
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1112.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1202.582 ; gain = 439.289
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1202.582 ; gain = 439.289
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Feb  6 16:16:08 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1202.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1658.227 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1660.227 ; gain = 2.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1663.234 ; gain = 0.000
+[Wed Feb  6 16:19:31 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1701.855 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1701.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1701.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Feb  6 16:23:21 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B159A
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Feb  6 16:34:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2814.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: vcb
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2906.445 ; gain = 0.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vcb' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vcb' (1#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+WARNING: [Synth 8-3331] design vcb has unconnected port LED[3]
+WARNING: [Synth 8-3331] design vcb has unconnected port LED[2]
+WARNING: [Synth 8-3331] design vcb has unconnected port LED[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2908.617 ; gain = 2.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2908.617 ; gain = 2.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2908.617 ; gain = 2.285
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2930.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2936.273 ; gain = 29.941
+5 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2936.273 ; gain = 29.941
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vcb' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vcb' (1#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3198.637 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vcb' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vcb' (1#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+WARNING: [Synth 8-3331] design vcb has unconnected port LED[3]
+WARNING: [Synth 8-3331] design vcb has unconnected port LED[1]
+WARNING: [Synth 8-3331] design vcb has unconnected port LED[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3198.637 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vcb' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vcb' (1#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/sources_1/imports/project_2/andGates.v:3]
+WARNING: [Synth 8-3331] design vcb has unconnected port LED[2]
+WARNING: [Synth 8-3331] design vcb has unconnected port LED[1]
+WARNING: [Synth 8-3331] design vcb has unconnected port LED[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3198.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_2/project_2.srcs/constrs_1/imports/project_2/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3204.613 ; gain = 5.977
+close_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Jan 20 10:15:46 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  6 16:48:19 2019...

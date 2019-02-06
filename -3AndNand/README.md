@@ -13,21 +13,33 @@ Project_1 is playing with voltage controlled buffers just like the previous lab,
 
 #### Port Diagram
 
+![1549483949140](1549483949140.png)
+
 #### Verilog Code
 
 ![1547913933708](1547913933708.png)
 
 #### RTL Schematic Screen shot
 
+![1549483730776](1549483730776.png)
+
 #### Synthesis Schematic Screen shot
+
+![1549484158635](1549484158635.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1549486444822](1549486444822.png)
+
 #### Testing
+
+I will flip both the switches to see is they act as an OR gate for the LED
 
 *A logical 1 is visible in the verilog code (vcb.v) and yet the RTL analysis schematic gets rid of the logical constant and is identical to the previous lab. Why? Draw a diagram similar to the RTL analysis with containing the design intent of the verilog code.*
 
 *What happens if the order of 1 and sw0  are switched (and the order of 1 and sw1) in the verilog code?*
+
+An error appears during the implementation stage of building the circuit. 
 
 Comment out the lines:
 
@@ -38,7 +50,11 @@ in the xdc file.
 
 *What error messages are generated?*   
 
+The error says the program now sees the design having a multi-driven net. When the constant is ignored as the second input, then the program turns the buffer into a two-state buffer.
+
 *Which (RTL, Synthesis, Implement or Generate Bitstream) causes failure?* 
+
+The implementation causes failure.
 
 *Which starts complaining first about these two lines?*
 
@@ -46,23 +62,55 @@ in the xdc file.
 
 *What is w in the verilog code? Is it necessary?* 
 
+The w is a variable in the verilog code. It is not necessary if you do not mind retyping LED every time it is needed in the code.
+
 ## project_2 andGates
 
 In this project an "And" gate is created four different ways. Test it. Show your instructor all four ways working. 
 
 #### Port Diagram
 
+![1549487923947](1549487923947.png)
+
 #### Verilog Code
+
+`timescale 1ns / 1ps
+
+module vcb(
+   input  sw0,
+   input  sw1,
+   output [3:0] LED
+   );
+   wire nand1;
+   and a1(LED[0],sw0,sw1);
+   bufif1 b1(LED[1], sw0, sw1);
+   nand n1(nand1,sw0,sw1);
+   nand n2(LED[2],nand1,nand1);
+   assign LED[3] = sw0 && sw1;
+
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1549487791306](1549487791306.png)
+
 #### Synthesis Schematic Screen shot
+
+![1549487956102](1549487956102.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1549488119894](1549488119894.png)
+
 #### Testing
 
+Checking to see if both switch 0 and switch 1 causes all 4 LED to come on, signaling all 4 AND gates are working.
+
+
+
 *Which of the four ways is the most attractive way to code?*
+
+The assign command is the most attractive way to code.
 
 *At what level of verilog code abstraction is the **assign** command?*
 
@@ -76,7 +124,15 @@ In this project an "And" gate is created four different ways. Test it. Show your
 
 *Implement each and gate one at a time. List any differences between them at the RTL or Synthesis states here. Take screen shots if you want or describe them verbally.* 
 
+![1549489035077](1549489035077.png)
 
+![1549489096060](1549489096060.png)
+
+![1549489138084](1549489138084.png)
+
+
+
+![1549489209301](1549489209301.png)
 
 ## project_3 XOR and Nand Gates
 
@@ -85,6 +141,8 @@ You create this from scratch.
 Use the "[assign](https://www.utdallas.edu/~akshay.sridharan/index_files/Page5212.htm)" command, 3 switches, and 2 LEDs to create a three input Nand gate and a three input XOR gate. Put them all in one project. 
 
 #### Port Diagram
+
+![1549489795854](1549489795854.png)
 
 #### Verilog Code
 
