@@ -146,13 +146,34 @@ Use the "[assign](https://www.utdallas.edu/~akshay.sridharan/index_files/Page521
 
 #### Verilog Code
 
+`timescale 1ns / 1ps
+
+module vcb(
+   input  sw0,
+   input  sw1,
+   input  sw2,
+   output [1:0] LED
+   );
+   assign LED[0] = ~(sw0 & sw1 & sw2);
+   assign LED[1] = ((sw0 ^ sw1) ^ sw2);
+
+endmodule
+
 #### RTL Schematic Screen shot
+
+![1549648135633](1549648135633.png)
 
 #### Synthesis Schematic Screen shot
 
+![1549648245448](1549648245448.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1549648391562](1549648391562.png)
+
 #### Testing
+
+Check to make sure that LED 0 is on for all possible switch combinations except when all three switches are on. Check to make sure LED 1 acts as an Odd detector for the three switches.
 
 *XOR gates have evolved with [two different implementations](https://en.wikipedia.org/wiki/XOR_gate#More_than_two_inputs) with three or more inputs.  Which does the verilog assign command implement?*
 
