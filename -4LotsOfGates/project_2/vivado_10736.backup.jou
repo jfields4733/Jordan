@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jan 19 13:34:20 2019
+# Process ID: 10736
+# Current directory: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10004 C:\Users\Scott Foerster\Documents\GitHub\ENES246\-4LotsOfGates\project_1\project_1.xpr
+# Log file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/vivado.log
+# Journal file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-4LotsOfGates/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+open_run synth_1 -name synth_1
+current_design rtl_1
+close_design
+open_run impl_1
