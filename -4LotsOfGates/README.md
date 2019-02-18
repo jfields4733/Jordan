@@ -80,15 +80,34 @@ Repeat project_1 with your own design. Develop two identical circuits. Build the
 
 #### Port Diagram
 
-
+![1550519296399](1550519296399.png)
 
 #### Verilog Code
 
+`timescale 1ns / 1ps
+
+module vcb(
+   input  [2:0] SW,
+   output [3:0] LED
+   );
+   assign LED[0] = ~SW[0]|SW[1];
+   assign LED[1] = ~SW[1]|SW[2];
+   assign LED[2] = ~((SW[0]^SW[1])&~SW[1]);
+   assign LED[3] = ~SW[1]|SW[2];
+
+endmodule
+
 #### RTL Schematic Screen shot
+
+![1550519474730](1550519474730.png)
 
 #### Synthesis Schematic Screen shot
 
+![1550519564731](1550519564731.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1550519717578](1550519717578.png)
 
 #### Testing
 
