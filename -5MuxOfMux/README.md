@@ -1,7 +1,7 @@
 # MuxOfMux
 Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry-logic, xor gates, d flip flops. Understanding these is the goal of this course. We have covered XOR gates and LUTs. The goal now is to cover muxes. 
 
-## m2x1Mux
+## 1m2x1Mux
 
 #### Port Diagram
 
@@ -14,6 +14,8 @@ Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry
 #### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
+
+#### Prompts
 
 This mux is implemented both with gates, tristate and RTL. 
 
@@ -33,7 +35,27 @@ This mux is implemented both with gates, tristate and RTL.
 
 *Can you leverage any of these to make a m4x2 mux? Describe what you tried here before looking at the m4x2 mux project.* 
 
-## m16x4Mux
+## 2m4x2Mux
+
+#### Port Diagram
+
+#### Verilog Code ![1549536796950](1549536796950.png)
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+#### Prompts
+
+*Verilog code on lines 10,11, and 12  are instantiating the  previous m2x1mux 3 times. Given that this mux was done with one line of code, three lines of code could replace 10,11,12 without calling this module?* 
+
+*Looking at line 14 from a traditional programming point of view, it looks like one is choosing one element of an array or list and putting it's value in segOut2. But select is defined as a net or a pair of wires driven by a physical world switch.  And b consists of three wires. How can two wires select three wires?*
+
+## 3m16x4Mux
 
 #### Port Diagram
 
@@ -47,7 +69,7 @@ This mux is implemented both with gates, tristate and RTL.
 
 #### Testing
 
-How is manually testing this circuit different?*
+#### Prompts
 
 *Put a screen shot of the exploded design sources here:*
 
@@ -75,7 +97,7 @@ How is manually testing this circuit different?*
 
 *At what workflow stage (RTL, Synthesis, Implementation, Generate Bitstream) is the XDC file last checked?*
 
-## m16x4MuxRTL
+## 4m16x4MuxRTL
 
 #### Port Diagram
 
@@ -88,6 +110,8 @@ How is manually testing this circuit different?*
 #### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
+
+#### Prompts
 
 *Go through each line of the code and comment on it .. explain the variables .. explain what is happening. Paste the commented verilog code here.*  
 
@@ -110,7 +134,7 @@ How is manually testing this circuit different?*
 *How many verilog modules were used in this Vivado project?*
 
 *Where is the original documentation for this command that creates muxes?* 
-It is impossible to prove a negative, such as "it is impossible" .. "It is not on the internet." The appropriate response is to **document exhaustion**.  This means writing a list of places tried, URL's tried, experiments performed that were close but not answer the question. The goal of  **documented exhaustion** is to provide a starting point for someone else to take a stab at answering the question.  Read the below and either answer the question or add to the **documented exhaustion**. 
+It is impossible to prove a negative, such as "it is impossible" .. "It is not on the internet." The appropriate response is to **document exhaustion**.  This means writing a list of places tried, URL's tried, experiments performed that were close but not answer the question. The goal of  **documented exhaustion** is to provide a starting point for someone else to take a stab at answering the question.  *Read the below and either answer the question or add to the **documented exhaustion**.* 
 
 Search terms tried: verilog bit width
 
@@ -121,13 +145,83 @@ This is a lab from [University of Maryland College Park](https://ece.umd.edu/cla
 This is the [link](http://electrosofts.com/verilog/mux.html) that inspired playing around with this command.    
 [Cliff Cummings](http://www.sunburst-design.com/papers/)  is an engineer that has been at the forefront of driving Verilog and System Verilog evolution and maybe in his writing somewhere there is an answer. 
 
+## 5Lut_Mux
+
+One goal might be to use the primitives within the FPGA CLB. Chapter 3 of the Vivado 7 Series Libraries  lists off the primitives. Chapter 4 describes how to implement them using VHDL and Verilog. Explore the LUT and MUX in this project. 
+
+#### Port Diagram
+
+#### Verilog Code
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+Look at the truth table in the Verilog code and be able to describe the switches needed to access a row in it and predict the output. 
+
+#### Prompts
+
+*Does it look like the primitives can be accessed in Verilog?* 
+
+*Can you see a direct relationship between the primitive used and the primitive referenced in the Verilog code?*
+
+*The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?*
+
+*How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?*
+
+*What Line of the Code puts a truth table in the LUT?*
+
+*How many rows are there to the truth table?*
+
+*How is the LUT instantiation different from the normal instantiation of calling a pre-existing module?*
+
+*Look through chapters 3 and 4 of the Vivado 7 Series Libraries.  Focus on the Design Entry Method box.  Then answer these questions.*
+
+*What does instantiation mean?*
+
+*What does inference mean?*
+
+*Have we inferred buffers (BUFG) in projects before?*
+
+*What does instantiation mean?*
+
+*What does inference mean?*
+
+*Verilog has tristate [buffer primitives](http://verilog.renerta.com/mobile/source/vrg00003.htm)  named bufif0 and bufif1. These names don't appear in the Vivado 7 series libraries. Why? What are the risks of using the buffers Xilinx has named in this document?*
+
+*Look up LUT6 in the Vivado 7 series library document. We instantiated it in this project. Is Instantiation possible according to the document?* 
+
+*What is the preferred design entry method?* 
+
+*Is MUXCY in the Vivado 7 series library document like LUT6?* 
+
+*We instantiated MUXCY in this project's verilog code. And it looks like it was successfully implemented. We can test it. Read this [article](https://forums.xilinx.com/t5/Welcome-Join/where-are-the-muxcy-and-xorcy/td-p/311931) from from Jan 2013 about MUXCY and XORCY. Do you think it is wise to use this piece of a CLB in a circuit design project?*
+
+*What would you guess is the preferred entry method for a MUXCY .. if it existed in the Vivado 7 series library?*
+
+*Why do you think Xlinix still supports MUXCY (because we used it!), yet don't document it?*
+
+*Xilinix was the [first FPGA vendor](http://hardwarebee.com/list-fpga-companies/) to start shipping LUT6 FPGAs. Intel FPGAs come from purchasing Xilinx's major competitor for years .. and ships a LUT6. How does [Flex-Logix](http://www.flex-logix.com/6lut-faster-denser/) fit into this competition?*
+
+*Why is this question important to you, the college, the market place?* 
+
+*What does [Flex-Logix name it's equivalent](http://www.flex-logix.com/dsp-applications/) of LUT6?*  
+
+*Is the code on this [web site](http://www.flex-logix.com/dsp-applications/) verilog or it's competitor VHDL?*
+
+*What class at HCC teaches you what a [FIR](http://www.flex-logix.com/dsp-applications/) is?* 
+
 ## Ethics
 
 The ethics questions below are more important than your answers. The goal in answering them is to remember the question. So the best answers are a non-trivial, thoughtful, relevant hypothesis. 
 
 #### Ethics of Change
 
-The simplicity of the RTL versions of the mux command raises the question of what is possible with the assign command? Where is the manual that goes over all this? Where can we discover what is possible? The problem is that there are many manuals with complete backwards compatibility to the dawn of verilog history in the 1980's.  These are the official Verilog standards.  They are all supersets .. meaning some vendors (Vivado) **don't** implement everything. 
+The simplicity of the RTL versions of the mux command raises the question of what is possible with the assign command? Where is the manual that goes over all this? Where can we discover what is possible? The problem is that there are many manuals with complete backwards compatibility to the dawn of verilog history in the 1980's.  These are the official Verilog standards.  They are all supersets .. meaning some vendors (Vivado) **don't** implement everything.  And Vendors lock you into their world with propritary  extensions of the verilog code. 
 
 ​	IEEE 1364-1995 (Verilog 1995)  
 ​	IEEE  1364-2001 (Verilog 2001)   
