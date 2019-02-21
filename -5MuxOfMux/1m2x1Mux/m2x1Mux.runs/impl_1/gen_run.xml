@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1548260313">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550781834">
   <File Type="BITSTR-BMM" Name="m2x1Mux_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="m2x1Mux_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="m2x1Mux_timing_summary_init.rpt"/>

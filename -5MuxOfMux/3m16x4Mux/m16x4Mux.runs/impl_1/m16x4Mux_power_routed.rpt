@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu Jan 24 05:16:18 2019
-| Host             : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date             : Thu Feb 21 16:17:48 2019
+| Host             : SET253-23C running 64-bit major release  (build 9200)
 | Command          : report_power -file m16x4Mux_power_routed.rpt -pb m16x4Mux_power_summary_routed.pb -rpx m16x4Mux_power_routed.rpx
 | Design           : m16x4Mux
 | Device           : xc7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.162        |
+| Total On-Chip Power (W)  | 1.966        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.061        |
-| Device Static (W)        | 0.101        |
+| Dynamic (W)              | 1.861        |
+| Device Static (W)        | 0.104        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 79.7         |
-| Junction Temperature (C) | 30.3         |
+| Max Ambient (C)          | 76.0         |
+| Junction Temperature (C) | 34.0         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,13 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.020 |        8 |       --- |             --- |
-|   LUT as Logic |     0.018 |        5 |     63400 |           <0.01 |
+| Slice Logic    |     0.018 |        7 |       --- |             --- |
+|   LUT as Logic |     0.016 |        4 |     63400 |           <0.01 |
 |   F7/F8 Muxes  |     0.002 |        3 |     63400 |           <0.01 |
-| Signals        |     0.140 |       23 |       --- |             --- |
-| I/O            |     0.901 |       22 |       210 |           10.48 |
-| Static Power   |     0.101 |          |           |                 |
-| Total          |     1.162 |          |           |                 |
+| Signals        |     0.130 |       21 |       --- |             --- |
+| I/O            |     1.713 |       21 |       210 |           10.00 |
+| Static Power   |     0.104 |          |           |                 |
+| Total          |     1.966 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.262 |       0.244 |      0.018 |
-| Vccaux    |       1.800 |     0.048 |       0.030 |      0.018 |
-| Vcco33    |       3.300 |     0.235 |       0.231 |      0.004 |
+| Vccint    |       1.000 |     0.249 |       0.228 |      0.021 |
+| Vccaux    |       1.800 |     0.079 |       0.060 |      0.019 |
+| Vcco33    |       3.300 |     0.466 |       0.462 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -135,7 +135,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| m16x4Mux |     1.061 |
+| m16x4Mux |     1.861 |
 +----------+-----------+
 
 

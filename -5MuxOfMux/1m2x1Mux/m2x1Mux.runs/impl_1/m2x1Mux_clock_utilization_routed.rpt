@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Jan 23 11:19:29 2019
-| Host         : LabSet332 running 64-bit major release  (build 9200)
+| Date         : Thu Feb 21 15:45:07 2019
+| Host         : SET253-23C running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file m2x1Mux_clock_utilization_routed.rpt
 | Design       : m2x1Mux
 | Device       : 7a100t-csg324

@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Jan 23 15:50:54 2019
-# Process ID: 13740
-# Current directory: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux.runs/synth_1
+# Start of session at: Thu Feb 21 15:58:56 2019
+# Process ID: 6964
+# Current directory: C:/Users/SET253-23U/Documents/GitHub/Jordan-s-ENES246/-5MuxOfMux/2m4x2Mux/m4x2Mux.runs/synth_1
 # Command line: vivado.exe -log m4x2Mux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source m4x2Mux.tcl
-# Log file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux.runs/synth_1/m4x2Mux.vds
-# Journal file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux.runs/synth_1\vivado.jou
+# Log file: C:/Users/SET253-23U/Documents/GitHub/Jordan-s-ENES246/-5MuxOfMux/2m4x2Mux/m4x2Mux.runs/synth_1/m4x2Mux.vds
+# Journal file: C:/Users/SET253-23U/Documents/GitHub/Jordan-s-ENES246/-5MuxOfMux/2m4x2Mux/m4x2Mux.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source m4x2Mux.tcl -notrace

@@ -67,9 +67,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/.Xil/Vivado-12476-LabSet332/incrSyn}
   open_checkpoint m4x2Mux_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m4x2Mux/m4x2Mux.cache/wt} [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-23U/Documents/GitHub/Jordan-s-ENES246/-5MuxOfMux/2m4x2Mux/m4x2Mux.cache/wt [current_project]
   catch { write_mem_info -force m4x2Mux.mmi }
   write_bitstream -force m4x2Mux.bit 
   catch {write_debug_probes -quiet -force m4x2Mux}

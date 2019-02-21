@@ -5,15 +5,49 @@ Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry
 
 #### Port Diagram
 
+![1550781650289](1550781650289.png)
+
 #### Verilog Code
+
+`timescale 1ns / 1ps
+module m2x1Mux(
+  input a,
+  input b,
+  input select,
+  output f,
+  output g,
+  output h);
+
+  //gate implementation
+  wire invsel,asel,bsel;
+  not U_inv (invsel,select);
+  and U_anda (asel,b,invsel),U_andb (bsel,a,select);
+  or U_or (f,asel,bsel);
+
+  //tristate implementation
+  bufif1 nb0(g, a, select);
+  bufif0 nb1(g, b, select);
+
+  //rtl implementation
+  assign h = select ? a : b; //if select then a else b .. cryptic notation
+
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1550781690802](1550781690802.png)
+
 #### Synthesis Schematic Screen shot
+
+![1550781925490](1550781925490.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1550781985024](1550781985024.png)
+
 #### Testing
+
+The circuit works properly when switch2 toggles which switch controls all 3 LEDs. When switch2 is in the on position, all three LEDs should turn on and off in sync with switch0. When switch2 is in the off position, all the LEDs should respond to switch1.
 
 #### Prompts
 
@@ -39,15 +73,27 @@ This mux is implemented both with gates, tristate and RTL.
 
 #### Port Diagram
 
-#### Verilog Code ![1549536796950](1549536796950.png)
+![1550782659236](1550782659236.png)
+
+#### Verilog Code
+
+####  ![1549536796950](1549536796950.png)
 
 #### RTL Schematic Screen shot
 
+![1550782718382](1550782718382.png)
+
 #### Synthesis Schematic Screen shot
+
+![1550782805278](1550782805278.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1550783099652](1550783099652.png)
+
 #### Testing
+
+Use switch4 and switch5 to code a binary value for select and the corresponding switch values between 0 and 3 will control both LED0 and LED1.
 
 #### Prompts
 
@@ -59,15 +105,27 @@ This mux is implemented both with gates, tristate and RTL.
 
 #### Port Diagram
 
+
+
 #### Verilog Code
+
+
 
 #### RTL Schematic Screen shot
 
+![1550783537084](1550783537084.png)
+
 #### Synthesis Schematic Screen shot
+
+![1550783792476](1550783792476.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1550783941037](1550783941037.png)
+
 #### Testing
+
+Need To figure out the combination of buttons leading to hex :/
 
 #### Prompts
 

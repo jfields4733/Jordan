@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Jan 24 05:16:18 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Thu Feb 21 16:17:48 2019
+| Host         : SET253-23C running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file m16x4Mux_timing_summary_routed.rpt -pb m16x4Mux_timing_summary_routed.pb -rpx m16x4Mux_timing_summary_routed.rpx -warn_on_violation
 | Design       : m16x4Mux
 | Device       : 7a100t-csg324
