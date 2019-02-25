@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Feb 18 16:51:03 2019">
+<application name="pa" timeStamp="Mon Feb 25 14:51:50 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="b079e1a373064b1ea7892351c65d6098" type="ProjectID"/>
 <property name="ProjectIteration" value="11" type="ProjectIteration"/>
@@ -18,7 +18,7 @@ This means code written to parse this file will need to be revisited each subseq
 </item>
 <item name="Java Command Handlers">
 <property name="AutoConnectTarget" value="1" type="JavaHandler"/>
-<property name="CloseProject" value="5" type="JavaHandler"/>
+<property name="CloseProject" value="6" type="JavaHandler"/>
 <property name="ConfigureBitstream" value="1" type="JavaHandler"/>
 <property name="EditCopy" value="1" type="JavaHandler"/>
 <property name="EditProperties" value="11" type="JavaHandler"/>
@@ -54,7 +54,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AbstractSearchablePanel_SHOW_SEARCH" value="2" type="GuiHandlerData"/>
 <property name="BaseDialog_APPLY" value="1" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="2" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="33" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="34" type="GuiHandlerData"/>
 <property name="BoardChooser_BOARD_TABLE" value="2" type="GuiHandlerData"/>
 <property name="ClosePlanner_YES" value="4" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="1" type="GuiHandlerData"/>
@@ -62,7 +62,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS" value="1" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_ADD_FILES" value="1" type="GuiHandlerData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="2" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="30" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="33" type="GuiHandlerData"/>
 <property name="FindView_COLLAPSE_ALL" value="1" type="GuiHandlerData"/>
 <property name="FindView_EXPAND_ALL" value="1" type="GuiHandlerData"/>
 <property name="FindView_GROUP_BY_HIERARCHY" value="3" type="GuiHandlerData"/>
@@ -76,19 +76,19 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="InstancePropPanels_LUT_OR_ROM_TABLE" value="1" type="GuiHandlerData"/>
 <property name="InstanceTablePanel_INSTANCE_TABLE" value="19" type="GuiHandlerData"/>
 <property name="InstanceTreeTablePanel_INSTANCE_TREE_TABLE" value="7" type="GuiHandlerData"/>
-<property name="MainMenuMgr_CHECKPOINT" value="8" type="GuiHandlerData"/>
+<property name="MainMenuMgr_CHECKPOINT" value="10" type="GuiHandlerData"/>
 <property name="MainMenuMgr_CONSTRAINTS" value="9" type="GuiHandlerData"/>
 <property name="MainMenuMgr_EXPORT" value="4" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FILE" value="12" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FILE" value="14" type="GuiHandlerData"/>
 <property name="MainMenuMgr_FLOORPLANNING" value="3" type="GuiHandlerData"/>
 <property name="MainMenuMgr_HELP" value="4" type="GuiHandlerData"/>
 <property name="MainMenuMgr_IMPORT" value="4" type="GuiHandlerData"/>
 <property name="MainMenuMgr_IO" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_IO_PLANNING" value="3" type="GuiHandlerData"/>
-<property name="MainMenuMgr_IP" value="6" type="GuiHandlerData"/>
-<property name="MainMenuMgr_PROJECT" value="6" type="GuiHandlerData"/>
+<property name="MainMenuMgr_IP" value="8" type="GuiHandlerData"/>
+<property name="MainMenuMgr_PROJECT" value="7" type="GuiHandlerData"/>
 <property name="MainMenuMgr_REPORTS" value="6" type="GuiHandlerData"/>
-<property name="MainMenuMgr_TEXT_EDITOR" value="4" type="GuiHandlerData"/>
+<property name="MainMenuMgr_TEXT_EDITOR" value="5" type="GuiHandlerData"/>
 <property name="MainMenuMgr_TIMING" value="5" type="GuiHandlerData"/>
 <property name="MainMenuMgr_TOOLS" value="8" type="GuiHandlerData"/>
 <property name="MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT" value="1" type="GuiHandlerData"/>
@@ -101,7 +101,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="NetlistTreeView_NETLIST_TREE" value="45" type="GuiHandlerData"/>
 <property name="PACommandNames_AUTO_CONNECT_TARGET" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_AUTO_FIT_SELECTION" value="2" type="GuiHandlerData"/>
-<property name="PACommandNames_CLOSE_PROJECT" value="5" type="GuiHandlerData"/>
+<property name="PACommandNames_CLOSE_PROJECT" value="6" type="GuiHandlerData"/>
 <property name="PACommandNames_CONFIG_BITSTREAM" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_FED_TOGGLE_ROUTING_RESOURCES" value="5" type="GuiHandlerData"/>
 <property name="PACommandNames_GOTO_INSTANTIATION" value="12" type="GuiHandlerData"/>

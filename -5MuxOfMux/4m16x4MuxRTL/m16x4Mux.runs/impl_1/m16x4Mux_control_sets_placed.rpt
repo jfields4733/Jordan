@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Jan 23 17:30:28 2019
-| Host         : LabSet332 running 64-bit major release  (build 9200)
+| Date         : Mon Feb 25 16:27:37 2019
+| Host         : SET253-04C running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file m16x4Mux_control_sets_placed.rpt
 | Design       : m16x4Mux
 | Device       : xc7a100t
@@ -59,8 +59,8 @@ Table of Contents
 +---------------------------+---------------+------------------+------------------+----------------+
 |        Clock Signal       | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +---------------------------+---------------+------------------+------------------+----------------+
-|  muxInput_reg[15]_i_1_n_0 |               | reset_IBUF       |                3 |              8 |
 |  muxInput_reg[7]_i_1_n_0  |               | reset_IBUF       |                3 |              8 |
+|  muxInput_reg[15]_i_1_n_0 |               | reset_IBUF       |                3 |              8 |
 |  LED_reg[15]_i_2_n_0      |               |                  |                3 |              8 |
 +---------------------------+---------------+------------------+------------------+----------------+
 

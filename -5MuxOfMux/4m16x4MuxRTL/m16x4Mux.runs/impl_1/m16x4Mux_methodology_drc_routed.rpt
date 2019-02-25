@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Jan 23 17:30:55 2019
-| Host         : LabSet332 running 64-bit major release  (build 9200)
+| Date         : Mon Feb 25 16:28:09 2019
+| Host         : SET253-04C running 64-bit major release  (build 9200)
 | Command      : report_methodology -file m16x4Mux_methodology_drc_routed.rpt -pb m16x4Mux_methodology_drc_routed.pb -rpx m16x4Mux_methodology_drc_routed.rpx
 | Design       : m16x4Mux
 | Device       : xc7a100tcsg324-1
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: design_1
+          Floorplan: checkpoint_m16x4Mux
       Design limits: <entire design considered>
              Max violations: <unlimited>
              Violations found: 24

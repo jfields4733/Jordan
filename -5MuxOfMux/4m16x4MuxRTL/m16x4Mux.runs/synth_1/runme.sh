@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux/m16x4Mux.runs/synth_1'
+HD_PWD='C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-5MuxOfMux/4m16x4MuxRTL/m16x4Mux.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

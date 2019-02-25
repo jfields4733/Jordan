@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1548282598">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1551130021">
+  <File Type="OPT-HWDEF" Name="m16x4Mux.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="m16x4Mux_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="m16x4Mux.dcp"/>
   <File Type="BITSTR-BMM" Name="m16x4Mux_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="m16x4Mux_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="m16x4Mux_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="m16x4Mux_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="m16x4Mux_reports.tcl"/>
   <File Type="OPT-DRC" Name="m16x4Mux_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="m16x4Mux.hwdef"/>
   <File Type="PWROPT-DCP" Name="m16x4Mux_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="m16x4Mux_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="m16x4Mux_timing_summary_pwropted.rpt"/>
@@ -22,7 +24,6 @@
   <File Type="PLACE-CTRL" Name="m16x4Mux_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="m16x4Mux_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="m16x4Mux_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="m16x4Mux.bgn"/>
   <File Type="PLACE-TIMING" Name="m16x4Mux_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="m16x4Mux_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="m16x4Mux.bin"/>
@@ -52,7 +53,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="m16x4Mux_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="m16x4Mux_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="m16x4Mux_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="m16x4Mux_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="m16x4Mux_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="m16x4Mux_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="m16x4Mux_postroute_physopt.dcp"/>
@@ -66,6 +66,7 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="m16x4Mux_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="m16x4Mux.rbt"/>
   <File Type="BITSTR-NKY" Name="m16x4Mux.nky"/>
+  <File Type="BG-BGN" Name="m16x4Mux.bgn"/>
   <File Type="BG-DRC" Name="m16x4Mux.drc"/>
   <File Type="RDI-RDI" Name="m16x4Mux.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -105,9 +106,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

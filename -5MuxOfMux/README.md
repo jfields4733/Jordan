@@ -105,11 +105,23 @@ Use switch4 and switch5 to code a binary value for select and the corresponding 
 
 #### Port Diagram
 
-
+![1551128787254](1551128787254.png)
 
 #### Verilog Code
 
+`timescale 1ns / 1ps
 
+module m16x4Mux(
+ input [15:0] tTC,
+ input [3:0] ABCD,
+ output muxOut);
+ wire [3:0] wInternal;
+ m4x2Mux m1(tTC[3:0], ABCD[1:0], wInternal[0]);
+ m4x2Mux m2(tTC[7:4], ABCD[1:0], wInternal[1]);
+ m4x2Mux m3(tTC[11:8], ABCD[1:0], wInternal[2]);
+ m4x2Mux m4(tTC[15:12], ABCD[1:0], wInternal[3]);
+ m4x2Mux m5(wInternal, ABCD[3:2], muxOut);
+endmodule
 
 #### RTL Schematic Screen shot
 
@@ -125,13 +137,17 @@ Use switch4 and switch5 to code a binary value for select and the corresponding 
 
 #### Testing
 
-Need To figure out the combination of buttons leading to hex :/
+The M18, P17, P18, and M17 buttons on the FPGA determine which switches control LED0 through a hexadecimal selection process. M18 is the smallest bit, and I listed them in increasing fashion.
 
 #### Prompts
 
 *Put a screen shot of the exploded design sources here:*
 
+![1551129938780](1551129938780.png)
+
 *Put a screen shot of the exploded RTL schematic here:*
+
+![1551129857039](1551129857039.png)
 
 *How many port diagrams are necessary for this project?*
 
@@ -159,15 +175,53 @@ Need To figure out the combination of buttons leading to hex :/
 
 #### Port Diagram
 
+![1551131313951](1551131313951.png)
+
 #### Verilog Code
+
+module m16x4Mux(
+    input [15:8] I,
+    input [3:0] select,
+    input bank,
+    input enter,
+    input reset,
+    output bankSelected,
+    output q,
+    output reg [15:8] LED,
+    output [3:0] LEDselected
+    );
+    
+
+    reg [15:0] muxInput;
+    
+    initial muxInput=0;
+    
+    always @* begin
+        if (reset) muxInput = 0; else begin
+            if (enter) if (bank) muxInput[15:8] = I[15:8]; else muxInput[7:0] = I[15:8];
+            else if (bank) LED[15:8] = muxInput[15:8]; else LED[15:8] = muxInput[7:0];
+        end
+    end
+    assign LEDselected = select;
+    assign q = muxInput[select];
+    assign bankSelected = bank;
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1551129420092](1551129420092.png)
+
 #### Synthesis Schematic Screen shot
+
+![1551129617095](1551129617095.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1551130155685](1551130155685.png)
+
 #### Testing
+
+The switch[3:0] control LED[3:0] and determine the select variable value which shows the value of muxInput[]  in q or LED4. Switch4 determines whether switch[15:8] represent muxInput[15:8] or muxInput[7:0]. Switch5 determines whether switch[15:8] changed the values in muxInput[] or not. Switch6 resets the values in muxInput[] to zeros.
 
 #### Prompts
 

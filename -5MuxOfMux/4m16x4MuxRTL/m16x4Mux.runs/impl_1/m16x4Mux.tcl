@@ -67,9 +67,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
   open_checkpoint m16x4Mux_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-5MuxOfMux/m16x4Mux/m16x4Mux.cache/wt} [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-5MuxOfMux/4m16x4MuxRTL/m16x4Mux.cache/wt [current_project]
   catch { write_mem_info -force m16x4Mux.mmi }
   write_bitstream -force m16x4Mux.bit 
   catch {write_debug_probes -quiet -force m16x4Mux}
