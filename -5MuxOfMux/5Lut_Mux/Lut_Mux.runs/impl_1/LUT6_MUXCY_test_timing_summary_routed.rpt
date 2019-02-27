@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Feb  7 07:53:10 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Wed Feb 27 14:59:55 2019
+| Host         : SET253-04C running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file LUT6_MUXCY_test_timing_summary_routed.rpt -pb LUT6_MUXCY_test_timing_summary_routed.pb -rpx LUT6_MUXCY_test_timing_summary_routed.rpx -warn_on_violation
 | Design       : LUT6_MUXCY_test
 | Device       : 7a100t-csg324
