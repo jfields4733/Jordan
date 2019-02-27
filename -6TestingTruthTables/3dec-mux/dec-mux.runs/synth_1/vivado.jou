@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb  6 09:17:09 2019
+# Process ID: 14472
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.runs/synth_1
+# Command line: vivado.exe -log decoderToMuxTest.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoderToMuxTest.tcl
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.runs/synth_1/decoderToMuxTest.vds
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source decoderToMuxTest.tcl -notrace

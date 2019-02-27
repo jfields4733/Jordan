@@ -16,6 +16,12 @@ This course is primarily about Electronic Design Automation [EDA](https://en.wik
 ​	Verilog **RTL** indirectly references memory storage, letting software (Vivado in this course) make the actual register implementation decisions. 
 ​	C is a **behavioral level** programming language meaning **sequential** algorithms.
 
+## Documents to Become Familiar With
+
+Xilinx Configuration Logic Block CLB ug574
+Vivado 7Series FPGA Libraries of Primitives found in the CLB ug953
+Verilog and System Verilog commands that Vivado will Synthesize ug901
+
 ## Course Outline
 
 ​	Gates .. tristate buffers, constants, nand, and, or, xor

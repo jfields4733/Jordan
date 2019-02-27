@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb  3 16:17:14 2019
+# Process ID: 13292
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/Lab2_0Testing7SegDisplay/Testing7SegDisplay.runs/synth_1
+# Command line: vivado.exe -log simple7Seg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source simple7Seg.tcl
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/Lab2_0Testing7SegDisplay/Testing7SegDisplay.runs/synth_1/simple7Seg.vds
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/Lab2_0Testing7SegDisplay/Testing7SegDisplay.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source simple7Seg.tcl -notrace

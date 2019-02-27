@@ -1,0 +1,596 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 20 06:26:30 2019
+# Process ID: 10404
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10504 C:\Users\FoersterGame\Documents\GitHub\ENES246\-7ControlPath\2_2_case_Sequential\2_2_case.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_2_case' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: case_parallel
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 823.266 ; gain = 21.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:11]
+WARNING: [Synth 8-324] index 2 out of range [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 865.352 ; gain = 63.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 865.352 ; gain = 63.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 865.352 ; gain = 63.418
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1149.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1224.363 ; gain = 422.430
+7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1224.363 ; gain = 422.430
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1224.512 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+WARNING: [Synth 8-324] index 2 out of range [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1228.375 ; gain = 3.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1228.375 ; gain = 3.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1228.375 ; gain = 3.863
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1234.730 ; gain = 10.219
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1302.523 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1330.492 ; gain = 27.969
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1330.492 ; gain = 27.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1330.492 ; gain = 27.969
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1341.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1360.938 ; gain = 19.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1360.938 ; gain = 19.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1360.938 ; gain = 19.285
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1403.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1403.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1403.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1403.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb 20 06:49:27 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/synth_1/runme.log
+[Wed Feb 20 06:49:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/impl_1/runme.log
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb 20 06:52:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/synth_1/runme.log
+[Wed Feb 20 06:52:10 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1568.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1568.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1568.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1568.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb 20 06:57:48 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/synth_1/runme.log
+[Wed Feb 20 06:57:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B140A
+set_property PROGRAM.FILE {C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/impl_1/case_parallel.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/impl_1/case_parallel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2366.270 ; gain = 11.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/sources_1/imports/2_2_case_Parallel/case_parallel.sv:3]
+WARNING: [Synth 8-3331] design case_parallel has unconnected port LED[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2397.496 ; gain = 42.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2398.727 ; gain = 44.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2398.727 ; gain = 44.074
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2451.191 ; gain = 96.539
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb 20 07:15:11 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2457.301 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb 20 07:16:27 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.srcs/constrs_1/imports/2_2_case_Parallel/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.332 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_project
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_2_case_clocked' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.ip_user_files', nor could it be found using path 'C:/Users/FoersterGame/Documents/GitHub/FPGAintro/2_2_case_clocked/2_2_case_clocked.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: case_parallel
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3114.652 ; gain = 0.000
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb 20 11:07:41 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Feb 20 11:08:10 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.runs/impl_1/runme.log
+refresh_design
+ERROR: [Synth 8-2715] syntax error near reg [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv:7]
+Failed to read verilog 'C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv'
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+ERROR: [Synth 8-2715] syntax error near reg [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv:7]
+Failed to read verilog 'C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv'
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3114.652 ; gain = 0.000
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'case_parallel' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'case_parallel' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/sources_1/imports/2_2_case_clocked/case_parallel.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3114.652 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3114.652 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb 20 11:40:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.srcs/constrs_1/imports/2_2_case_clocked/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.652 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 3114.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.652 ; gain = 0.000
+[Wed Feb 20 11:41:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb 20 11:43:11 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_clocked/2_2_case_clocked.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.035 . Memory (MB): peak = 3114.652 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.035 . Memory (MB): peak = 3114.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3114.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_project
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb 20 12:12:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/synth_1/runme.log
+[Wed Feb 20 12:12:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_2_case_Sequential/2_2_case.runs/impl_1/runme.log
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 20 12:18:06 2019...

@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb  6 09:07:33 2019
+# Process ID: 12552
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17832 C:\Users\FoersterGame\Documents\GitHub\ENES246\-6TestingTruthTables\dec-mux\dec-mux.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Scott Foerster/Documents/GitHub/ENES246/-6TruthTables/dec-mux' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.ip_user_files', nor could it be found using path 'C:/Users/Scott Foerster/Documents/GitHub/ENES246/-6TruthTables/dec-mux/dec-mux.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: decoderToMuxTest
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 869.141 ; gain = 82.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'decoderToMuxTest' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/sources_1/new/decoderToMuxTest.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'decoderToMuxTest' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/sources_1/new/decoderToMuxTest.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 881.965 ; gain = 95.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 881.965 ; gain = 95.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 881.965 ; gain = 95.066
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'select[3]'. [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1126.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1221.859 ; gain = 434.961
+6 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1221.859 ; gain = 434.961
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Feb  6 09:17:08 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1334.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  6 09:19:55 2019...

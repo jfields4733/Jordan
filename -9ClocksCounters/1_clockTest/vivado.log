@@ -1,0 +1,234 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 22 12:39:45 2019
+# Process ID: 6392
+# Current directory: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9952 C:\Users\SET253-17U.HCCMAIN\Documents\GitHub\ENES246\-9ClocksCounters\1_clockTest\clockTest.xpr
+# Log file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/vivado.log
+# Journal file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest'
+INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/4_clockTest' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 735.828 ; gain = 148.117
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Feb 22 12:45:05 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/synth_1/runme.log
+[Fri Feb 22 12:45:05 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4022BA
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/clkDivider.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/clkDivider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Feb 22 13:06:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/synth_1/runme.log
+[Fri Feb 22 13:06:53 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4022BA
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/clkDivider.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/clkDivider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Feb 22 13:17:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/synth_1/runme.log
+[Fri Feb 22 13:17:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: clkDivider
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1822.070 ; gain = 71.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clkDivider' [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/sources_1/imports/clockTest/ClkDivider.sv:1]
+WARNING: [Synth 8-5788] Register count_up_reg in module clkDivider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/sources_1/imports/clockTest/ClkDivider.sv:32]
+WARNING: [Synth 8-5788] Register anode_up_reg in module clkDivider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/sources_1/imports/clockTest/ClkDivider.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'clkDivider' (1#1) [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/sources_1/imports/clockTest/ClkDivider.sv:1]
+WARNING: [Synth 8-3917] design clkDivider has port a driven by constant 0
+WARNING: [Synth 8-3917] design clkDivider has port b driven by constant 1
+WARNING: [Synth 8-3917] design clkDivider has port c driven by constant 1
+WARNING: [Synth 8-3917] design clkDivider has port d driven by constant 0
+WARNING: [Synth 8-3917] design clkDivider has port e driven by constant 1
+WARNING: [Synth 8-3917] design clkDivider has port f driven by constant 1
+WARNING: [Synth 8-3917] design clkDivider has port g driven by constant 0
+WARNING: [Synth 8-3331] design clkDivider has unconnected port slowFast
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1859.781 ; gain = 109.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1859.781 ; gain = 109.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1859.781 ; gain = 109.418
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 7 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2188.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2232.172 ; gain = 481.809
+7 Infos, 11 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2232.172 ; gain = 481.809
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Feb 22 13:23:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/synth_1/runme.log
+[Fri Feb 22 13:23:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2254.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clkDivider' [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/sources_1/imports/clockTest/ClkDivider.sv:1]
+WARNING: [Synth 8-5788] Register count_up_reg in module clkDivider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/sources_1/imports/clockTest/ClkDivider.sv:32]
+WARNING: [Synth 8-5788] Register anode_up_reg in module clkDivider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/sources_1/imports/clockTest/ClkDivider.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'clkDivider' (1#1) [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/sources_1/imports/clockTest/ClkDivider.sv:1]
+WARNING: [Synth 8-3917] design clkDivider has port a driven by constant 0
+WARNING: [Synth 8-3917] design clkDivider has port b driven by constant 1
+WARNING: [Synth 8-3917] design clkDivider has port c driven by constant 1
+WARNING: [Synth 8-3917] design clkDivider has port d driven by constant 0
+WARNING: [Synth 8-3917] design clkDivider has port e driven by constant 1
+WARNING: [Synth 8-3917] design clkDivider has port f driven by constant 1
+WARNING: [Synth 8-3917] design clkDivider has port g driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2254.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2254.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2254.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 7 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2327.230 ; gain = 72.684
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Feb 22 13:24:36 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Feb 22 13:25:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Feb 22 13:27:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/clkDivider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Feb 22 13:30:03 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/synth_1/runme.log
+[Fri Feb 22 13:30:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1/clkDivider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 22 13:55:57 2019...

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Feb 21 11:34:36 2019
+# Process ID: 10756
+# Current directory: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-7ControlPath/2_3_NestedForClocked
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10008 C:\Users\Scott Foerster\Documents\GitHub\ENES246\-7ControlPath\2_3_NestedForClocked\NestedForLoops.xpr
+# Log file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-7ControlPath/2_3_NestedForClocked/vivado.log
+# Journal file: C:/Users/Scott Foerster/Documents/GitHub/ENES246/-7ControlPath/2_3_NestedForClocked\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-7ControlPath/2_3_NestedForClocked/NestedForLoops.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-7ControlPath/3_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.xpr}
+update_compile_order -fileset sources_1
+save_project_as HexOrBCD7segDisplay {C:/Users/Scott Foerster/Documents/GitHub/ENES246/-7ControlPath/4_HexOrBCD7segDisplay/HexOrBCD7segDisplay} -force

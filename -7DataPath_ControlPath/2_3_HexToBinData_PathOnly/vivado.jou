@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 20 12:27:08 2019
+# Process ID: 14520
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_3_For_Combinational
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14772 C:\Users\FoersterGame\Documents\GitHub\ENES246\-7ControlPath\2_3_For_Combinational\2_3_ForLoop_Combinational.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_3_For_Combinational/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_3_For_Combinational\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_3_For_Combinational/2_3_ForLoop_Combinational.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_project
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/-7ControlPath/2_3_Not_For_Clocked/Not_For_Clocked.xpr
+update_compile_order -fileset sources_1
