@@ -16,19 +16,39 @@ To implement this we need to first build a decoder circuit.
 
 #### Port Diagram
 
+![1551303587792](1551303587792.png)
+
 #### Verilog Code
+
+module decoder(
+    input [3:0] select,
+    output [15:0] LED
+    );
+    assign LED = 1 << select;
+    
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1551303185069](1551303185069.png)
+
 #### Synthesis Schematic Screen shot
+
+![1551303429777](1551303429777.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1551303646392](1551303646392.png)
+
 #### Testing
+
+The LEDs should reflect the decimal number given by the combination of the 4 switches representing a 4-bit number.
 
 #### Prompts
 
 *How many of the outputs of the Decoder are positive at any given instant in time?*
+
+1 output
 
 *When the Decoder changes it's output, what happens among these choices:*
 
@@ -45,7 +65,20 @@ To implement this we need to first build a decoder circuit.
 
 #### Port Diagram
 
+![1551304220246](1551304220246.png)
+
 #### Verilog Code
+
+module decoderToMuxTest(
+    input [3:0] select,
+    output q
+    );
+    wire [15:0] inBetween;
+    
+    assign inBetween = 1 << select;
+    assign q = inBetween[select];
+
+endmodule
 
 #### RTL Schematic Screen shot
 
@@ -53,7 +86,11 @@ To implement this we need to first build a decoder circuit.
 
 #### Synthesis Schematic Screen shot
 
+![1551304259424](1551304259424.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1551304339969](1551304339969.png)
 
 #### Testing
 
@@ -64,6 +101,8 @@ To implement this we need to first build a decoder circuit.
 *At what stage in the workflow does the vivado decide this circuit is a mistake, it is trivial and doesn't implement it?*
 
 *Do you think it is [possible to turn off some aspect of Vivado](https://forums.xilinx.com/t5/Implementation/How-to-disable-optimization-in-vivado/td-p/770861) that would enable testing of this circuit?*
+
+No it is not possible.
 
 *What is the easiest, obvious starting point to explore options in Vivado to turn off anything that it does?*
 

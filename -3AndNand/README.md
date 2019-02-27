@@ -33,7 +33,7 @@ Project_1 is playing with voltage controlled buffers just like the previous lab,
 
 #### Testing
 
-I will flip both the switches to see is they act as an OR gate for the LED
+I will flip both the switches to see if they act as an OR gate for the LED
 
 *A logical 1 is visible in the verilog code (vcb.v) and yet the RTL analysis schematic gets rid of the logical constant and is identical to the previous lab. Why? Draw a diagram similar to the RTL analysis with containing the design intent of the verilog code.*
 

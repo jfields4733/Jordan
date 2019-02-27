@@ -310,6 +310,14 @@ endmodule
 
 Look at the truth table in the Verilog code and be able to describe the switches needed to access a row in it and predict the output. 
 
+
+
+The truth table shows the hex value given in the code from top to bottom and in 64 bit form. Each switch combination aligns with a specific bit and control LED0.
+
+LED1 is controlled by switch[7:6] and demonstrates a simple for 4 port MUX with one of the data  ports always on. The select switch determines whether the carry switch controls LED1. The carry switch controls until turned off.
+
+
+
 #### Prompts
 
 *Does it look like the primitives can be accessed in Verilog?* 

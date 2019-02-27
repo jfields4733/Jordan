@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-18U.HCCMAIN/Documents/GitHub/ENES246/-6TestingTruthTables/dec-mux-nothing/dec-mux.runs/synth_1'
+HD_PWD='C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-6TestingTruthTables/2dec-mux-nothing/dec-mux.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
