@@ -75,6 +75,7 @@ module decoderToMuxTest(
     );
     wire [15:0] inBetween;
     
+
     assign inBetween = 1 << select;
     assign q = inBetween[select];
 
@@ -94,9 +95,13 @@ endmodule
 
 #### Testing
 
+The LED should stay on.
+
 #### Prompts
 
 *Does this circuit work, or is the testing trivial?*
+
+The testing is trivial
 
 *At what stage in the workflow does the vivado decide this circuit is a mistake, it is trivial and doesn't implement it?*
 
@@ -118,25 +123,52 @@ Maybe the reason that Vivado optimized the decoder and multiplexer out of the ci
 
 #### Port Diagram
 
+![1552068134231](1552068134231.png)
+
 #### Verilog Code
+
+module decoderToMuxTest(
+    input [2:0] select,
+    output [7:0] LED,
+    output muxOut
+    );
+    wire [7:0] inBetween;
+    
+    assign muxOut = inBetween[select];
+    assign inBetween = 1 << select;
+    assign LED = inBetween;
+
+endmodule
 
 #### RTL Schematic Screen shot
 
-![1549467326960](1549467326960.png)
+![1552068228314](1552068228314.png)
 
 #### Synthesis Schematic Screen shot
 
+![1552068337436](1552068337436.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1552068409122](1552068409122.png)
+
 #### Testing
+
+This circuit should put the 3-bit binary input of switch[2:0] and display it in LED[7:0].
 
 #### Prompts
 
 *Did this circuit fix the problems of the previous circuit?*
 
+yes
+
 *Did this circuit test the decoder?*
 
+yes
+
 *Did this circuit test the mux?*
+
+yes
 
 ## 4Lut
 
@@ -144,15 +176,52 @@ Vivado calls optimization "inferred" as in vivado infers your intent and then re
 
 #### Port Diagram
 
+![1552069252242](1552069252242.png)
+
 #### Verilog Code
+
+module LUT6_MUXCY_test (
+	input  [2:0]  data_in,
+	input  [2:0]  sel,
+	input         muxcy_sel,
+	input         muxcy_carry,
+	output 		  muxcy_data_out,
+	output        lut_data_out);
+
+	LUT6 #(.INIT (64'h0000000F003355FF)) selection_lut (
+			.I0 	(data_in[0]), 
+			.I1 	(data_in[1]), 
+			.I2     (data_in[2]),
+			.I3     (sel[0]),
+			.I4     (sel[1]),
+			.I5     (sel[2]),
+			.O      (lut_data_out)); 
+
+
+	MUXCY combiner_muxcy ( 
+		   .DI      (1'b1),
+		   .CI      (muxcy_carry),                     
+		   .S       (muxcy_sel),
+		   .O       (muxcy_data_out)) ;
+
+
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1552068895810](1552068895810.png)
+
 #### Synthesis Schematic Screen shot
+
+![1552069008812](1552069008812.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1552069131170](1552069131170.png)
+
 #### Testing
+
+The output of LED0 should resemble the hexidecimal number h0000000F003355FF.
 
 #### Prompts
 

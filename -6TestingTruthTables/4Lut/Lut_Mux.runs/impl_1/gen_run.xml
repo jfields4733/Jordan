@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549543942">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552068986">
+  <File Type="OPT-HWDEF" Name="LUT6_MUXCY_test.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="LUT6_MUXCY_test_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="LUT6_MUXCY_test.dcp"/>
   <File Type="BITSTR-BMM" Name="LUT6_MUXCY_test_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="LUT6_MUXCY_test_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="LUT6_MUXCY_test_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="LUT6_MUXCY_test_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="LUT6_MUXCY_test_reports.tcl"/>
   <File Type="OPT-DRC" Name="LUT6_MUXCY_test_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="LUT6_MUXCY_test.hwdef"/>
   <File Type="PWROPT-DCP" Name="LUT6_MUXCY_test_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="LUT6_MUXCY_test_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="LUT6_MUXCY_test_timing_summary_pwropted.rpt"/>
@@ -22,7 +24,6 @@
   <File Type="PLACE-CTRL" Name="LUT6_MUXCY_test_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="LUT6_MUXCY_test_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="LUT6_MUXCY_test_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="LUT6_MUXCY_test.bgn"/>
   <File Type="PLACE-TIMING" Name="LUT6_MUXCY_test_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="LUT6_MUXCY_test_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="LUT6_MUXCY_test.bin"/>
@@ -52,7 +53,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="LUT6_MUXCY_test_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="LUT6_MUXCY_test_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="LUT6_MUXCY_test_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="LUT6_MUXCY_test_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="LUT6_MUXCY_test_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="LUT6_MUXCY_test_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="LUT6_MUXCY_test_postroute_physopt.dcp"/>
@@ -66,6 +66,7 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="LUT6_MUXCY_test_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="LUT6_MUXCY_test.rbt"/>
   <File Type="BITSTR-NKY" Name="LUT6_MUXCY_test.nky"/>
+  <File Type="BG-BGN" Name="LUT6_MUXCY_test.bgn"/>
   <File Type="BG-DRC" Name="LUT6_MUXCY_test.drc"/>
   <File Type="RDI-RDI" Name="LUT6_MUXCY_test.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -73,7 +74,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/4Lut/Lut6_MUXCY.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../-6TestingTruthTables/4Lut/Lut6_MUXCY.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lut6_MUXCY.v"/>
         <Attr Name="ImportTime" Val="1549541078"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -90,7 +91,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../-6TestingTruthTables/3dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../3dec-mux/dec-mux.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc"/>
         <Attr Name="ImportTime" Val="1549536331"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -107,9 +108,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

@@ -111,7 +111,33 @@ endmodule
 
 #### Testing
 
+SW0	SW1	SW2	LED0	LED1	LED2	LED3
+
+0		0		0		1		1		1		1
+
+0		0		1		1		1		1		1		
+
+0		1		0		1		0		1		0
+
+0		1		1		1		1		1		1
+
+1		0		0		0		1		0		1
+
+1		0		1		0		1		0		1
+
+1		1		0		1		0		1		0
+
+1		1		1		1		1		1		1
+
+
+
+LED0 and LED2 should act as an OR gate for ~SW0 or SW1. LED1 and LED3 should act as an OR gate for ~SW1 or SW2.
+
+
+
 *Is anything different?* 
+
+Nope. Both LED sets still act the same. The LED sets are LED0 and LED2 along with LED1 and LED3.
 
 # Ethics of choosing which Algorithms to Teach
 

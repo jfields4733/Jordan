@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Feb 25 14:45:12 2019
-# Process ID: 10232
+# Start of session at: Fri Mar  8 13:30:14 2019
+# Process ID: 6900
 # Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-4LotsOfGates/project_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12572 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\-4LotsOfGates\project_2\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12760 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\-4LotsOfGates\project_2\project_1.xpr
 # Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-4LotsOfGates/project_2/vivado.log
 # Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-4LotsOfGates/project_2\vivado.jou
 #-----------------------------------------------------------
@@ -19,8 +19,24 @@ WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 945.844 ; gain = 384.375
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 734.270 ; gain = 127.539
 update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B159A
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-4LotsOfGates/project_2/project_1.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-4LotsOfGates/project_2/project_1.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 close_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 25 14:51:56 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  8 14:10:15 2019...

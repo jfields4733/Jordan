@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar  8 14:10:01 2019
+# Process ID: 2104
+# Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-6TestingTruthTables/4Lut
+# Command line: wbtcv.exe -mode batch -source C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-6TestingTruthTables/4Lut/Lut_Mux.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-6TestingTruthTables/4Lut/webtalk.log
+# Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-6TestingTruthTables/4Lut\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-6TestingTruthTables/4Lut/Lut_Mux.hw/webtalk/labtool_webtalk.tcl -notrace
