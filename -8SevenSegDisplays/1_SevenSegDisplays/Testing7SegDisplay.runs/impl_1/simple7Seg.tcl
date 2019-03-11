@@ -67,9 +67,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/Lab2_0Testing7SegDisplay/.Xil/Vivado-15576-DESKTOP-KB2R4MG/incrSyn
   open_checkpoint simple7Seg_routed.dcp
-  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/Lab2_0Testing7SegDisplay/Testing7SegDisplay.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-8SevenSegDisplays/1_SevenSegDisplays/Testing7SegDisplay.cache/wt [current_project]
   catch { write_mem_info -force simple7Seg.mmi }
   write_bitstream -force simple7Seg.bit 
   catch {write_debug_probes -quiet -force simple7Seg}

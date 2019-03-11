@@ -6,7 +6,7 @@ module hex2bcd(
     always @* begin
         if (hex>4'b1001) begin  //greater than 9
             carry=1; 
-            bcd[3:0]=hex-10;
+            bcd[3:0]=hex;
             end 
         else begin
             bcd=hex;

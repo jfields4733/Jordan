@@ -10,15 +10,39 @@ The goal of this project is to manually explore how a 7 seg Display works. You j
 
 #### Port Diagram
 
+![1552335803319](1552335803319.png)
+
 #### Verilog Code
+
+module simple7Seg(
+    input [15:0] SW,
+    output [6:0] C,
+    output DP,
+    output [7:0] AN,
+    output [15:0] LED
+    );
+
+   assign C = SW[6:0];
+   assign DP = SW[7];
+   assign AN = SW[15:8];
+   assign LED = SW;
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1552334099659](1552334099659.png)
+
 #### Synthesis Schematic Screen shot
+
+![1552334399651](1552334399651.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1552334556967](1552334556967.png)
+
 #### Testing
+
+Switch[6:0] should control one of the 7 segments. Switch7 should control the decimal point. Switch[15:8] should control each of the anodes going from left to right. Additionally, the Switches should control the LED right above it.
 
 ## 2 _HexTo7SegDisplay
 
@@ -44,6 +68,8 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 #### RTL Schematic Screen shot
 
   make this of your modified code
+
+![1552336031377](1552336031377.png)
 
 #### Synthesis Schematic Screen shot
 

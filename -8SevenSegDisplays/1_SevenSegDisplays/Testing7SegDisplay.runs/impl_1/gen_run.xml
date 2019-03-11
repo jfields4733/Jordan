@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549228658">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552334411">
+  <File Type="OPT-HWDEF" Name="simple7Seg.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="simple7Seg_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="simple7Seg.dcp"/>
   <File Type="BITSTR-BMM" Name="simple7Seg_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="simple7Seg_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="simple7Seg_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="simple7Seg_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="simple7Seg_reports.tcl"/>
   <File Type="OPT-DRC" Name="simple7Seg_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="simple7Seg.hwdef"/>
   <File Type="PWROPT-DCP" Name="simple7Seg_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="simple7Seg_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="simple7Seg_timing_summary_pwropted.rpt"/>
@@ -22,7 +24,6 @@
   <File Type="PLACE-CTRL" Name="simple7Seg_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="simple7Seg_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="simple7Seg_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="simple7Seg.bgn"/>
   <File Type="PLACE-TIMING" Name="simple7Seg_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="simple7Seg_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="simple7Seg.bin"/>
@@ -52,7 +53,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="simple7Seg_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="simple7Seg_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="simple7Seg_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="simple7Seg_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="simple7Seg_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="simple7Seg_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="simple7Seg_postroute_physopt.dcp"/>
@@ -66,6 +66,7 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="simple7Seg_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="simple7Seg.rbt"/>
   <File Type="BITSTR-NKY" Name="simple7Seg.nky"/>
+  <File Type="BG-BGN" Name="simple7Seg.bgn"/>
   <File Type="BG-DRC" Name="simple7Seg.drc"/>
   <File Type="RDI-RDI" Name="simple7Seg.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

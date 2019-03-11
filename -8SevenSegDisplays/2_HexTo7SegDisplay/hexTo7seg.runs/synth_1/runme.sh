@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/Lab2_3_hexTo7seg/hexTo7seg.runs/synth_1'
+HD_PWD='C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
