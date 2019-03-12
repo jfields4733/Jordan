@@ -1,0 +1,1321 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sun May 14 19:48:12 2017
+| Host         : Brendan-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_methodology -file Nexys4DdrUserDemo_methodology_drc_routed.rpt -rpx Nexys4DdrUserDemo_methodology_drc_routed.rpx
+| Design       : Nexys4DdrUserDemo
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 256
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 12         |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal      | 1          |
+| SYNTH-9   | Warning  | Small multiplier                                | 12         |
+| TIMING-6  | Warning  | No common primary clock between related clocks  | 46         |
+| TIMING-10 | Warning  | Missing property on synchronizer                | 1          |
+| TIMING-16 | Warning  | Large setup violation                           | 115        |
+| TIMING-18 | Warning  | Missing input or output delay                   | 69         |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X63Y86 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X66Y87 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X67Y88 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X63Y88 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X64Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X62Y87 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X65Y89 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X65Y85 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X62Y89 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X66Y89 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X64Y88 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X65Y87 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance Inst_VGA/Inst_MicDisplay/sample_buf_ram_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_Adt7420TempDisplay/TEMP_ACC.temp_scaled_reg[12]_i_1 of size 12x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_Adt7420TempDisplay/TEMP_ACC.temp_scaled_reg[13]_i_1 of size 12x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#3 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_Adt7420TempDisplay/TEMP_ACC.temp_scaled_reg[4]_i_1 of size 12x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#4 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_Adt7420TempDisplay/TEMP_ACC.temp_scaled_reg[8]_i_1 of size 12x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#5 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_Adxl362TempDisplay/TEMP_ACC.temp_scaled_reg[12]_i_1 of size 11x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#6 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_Adxl362TempDisplay/TEMP_ACC.temp_scaled_reg[13]_i_1 of size 11x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#7 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_Adxl362TempDisplay/TEMP_ACC.temp_scaled_reg[4]_i_1 of size 11x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#8 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_Adxl362TempDisplay/TEMP_ACC.temp_scaled_reg[8]_i_1 of size 11x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#9 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_XadcTempDisplay/XADC.temp_xad_px_scaled_reg[12]_i_1 of size 14x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#10 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_XadcTempDisplay/XADC.temp_xad_px_scaled_reg[13]_i_1 of size 14x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#11 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_XadcTempDisplay/XADC.temp_xad_px_scaled_reg[4]_i_1 of size 14x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#12 Warning
+Small multiplier  
+Detected multiplier at Inst_VGA/Inst_XadcTempDisplay/XADC.temp_xad_px_scaled_reg[8]_i_1 of size 14x3, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks CLK_OUT1_PxlClkGen and CLK_OUT1_PxlClkGen_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks CLK_OUT1_PxlClkGen] -to [get_clocks CLK_OUT1_PxlClkGen_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks CLK_OUT1_PxlClkGen_1 and CLK_OUT1_PxlClkGen are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks CLK_OUT1_PxlClkGen_1] -to [get_clocks CLK_OUT1_PxlClkGen]
+Related violations: <none>
+
+TIMING-6#3 Warning
+No common primary clock between related clocks  
+The clocks clk_100MHz_o_ClkGen and CLK_OUT1_PxlClkGen_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_100MHz_o_ClkGen] -to [get_clocks CLK_OUT1_PxlClkGen_1]
+Related violations: <none>
+
+TIMING-6#4 Warning
+No common primary clock between related clocks  
+The clocks clk_100MHz_o_ClkGen and clk_100MHz_o_ClkGen_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_100MHz_o_ClkGen] -to [get_clocks clk_100MHz_o_ClkGen_1]
+Related violations: <none>
+
+TIMING-6#5 Warning
+No common primary clock between related clocks  
+The clocks clk_100MHz_o_ClkGen and clk_pll_i_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_100MHz_o_ClkGen] -to [get_clocks clk_pll_i_1]
+Related violations: <none>
+
+TIMING-6#6 Warning
+No common primary clock between related clocks  
+The clocks clk_100MHz_o_ClkGen_1 and CLK_OUT1_PxlClkGen are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_100MHz_o_ClkGen_1] -to [get_clocks CLK_OUT1_PxlClkGen]
+Related violations: <none>
+
+TIMING-6#7 Warning
+No common primary clock between related clocks  
+The clocks clk_100MHz_o_ClkGen_1 and clk_100MHz_o_ClkGen are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_100MHz_o_ClkGen_1] -to [get_clocks clk_100MHz_o_ClkGen]
+Related violations: <none>
+
+TIMING-6#8 Warning
+No common primary clock between related clocks  
+The clocks clk_100MHz_o_ClkGen_1 and clk_pll_i are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_100MHz_o_ClkGen_1] -to [get_clocks clk_pll_i]
+Related violations: <none>
+
+TIMING-6#9 Warning
+No common primary clock between related clocks  
+The clocks clk_200MHz_o_ClkGen and clk_200MHz_o_ClkGen_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_200MHz_o_ClkGen] -to [get_clocks clk_200MHz_o_ClkGen_1]
+Related violations: <none>
+
+TIMING-6#10 Warning
+No common primary clock between related clocks  
+The clocks clk_200MHz_o_ClkGen_1 and clk_200MHz_o_ClkGen are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_200MHz_o_ClkGen_1] -to [get_clocks clk_200MHz_o_ClkGen]
+Related violations: <none>
+
+TIMING-6#11 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and clk_100MHz_o_ClkGen_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks clk_100MHz_o_ClkGen_1]
+Related violations: <none>
+
+TIMING-6#12 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and clk_pll_i_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks clk_pll_i_1]
+Related violations: <none>
+
+TIMING-6#13 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk_1]
+Related violations: <none>
+
+TIMING-6#14 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk_1]
+Related violations: <none>
+
+TIMING-6#15 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i_1 and clk_100MHz_o_ClkGen are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i_1] -to [get_clocks clk_100MHz_o_ClkGen]
+Related violations: <none>
+
+TIMING-6#16 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i_1 and clk_pll_i are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i_1] -to [get_clocks clk_pll_i]
+Related violations: <none>
+
+TIMING-6#17 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i_1 and u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i_1] -to [get_clocks u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk]
+Related violations: <none>
+
+TIMING-6#18 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i_1 and u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i_1] -to [get_clocks u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk]
+Related violations: <none>
+
+TIMING-6#19 Warning
+No common primary clock between related clocks  
+The clocks iserdes_clkdiv and iserdes_clkdiv_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks iserdes_clkdiv] -to [get_clocks iserdes_clkdiv_2]
+Related violations: <none>
+
+TIMING-6#20 Warning
+No common primary clock between related clocks  
+The clocks iserdes_clkdiv_1 and iserdes_clkdiv_3 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks iserdes_clkdiv_1] -to [get_clocks iserdes_clkdiv_3]
+Related violations: <none>
+
+TIMING-6#21 Warning
+No common primary clock between related clocks  
+The clocks iserdes_clkdiv_2 and iserdes_clkdiv are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks iserdes_clkdiv_2] -to [get_clocks iserdes_clkdiv]
+Related violations: <none>
+
+TIMING-6#22 Warning
+No common primary clock between related clocks  
+The clocks iserdes_clkdiv_3 and iserdes_clkdiv_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks iserdes_clkdiv_3] -to [get_clocks iserdes_clkdiv_1]
+Related violations: <none>
+
+TIMING-6#23 Warning
+No common primary clock between related clocks  
+The clocks mem_refclk and mem_refclk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks mem_refclk] -to [get_clocks mem_refclk_1]
+Related violations: <none>
+
+TIMING-6#24 Warning
+No common primary clock between related clocks  
+The clocks mem_refclk_1 and mem_refclk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks mem_refclk_1] -to [get_clocks mem_refclk]
+Related violations: <none>
+
+TIMING-6#25 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk and oserdes_clk_4 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk] -to [get_clocks oserdes_clk_4]
+Related violations: <none>
+
+TIMING-6#26 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk and oserdes_clkdiv_4 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk] -to [get_clocks oserdes_clkdiv_4]
+Related violations: <none>
+
+TIMING-6#27 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_1 and oserdes_clkdiv_5 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_1] -to [get_clocks oserdes_clkdiv_5]
+Related violations: <none>
+
+TIMING-6#28 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_2 and oserdes_clk_6 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_2] -to [get_clocks oserdes_clk_6]
+Related violations: <none>
+
+TIMING-6#29 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_2 and oserdes_clkdiv_6 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_2] -to [get_clocks oserdes_clkdiv_6]
+Related violations: <none>
+
+TIMING-6#30 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_3 and oserdes_clkdiv_7 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_3] -to [get_clocks oserdes_clkdiv_7]
+Related violations: <none>
+
+TIMING-6#31 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_4 and oserdes_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_4] -to [get_clocks oserdes_clk]
+Related violations: <none>
+
+TIMING-6#32 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_4 and oserdes_clkdiv are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_4] -to [get_clocks oserdes_clkdiv]
+Related violations: <none>
+
+TIMING-6#33 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_5 and oserdes_clkdiv_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_5] -to [get_clocks oserdes_clkdiv_1]
+Related violations: <none>
+
+TIMING-6#34 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_6 and oserdes_clk_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_6] -to [get_clocks oserdes_clk_2]
+Related violations: <none>
+
+TIMING-6#35 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_6 and oserdes_clkdiv_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_6] -to [get_clocks oserdes_clkdiv_2]
+Related violations: <none>
+
+TIMING-6#36 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_7 and oserdes_clkdiv_3 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_7] -to [get_clocks oserdes_clkdiv_3]
+Related violations: <none>
+
+TIMING-6#37 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv and oserdes_clkdiv_4 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv] -to [get_clocks oserdes_clkdiv_4]
+Related violations: <none>
+
+TIMING-6#38 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_1 and oserdes_clkdiv_5 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_1] -to [get_clocks oserdes_clkdiv_5]
+Related violations: <none>
+
+TIMING-6#39 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_2 and oserdes_clkdiv_6 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_2] -to [get_clocks oserdes_clkdiv_6]
+Related violations: <none>
+
+TIMING-6#40 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_3 and oserdes_clkdiv_7 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_3] -to [get_clocks oserdes_clkdiv_7]
+Related violations: <none>
+
+TIMING-6#41 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_4 and oserdes_clkdiv are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_4] -to [get_clocks oserdes_clkdiv]
+Related violations: <none>
+
+TIMING-6#42 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_5 and oserdes_clkdiv_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_5] -to [get_clocks oserdes_clkdiv_1]
+Related violations: <none>
+
+TIMING-6#43 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_6 and oserdes_clkdiv_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_6] -to [get_clocks oserdes_clkdiv_2]
+Related violations: <none>
+
+TIMING-6#44 Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_7 and oserdes_clkdiv_3 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_7] -to [get_clocks oserdes_clkdiv_3]
+Related violations: <none>
+
+TIMING-6#45 Warning
+No common primary clock between related clocks  
+The clocks sync_pulse and mem_refclk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sync_pulse] -to [get_clocks mem_refclk_1]
+Related violations: <none>
+
+TIMING-6#46 Warning
+No common primary clock between related clocks  
+The clocks sync_pulse_1 and mem_refclk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sync_pulse_1] -to [get_clocks mem_refclk]
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.503 ns between Inst_RGB/BLUE_OUT_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_BLUE_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.513 ns between Inst_MouseCtl/ypos_reg[6]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[6]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.539 ns between Inst_MouseCtl/ypos_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.575 ns between Inst_FPGAMonitor/TEMP_O_reg[0]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.595 ns between Inst_RGB/RED_OUT_reg[1]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_RED_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.596 ns between Inst_RGB/RED_OUT_reg[0]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_RED_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.600 ns between Inst_MouseCtl/xpos_reg[10]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[10]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.612 ns between Inst_RGB/RED_OUT_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_RED_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.622 ns between Inst_FPGAMonitor/TEMP_O_reg[11]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[11]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.624 ns between Inst_MouseCtl/ypos_reg[10]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[10]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.632 ns between Inst_MouseCtl/xpos_reg[8]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[8]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.650 ns between Inst_TempSensorCtl/tempReg_reg[14]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[11]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.653 ns between Inst_RGB/GREEN_OUT_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_GREEN_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.654 ns between Inst_MouseCtl/xpos_reg[6]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[6]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.655 ns between Inst_FPGAMonitor/TEMP_O_reg[7]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[7]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.669 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[5]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[5]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.670 ns between Inst_MouseCtl/xpos_reg[1]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.670 ns between Inst_RGB/RED_OUT_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_RED_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.673 ns between Inst_FPGAMonitor/TEMP_O_reg[10]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[10]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.673 ns between Inst_RGB/BLUE_OUT_reg[1]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_BLUE_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.673 ns between Inst_TempSensorCtl/tempReg_reg[15]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[12]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.678 ns between Inst_RGB/GREEN_OUT_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_GREEN_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.684 ns between Inst_RGB/GREEN_OUT_reg[1]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_GREEN_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.685 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[11]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[11]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.689 ns between Inst_MouseCtl/ypos_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.691 ns between Inst_RGB/GREEN_OUT_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_GREEN_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -1.692 ns between Inst_Audio/Deserializer/pdm_clk_rising_o_reg/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/mic_m_clk_rising_sync1_reg/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -1.695 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[7]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[7]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -1.703 ns between Inst_MouseCtl/ypos_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -1.704 ns between Inst_TempSensorCtl/tempReg_reg[6]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -1.708 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[6]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[6]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -1.708 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[8]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[8]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -1.708 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[9]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[9]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -1.708 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_CLIP_reg[5]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_Y_IN_REG_reg[5]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -1.709 ns between Inst_MouseCtl/xpos_reg[5]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[5]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -1.709 ns between Inst_TempSensorCtl/tempReg_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -1.711 ns between Inst_RGB/BLUE_OUT_reg[0]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_BLUE_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -1.717 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_CLIP_reg[6]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_X_IN_REG_reg[6]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -1.717 ns between Inst_MouseCtl/ypos_reg[1]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -1.718 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_CLIP_reg[1]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_Y_IN_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -1.719 ns between Inst_FPGAMonitor/TEMP_O_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -1.719 ns between Inst_MouseCtl/ypos_reg[8]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[8]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -1.721 ns between Inst_RGB/BLUE_OUT_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_BLUE_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -1.723 ns between Inst_MouseCtl/xpos_reg[11]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[11]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -1.723 ns between Inst_RGB/GREEN_OUT_reg[0]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_GREEN_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -1.724 ns between Inst_RGB/RED_OUT_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_RED_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -1.729 ns between Inst_MouseCtl/xpos_reg[0]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -1.733 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_CLIP_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_Y_IN_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -1.735 ns between Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation/U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_last.gen_no_round.gen_sqrt_tmp/gen_rtl.gen_reg.d_reg_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_MAG_IN_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -1.736 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_CLIP_reg[0]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_Y_IN_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -1.736 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_CLIP_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_Y_IN_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -1.737 ns between Inst_MouseCtl/ypos_reg[0]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -1.738 ns between Inst_FPGAMonitor/TEMP_O_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -1.738 ns between Inst_TempSensorCtl/tempReg_reg[9]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[6]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -1.739 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -1.739 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -1.739 ns between Inst_MouseCtl/xpos_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#58 Warning
+Large setup violation  
+There is a large setup violation of -1.739 ns between Inst_MouseCtl/ypos_reg[9]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[9]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#59 Warning
+Large setup violation  
+There is a large setup violation of -1.740 ns between Inst_FPGAMonitor/TEMP_O_reg[1]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#60 Warning
+Large setup violation  
+There is a large setup violation of -1.741 ns between Inst_MouseCtl/xpos_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#61 Warning
+Large setup violation  
+There is a large setup violation of -1.741 ns between Inst_MouseCtl/xpos_reg[7]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[7]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#62 Warning
+Large setup violation  
+There is a large setup violation of -1.742 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[0]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#63 Warning
+Large setup violation  
+There is a large setup violation of -1.742 ns between Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation/U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_last.gen_no_round.gen_sqrt_tmp/gen_rtl.gen_reg.d_reg_reg[5]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_MAG_IN_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#64 Warning
+Large setup violation  
+There is a large setup violation of -1.742 ns between Inst_RGB/BLUE_OUT_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/RGB_LED_BLUE_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#65 Warning
+Large setup violation  
+There is a large setup violation of -1.744 ns between Inst_MouseCtl/ypos_reg[5]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[5]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#66 Warning
+Large setup violation  
+There is a large setup violation of -1.747 ns between Inst_FPGAMonitor/TEMP_O_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#67 Warning
+Large setup violation  
+There is a large setup violation of -1.748 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[1]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#68 Warning
+Large setup violation  
+There is a large setup violation of -1.749 ns between Inst_TempSensorCtl/tempReg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#69 Warning
+Large setup violation  
+There is a large setup violation of -1.750 ns between Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation/U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_last.gen_no_round.gen_sqrt_tmp/gen_rtl.gen_reg.d_reg_reg[8]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_MAG_IN_REG_reg[6]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#70 Warning
+Large setup violation  
+There is a large setup violation of -1.754 ns between Inst_TempSensorCtl/tempReg_reg[10]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[7]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#71 Warning
+Large setup violation  
+There is a large setup violation of -1.757 ns between Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation/U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_last.gen_no_round.gen_sqrt_tmp/gen_rtl.gen_reg.d_reg_reg[9]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_MAG_IN_REG_reg[7]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#72 Warning
+Large setup violation  
+There is a large setup violation of -1.757 ns between Inst_TempSensorCtl/tempReg_reg[8]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[5]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#73 Warning
+Large setup violation  
+There is a large setup violation of -1.760 ns between Inst_FPGAMonitor/TEMP_O_reg[8]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[8]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#74 Warning
+Large setup violation  
+There is a large setup violation of -1.764 ns between Inst_TempSensorCtl/tempReg_reg[5]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#75 Warning
+Large setup violation  
+There is a large setup violation of -1.765 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_CLIP_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_X_IN_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#76 Warning
+Large setup violation  
+There is a large setup violation of -1.770 ns between Inst_MouseCtl/ypos_reg[7]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_Y_POS_REG_reg[7]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#77 Warning
+Large setup violation  
+There is a large setup violation of -1.772 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_CLIP_reg[0]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_X_IN_REG_reg[0]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#78 Warning
+Large setup violation  
+There is a large setup violation of -1.773 ns between Inst_FPGAMonitor/TEMP_O_reg[6]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[6]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#79 Warning
+Large setup violation  
+There is a large setup violation of -1.776 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[10]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[10]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#80 Warning
+Large setup violation  
+There is a large setup violation of -1.793 ns between Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation/U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_last.gen_no_round.gen_sqrt_tmp/gen_rtl.gen_reg.d_reg_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_MAG_IN_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#81 Warning
+Large setup violation  
+There is a large setup violation of -1.796 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_CLIP_reg[5]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_X_IN_REG_reg[5]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#82 Warning
+Large setup violation  
+There is a large setup violation of -1.796 ns between Inst_TempSensorCtl/tempReg_reg[7]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#83 Warning
+Large setup violation  
+There is a large setup violation of -1.810 ns between Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation/U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_last.gen_no_round.gen_sqrt_tmp/gen_rtl.gen_reg.d_reg_reg[7]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_MAG_IN_REG_reg[5]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#84 Warning
+Large setup violation  
+There is a large setup violation of -1.821 ns between Inst_FPGAMonitor/TEMP_O_reg[5]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[5]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#85 Warning
+Large setup violation  
+There is a large setup violation of -1.823 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_CLIP_reg[1]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_X_IN_REG_reg[1]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#86 Warning
+Large setup violation  
+There is a large setup violation of -1.831 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_CLIP_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_X_IN_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#87 Warning
+Large setup violation  
+There is a large setup violation of -1.841 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_CLIP_reg[7]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_X_IN_REG_reg[7]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#88 Warning
+Large setup violation  
+There is a large setup violation of -1.842 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_CLIP_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_X_IN_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#89 Warning
+Large setup violation  
+There is a large setup violation of -1.846 ns between Inst_MouseCtl/xpos_reg[3]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[3]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#90 Warning
+Large setup violation  
+There is a large setup violation of -1.851 ns between Inst_MouseCtl/xpos_reg[9]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/MOUSE_X_POS_REG_reg[9]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#91 Warning
+Large setup violation  
+There is a large setup violation of -1.860 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_CLIP_reg[6]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_Y_IN_REG_reg[6]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#92 Warning
+Large setup violation  
+There is a large setup violation of -1.860 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_CLIP_reg[8]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_Y_IN_REG_reg[8]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#93 Warning
+Large setup violation  
+There is a large setup violation of -1.865 ns between Inst_AccelerometerCtl/ADXL_Control/ACCEL_TMP_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADXL362_TEMP_VALUE_I_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#94 Warning
+Large setup violation  
+There is a large setup violation of -1.877 ns between Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation/U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_last.gen_no_round.gen_sqrt_tmp/gen_rtl.gen_reg.d_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_MAG_IN_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#95 Warning
+Large setup violation  
+There is a large setup violation of -1.879 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_CLIP_reg[2]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_Y_IN_REG_reg[2]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#96 Warning
+Large setup violation  
+There is a large setup violation of -1.884 ns between Inst_TempSensorCtl/tempReg_reg[11]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[8]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#97 Warning
+Large setup violation  
+There is a large setup violation of -1.887 ns between Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation/U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_last.gen_no_round.gen_sqrt_tmp/gen_rtl.gen_reg.d_reg_reg[10]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_MAG_IN_REG_reg[8]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#98 Warning
+Large setup violation  
+There is a large setup violation of -1.891 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_X_CLIP_reg[8]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_X_IN_REG_reg[8]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#99 Warning
+Large setup violation  
+There is a large setup violation of -1.906 ns between Inst_AccelerometerCtl/Accel_Calculation/Magnitude_Calculation/U0/i_synth/i_synth/gen_sqrt.square_root/gen_iterations[14].gen_last.gen_no_round.gen_sqrt_tmp/gen_rtl.gen_reg.d_reg_reg[6]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_MAG_IN_REG_reg[4]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#100 Warning
+Large setup violation  
+There is a large setup violation of -1.922 ns between Inst_FPGAMonitor/TEMP_O_reg[9]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/XADC_TEMP_VALUE_I_REG_reg[9]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#101 Warning
+Large setup violation  
+There is a large setup violation of -1.928 ns between Inst_TempSensorCtl/tempReg_reg[13]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[10]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#102 Warning
+Large setup violation  
+There is a large setup violation of -1.936 ns between Inst_TempSensorCtl/tempReg_reg[12]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ADT7420_TEMP_VALUE_I_REG_reg[9]/D (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#103 Warning
+Large setup violation  
+There is a large setup violation of -2.114 ns between Inst_AccelerometerCtl/Accel_Calculation/ACCEL_Y_CLIP_reg[7]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/ACL_Y_IN_REG_reg[7]/D (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#104 Warning
+Large setup violation  
+There is a large setup violation of -2.857 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[6]/CE (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#105 Warning
+Large setup violation  
+There is a large setup violation of -2.857 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[7]/CE (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#106 Warning
+Large setup violation  
+There is a large setup violation of -2.906 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[4]/CE (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#107 Warning
+Large setup violation  
+There is a large setup violation of -2.906 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[5]/CE (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#108 Warning
+Large setup violation  
+There is a large setup violation of -3.046 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[0]/CE (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#109 Warning
+Large setup violation  
+There is a large setup violation of -3.046 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[10]/CE (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#110 Warning
+Large setup violation  
+There is a large setup violation of -3.046 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[1]/CE (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#111 Warning
+Large setup violation  
+There is a large setup violation of -3.046 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[2]/CE (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#112 Warning
+Large setup violation  
+There is a large setup violation of -3.046 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[3]/CE (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#113 Warning
+Large setup violation  
+There is a large setup violation of -3.046 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[8]/CE (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#114 Warning
+Large setup violation  
+There is a large setup violation of -3.046 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/wr_addr_reg_reg[9]/CE (clocked by CLK_OUT1_PxlClkGen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#115 Warning
+Large setup violation  
+There is a large setup violation of -3.391 ns between Inst_VGA/Inst_MicDisplay/clk_cntr_reg_reg[4]/C (clocked by clk_100MHz_o_ClkGen) and Inst_VGA/Inst_MicDisplay/sample_buf_ram_reg/ENARDEN (clocked by CLK_OUT1_PxlClkGen_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btnc_i relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on btnd_i relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on btnl_i relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on btnr_i relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on btnu_i relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on miso relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on pdm_data_i relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on ps2_clk relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on ps2_data relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on pwm_audio_o relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on rstn_i relative to clock(s) VIRTUAL_clk_200MHz_o_ClkGen clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on tmp_scl relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on tmp_sda relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on disp_an_o[0] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on disp_an_o[1] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on disp_an_o[2] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on disp_an_o[3] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on disp_an_o[4] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on disp_an_o[5] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on disp_an_o[6] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on disp_an_o[7] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[0] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[1] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[2] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[3] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[4] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[5] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[6] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on disp_seg_o[7] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on led_o[0] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on led_o[10] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on led_o[11] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on led_o[12] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on led_o[13] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on led_o[14] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on led_o[15] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on led_o[1] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on led_o[2] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on led_o[3] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on led_o[4] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on led_o[5] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on led_o[6] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on led_o[7] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on led_o[8] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An output delay is missing on led_o[9] relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An output delay is missing on mosi relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on pdm_clk_o relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on rgb1_blue_o relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An output delay is missing on rgb1_green_o relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An output delay is missing on rgb1_red_o relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on rgb2_blue_o relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#52 Warning
+Missing input or output delay  
+An output delay is missing on rgb2_green_o relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#53 Warning
+Missing input or output delay  
+An output delay is missing on rgb2_red_o relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#54 Warning
+Missing input or output delay  
+An output delay is missing on sclk relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#55 Warning
+Missing input or output delay  
+An output delay is missing on ss relative to clock(s) clk_i sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#56 Warning
+Missing input or output delay  
+An output delay is missing on vga_blue_o[0] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#57 Warning
+Missing input or output delay  
+An output delay is missing on vga_blue_o[1] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#58 Warning
+Missing input or output delay  
+An output delay is missing on vga_blue_o[2] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#59 Warning
+Missing input or output delay  
+An output delay is missing on vga_blue_o[3] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#60 Warning
+Missing input or output delay  
+An output delay is missing on vga_green_o[0] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#61 Warning
+Missing input or output delay  
+An output delay is missing on vga_green_o[1] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#62 Warning
+Missing input or output delay  
+An output delay is missing on vga_green_o[2] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#63 Warning
+Missing input or output delay  
+An output delay is missing on vga_green_o[3] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#64 Warning
+Missing input or output delay  
+An output delay is missing on vga_hs_o relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#65 Warning
+Missing input or output delay  
+An output delay is missing on vga_red_o[0] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#66 Warning
+Missing input or output delay  
+An output delay is missing on vga_red_o[1] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#67 Warning
+Missing input or output delay  
+An output delay is missing on vga_red_o[2] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#68 Warning
+Missing input or output delay  
+An output delay is missing on vga_red_o[3] relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+TIMING-18#69 Warning
+Missing input or output delay  
+An output delay is missing on vga_vs_o relative to clock(s) VIRTUAL_CLK_OUT1_PxlClkGen 
+Related violations: <none>
+
+

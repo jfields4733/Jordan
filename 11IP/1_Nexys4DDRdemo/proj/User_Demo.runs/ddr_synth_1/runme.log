@@ -1,0 +1,380 @@
+
+*** Running vivado
+    with args -log ddr.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source ddr.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 356.918 ; gain = 144.434
+INFO: [Synth 8-638] synthesizing module 'ddr' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ddr.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'ddr_mig' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ddr_mig.vhd:522]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_iodelay_ctrl' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_0_iodelay_ctrl.v:80]
+INFO: [Synth 8-638] synthesizing module 'IDELAYCTRL' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:16182]
+INFO: [Synth 8-256] done synthesizing module 'IDELAYCTRL' (1#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:16182]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_iodelay_ctrl' (2#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_0_iodelay_ctrl.v:80]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_clk_ibuf' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_0_clk_ibuf.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_clk_ibuf' (3#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_0_clk_ibuf.v:68]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_tempmon' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_0_tempmon.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_tempmon' (4#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_0_tempmon.v:69]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_infrastructure' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:78]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (5#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (6#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'PLLE2_ADV' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32674]
+INFO: [Synth 8-256] done synthesizing module 'PLLE2_ADV' (7#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32674]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (8#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_infrastructure' (9#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:78]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_memc_ui_top_std' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ip_top/mig_7series_v4_0_memc_ui_top_std.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_mem_intfc' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ip_top/mig_7series_v4_0_mem_intfc.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_mc' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_mc.v:73]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_rank_mach' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_rank_mach.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_rank_cntrl' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_rank_cntrl.v:79]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (10#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_rank_cntrl' (11#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_rank_cntrl.v:79]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_rank_common' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_rank_common.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb' (12#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized0' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized0' (12#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_rank_common' (13#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_rank_common.v:72]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_rank_mach' (14#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_rank_mach.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_mach' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_mach.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_compare' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_compare.v:74]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_compare' (15#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_compare.v:74]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state' (16#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue' (17#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized0' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state__parameterized0' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state__parameterized0' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue__parameterized0' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue__parameterized0' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized0' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized1' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state__parameterized1' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state__parameterized1' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue__parameterized1' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue__parameterized1' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized1' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized2' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state__parameterized2' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state__parameterized2' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue__parameterized2' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue__parameterized2' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized2' (18#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_common' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_common.v:73]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_common' (19#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_common.v:73]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_arb_mux' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_arb_mux.v:69]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_arb_row_col' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_arb_row_col.v:83]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized1' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized1' (19#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized2' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized2' (19#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized3' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized3' (19#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized4' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized4' (19#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_arb_row_col' (20#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_arb_row_col.v:83]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_arb_select' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_arb_select.v:75]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_arb_select' (21#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_arb_select.v:75]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_arb_mux' (22#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_arb_mux.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_mach' (23#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_bank_mach.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_col_mach' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_col_mach.v:88]
+INFO: [Synth 8-638] synthesizing module 'RAM32M' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36749]
+INFO: [Synth 8-256] done synthesizing module 'RAM32M' (24#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36749]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_col_mach' (25#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_col_mach.v:88]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_mc' (26#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/controller/mig_7series_v4_0_mc.v:73]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_top' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_top.vhd:371]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_mc_phy_wrapper' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-638] synthesizing module 'OBUF' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21927]
+INFO: [Synth 8-256] done synthesizing module 'OBUF' (27#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21927]
+INFO: [Synth 8-638] synthesizing module 'OBUFT' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:22143]
+INFO: [Synth 8-256] done synthesizing module 'OBUFT' (28#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:22143]
+INFO: [Synth 8-638] synthesizing module 'IOBUF_INTERMDISABLE' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17947]
+INFO: [Synth 8-256] done synthesizing module 'IOBUF_INTERMDISABLE' (29#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17947]
+INFO: [Synth 8-638] synthesizing module 'IOBUFDS_INTERMDISABLE' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17524]
+INFO: [Synth 8-256] done synthesizing module 'IOBUFDS_INTERMDISABLE' (30#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17524]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo' (31#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized0' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized0' (31#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized1' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized1' (31#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_mc_phy' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_4lanes' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_if_post_fifo' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_if_post_fifo' (32#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized2' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized2' (32#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'PHASER_IN_PHY' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32360]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_IN_PHY' (33#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32360]
+INFO: [Synth 8-638] synthesizing module 'IN_FIFO' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17265]
+INFO: [Synth 8-256] done synthesizing module 'IN_FIFO' (34#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17265]
+INFO: [Synth 8-638] synthesizing module 'PHASER_OUT_PHY' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_OUT_PHY' (35#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-638] synthesizing module 'OUT_FIFO' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-256] done synthesizing module 'OUT_FIFO' (36#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-638] synthesizing module 'IDELAYE2' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:16195]
+INFO: [Synth 8-256] done synthesizing module 'IDELAYE2' (37#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:16195]
+INFO: [Synth 8-638] synthesizing module 'ISERDESE2' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:19685]
+INFO: [Synth 8-256] done synthesizing module 'ISERDESE2' (38#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:19685]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized0' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized0' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized1' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized1' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized2' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized2' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized3' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized3' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized4' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized4' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized5' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized5' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized6' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized6' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized7' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized7' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized8' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized8' (39#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'ODDR' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25305]
+INFO: [Synth 8-256] done synthesizing module 'ODDR' (40#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25305]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io' (41#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane' (42#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized0' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized3' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized3' (42#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'PHASER_OUT_PHY__parameterized0' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_OUT_PHY__parameterized0' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-638] synthesizing module 'OUT_FIFO__parameterized0' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-256] done synthesizing module 'OUT_FIFO__parameterized0' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized0' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized9' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized9' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized10' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized10' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized11' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized11' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized12' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized12' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized13' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized13' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized14' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized14' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized15' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized15' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized16' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized16' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized17' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized17' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized18' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized18' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized19' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized19' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized20' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized20' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized0' (42#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized0' (42#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized1' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized4' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized4' (42#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized1' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized21' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized21' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized22' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized22' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized23' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized23' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized24' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized24' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized25' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized25' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized26' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized26' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized27' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized27' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized28' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized28' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized29' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized29' (42#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized1' (42#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized1' (42#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized2' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized5' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized5' (42#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'OBUFDS' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21941]
+INFO: [Synth 8-256] done synthesizing module 'OBUFDS' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21941]
+INFO: [Synth 8-638] synthesizing module 'PHASER_OUT_PHY__parameterized1' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_OUT_PHY__parameterized1' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-638] synthesizing module 'OUT_FIFO__parameterized1' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-256] done synthesizing module 'OUT_FIFO__parameterized1' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized2' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized30' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized30' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized31' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized31' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized32' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized32' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized33' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized33' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized34' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized34' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized35' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized35' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized36' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized36' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized37' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized37' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized38' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized38' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized39' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized39' (43#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized2' (43#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized2' (43#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'BUFIO' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:831]
+INFO: [Synth 8-256] done synthesizing module 'BUFIO' (44#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:831]
+INFO: [Synth 8-638] synthesizing module 'PHY_CONTROL' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32588]
+INFO: [Synth 8-256] done synthesizing module 'PHY_CONTROL' (45#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32588]
+INFO: [Synth 8-638] synthesizing module 'PHASER_REF' [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32572]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_REF' (46#1) [D:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32572]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_4lanes' (47#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_mc_phy' (48#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_mc_phy_wrapper' (49#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_calib_top' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_calib_top.v:82]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_wrlvl_off_delay' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl_off_delay.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_wrlvl_off_delay' (50#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl_off_delay.v:68]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_dqs_found_cal_hr' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.v:79]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_dqs_found_cal_hr' (51#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.v:79]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_rdlvl' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_rdlvl.v:81]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_rdlvl' (52#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_rdlvl.v:81]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_prbs_gen' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_prbs_gen.v:92]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_prbs_gen' (53#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_prbs_gen.v:92]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_init' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_init.v:89]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_init' (54#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_init.v:89]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_wrcal' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_wrcal' (55#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_tempmon' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_tempmon' (56#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_calib_top' (57#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_calib_top.v:82]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_top' (58#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_top.vhd:371]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_mem_intfc' (59#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ip_top/mig_7series_v4_0_mem_intfc.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_top' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_0_ui_top.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_cmd' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_0_ui_cmd.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_cmd' (60#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_0_ui_cmd.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_wr_data' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_0_ui_wr_data.v:131]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_wr_data' (61#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_0_ui_wr_data.v:131]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_rd_data' [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_0_ui_rd_data.v:140]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_rd_data' (62#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_0_ui_rd_data.v:140]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_top' (63#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ui/mig_7series_v4_0_ui_top.v:71]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_memc_ui_top_std' (64#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ip_top/mig_7series_v4_0_memc_ui_top_std.v:72]
+INFO: [Synth 8-256] done synthesizing module 'ddr_mig' (65#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ddr_mig.vhd:522]
+INFO: [Synth 8-256] done synthesizing module 'ddr' (66#1) [d:/Vivado_Labs/User_Demo/src/ip/ddr/ddr/user_design/rtl/ddr.vhd:117]
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 516.234 ; gain = 303.750
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 516.234 ; gain = 303.750
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.182 . Memory (MB): peak = 810.410 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 810.410 ; gain = 597.926
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 810.410 ; gain = 597.926
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 810.410 ; gain = 597.926
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 810.410 ; gain = 597.926
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:49 . Memory (MB): peak = 893.949 ; gain = 681.465
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------------------+------------+---------------+----------------+
+|Module Name                   | RTL Object | Depth x Width | Implemented As | 
++------------------------------+------------+---------------+----------------+
+|mig_7series_v4_0_ddr_prbs_gen | mem_out    | 256x18        | LUT            | 
+|mig_7series_v4_0_ddr_prbs_gen | mem_out    | 256x18        | LUT            | 
++------------------------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                                                            | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|ddr         | of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg                                             | Implied   | 16 x 80              | RAM32M x 14   | 
+|ddr         | ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.u_ddr_if_post_fifo/mem_reg | Implied   | 4 x 80               | RAM32M x 14   | 
+|ddr         | ddr_byte_lane_A.ddr_byte_lane_A/of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg             | Implied   | 16 x 80              | RAM32M x 14   | 
+|ddr         | ddr_byte_lane_B.ddr_byte_lane_B/of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg             | Implied   | 16 x 80              | RAM32M x 14   | 
+|ddr         | ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.u_ddr_if_post_fifo/mem_reg | Implied   | 4 x 80               | RAM32M x 14   | 
+|ddr         | ddr_byte_lane_C.ddr_byte_lane_C/of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg             | Implied   | 16 x 80              | RAM32M x 14   | 
++------------+---------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:51 ; elapsed = 00:02:01 . Memory (MB): peak = 972.953 ; gain = 760.469
+Finished Timing Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:02:01 . Memory (MB): peak = 976.832 ; gain = 764.348
+Finished Technology Mapping : Time (s): cpu = 00:01:59 ; elapsed = 00:02:09 . Memory (MB): peak = 1003.973 ; gain = 791.488
+Finished IO Insertion : Time (s): cpu = 00:02:00 ; elapsed = 00:02:10 . Memory (MB): peak = 1003.973 ; gain = 791.488
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:00 ; elapsed = 00:02:10 . Memory (MB): peak = 1003.973 ; gain = 791.488
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:02 ; elapsed = 00:02:11 . Memory (MB): peak = 1003.973 ; gain = 791.488
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:02 ; elapsed = 00:02:11 . Memory (MB): peak = 1003.973 ; gain = 791.488
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:02 ; elapsed = 00:02:12 . Memory (MB): peak = 1003.973 ; gain = 791.488
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:02 ; elapsed = 00:02:12 . Memory (MB): peak = 1003.973 ; gain = 791.488
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |BUFG                  |     3|
+|2     |BUFH                  |     1|
+|3     |BUFIO                 |     1|
+|4     |CARRY4                |   101|
+|5     |IDELAYCTRL            |     1|
+|6     |IDELAYE2              |    16|
+|7     |IN_FIFO               |     2|
+|8     |ISERDESE2             |    16|
+|9     |LUT1                  |   426|
+|10    |LUT2                  |   413|
+|11    |LUT3                  |   717|
+|12    |LUT4                  |   842|
+|13    |LUT5                  |   819|
+|14    |LUT6                  |  1046|
+|15    |MMCME2_ADV            |     1|
+|16    |MUXF7                 |     8|
+|17    |ODDR                  |     5|
+|18    |OSERDESE2             |    22|
+|19    |OSERDESE2_1           |     2|
+|20    |OSERDESE2_2           |    18|
+|21    |OUT_FIFO              |     2|
+|22    |OUT_FIFO_1            |     2|
+|23    |PHASER_IN_PHY         |     2|
+|24    |PHASER_OUT_PHY        |     2|
+|25    |PHASER_OUT_PHY_1      |     2|
+|26    |PHASER_REF            |     1|
+|27    |PHY_CONTROL           |     1|
+|28    |PLLE2_ADV             |     1|
+|29    |RAM32M                |   104|
+|30    |SRL16E                |    16|
+|31    |SRLC32E               |     1|
+|32    |XORCY                 |     6|
+|33    |FDCE                  |     1|
+|34    |FDPE                  |    70|
+|35    |FDRE                  |  3097|
+|36    |FDSE                  |    71|
+|37    |IOBUFDS_INTERMDISABLE |     2|
+|38    |IOBUF_INTERMDISABLE   |    16|
+|39    |OBUF                  |    22|
+|40    |OBUFDS                |     1|
+|41    |OBUFT                 |     2|
++------+----------------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:02 ; elapsed = 00:02:12 . Memory (MB): peak = 1003.973 ; gain = 791.488
+synth_design: Time (s): cpu = 00:02:02 ; elapsed = 00:02:06 . Memory (MB): peak = 1003.973 ; gain = 724.984

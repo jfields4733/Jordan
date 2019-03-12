@@ -60,21 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache C:/Users/FoersterGame/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16412-DESKTOP-KB2R4MG/incrSyn
-  set_param xicom.use_bs_reader 1
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/3_PriorityEncoder/PriorityEncoder.runs/impl_1/PriorityEncoder.dcp
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/3_PriorityEncoder/PriorityEncoder.cache/wt [current_project]
   set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/3_PriorityEncoder/PriorityEncoder.xpr [current_project]
   set_property ip_output_repo C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/3_PriorityEncoder/PriorityEncoder.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/3_PriorityEncoder/PriorityEncoder.runs/synth_1/PriorityEncoder.dcp
+  read_xdc C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/3_PriorityEncoder/PriorityEncoder.srcs/constrs_1/imports/3_PriorityEncoder/Nexys4DDR_Master.xdc
+  link_design -top PriorityEncoder -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -146,6 +147,24 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force PriorityEncoder.mmi }
+  write_bitstream -force PriorityEncoder.bit 
+  catch {write_debug_probes -quiet -force PriorityEncoder}
+  catch {file copy -force PriorityEncoder.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

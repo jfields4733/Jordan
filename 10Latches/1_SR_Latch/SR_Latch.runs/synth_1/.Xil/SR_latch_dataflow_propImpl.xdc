@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/10_SR_Latch/SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc rfile:../../../SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/1_SR_Latch/SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc rfile:../../../SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { S }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]

@@ -1,0 +1,45 @@
+#! /usr/share/iverilog-0.10.0/bin/vvp
+:ivl_version "0.10.0 (devel)" "(v0_9_6)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+:vpi_module "v2009";
+S_0x23c4850 .scope module, "nandgate" "nandgate" 2 2;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "dis"
+    .port_info 1 /INPUT 1 "oDP"
+    .port_info 2 /OUTPUT 1 "EoDP"
+v0x23c49d0_0 .var "EoDP", 0 0;
+o0x7f14a608d048 .functor BUFZ 1, C4<z>; HiZ drive
+v0x23d3280_0 .net "dis", 0 0, o0x7f14a608d048;  0 drivers
+o0x7f14a608d078 .functor BUFZ 1, C4<z>; HiZ drive
+v0x23d3340_0 .net "oDP", 0 0, o0x7f14a608d078;  0 drivers
+E_0x23c50f0 .event edge, v0x23d3340_0, v0x23d3280_0;
+    .scope S_0x23c4850;
+T_0 ;
+    %wait E_0x23c50f0;
+    %load/v 8, v0x23d3340_0, 1;
+    %pad 9, 0, 1;
+    %cmpi/u 8, 0, 2;
+    %mov 8, 4, 1;
+    %load/v 9, v0x23d3280_0, 1;
+    %pad 10, 0, 1;
+    %cmpi/u 9, 0, 2;
+    %mov 9, 4, 1;
+    %and 8, 9, 1;
+    %jmp/0xz  T_0.0, 8;
+    %set/v v0x23c49d0_0, 1, 1;
+    %jmp T_0.1;
+T_0.0 ;
+    %set/v v0x23c49d0_0, 0, 1;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0, $push;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "design.sv";

@@ -60,19 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/10_SR_Latch/SR_Latch.runs/impl_1/SR_latch_dataflow.dcp
-  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/10_SR_Latch/SR_Latch.cache/wt [current_project]
-  set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/10_SR_Latch/SR_Latch.xpr [current_project]
-  set_property ip_output_repo C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/10_SR_Latch/SR_Latch.cache/ip [current_project]
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/1_SR_Latch/SR_Latch.cache/wt [current_project]
+  set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/1_SR_Latch/SR_Latch.xpr [current_project]
+  set_property ip_output_repo C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/1_SR_Latch/SR_Latch.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/1_SR_Latch/SR_Latch.runs/synth_1/SR_latch_dataflow.dcp
+  read_xdc C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/1_SR_Latch/SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc
+  link_design -top SR_latch_dataflow -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -144,6 +147,24 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force SR_latch_dataflow.mmi }
+  write_bitstream -force SR_latch_dataflow.bit 
+  catch {write_debug_probes -quiet -force SR_latch_dataflow}
+  catch {file copy -force SR_latch_dataflow.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

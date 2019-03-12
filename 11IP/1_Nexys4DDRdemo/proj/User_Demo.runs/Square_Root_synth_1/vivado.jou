@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 14 17:23:39 2017
+# Process ID: 6348
+# Current directory: D:/Vivado_Labs/User_Demo/proj/User_Demo.runs/Square_Root_synth_1
+# Command line: vivado.exe -log Square_Root.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Square_Root.tcl
+# Log file: D:/Vivado_Labs/User_Demo/proj/User_Demo.runs/Square_Root_synth_1/Square_Root.vds
+# Journal file: D:/Vivado_Labs/User_Demo/proj/User_Demo.runs/Square_Root_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Square_Root.tcl -notrace

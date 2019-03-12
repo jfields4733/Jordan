@@ -129,32 +129,34 @@ More generally this is called priority logic.  It was the subject of a talk at t
 
 #### Port Diagram
 
-
-
 #### Verilog Code
-
-
 
 #### RTL Schematic Screen shot
 
-![1550923079849](assets/1550923079849.png)
-
 #### Synthesis Schematic Screen shot
-
-![1550924426561](assets/1550924426561.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
 #### Testing
 
+#### Prompts
+
+The priority encoder is one of the most difficult concepts to synthesize and implement. The casez command is obviously easier to understand than the for loop. In the end they are implemented with the same number of resources. But there is a difference in the synthesis schematic. *Describe this.*
+
+*VHDL is the alternative to Verilog. VHDL case statements are required to have no overlap. VHDL case commands can not be used to build a priority encoder. If commands have to be used. Find a URL reference to this and link it up here.* 
+
+Verilog case statements can overlap. *What does this mean? Write some code that would test this. (You don't have to make a project out of it)*
+
 ------
 
-# 4_addPriorityEncoderTo7segDisplay
+# 4_7segWithZeroBlank
 
-The goal of this project is to manually explore how a 7 seg Display works. You just need to shoot screen shots and test.
+The code for the 7 seg display is evolving. 
 
 #### Port Diagram
 
+Just do a screen shot of the top level module. 
+
 #### Verilog Code
 
 #### RTL Schematic Screen shot
@@ -167,4 +169,51 @@ The goal of this project is to manually explore how a 7 seg Display works. You j
 
 ------
 
-# 
+#### Prompts 
+
+## 5_clockUsing7segDisplay
+
+#### Port Diagram
+
+Just do a screen shot of the top level module. 
+
+#### Verilog Code
+
+*Don't put screen shots here. Outline the two modules  terms of application and design construct. For example, the application would be blank leading zeros. The tool would be a priority encoder.  We may not have covered the tool yet. Do your best ..* 
+
+#### RTL Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+----
+
+#### Prompts
+
+*Screen shot the "Report Utilization" for this project.   Compare with the project above.*
+
+*Look at the code constructs and the RTL schematic screen shot. How many gates do you see?* 
+
+*What are the indications that this is written at a behavioral level, C language like level?*
+
+*Where would you switch to case to improve readability?*
+
+*Putting too much on one line may be a problem. What would you suggest to improve readability?*
+
+*How are the modules called differently in the top level module compared with the project above?*
+
+*Look through the messages, starting with errors, very important, ... What are some errors that concern you, that we should be addressing?*
+
+
+
+# Next Steps
+
+Improve readability of the module.
+
+Add "split" feature that does zero blanking on the right 4 segments separately from the left 4 segments so two numbers could be displayed simultaneously.
+
+Combine the "split" and "BCD" feature so that both the left and the right can be switched from binary to BCD.
+
+Another option needs to be added that supports words being input rather than binary. Would add support for this [representation of the alphabet on a 7 seg display](https://en.wikichip.org/wiki/seven-segment_display/representing_letters). Need to think about how it would be physically implemented. Can numbers be mixed with this? Could but there are 26 + 10 or 36 which is 6 bits per segment, not 4. So has to be widened to 48 bits sent to the 7seg display with some of the most significant bits turning into letters. Some design is needed here. Zero blanking may need to be turned off. Would need to write a top level module that shows how to use it in this mode.
+

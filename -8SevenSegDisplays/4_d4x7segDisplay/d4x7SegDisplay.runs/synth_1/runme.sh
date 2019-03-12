@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-7FourSevenSegDisplays/4_d4x7segDisplay/d4x7SegDisplay.runs/synth_1'
+HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES246/-8SevenSegDisplays/4_d4x7segDisplay/d4x7SegDisplay.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log d4x7segDisplay.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source d4x7segDisplay.tcl
+EAStep vivado -log d3x7segDisplay.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source d3x7segDisplay.tcl

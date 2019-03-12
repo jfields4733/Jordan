@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1551185867">
-  <File Type="OPT-HWDEF" Name="SR_latch_dataflow.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="SR_latch_dataflow_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="SR_latch_dataflow.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1551446907">
   <File Type="BITSTR-BMM" Name="SR_latch_dataflow_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="SR_latch_dataflow_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="SR_latch_dataflow_timing_summary_init.rpt"/>
@@ -13,6 +10,7 @@
   <File Type="ROUTE-PWR-SUM" Name="SR_latch_dataflow_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="SR_latch_dataflow_reports.tcl"/>
   <File Type="OPT-DRC" Name="SR_latch_dataflow_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SR_latch_dataflow.hwdef"/>
   <File Type="PWROPT-DCP" Name="SR_latch_dataflow_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="SR_latch_dataflow_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="SR_latch_dataflow_timing_summary_pwropted.rpt"/>
@@ -24,6 +22,7 @@
   <File Type="PLACE-CTRL" Name="SR_latch_dataflow_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="SR_latch_dataflow_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="SR_latch_dataflow_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="SR_latch_dataflow.bgn"/>
   <File Type="PLACE-TIMING" Name="SR_latch_dataflow_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="SR_latch_dataflow_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="SR_latch_dataflow.bin"/>
@@ -53,6 +52,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="SR_latch_dataflow_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="SR_latch_dataflow_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="SR_latch_dataflow_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="SR_latch_dataflow_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="SR_latch_dataflow_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="SR_latch_dataflow_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="SR_latch_dataflow_postroute_physopt.dcp"/>
@@ -66,7 +66,6 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="SR_latch_dataflow_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="SR_latch_dataflow.rbt"/>
   <File Type="BITSTR-NKY" Name="SR_latch_dataflow.nky"/>
-  <File Type="BG-BGN" Name="SR_latch_dataflow.bgn"/>
   <File Type="BG-DRC" Name="SR_latch_dataflow.drc"/>
   <File Type="RDI-RDI" Name="SR_latch_dataflow.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

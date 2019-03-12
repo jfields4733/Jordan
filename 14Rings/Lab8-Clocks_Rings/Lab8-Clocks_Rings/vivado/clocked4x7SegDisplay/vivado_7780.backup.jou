@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed Oct 24 15:15:55 2018
+# Process ID: 7780
+# Current directory: C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3216 C:\Users\SET253-05U.HCCMAIN\Desktop\Lab8-Clocks_Rings\vivado\clocked4x7SegDisplay\clocked4x7SegDisplay.xpr
+# Log file: C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/vivado.log
+# Journal file: C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.xpr
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

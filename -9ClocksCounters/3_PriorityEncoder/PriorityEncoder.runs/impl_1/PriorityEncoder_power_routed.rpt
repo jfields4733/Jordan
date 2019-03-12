@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sat Feb 23 07:18:37 2019
+| Date             : Sun Mar  3 10:07:55 2019
 | Host             : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
 | Command          : report_power -file PriorityEncoder_power_routed.rpt -pb PriorityEncoder_power_summary_routed.pb -rpx PriorityEncoder_power_routed.rpx
 | Design           : PriorityEncoder
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.075        |
+| Total On-Chip Power (W)  | 5.786        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.970        |
-| Device Static (W)        | 0.105        |
+| Dynamic (W)              | 5.656        |
+| Device Static (W)        | 0.130        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 75.5         |
-| Junction Temperature (C) | 34.5         |
+| Max Ambient (C)          | 58.6         |
+| Junction Temperature (C) | 51.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.017 |        6 |       --- |             --- |
-|   LUT as Logic |     0.017 |        5 |     63400 |           <0.01 |
-| Signals        |     0.047 |       14 |       --- |             --- |
-| I/O            |     1.905 |       12 |       210 |            5.71 |
-| Static Power   |     0.105 |          |           |                 |
-| Total          |     2.075 |          |           |                 |
+| Slice Logic    |     0.023 |        8 |       --- |             --- |
+|   LUT as Logic |     0.023 |        6 |     63400 |           <0.01 |
+| Signals        |     0.070 |       16 |       --- |             --- |
+| I/O            |     5.562 |       17 |       210 |            8.10 |
+| Static Power   |     0.130 |          |           |                 |
+| Total          |     5.786 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,16 +67,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.118 |       0.097 |      0.021 |
-| Vccaux    |       1.800 |     0.087 |       0.069 |      0.019 |
-| Vcco33    |       3.300 |     0.534 |       0.530 |      0.004 |
+| Vccint    |       1.000 |     0.167 |       0.126 |      0.042 |
+| Vccaux    |       1.800 |     0.224 |       0.203 |      0.021 |
+| Vcco33    |       3.300 |     1.569 |       1.565 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -134,7 +134,7 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| PriorityEncoder |     1.970 |
+| PriorityEncoder |     5.656 |
 +-----------------+-----------+
 
 

@@ -1,0 +1,379 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed Oct 24 15:18:00 2018
+# Process ID: 4108
+# Current directory: C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.runs/synth_1
+# Command line: vivado.exe -log clocked4x7SegDisplay.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clocked4x7SegDisplay.tcl
+# Log file: C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.runs/synth_1/clocked4x7SegDisplay.vds
+# Journal file: C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source clocked4x7SegDisplay.tcl -notrace
+Command: synth_design -top clocked4x7SegDisplay -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9132 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 368.703 ; gain = 98.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clocked4x7SegDisplay' [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/new/clocked4x7SegDisplay.v:3]
+INFO: [Synth 8-6157] synthesizing module 'd4x7segDisplay' [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/new/d4x7segDisplay.v:13]
+INFO: [Synth 8-6157] synthesizing module 'd2to4decoder' [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/new/d4x7segDisplay.v:70]
+INFO: [Synth 8-226] default block is never used [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/new/d4x7segDisplay.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'd2to4decoder' (1#1) [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/new/d4x7segDisplay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'd7segDisplay' [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/new/d4x7segDisplay.v:45]
+INFO: [Synth 8-6157] synthesizing module 'm16x4Mux' [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/imports/new/m16x4Mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm4x2Mux' [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/imports/new/m4x2Mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm2x1Mux' [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/imports/new/m2x1mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'm2x1Mux' (2#1) [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/imports/new/m2x1mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'm4x2Mux' (3#1) [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/imports/new/m4x2Mux.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vcb' [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/imports/new/vcb.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vcb' (4#1) [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/imports/new/vcb.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'm16x4Mux' (5#1) [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/imports/new/m16x4Mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'd7segDisplay' (6#1) [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/new/d4x7segDisplay.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'd4x7segDisplay' (7#1) [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/imports/sources_1/new/d4x7segDisplay.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'clocked4x7SegDisplay' (8#1) [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/sources_1/new/clocked4x7SegDisplay.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 423.840 ; gain = 153.488
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 423.840 ; gain = 153.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 423.840 ; gain = 153.488
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/constrs_1/imports/CONSTANTS/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/constrs_1/imports/CONSTANTS/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.srcs/constrs_1/imports/CONSTANTS/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clocked4x7SegDisplay_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/clocked4x7SegDisplay_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 770.363 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module d2to4decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design clocked4x7SegDisplay has port outAnnode[7] driven by constant 1
+WARNING: [Synth 8-3917] design clocked4x7SegDisplay has port outAnnode[6] driven by constant 1
+WARNING: [Synth 8-3917] design clocked4x7SegDisplay has port outAnnode[5] driven by constant 1
+WARNING: [Synth 8-3917] design clocked4x7SegDisplay has port outAnnode[4] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     9|
+|4     |LUT2   |    30|
+|5     |LUT4   |    36|
+|6     |LUT6   |     8|
+|7     |FDRE   |    19|
+|8     |IBUF   |    22|
+|9     |OBUF   |     9|
+|10    |OBUFT  |     7|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+---------------+------+
+|      |Instance     |Module         |Cells |
++------+-------------+---------------+------+
+|1     |top          |               |   146|
+|2     |  u1         |d4x7segDisplay |    74|
+|3     |    d1       |d2to4decoder   |    21|
+|4     |    u0       |d7segDisplay   |     7|
+|5     |      i1     |m16x4Mux_63    |     1|
+|6     |        m5   |m4x2Mux_82     |     1|
+|7     |          I3 |m2x1Mux_83     |     1|
+|8     |      i2     |m16x4Mux_64    |     1|
+|9     |        m5   |m4x2Mux_80     |     1|
+|10    |          I3 |m2x1Mux_81     |     1|
+|11    |      i3     |m16x4Mux_65    |     1|
+|12    |        m5   |m4x2Mux_78     |     1|
+|13    |          I3 |m2x1Mux_79     |     1|
+|14    |      i4     |m16x4Mux_66    |     1|
+|15    |        m5   |m4x2Mux_76     |     1|
+|16    |          I3 |m2x1Mux_77     |     1|
+|17    |      i5     |m16x4Mux_67    |     1|
+|18    |        m5   |m4x2Mux_74     |     1|
+|19    |          I3 |m2x1Mux_75     |     1|
+|20    |      i6     |m16x4Mux_68    |     1|
+|21    |        m5   |m4x2Mux_72     |     1|
+|22    |          I3 |m2x1Mux_73     |     1|
+|23    |      i7     |m16x4Mux_69    |     1|
+|24    |        m5   |m4x2Mux_70     |     1|
+|25    |          I3 |m2x1Mux_71     |     1|
+|26    |    u1       |d7segDisplay_0 |     7|
+|27    |      i1     |m16x4Mux_42    |     1|
+|28    |        m5   |m4x2Mux_61     |     1|
+|29    |          I3 |m2x1Mux_62     |     1|
+|30    |      i2     |m16x4Mux_43    |     1|
+|31    |        m5   |m4x2Mux_59     |     1|
+|32    |          I3 |m2x1Mux_60     |     1|
+|33    |      i3     |m16x4Mux_44    |     1|
+|34    |        m5   |m4x2Mux_57     |     1|
+|35    |          I3 |m2x1Mux_58     |     1|
+|36    |      i4     |m16x4Mux_45    |     1|
+|37    |        m5   |m4x2Mux_55     |     1|
+|38    |          I3 |m2x1Mux_56     |     1|
+|39    |      i5     |m16x4Mux_46    |     1|
+|40    |        m5   |m4x2Mux_53     |     1|
+|41    |          I3 |m2x1Mux_54     |     1|
+|42    |      i6     |m16x4Mux_47    |     1|
+|43    |        m5   |m4x2Mux_51     |     1|
+|44    |          I3 |m2x1Mux_52     |     1|
+|45    |      i7     |m16x4Mux_48    |     1|
+|46    |        m5   |m4x2Mux_49     |     1|
+|47    |          I3 |m2x1Mux_50     |     1|
+|48    |    u2       |d7segDisplay_1 |    21|
+|49    |      i1     |m16x4Mux_21    |     3|
+|50    |        m5   |m4x2Mux_40     |     3|
+|51    |          I3 |m2x1Mux_41     |     3|
+|52    |      i2     |m16x4Mux_22    |     3|
+|53    |        m5   |m4x2Mux_38     |     3|
+|54    |          I3 |m2x1Mux_39     |     3|
+|55    |      i3     |m16x4Mux_23    |     3|
+|56    |        m5   |m4x2Mux_36     |     3|
+|57    |          I3 |m2x1Mux_37     |     3|
+|58    |      i4     |m16x4Mux_24    |     3|
+|59    |        m5   |m4x2Mux_34     |     3|
+|60    |          I3 |m2x1Mux_35     |     3|
+|61    |      i5     |m16x4Mux_25    |     3|
+|62    |        m5   |m4x2Mux_32     |     3|
+|63    |          I3 |m2x1Mux_33     |     3|
+|64    |      i6     |m16x4Mux_26    |     3|
+|65    |        m5   |m4x2Mux_30     |     3|
+|66    |          I3 |m2x1Mux_31     |     3|
+|67    |      i7     |m16x4Mux_27    |     3|
+|68    |        m5   |m4x2Mux_28     |     3|
+|69    |          I3 |m2x1Mux_29     |     3|
+|70    |    u3       |d7segDisplay_2 |    14|
+|71    |      i1     |m16x4Mux       |     2|
+|72    |        m5   |m4x2Mux_19     |     2|
+|73    |          I3 |m2x1Mux_20     |     2|
+|74    |      i2     |m16x4Mux_3     |     2|
+|75    |        m5   |m4x2Mux_17     |     2|
+|76    |          I3 |m2x1Mux_18     |     2|
+|77    |      i3     |m16x4Mux_4     |     2|
+|78    |        m5   |m4x2Mux_15     |     2|
+|79    |          I3 |m2x1Mux_16     |     2|
+|80    |      i4     |m16x4Mux_5     |     2|
+|81    |        m5   |m4x2Mux_13     |     2|
+|82    |          I3 |m2x1Mux_14     |     2|
+|83    |      i5     |m16x4Mux_6     |     2|
+|84    |        m5   |m4x2Mux_11     |     2|
+|85    |          I3 |m2x1Mux_12     |     2|
+|86    |      i6     |m16x4Mux_7     |     2|
+|87    |        m5   |m4x2Mux_9      |     2|
+|88    |          I3 |m2x1Mux_10     |     2|
+|89    |      i7     |m16x4Mux_8     |     2|
+|90    |        m5   |m4x2Mux        |     2|
+|91    |          I3 |m2x1Mux        |     2|
++------+-------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 770.363 ; gain = 500.012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 770.363 ; gain = 153.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 770.363 ; gain = 500.012
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 788.840 ; gain = 531.008
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.runs/synth_1/clocked4x7SegDisplay.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file clocked4x7SegDisplay_utilization_synth.rpt -pb clocked4x7SegDisplay_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 788.840 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 24 15:18:34 2018...

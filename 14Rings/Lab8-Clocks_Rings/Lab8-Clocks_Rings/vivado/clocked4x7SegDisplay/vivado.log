@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed Oct 24 16:19:10 2018
+# Process ID: 2472
+# Current directory: C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1532 C:\Users\SET253-05U.HCCMAIN\Desktop\Lab8-Clocks_Rings\vivado\clocked4x7SegDisplay\clocked4x7SegDisplay.xpr
+# Log file: C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/vivado.log
+# Journal file: C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay/clocked4x7SegDisplay.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/SET253-05U.HCCMAIN/Desktop/Lab8-Clocks_Rings/vivado/clocked4x7SegDisplay'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 820.902 ; gain = 117.824
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 24 16:25:24 2018...

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550001837">
-  <File Type="PA-TCL" Name="d4x7segDisplay.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="d4x7segDisplay_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="d4x7segDisplay_reports.tcl"/>
-  <File Type="RDS-RDS" Name="d4x7segDisplay.vds"/>
-  <File Type="RDS-UTIL" Name="d4x7segDisplay_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="d4x7segDisplay_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="d4x7segDisplay.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="d4x7segDisplay_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="d4x7segDisplay_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1551635850">
+  <File Type="PA-TCL" Name="d3x7segDisplay.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="d3x7segDisplay_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="d3x7segDisplay_reports.tcl"/>
+  <File Type="RDS-RDS" Name="d3x7segDisplay.vds"/>
+  <File Type="RDS-UTIL" Name="d3x7segDisplay_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="d3x7segDisplay_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="d3x7segDisplay.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="d3x7segDisplay_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="d3x7segDisplay_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/m16x4Mux.v">
@@ -56,7 +56,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="d4x7segDisplay"/>
+      <Option Name="TopModule" Val="d3x7segDisplay"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
