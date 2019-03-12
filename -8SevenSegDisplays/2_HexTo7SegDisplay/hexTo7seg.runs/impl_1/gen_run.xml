@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552339622">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552426778">
+  <File Type="OPT-HWDEF" Name="hexTo7seg.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="hexTo7seg_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="hexTo7seg.dcp"/>
   <File Type="BITSTR-BMM" Name="hexTo7seg_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="hexTo7seg_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="hexTo7seg_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="hexTo7seg_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="hexTo7seg_reports.tcl"/>
   <File Type="OPT-DRC" Name="hexTo7seg_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="hexTo7seg.hwdef"/>
   <File Type="PWROPT-DCP" Name="hexTo7seg_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="hexTo7seg_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="hexTo7seg_timing_summary_pwropted.rpt"/>
@@ -22,7 +24,6 @@
   <File Type="PLACE-CTRL" Name="hexTo7seg_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="hexTo7seg_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="hexTo7seg_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="hexTo7seg.bgn"/>
   <File Type="PLACE-TIMING" Name="hexTo7seg_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="hexTo7seg_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="hexTo7seg.bin"/>
@@ -52,7 +53,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="hexTo7seg_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="hexTo7seg_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="hexTo7seg_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="hexTo7seg_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="hexTo7seg_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="hexTo7seg_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="hexTo7seg_postroute_physopt.dcp"/>
@@ -66,6 +66,7 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="hexTo7seg_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="hexTo7seg.rbt"/>
   <File Type="BITSTR-NKY" Name="hexTo7seg.nky"/>
+  <File Type="BG-BGN" Name="hexTo7seg.bgn"/>
   <File Type="BG-DRC" Name="hexTo7seg.drc"/>
   <File Type="RDI-RDI" Name="hexTo7seg.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

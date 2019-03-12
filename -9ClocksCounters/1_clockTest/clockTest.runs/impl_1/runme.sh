@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1'
+HD_PWD='C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/1_clockTest/clockTest.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log clkDivider.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source clkDivider.tcl -notrace
 
 

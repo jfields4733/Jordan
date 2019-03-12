@@ -22,23 +22,107 @@ The goal of this project is see the most simple counter possible.
 
 #### Port Diagram
 
+![1552430833868](1552430833868.png)
+
 #### Verilog Code
+
+module clkDivider(
+    input clk,
+    input rst, //SW[0]
+    input [1:0] outputBankSelect, //SW[1],SW[2] there are 32 bits of cout_up, displayed 8 at a time in the LEDs
+    input slowFast, //SW[3]
+    output [7:0] count_small,
+    output [2:0] anode_small,
+    output [7:0] AN,
+    output a,
+    output b,
+    output c,
+    output d,
+    output e,
+    output f,
+    output g
+    );
+     
+reg [31:0] divider_counter = 50000000; // 100,000,000/50,000,000 = 2 counts per second 
+reg [31:0] divider_anode = 100000000; //with 100,000,000/100,000,000 = 1 count per second
+
+integer count_clk = 0; //this is the counter to be displayed by the 7 seg display
+integer anode_clk = 0; //this is the clock that is to cause a 3 bit counter to to change 50 times a second
+
+integer count_up = 100000000; //this is a 32 but counter that add's 1 
+reg [2:0] anode_up = 0; //this counts slowly so can see individual anodes .. or not .. if you want to see them all on
+
+always_ff @ (posedge(clk), posedge(rst))
+begin
+    if (rst == 1) count_clk <= 0;
+    else if (count_clk == divider_counter-1) begin
+     count_clk <= 0;
+     count_up <= count_up + 1;
+     end         
+    else count_clk <= count_clk + 1;
+end
+
+always_ff @ (posedge(clk), posedge(rst))
+begin
+    if (rst == 1) anode_clk <=0 ;
+    else if (anode_clk == divider_anode-1) begin
+        anode_clk <=0 ;
+        anode_up <= anode_up+1;
+    end         
+    else anode_clk<=anode_clk + 1;
+end
+
+assign count_small = count_up[8*outputBankSelect +: 8];
+assign anode_small = anode_up[2:0];
+
+//creates the three bars on the seven segment displays
+assign AN = ~(1 << anode_up);
+assign a=0;
+assign b=1;
+assign c=1;
+assign d=0;
+assign e=1;
+assign f=1;
+assign g=0;
+
+//switches counting speeds
+always_comb 
+    if (slowFast==0) begin
+        divider_counter = 50000000; // 100,000,000/50,000,000 = 2 counts per second 
+        divider_anode = 100000000; //with 100,000,000/100,000,000 = 1 count per second
+    end
+    else begin
+        divider_counter = 500000; // 100,000,000/100,000,000 = 200 counts per second 
+        divider_anode = 50000; //with 100,000,000/50,000 = 200 count per second
+    end
+
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1552430236434](1552430236434.png)
+
 #### Synthesis Schematic Screen shot
 
+![1552430343403](1552430343403.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1552430531579](1552430531579.png)
 
 #### Testing
 
 You should uncover a bug during the test of this circuit.
+
+The circuit is supposed to be a counter that is capable of counting in 16 and 32 bit numbers. Sw[0] resets the counter (or stop/starts it). Sw[2:1] selects which 8-bit section of the 32-bit number to display on the 7-segment display. Sw[3] changes the number between a 32-bit counter and 16-bit counter.
 
 ___
 
 #### Prompts
 
 *What are the symptoms of the problem?* 
+
+The circuit never resets and the numbers are displayed wrongly on the 7-segment display. Also, when the counter is displaying a 16-bit number, it does not show all the digits at the same time, it goes through each digit only showing one at a time.
 
 *There are two manual solutions to the problem. What are they?*
 
@@ -62,11 +146,35 @@ The goal  is to find a way to grab 4 bits out a group of 32 in a single line of 
 
 #### Verilog Code
 
+module bitSlice(
+    input [2:0] select,
+    output [3:0] hexOut
+    );
+
+    /* https://stackoverflow.com/questions/13399663/splitting-a-bit-array-in-verilog*/
+    
+    integer c_input = 451263789; // using 32 of the 128 bits 
+    //goal is to display a group of 4 bits: 0001 1010 1110 0101 1011 1101 0010 1101
+    // using 4 bit wide hexOut instead of eight bit wire [7:0] out = in[8*idx +: 8];
+    
+    assign hexOut = c_input[4*select +: 4];
+    /* this means there are 8 possible groups of 4 bits in 32 bits, 
+    If select is 0 then c_input[4*(0) +: 8] == c_input[7:0]
+    If select is 7 then c_input[4*(7) +: 8] == c_input[31:24]
+    */
+endmodule
+
 #### RTL Schematic Screen shot
+
+![1552431275279](1552431275279.png)
 
 #### Synthesis Schematic Screen shot
 
+![1552431356712](1552431356712.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1552431458413](1552431458413.png)
 
 #### Testing
 

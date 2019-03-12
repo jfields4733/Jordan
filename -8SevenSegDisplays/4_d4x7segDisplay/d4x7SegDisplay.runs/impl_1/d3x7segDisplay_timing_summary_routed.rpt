@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun Mar  3 12:58:41 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Tue Mar 12 18:08:47 2019
+| Host         : SET253-14C running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file d3x7segDisplay_timing_summary_routed.rpt -pb d3x7segDisplay_timing_summary_routed.pb -rpx d3x7segDisplay_timing_summary_routed.rpx -warn_on_violation
 | Design       : d3x7segDisplay
 | Device       : 7a100t-csg324

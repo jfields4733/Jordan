@@ -65,21 +65,35 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
    paste your modified code here
 
+![1552426603470](1552426603470.png)
+
+![1552426635750](1552426635750.png)
+
+![1552426698234](1552426698234.png)
+
 #### RTL Schematic Screen shot
 
   make this of your modified code
+
+![1552426534684](1552426534684.png)
 
 #### Synthesis Schematic Screen shot
 
   make this of your modified code
 
+![1552426815801](1552426815801.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
 
   make this of your modified code
 
+![1552426912366](1552426912366.png)
+
 #### Testing
 
 testing the modified and unmodified should be the same
+
+Use the left 4 switches to make 4-bit representation of hex numbers and the LEDs should represent the BCD form of the number with LED4 acting as the carry-bit. The rightmost 7-segment display should display the hex representation of the 4-bit binary number.
 
 ## 3_d7SegDisplay
 
@@ -91,13 +105,23 @@ xxxxx don't try to draw xxxxxx
 
 shoot screen shot
 
+![1552427380784](1552427380784.png)
+
 #### RTL Schematic Screen shot
+
+![1552427300284](1552427300284.png)
 
 #### Synthesis Schematic Screen shot
 
+![1552427429838](1552427429838.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1552427632603](1552427632603.png)
+
 #### Testing
+
+Switch5 turns the rightmost 7-segment display on and off. When on, it should display the hex representation of the 4-bit binary number given by the switch[3:0]. Switch4 turns the decimal point on and off.
 
 ------
 
@@ -117,13 +141,121 @@ xxxxx don't try to draw xxxxxx
 
 #### Verilog Code
 
+`timescale 1ns / 1ps
+
+
+module d3x7segDisplay(
+	input [11:0] hexToDisplay, //uses 12 bits because have 16 switches and need 4 of them to manually control the anodes and decimal place
+	input [1:0] iDP, // in Decimal Place .. is 2 bit number so that only one decimal place can be turned on at a time
+	input [1:0] Annode, // again, is 2 bit number so after going through decoder, can only use one at a time
+	output a, //these are for one 7 seg ment display
+    output b, //the particular seen seg display being used is determined by Annode
+    output c,
+    output d,
+    output e,
+    output f,
+    output g,
+    output oDP, //output decimal place, is turned on only when iDP and Annode match
+    output [7:0] outAnnode_selector
+    );
+    wire [3:0] iDecimalPlace; 
+    wire [3:0] iAnnode;
+       
+	d2to4decoder d0(iDecimalPlace,iDP); //active high, turns 2 bit number into 4 bit with only one of the four bits high
+	d2to4decoder d1(iAnnode,Annode); // active high, turns 2 bit number into 4 bit with only one of the four bits high
+	
+	d7segDisplay u0(hexToDisplay[3:0], iDecimalPlace[0], iAnnode[0], a,b,c,d,e,f,g,oDP); //all this logic is active high
+	d7segDisplay u1(hexToDisplay[7:4], iDecimalPlace[1], iAnnode[1], a,b,c,d,e,f,g,oDP); //need one of these for each segment driving
+	d7segDisplay u2(hexToDisplay[11:8],iDecimalPlace[2], iAnnode[2], a,b,c,d,e,f,g,oDP); //iAnnode only turns on one
+	d7segDisplay u3(hexToDisplay[11:8],iDecimalPlace[3], iAnnode[3], a,b,c,d,e,f,g,oDP); 
+	//They have to be in a group like this because all 7seg displays are hooked to the same a,b,c,d,... wires as output devices 
+	
+	//outAnnode_selector is what determines whether a particular 7seg display is turned on or not
+	assign outAnnode_selector[3:0] = ~iAnnode; //annode is active low so if iAnnode is a 1, then outAnnode_selector is 0 and is turned on 
+	assign outAnnode_selector[7:4] = 4'b1111; // 1 means display is off  .. have to turn unused off   
+
+endmodule
+
+module d7segDisplay(
+    input [3:0] hexToDisplay,
+    input iDP,
+    input anode,
+    output a,
+    output b,
+    output c,
+    output d,
+    output e,
+    output f,
+    output g,
+    output dp
+    );
+    wire invertedDP;
+    m16x4Mux i1(16'h2812,hexToDisplay,anode,a);
+    m16x4Mux i2(16'hd860,hexToDisplay,anode,b);
+    m16x4Mux i3(16'hd004,hexToDisplay,anode,c);
+    m16x4Mux i4(16'h8692,hexToDisplay,anode,d);
+    m16x4Mux i5(16'h02ba,hexToDisplay,anode,e);
+    m16x4Mux i6(16'h208e,hexToDisplay,anode,f);
+    m16x4Mux i7(16'h1083,hexToDisplay,anode,g);
+    assign invertedDP = ~iDP;
+    vcb i8(invertedDP,anode,dp);
+endmodule
+
+module d2to4decoder(Y, X);
+
+ output [3:0] Y;
+ input [1:0] X;
+ reg [3:0] Y;
+
+ always @* begin
+	case ( {X} )
+		2'b00: {Y} = 4'b0001;
+		2'b01: {Y} = 4'b0010;
+		2'b10: {Y} = 4'b0100;
+		2'b11: {Y} = 4'b1000;
+		default: {Y} = 4'bxxxx;
+	endcase
+ end
+
+ endmodule
+
+ module d3to8decoder(Y, X);
+
+  output [7:0] Y;
+  input [2:0] X;
+  reg [7:0] Y;
+
+  always @* begin
+     case ( {X} )
+         3'b000: {Y} = 8'b00000001;
+         3'b001: {Y} = 8'b00000010;
+         3'b010: {Y} = 8'b00000100;
+         3'b011: {Y} = 8'b00001000;
+         3'b100: {Y} = 8'b00010000;
+         3'b101: {Y} = 8'b00100000;
+         3'b110: {Y} = 8'b01000000;
+         3'b111: {Y} = 8'b10000000;         
+         default: {Y} = 8'bxxxx;
+     endcase
+  end
+
+  endmodule
+
 #### RTL Schematic Screen shot
+
+![1552428325518](1552428325518.png)
 
 #### Synthesis Schematic Screen shot
 
+![1552428446761](1552428446761.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1552428587027](1552428587027.png)
+
 #### Testing
+
+Sw[15:14] give a 2-bit number determining which of the four rightmost 7-segment displays will display the decimal place. Sw[13:12] give a 2-but number determining which of the four rightmost 7-segment displays will be on. Sw[11:0] give a 12-bit number that is converted to HEX and each digit of the HEX is assigned to a 7-segment display in order from MSB to LSB. 
 
 ------
 

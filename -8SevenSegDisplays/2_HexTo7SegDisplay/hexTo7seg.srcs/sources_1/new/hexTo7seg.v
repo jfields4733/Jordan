@@ -16,7 +16,7 @@ module hexTo7seg(
     // exercise the two modules
     wire [6:0] seg;
     hex2bcd i1(hex,bcd,carry);
-    BCDto7segment i2(bcd,seg);
+    BCDto7segment i2(hex,seg);
     
     //now translate seg into the default cathod a, cathod b, language of the XDC file
     assign CA = seg[0];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549996512">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552427311">
   <File Type="PA-TCL" Name="d7segDisplay.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="d7segDisplay_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="d7segDisplay_reports.tcl"/>

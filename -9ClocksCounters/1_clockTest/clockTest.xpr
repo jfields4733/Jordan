@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-9ClocksCounters/1_clockTest/clockTest.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/1_clockTest/clockTest.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="ee4b75e24dbb4e2295e18e75dd68b239"/>

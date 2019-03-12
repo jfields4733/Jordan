@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/-7FourSevenSegDisplays/3_d7SegDisplay/d7segDisplay.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-8SevenSegDisplays/3_d7SegDisplay/d7segDisplay.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5aedf5299cfd4e70ad849e443d39a651"/>

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/FoersterGame/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/2_bitSlicing/bitSlicing.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/2_bitSlicing/bitSlicing.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="25114d7938114cbbbb4416c63e48e4d7"/>

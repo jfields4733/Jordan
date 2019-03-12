@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550860203">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552430326">
+  <File Type="OPT-HWDEF" Name="clkDivider.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="clkDivider_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="clkDivider.dcp"/>
   <File Type="BITSTR-BMM" Name="clkDivider_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="clkDivider_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="clkDivider_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="clkDivider_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="clkDivider_reports.tcl"/>
   <File Type="OPT-DRC" Name="clkDivider_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="clkDivider.hwdef"/>
   <File Type="PWROPT-DCP" Name="clkDivider_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="clkDivider_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="clkDivider_timing_summary_pwropted.rpt"/>
@@ -22,7 +24,6 @@
   <File Type="PLACE-CTRL" Name="clkDivider_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="clkDivider_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="clkDivider_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="clkDivider.bgn"/>
   <File Type="PLACE-TIMING" Name="clkDivider_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="clkDivider_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="clkDivider.bin"/>
@@ -52,7 +53,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="clkDivider_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="clkDivider_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="clkDivider_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="clkDivider_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="clkDivider_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="clkDivider_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="clkDivider_postroute_physopt.dcp"/>
@@ -66,6 +66,7 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="clkDivider_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="clkDivider.rbt"/>
   <File Type="BITSTR-NKY" Name="clkDivider.nky"/>
+  <File Type="BG-BGN" Name="clkDivider.bgn"/>
   <File Type="BG-DRC" Name="clkDivider.drc"/>
   <File Type="RDI-RDI" Name="clkDivider.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

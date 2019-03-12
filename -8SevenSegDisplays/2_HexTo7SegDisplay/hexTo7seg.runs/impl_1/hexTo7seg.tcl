@@ -67,10 +67,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-8SevenSegDisplays/2_HexTo7SegDisplay/.Xil/Vivado-14684-SET253-04C/incrSyn
-  set_param xicom.use_bs_reader 1
   open_checkpoint hexTo7seg_routed.dcp
-  set_property webtalk.parent_dir C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-8SevenSegDisplays/2_HexTo7SegDisplay/hexTo7seg.cache/wt [current_project]
   catch { write_mem_info -force hexTo7seg.mmi }
   write_bitstream -force hexTo7seg.bit 
   catch {write_debug_probes -quiet -force hexTo7seg}
