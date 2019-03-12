@@ -69,8 +69,6 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
   make this of your modified code
 
-![1552336031377](1552336031377.png)
-
 #### Synthesis Schematic Screen shot
 
   make this of your modified code
@@ -181,7 +179,9 @@ Switches 0 through 2 control the decimal place.
 
 *Which* *counter would you delete if another program was controlling the number to be displayed? Cut and paste a picture of the code that would be deleted in order to do this.*
 
-![1550263932331](../../ENES247/lab3-ReusableBCDhex7segDisplayCode/1550263932331.png)
+
+
+![1552355054620](1552355054620.png)
 
 
 

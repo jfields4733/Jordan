@@ -7,7 +7,8 @@ module BCDto7segment(
     input [3:0] x,
     output [6:0] seg
     );
-      
+	
+	
 	assign seg[6] = (~x[3] & ~x[2] & ~x[1]) | (~x[3] & x[2] & x[1] & x[0]) | (x[3] & x[2] & ~x[1] & ~x[0]);  // seg g or 6
 	assign seg[5] = (~x[3] & ~x[2] & x[0]) | (~x[3] & x[1] & x[0]) | (~x[3] & ~x[2] & x[1]) | (x[3] & x[2] & ~x[1] & x[0]);  // seg f or 5
 	assign seg[4] = (~x[3] & x[0]) | (~x[3] & x[2] & ~x[1]) | (x[3] & ~x[2] & ~x[1] & x[0]);  // seg e or 4
