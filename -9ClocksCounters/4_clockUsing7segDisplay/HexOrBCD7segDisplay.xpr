@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1f10c2c8e0854d00b12c6b6456ba9b66"/>

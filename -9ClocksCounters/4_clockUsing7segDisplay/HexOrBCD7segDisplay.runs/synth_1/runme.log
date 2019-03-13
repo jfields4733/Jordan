@@ -14,16 +14,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11864 
+INFO: Helper process launched with PID 4400 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 348.320 ; gain = 95.848
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 374.910 ; gain = 100.164
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'thirtyTwobitHexTo16LEDs' [C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.srcs/sources_1/imports/4_32bitsHexTo7segAnd16LEDs/32bitHexTo16LEDs.sv:2]
-WARNING: [Synth 8-5788] Register dp_reg in module thirtyTwobitHexTo16LEDs is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.srcs/sources_1/imports/4_32bitsHexTo7segAnd16LEDs/32bitHexTo16LEDs.sv:56]
-WARNING: [Synth 8-5788] Register segment_reg in module thirtyTwobitHexTo16LEDs is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.srcs/sources_1/imports/4_32bitsHexTo7segAnd16LEDs/32bitHexTo16LEDs.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'thirtyTwobitHexTo16LEDs' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.srcs/sources_1/imports/4_32bitsHexTo7segAnd16LEDs/32bitHexTo16LEDs.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'thirtyTwobitHexTo16LEDs' [C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.srcs/sources_1/imports/4_32bitsHexTo7segAnd16LEDs/32bitHexTo16LEDs.sv:2]
+WARNING: [Synth 8-5788] Register dp_reg in module thirtyTwobitHexTo16LEDs is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.srcs/sources_1/imports/4_32bitsHexTo7segAnd16LEDs/32bitHexTo16LEDs.sv:56]
+WARNING: [Synth 8-5788] Register segment_reg in module thirtyTwobitHexTo16LEDs is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.srcs/sources_1/imports/4_32bitsHexTo7segAnd16LEDs/32bitHexTo16LEDs.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'thirtyTwobitHexTo16LEDs' (1#1) [C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.srcs/sources_1/imports/4_32bitsHexTo7segAnd16LEDs/32bitHexTo16LEDs.sv:2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 408.754 ; gain = 156.281
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 436.301 ; gain = 161.555
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -36,44 +36,44 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 408.754 ; gain = 156.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 436.301 ; gain = 161.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 408.754 ; gain = 156.281
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 436.301 ; gain = 161.555
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.srcs/constrs_1/imports/3_32bitsHexTo7segAnd16LEDs/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.srcs/constrs_1/imports/3_32bitsHexTo7segAnd16LEDs/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.srcs/constrs_1/imports/3_32bitsHexTo7segAnd16LEDs/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thirtyTwobitHexTo16LEDs_propImpl.xdc].
+Parsing XDC File [C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.srcs/constrs_1/imports/3_32bitsHexTo7segAnd16LEDs/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.srcs/constrs_1/imports/3_32bitsHexTo7segAnd16LEDs/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.srcs/constrs_1/imports/3_32bitsHexTo7segAnd16LEDs/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thirtyTwobitHexTo16LEDs_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/thirtyTwobitHexTo16LEDs_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 756.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 783.867 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 756.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 783.867 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 756.301 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 756.301 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 783.867 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 783.867 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 756.301 ; gain = 503.828
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 783.867 ; gain = 509.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 756.301 ; gain = 503.828
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 783.867 ; gain = 509.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 756.301 ; gain = 503.828
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 783.867 ; gain = 509.121
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "anode_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "dp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -81,7 +81,7 @@ INFO: [Synth 8-5545] ROM "anode_clk" won't be mapped to RAM because address size
 INFO: [Synth 8-5545] ROM "dp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "divider_counter" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 756.301 ; gain = 503.828
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 783.867 ; gain = 509.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -153,7 +153,7 @@ Warning: Parallel synthesis criteria is not met
 INFO: [Synth 8-5545] ROM "anode_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "dp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 816.652 ; gain = 564.180
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 844.414 ; gain = 569.668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -165,13 +165,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 816.652 ; gain = 564.180
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 844.414 ; gain = 569.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 816.652 ; gain = 564.180
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 844.414 ; gain = 569.668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -183,7 +183,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 847.090 ; gain = 594.617
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 873.438 ; gain = 598.691
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -207,7 +207,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 847.090 ; gain = 594.617
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 873.438 ; gain = 598.691
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -220,7 +220,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 847.090 ; gain = 594.617
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 873.438 ; gain = 598.691
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -232,25 +232,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 847.090 ; gain = 594.617
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 873.438 ; gain = 598.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 847.090 ; gain = 594.617
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 873.438 ; gain = 598.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 847.090 ; gain = 594.617
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 873.438 ; gain = 598.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 847.090 ; gain = 594.617
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 873.438 ; gain = 598.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -287,27 +287,27 @@ Report Instance Areas:
 |1     |top      |       |   666|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 847.090 ; gain = 594.617
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 873.438 ; gain = 598.691
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 847.090 ; gain = 247.070
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 847.090 ; gain = 594.617
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 873.438 ; gain = 251.125
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 873.438 ; gain = 598.691
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 847.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 873.438 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 21 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 847.090 ; gain = 594.617
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 847.090 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 873.438 ; gain = 611.453
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 873.438 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.runs/synth_1/thirtyTwobitHexTo16LEDs.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.runs/synth_1/thirtyTwobitHexTo16LEDs.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file thirtyTwobitHexTo16LEDs_utilization_synth.rpt -pb thirtyTwobitHexTo16LEDs_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Mar  3 12:24:37 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 12 21:56:31 2019...

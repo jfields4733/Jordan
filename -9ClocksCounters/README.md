@@ -180,7 +180,7 @@ endmodule
 
 3 Select bits select 1 of 8, 4 bit groups from a 32 bit constant and display on LEDs.  The constant is inside the port diagram:
 
-![bitSlicing](../../ENES247/lab3-ReusableBCDhex7segDisplayCode/assets/bitSlicing.svg)
+![1552440459882](1552440459882.png)
 
 ------
 
@@ -237,15 +237,61 @@ More generally this is called priority logic.  It was the subject of a talk at t
 
 #### Port Diagram
 
+![1552441123122](1552441123122.png)
+
 #### Verilog Code
+
+`timescale 1ns / 1ps
+
+
+module PriorityEncoder(
+    input [7:0] y,
+    output reg [2:0] abc1,
+    output reg [2:0] abc2,
+    output reg [2:0] abc3
+    );
+	
+    integer i;
+    
+    always_comb begin //priority encoder #1
+        abc1=0;
+        for (i=7; i>=0; i = i-1) if (y[i]==1) abc1=7-i;
+    end
+    
+    always_comb begin  //priority encoder #2
+       abc2=0;
+       for (i=0; i<8; i = i+1) if (y[i]==1) abc2=i;
+    end   
+    
+    always_comb begin //priority encoder #3 .. more general using casez
+        abc3=0;
+        casez (y)
+             8'b1???????: abc3 = 7;
+             8'b01??????: abc3 = 6;
+             8'b001?????: abc3 = 5;
+             8'b0001????: abc3 = 4;
+             8'b00001???: abc3 = 3;
+             8'b000001??: abc3 = 2;
+             8'b0000001?: abc3 = 1;            
+        endcase
+    end
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1552440836385](1552440836385.png)
+
 #### Synthesis Schematic Screen shot
+
+![1552440926230](1552440926230.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1552441059881](1552441059881.png)
+
 #### Testing
+
+The LEDs are split into 3 groups. LED[3:1] should show the 3-bit binary representation of 7 subtracted by the position number of the rightmost switch that is turned on. For example having sw2 on and sw1 and sw0 off would yield 7-2=5 and 5 should be shown in LED[3:1]. LED[15:13] and LED [9:7] should show the 3-bit binary representation of the position number of the leftmost switch turned on.
 
 #### Prompts
 
@@ -265,15 +311,152 @@ The code for the 7 seg display is evolving.
 
 Just do a screen shot of the top level module. 
 
+![1552442198855](1552442198855.png)
+
 #### Verilog Code
+
+module thirtyTwobitHexTo16LEDs(
+    input clk, // is automatic
+    input stop_start, // pauses
+    input reset, // starts counters over again at 1
+    input hexBCD, // switches from displaying 32 bits of hex to displaying 28 bits of hex converted to 32 bits BCD 
+    input bankSwitch, //switches LED's to lower 16 and slows down the counting
+    input [2:0] dp_selector, // decimal place selector
+    output reg dp, // decimal place red light dot on the 7 segment displays
+    output reg [7:0] anodes, //on off buttons for each of the 7 segment displays
+    output a,b,c,d,e,f,g, // red led's on the seven segment displays
+    output reg [15:0] LED // LEDs above the switches
+    );
+    
+    // clock stuff ... really two clocks .. one so can see counting on the display
+    // another faster clock that displays 8 7seg displays fast enough that they blur, but slow enough to fully turn on and be bright
+    integer divider_counter; // 50,000,000 with 100,000,000Hz clock means 2 times per second     
+    always_comb if (bankSwitch==1) divider_counter=50000000; else divider_counter=1000; //about twice a second
+    integer divider_anode = 250000; //with 100,000,000Hz clock means 400Hz clock
+    
+    integer count_clk = 0; //this is the counter to be displayed by the 7 seg display
+    integer anode_clk = 0; //this is the clock that is to cause a 3 bit counter to to change 50 times a second
+    
+    reg [2:0] segment = 0; //this is what chooses what is displayed on which segment 
+    integer c_input=451263789; //this creates a variable called c_input with 32 bits that has 1 added to it by a clock
+              //in hex is 1AE5 BD2D
+              //in decimal is 451,263,789
+              //in binary is 0001 1010 1110 0101 1011 1101 0010 1101
+              //this is so that if upper 16 bits are displayed on LED's can see them counting, lower 16 will be a blur
+    
+    //first clock controlling how fast numbers seem to count on the 8 segments
+    //--------------------------------------------------------------------------
+    always_ff @ (posedge(clk), posedge(reset))
+    begin
+        if (reset == 1) begin
+            count_clk <= 0;
+            c_input <=0;
+        end
+        else if(stop_start==0) begin
+            if (count_clk >= divider_counter-1) begin
+                count_clk <= 0;
+                c_input <= c_input + 1;
+                end         
+            else count_clk <= count_clk + 1;
+        end
+        else count_clk <= count_clk;
+    end
+    
+    //second clock controlling how fast the 8 displays are turned on one at a time, too fast grow dim, too slow they flicker
+    //----------------------------------------------------------------------------------------------------------------------      
+    always_ff @ (posedge(clk), posedge(reset))
+    begin
+        if (reset == 1) anode_clk <=0 ;
+        else if (anode_clk == divider_anode-1) begin
+            anode_clk <=0 ;
+            if ((segment+1)==dp_selector) dp<=0; else dp<=1; // had to fiddle with this code, no idea why it works this way
+            segment <= segment+1;
+        end         
+        else anode_clk<=anode_clk + 1;
+    end
+    
+    //anode expansion .. creates 8 bits determining which segment is on or off at the moment
+    //-----------------------------------------------------------------------------------------
+    reg [2:0] abc; // used to blank out the leading zeros
+    always_comb if(segment <= abc) anodes = ~(1 << segment); else anodes=8'hFF; // is a decoder .. anode_select 3 bits could be 0,1,2,3,4,5,6,7 ..     
+    
+    // hex selector find 4 bit hex display for a specific segment from 32 binary (c_input) or BCD
+    //-------------------------------------------------------------------------------------------- 
+    reg [3:0] hex_to_display; 
+    reg [31:0] BCD;
+    always_comb begin // this switches between Hex and BCD depending upon switch position
+        if (hexBCD) begin
+            hex_to_display = BCD[4*segment +: 4];
+            if (~bankSwitch) LED = BCD[31:16]; else LED = BCD[15:0];
+        end  
+        else begin
+            hex_to_display = c_input[4*segment +: 4];
+            if (~bankSwitch) LED = c_input[31:16]; else LED=c_input[15:0];
+        end  
+    end
+
+   
+
+    //7-Seg Convertor .. turn 4 bits of hex into a,b,c,d,e,f,g segment turn off or turn on
+    //----------------------------------------------------------------------------------------------------
+    integer ac=16'h2812, bc=16'hd860, cc=16'hd004, dc=16'h8692, ec=16'h02ba, fc=16'h208e,gc=16'h1083;
+    assign a = ac[hex_to_display]; // all these are muxes, hex_to_display selects one of the constants 16 bits
+    assign b = bc[hex_to_display];
+    assign c = cc[hex_to_display];
+    assign d = dc[hex_to_display];
+    assign e = ec[hex_to_display];
+    assign f = fc[hex_to_display];
+    assign g = gc[hex_to_display];   
+    
+    //hex to BCD convert using nested for loops
+    //---------------------------------------------------------------------------------------------
+    integer i; //number of binary bits being converted (SW)
+    integer j; //number of segments of BCD that are going to be displayed in LED
+    always_comb begin
+        BCD = 0;
+        for (i = 27; i >=0; i = i - 1) begin
+            //slicing LED up into groups of 4, adding three if current 4 bit value is greater than 5
+            for (j = 0; j < 8; j = j + 1) if (BCD[j*4 +: 4] >= 5) BCD[j*4 +: 4] = BCD[j*4 +: 4] + 3;
+            //shift to the left 1
+            BCD = BCD << 1;
+            BCD[0] = c_input[i];
+        end
+    end
+    
+    //zero blank .. blank leading zeros on the display
+    //-----------------------------------------------------------------------------
+    //first build up the priority encoder 7 bits from the 32 bits of c_input or BCD
+    integer k;
+    
+    reg [7:0] priority_encoder_truthTable = 0;
+    always_comb begin
+        if (hexBCD) for (k = 0; k < 8; k = k + 1) if (BCD[k*4 +: 4] > 0) priority_encoder_truthTable[k]=1; else priority_encoder_truthTable[k]=0;
+        else for (k = 0; k < 8; k = k + 1) if (c_input[k*4 +: 4] > 0) priority_encoder_truthTable[k]=1; else priority_encoder_truthTable[k]=0;
+    end
+    //now find 3 bit pointer to the first one among the 8 displays using priority encoder logic
+    integer L;
+    always_comb begin
+        abc = 0;
+        for (L=0; L<8; L = L+1) if (priority_encoder_truthTable[L]==1) abc=L;
+    end    
+
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1552442089886](1552442089886.png)
+
 #### Synthesis Schematic Screen shot
+
+![1552442248402](1552442248402.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1552442391530](1552442391530.png)
+
 #### Testing
+
+The LEDs should give a BCD representation of the numbers on the 7-segment display. Sw[2:0] should determine which of the 7 spots (or nothing at all) the decimal point should show up. Sw15 should start and stop the counting. Sw14 should reset the counter. Sw13 should convert the HEX to BCD when turned on. Sw12 will slow the counter to about 2 ticks per second.
 
 ------
 

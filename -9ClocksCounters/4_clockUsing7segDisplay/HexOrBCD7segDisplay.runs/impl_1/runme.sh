@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES246/-9ClocksCounters/4_7segWithZeroBlank/HexOrBCD7segDisplay.runs/impl_1'
+HD_PWD='C:/Users/SET165-11U/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/4_clockUsing7segDisplay/HexOrBCD7segDisplay.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log thirtyTwobitHexTo16LEDs.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source thirtyTwobitHexTo16LEDs.tcl -notrace
 
 

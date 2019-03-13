@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1551625606">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552440845">
   <File Type="PA-TCL" Name="PriorityEncoder.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="PriorityEncoder_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="PriorityEncoder_reports.tcl"/>

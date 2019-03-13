@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun Mar  3 10:07:29 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Tue Mar 12 21:35:41 2019
+| Host         : SET165-11C running 64-bit major release  (build 9200)
 | Command      : report_drc -file PriorityEncoder_drc_opted.rpt -pb PriorityEncoder_drc_opted.pb -rpx PriorityEncoder_drc_opted.rpx
 | Design       : PriorityEncoder
 | Device       : xc7a100tcsg324-1
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: design_1
+          Floorplan: checkpoint_PriorityEncoder
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>

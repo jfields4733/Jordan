@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1551625606">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552440906">
+  <File Type="OPT-HWDEF" Name="PriorityEncoder.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="PriorityEncoder_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="PriorityEncoder.dcp"/>
   <File Type="BITSTR-BMM" Name="PriorityEncoder_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="PriorityEncoder_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="PriorityEncoder_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="PriorityEncoder_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="PriorityEncoder_reports.tcl"/>
   <File Type="OPT-DRC" Name="PriorityEncoder_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="PriorityEncoder.hwdef"/>
   <File Type="PWROPT-DCP" Name="PriorityEncoder_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="PriorityEncoder_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="PriorityEncoder_timing_summary_pwropted.rpt"/>
@@ -22,7 +24,6 @@
   <File Type="PLACE-CTRL" Name="PriorityEncoder_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="PriorityEncoder_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="PriorityEncoder_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="PriorityEncoder.bgn"/>
   <File Type="PLACE-TIMING" Name="PriorityEncoder_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="PriorityEncoder_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="PriorityEncoder.bin"/>
@@ -52,7 +53,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="PriorityEncoder_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="PriorityEncoder_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="PriorityEncoder_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="PriorityEncoder_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="PriorityEncoder_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="PriorityEncoder_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="PriorityEncoder_postroute_physopt.dcp"/>
@@ -66,6 +66,7 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PriorityEncoder_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="PriorityEncoder.rbt"/>
   <File Type="BITSTR-NKY" Name="PriorityEncoder.nky"/>
+  <File Type="BG-BGN" Name="PriorityEncoder.bgn"/>
   <File Type="BG-DRC" Name="PriorityEncoder.drc"/>
   <File Type="RDI-RDI" Name="PriorityEncoder.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
