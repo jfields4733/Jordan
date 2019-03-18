@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552490197">
+  <File Type="BITSTR-BMM" Name="always_comb_mux_example_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="always_comb_mux_example_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="always_comb_mux_example_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="always_comb_mux_example_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="always_comb_mux_example.tcl"/>
+  <File Type="OPT-TIMING" Name="always_comb_mux_example_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="always_comb_mux_example_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="always_comb_mux_example_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="always_comb_mux_example_reports.tcl"/>
+  <File Type="OPT-DRC" Name="always_comb_mux_example_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="always_comb_mux_example.hwdef"/>
+  <File Type="PWROPT-DCP" Name="always_comb_mux_example_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="always_comb_mux_example_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="always_comb_mux_example_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="always_comb_mux_example_placed.dcp"/>
+  <File Type="PLACE-IO" Name="always_comb_mux_example_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="always_comb_mux_example_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="always_comb_mux_example_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="always_comb_mux_example_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="always_comb_mux_example_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="always_comb_mux_example_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="always_comb_mux_example_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="always_comb_mux_example.bgn"/>
+  <File Type="PLACE-TIMING" Name="always_comb_mux_example_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="always_comb_mux_example_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="always_comb_mux_example.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="always_comb_mux_example_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="always_comb_mux_example_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="always_comb_mux_example_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="always_comb_mux_example.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="always_comb_mux_example_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="always_comb_mux_example_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="always_comb_mux_example_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="always_comb_mux_example_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="always_comb_mux_example_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="always_comb_mux_example_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="always_comb_mux_example.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="always_comb_mux_example_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="always_comb_mux_example.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="always_comb_mux_example_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="always_comb_mux_example_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="always_comb_mux_example.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="always_comb_mux_example_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="always_comb_mux_example_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="always_comb_mux_example_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="always_comb_mux_example_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="always_comb_mux_example_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="always_comb_mux_example_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="always_comb_mux_example_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="always_comb_mux_example_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="always_comb_mux_example_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="always_comb_mux_example_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="always_comb_mux_example_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="always_comb_mux_example_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="always_comb_mux_example_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="always_comb_mux_example_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="always_comb_mux_example_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="always_comb_mux_example_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="always_comb_mux_example_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="always_comb_mux_example_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="always_comb_mux_example_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="always_comb_mux_example.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="always_comb_mux_example_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="always_comb_mux_example.rbt"/>
+  <File Type="BITSTR-NKY" Name="always_comb_mux_example.nky"/>
+  <File Type="BG-DRC" Name="always_comb_mux_example.drc"/>
+  <File Type="RDI-RDI" Name="always_comb_mux_example.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/3_Blocking/always_comb_mux.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../always_comb_mux.sv"/>
+        <Attr Name="ImportTime" Val="1552419214"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="always_comb_mux_example"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/3_Blocking/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1552414366"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
