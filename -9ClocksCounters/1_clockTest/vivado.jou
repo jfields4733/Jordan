@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Mar 13 16:11:32 2019
-# Process ID: 9844
+# Start of session at: Mon Mar 18 16:06:19 2019
+# Process ID: 13120
 # Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/1_clockTest
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4324 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\-9ClocksCounters\1_clockTest\clockTest.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9924 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\-9ClocksCounters\1_clockTest\clockTest.xpr
 # Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/1_clockTest/vivado.log
 # Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/1_clockTest\vivado.jou
 #-----------------------------------------------------------

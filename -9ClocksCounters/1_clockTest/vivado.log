@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Mar 13 16:11:32 2019
-# Process ID: 9844
+# Start of session at: Mon Mar 18 16:06:19 2019
+# Process ID: 13120
 # Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/1_clockTest
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4324 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\-9ClocksCounters\1_clockTest\clockTest.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9924 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\-9ClocksCounters\1_clockTest\clockTest.xpr
 # Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/1_clockTest/vivado.log
 # Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-9ClocksCounters/1_clockTest\vivado.jou
 #-----------------------------------------------------------
@@ -19,7 +19,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 713.066 ; gain = 144.992
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 724.805 ; gain = 128.809
 update_compile_order -fileset sources_1
 open_hw
 connect_hw_server
@@ -60,4 +60,4 @@ INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 13 16:56:17 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 16:50:55 2019...

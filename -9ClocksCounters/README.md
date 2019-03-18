@@ -397,6 +397,7 @@ module thirtyTwobitHexTo16LEDs(
 
    
 
+
     //7-Seg Convertor .. turn 4 bits of hex into a,b,c,d,e,f,g segment turn off or turn on
     //----------------------------------------------------------------------------------------------------
     integer ac=16'h2812, bc=16'hd860, cc=16'hd004, dc=16'h8692, ec=16'h02ba, fc=16'h208e,gc=16'h1083;
@@ -468,15 +469,29 @@ The LEDs should give a BCD representation of the numbers on the 7-segment displa
 
 Just do a screen shot of the top level module. 
 
+![1552937725894](1552937725894.png)
+
 #### Verilog Code
 
 *Don't put screen shots here. Outline the two modules  terms of application and design construct. For example, the application would be blank leading zeros. The tool would be a priority encoder.  We may not have covered the tool yet. Do your best ..* 
 
+The top level module's application is to control the counter by adding reset, stop/start, and 2-speed functionality. The design construct uses flip-flops to store inputs of the reset and stop/start switches and applying them at the positive edge input of the clock signal. It also checks the value of the bankSwitch to control the speed with parallel execution to the flip flops.
+
+
+
+The second module's application turns on the anodes at proper times, converts HEX to BCD, and turns the 7 segments into numbers. The second module's design construct uses a priority encoder and a fast clock to show the right numbers in a manner that appears as though they're all shown at the same time. The module uses registers to convert HEX to BCD. The module uses previously defined functions to control the 7 segments.
+
 #### RTL Schematic Screen shot
+
+![1552937800666](1552937800666.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1552938700462](1552938700462.png)
+
 #### Testing
+
+The LEDs should give a BCD representation of the numbers on the 7-segment display. Sw[2:0] should determine which of the 7 spots (or nothing at all) the decimal point should show up. Sw15 should start and stop the counting. Sw14 should reset the counter. Sw13 should convert the HEX to BCD when turned on. Sw12 will slow the counter to about 2 ticks per second.
 
 ----
 
@@ -485,6 +500,8 @@ Just do a screen shot of the top level module.
 *Screen shot the "Report Utilization" for this project.   Compare with the project above.*
 
 *Look at the code constructs and the RTL schematic screen shot. How many gates do you see?* 
+
+
 
 *What are the indications that this is written at a behavioral level, C language like level?*
 
