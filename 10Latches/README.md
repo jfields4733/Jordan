@@ -25,17 +25,31 @@ What is interesting is one of the LUTs has three inputs. Looking at the inputs, 
 
 #### Test/Demo
 
+
+
 #### Prompts
 
 *What gate(s) does the LUT2 truth table (look at the equation) represent?* 
 
+a NOR gate or an AND gate with both inputs notted
+
 *What gate(s) does the LUT3 truth table (look at the equation) represent?* A complicated mess. 
+
+Two AND gates and an OR gate with input0 notted
 
 *What feature or pattern in the LUT3 truth table prevents an oscillation, prevents the output feeding back to the input, changing the output again, changing the input again?* *Cut and paste the truth table here.  And then discuss.* 
 
+![1553110476671](1553110476671.png)
+
+The LUT3 needs input0 or R needs to be notted in order for the output to change to 1.
+
 *Click Run Simulation. What are the options?  Type them or insert a screen shot.* 
 
+![1553112085566](1553112085566.png)
+
 *Click on the top option, Behavioral Simulation. What new command appears in the top, horizontal ribbon bar?* Run
+
+
 
 *Does "Open Synthesized Design" cause a new option on the top level ribbon?* No.
 *Does "Open Implemented Design" cause a new option on the top level ribbon?* No.
