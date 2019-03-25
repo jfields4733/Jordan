@@ -155,15 +155,38 @@ This circuit is a traditional clocked, two state network. It is to be used to co
 
 #### Port Diagram
 
+![1553542339381](1553542339381.png)
+
 #### Verilog Code
+
+`timescale 1ns / 1ps
+
+module EveryOther(
+    input x,
+    output reg z,
+    output reg [1:0] state
+    );
+    always_ff @ (posedge x) begin
+        state=state+1;
+        if (state==0) z=1; else z=0;
+    end
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1553542003999](1553542003999.png)
+
 #### Synthesis Schematic Screen shot
+
+![1553542205534](1553542205534.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1553542375854](1553542375854.png)
+
 #### Testing
+
+Use sw0 as the clock and the circuit should toggle through all 4 states of LED0, LED1,LED2, and LED[2:1]
 
 +++++++++
 
@@ -171,7 +194,13 @@ This circuit is a traditional clocked, two state network. It is to be used to co
 
 *How many switch up and down movements are necessary to go through all four state combinations?*
 
+4 switch movements are necessary
+
 *We have been taught that all nets have to have a driver. What drives the combinatory loop?*
+
+The previous state drives the loops
+
+
 
 
 
@@ -181,21 +210,62 @@ This circuit is from the [University of WaterLoo in Canada](http://pami.uwaterlo
 
 #### Port Diagram
 
+![1553542339381](1553542339381.png)
+
+#### 
+
 #### Verilog Code
+
+`timescale 1ns / 1ps
+
+module everyOther(
+    input X,
+    output Y,
+    output y1,
+    output y2
+    );
+    
+    wire and1;
+    wire and2;
+    wire and3;
+    
+    // combinatory loops
+    
+    assign y1 = Y1;
+    assign y2 = Y2;
+    assign and1 = y1 & X;
+    assign and2 = ~X & y2;
+    assign and3 = ~y1 & X;
+    assign Y1 = and1 | and2;
+    assign Y2 = and2 | and3;
+    assign Y = ~ Y1 & Y2;
+
+​    
+endmodule
 
 #### RTL Schematic Screen shot
 
+![1553543861300](1553543861300.png)
+
 #### Synthesis Schematic Screen shot
+
+![1553544007067](1553544007067.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1553544056340](1553544056340.png)
+
 #### Testing
+
+There should be 4 combinations that should restart after every 2 times sw0 comes on. The order is nothing, LED0 + LED15, LED[15:14], then LED14
 
 ___
 
 #### Prompts
 
 *How many switch up and down movements are necessary to go through all four state combinations?*
+
+2 up movements and 2 down movements
 
 ## 5_Combinatory Loops
 
@@ -223,7 +293,11 @@ ___
 
 There are three modules in this circuit. *What are their names? What are their port interfaces?*
 
+There names are ASN, Main, and ComboCombinatory. ASN's port interface has 7 switches (inputs) and 6 LEDs (outputs).  Main's port interface has 2 inputs (the 4-bit combination and the enter), so I'd say 5 switches. It also has 3 outputs and 3 LEDs. The ComboCombinatory port interface has 5 switches (inputs) and 2 LEDs (outputs).
+
 *How many combinatory loops are there in this Combination Lock ASN circuit?*
+
+5 combinatory loops
 
 The Asynchronous Sequential Network (ASN) network for the Combination Lock is impossible to **manually** test. The truth table has 7 inputs .. meaning 128 rows with 6 outputs each for a total of 768 values .. with a good percentage don't care outputs. There is no way to physically test it. Look over this [spreadsheet](https://docs.google.com/spreadsheets/d/1nGkVcBFB3kErm-xxgKJ7ydEvMWoGxCaui6ZHOyj6pJw/edit?usp=sharing). *What rows on the spreadsheet contain the truth table?*
 

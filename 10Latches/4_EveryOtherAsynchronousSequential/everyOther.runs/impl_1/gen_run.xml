@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1551676717">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553543939">
+  <File Type="OPT-HWDEF" Name="everyOther.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="everyOther_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="everyOther.dcp"/>
   <File Type="BITSTR-BMM" Name="everyOther_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="everyOther_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="everyOther_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="everyOther_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="everyOther_reports.tcl"/>
   <File Type="OPT-DRC" Name="everyOther_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="everyOther.hwdef"/>
   <File Type="PWROPT-DCP" Name="everyOther_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="everyOther_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="everyOther_timing_summary_pwropted.rpt"/>
@@ -22,7 +24,6 @@
   <File Type="PLACE-CTRL" Name="everyOther_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="everyOther_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="everyOther_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="everyOther.bgn"/>
   <File Type="PLACE-TIMING" Name="everyOther_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="everyOther_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="everyOther.bin"/>
@@ -52,7 +53,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="everyOther_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="everyOther_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="everyOther_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="everyOther_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="everyOther_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="everyOther_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="everyOther_postroute_physopt.dcp"/>
@@ -66,6 +66,7 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="everyOther_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="everyOther.rbt"/>
   <File Type="BITSTR-NKY" Name="everyOther.nky"/>
+  <File Type="BG-BGN" Name="everyOther.bgn"/>
   <File Type="BG-DRC" Name="everyOther.drc"/>
   <File Type="RDI-RDI" Name="everyOther.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

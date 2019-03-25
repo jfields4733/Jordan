@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/4_EveryOtherAsynchronousSequential/everyOther.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/10Latches/4_EveryOtherAsynchronousSequential/everyOther.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="652bee34ab75475b9bb4b0b73475455f"/>

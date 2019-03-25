@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/2_EveryOtherClocked/EveryOther.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/10Latches/3_EveryOtherClocked/EveryOther.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="111b93ad37b44167b53450692651b55d"/>
