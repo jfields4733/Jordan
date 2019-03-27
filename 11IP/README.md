@@ -171,8 +171,6 @@ Form a hypothesis off the top of your mind to mind that is possibly relevant tha
 
 *What is the difference between a clock path and a control path?*
 
-*How much of this is about clock rates in Hz and the time it takes to get through the FPGA fabric from one place to the other?*
-
 *How much of this is about the time it takes to get through a series of FlipFLops and how much is about getting through async combinatory circuits?* 
 
 *The video talks about moving pads around. Why is this impossible for us?*
@@ -191,17 +189,11 @@ Getting into this detail is the subject of another course.
 
 Right now the goal is to understand the big picture scope of the problem, and then begin our first good habit with respect to these clock issues.  That is understanding when to begin using the Xilinx Clock IP. 
 
-So first let's build a simple circuit that counts up and down using the Xilinx clock IP and see what it is capable of.
+
 
 ![1552223136201](assets/1552223136201.png)
 
-The goal is to add the IP, connect up the 7seg display and count, again. Your goal is to follow the steps  above for finding and configuring the clock IP. You are going to have to read the [Xilinx Clock IP pdf](assets/pg065-clk-wiz.pdf) (published Feb. 25, 2019) , refer to the previous project, cut and paste the 7seg display into it.
-
-You can see where Clock IP was formerly linked up in this project. 
-
-![1552223982125](assets/1552223982125.png)
-
-Obviously the code will need to be modified. After doing so, you should be able to answer these questions:
+Suppose your goal is to add the IP, connect up the 7seg display and count, again. Read the [Xilinx Clock IP pdf](assets/pg065-clk-wiz.pdf) (published Feb. 25, 2019).
 
 *Is the Xilinx clock intended to replace the sync, async, reset , set clock issues and help us divide clocks or something else?* 
 
@@ -211,4 +203,3 @@ Obviously the code will need to be modified. After doing so, you should be able 
 
 *What are the possible future projects where you will want to use the Xilinx Clock?*
 
-Show your instructor counting up and down when done!

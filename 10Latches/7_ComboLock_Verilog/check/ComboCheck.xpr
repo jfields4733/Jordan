@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/5_ComboLock/ComboCheck.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/10Latches/7_ComboLock_Verilog/check/ComboCheck.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9db7bbc610c94d349509eb7b80615d0f"/>

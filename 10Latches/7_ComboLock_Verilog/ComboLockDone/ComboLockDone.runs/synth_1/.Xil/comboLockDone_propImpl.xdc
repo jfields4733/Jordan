@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/FoersterGame/Documents/GitHub/ENES246/10Latches/7_ComboLock_Verilog/ComboLockDone/ComboLockDone.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc rfile:../../../ComboLockDone.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/10Latches/7_ComboLock_Verilog/ComboLockDone/ComboLockDone.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc rfile:../../../ComboLockDone.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
 set_property DONT_TOUCH true [get_nets y1]
 set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
