@@ -1,64 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1494803742">
-  <File Type="PWROPT-DRC" Name="Nexys4DdrUserDemo_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Nexys4DdrUserDemo_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Nexys4DdrUserDemo_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="Nexys4DdrUserDemo_power_routed.rpx"/>
-  <File Type="PA-TCL" Name="Nexys4DdrUserDemo.tcl"/>
-  <File Type="OPT-HWDEF" Name="Nexys4DdrUserDemo.hwdef"/>
-  <File Type="RDI-RDI" Name="Nexys4DdrUserDemo.vdi"/>
-  <File Type="OPT-DCP" Name="Nexys4DdrUserDemo_opt.dcp"/>
   <File Type="OPT-DRC" Name="Nexys4DdrUserDemo_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="Nexys4DdrUserDemo_timing_summary_opted.rpt"/>
+  <File Type="ROUTE-CLK" Name="Nexys4DdrUserDemo_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Nexys4DdrUserDemo.vdi"/>
+  <File Type="ROUTE-PWR" Name="Nexys4DdrUserDemo_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Nexys4DdrUserDemo.tcl"/>
+  <File Type="BITSTR-BMM" Name="Nexys4DdrUserDemo_bd.bmm"/>
+  <File Type="ROUTE-PWR-RPX" Name="Nexys4DdrUserDemo_power_routed.rpx"/>
+  <File Type="OPT-HWDEF" Name="Nexys4DdrUserDemo.hwdef"/>
+  <File Type="OPT-DCP" Name="Nexys4DdrUserDemo_opt.dcp"/>
   <File Type="PWROPT-DCP" Name="Nexys4DdrUserDemo_pwropt.dcp"/>
-  <File Type="PWROPT-TIMING" Name="Nexys4DdrUserDemo_timing_summary_pwropted.rpt"/>
+  <File Type="BG-DRC" Name="Nexys4DdrUserDemo.drc"/>
   <File Type="PLACE-DCP" Name="Nexys4DdrUserDemo_placed.dcp"/>
   <File Type="PLACE-IO" Name="Nexys4DdrUserDemo_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Nexys4DdrUserDemo_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Nexys4DdrUserDemo_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Nexys4DdrUserDemo_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Nexys4DdrUserDemo_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Nexys4DdrUserDemo_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Nexys4DdrUserDemo_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="Nexys4DdrUserDemo_timing_summary_placed.rpt"/>
+  <File Type="BG-BGN" Name="Nexys4DdrUserDemo.bgn"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Nexys4DdrUserDemo_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Nexys4DdrUserDemo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="BG-BIN" Name="Nexys4DdrUserDemo.bin"/>
   <File Type="PHYSOPT-DCP" Name="Nexys4DdrUserDemo_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Nexys4DdrUserDemo_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="Nexys4DdrUserDemo_timing_summary_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Nexys4DdrUserDemo.msk"/>
   <File Type="ROUTE-ERROR-DCP" Name="Nexys4DdrUserDemo_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Nexys4DdrUserDemo_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Nexys4DdrUserDemo_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Nexys4DdrUserDemo_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Nexys4DdrUserDemo_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="Nexys4DdrUserDemo.bin"/>
   <File Type="ROUTE-DRC-RPX" Name="Nexys4DdrUserDemo_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="Nexys4DdrUserDemo.drc"/>
+  <File Type="BITSTR-MMI" Name="Nexys4DdrUserDemo.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Nexys4DdrUserDemo_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="Nexys4DdrUserDemo.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Nexys4DdrUserDemo_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="Nexys4DdrUserDemo.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="Nexys4DdrUserDemo.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Nexys4DdrUserDemo_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="Nexys4DdrUserDemo_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="Nexys4DdrUserDemo_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="Nexys4DdrUserDemo_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Nexys4DdrUserDemo_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Nexys4DdrUserDemo_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Nexys4DdrUserDemo_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Nexys4DdrUserDemo_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Nexys4DdrUserDemo_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Nexys4DdrUserDemo_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Nexys4DdrUserDemo_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Nexys4DdrUserDemo_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Nexys4DdrUserDemo_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Nexys4DdrUserDemo_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Nexys4DdrUserDemo_timing_summary_postroute_physopted.rpx"/>
   <File Type="BG-BIT" Name="Nexys4DdrUserDemo.bit"/>
   <File Type="BITSTR-RBT" Name="Nexys4DdrUserDemo.rbt"/>
   <File Type="BITSTR-NKY" Name="Nexys4DdrUserDemo.nky"/>
-  <File Type="BITSTR-BMM" Name="Nexys4DdrUserDemo_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="Nexys4DdrUserDemo.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="Nexys4DdrUserDemo.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -279,9 +264,9 @@
       <Option Id="BinFile">1</Option>
     </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ClkGen"/>
   <BlockFileSet Type="BlockSrcs" Name="BRAM_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="PxlClkGen"/>
+  <BlockFileSet Type="BlockSrcs" Name="ClkGen"/>
   <BlockFileSet Type="BlockSrcs" Name="ddr"/>
+  <BlockFileSet Type="BlockSrcs" Name="PxlClkGen"/>
   <BlockFileSet Type="BlockSrcs" Name="Square_Root"/>
 </GenRun>

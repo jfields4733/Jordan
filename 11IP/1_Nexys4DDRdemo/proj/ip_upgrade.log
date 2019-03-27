@@ -1,0 +1,25 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Mar 27 16:20:14 2019
+| Host         : SET253-04C running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BRAM_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BRAM_1 from xilinx.com:ip:blk_mem_gen:8.3 (Rev. 5) to xilinx.com:ip:blk_mem_gen:8.4 (Rev. 2)
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'BRAM_1'.
+
+
+-Upgrade has removed interface 'BRAM_PORTB'
+
+

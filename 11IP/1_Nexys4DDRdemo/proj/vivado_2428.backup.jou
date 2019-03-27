@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 27 16:17:37 2019
+# Process ID: 2428
+# Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/11IP/1_Nexys4DDRdemo/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2624 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\11IP\1_Nexys4DDRdemo\proj\User_Demo.xpr
+# Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/11IP/1_Nexys4DDRdemo/proj/vivado.log
+# Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/11IP/1_Nexys4DDRdemo/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/11IP/1_Nexys4DDRdemo/proj/User_Demo.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 

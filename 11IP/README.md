@@ -13,11 +13,19 @@ This is the biggest project we will get to look at in this course. This is the p
 
 *Open Vivado, and send the bit file in the repo root called Nexys4DDR_Restore_Demo to your Nexys4DDR board. It was created with a Vivado 2015 version. Does it still work?* *What would have to change in order for it to fail? Is the Nexys4DDR board [still in production](https://store.digilentinc.com/nexys-4-ddr-artix-7-fpga-trainer-board-recommended-for-ece-curriculum/)? Is it still in [stock at digi-key](https://www.digikey.com/product-detail/en/digilent-inc/410-292/1286-1081-ND/5117190)?* 
 
+Yes it still works. Hardware? Compiler?
+
 *Look in the 1_Nexys4DDRdemo folder.  Within it are two folders: proj and scr. Proj contains familiar contents. But a folder normally there is missing.  Which folder is it?* 
+
+The sources folder
 
 *List off the scr folder contents (or a screen shot). We are going to move through them one at a time.* 
 
+constraints, hdl, ip, others
+
 *The scr/contraints folder looks like it contains a normal XDC file. Look at it without using vivado. It implies that other things are demoed besides LED's and switches. What are they?* 
+
+clock signal, 7 seg display, buttons, vga connector, accelerometer, temperature sensor, omnidirectional microphone pwm audio amplifier, usb HID
 
 *Which features may be used but are not described in detail (they are listed under features used) on this [web page](https://reference.digilentinc.com/learn/programmable-logic/tutorials/nexys-4-ddr-user-demo/start)?* 
 
@@ -25,7 +33,11 @@ This is the biggest project we will get to look at in this course. This is the p
 
 *Look in the scr/hdl folder. This demo was split into how many modules?*
 
+30 modules
+
 *What looks like the name of the top level module?*
+
+Nexys4DdrUserDemo
 
 *The models average 400 lines of code 157 lines estimated to be comments. Please go through each of the code blocks and fill in an [unfilled column of this spreadsheet](https://docs.google.com/spreadsheets/d/1YMxmIy6VkRc-pRICy5a5Qc_1I_HvcNle5VwgkN6bdQM/edit#gid=0). Please put your name at the top of the column.* 
 
@@ -46,6 +58,8 @@ This is the biggest project we will get to look at in this course. This is the p
 ![1551538304647](assets/1551538304647.png)
 
 *Which IP are you required to update?* 
+
+Block Memory Generator
 
 *After upgrading only the required IP, what message do you get?*
 
