@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 17 08:48:55 2019
+# Process ID: 8296
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/1_TimingControl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10552 C:\Users\FoersterGame\Documents\GitHub\ENES246\12ControlPathDoesDonts\1_TimingControl\timingControl.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/1_TimingControl/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/1_TimingControl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/1_TimingControl/timingControl.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/1_TimingControl/timingControl.runs/impl_1/always_example.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+close_project

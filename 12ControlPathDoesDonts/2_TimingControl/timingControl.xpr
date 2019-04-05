@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/1_TimingControl/timingControl.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/2_TimingControl/timingControl.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3ce1c2e65d5546c6972a4168f2bc55ba"/>

@@ -1,16 +1,33 @@
 # ENES-246 Digital Design Course Overview
 
-This course is primarily about Electronic Design Automation [EDA](https://en.wikipedia.org/wiki/Electronic_design_automation) . This is what digital design has evolved into. There are [indications](https://www.darpa.mil/work-with-us/electronics-resurgence-initiative) that analog design is going to be taken over by the same techniques.  The goal of this course is to program in verilog at the RTL or behavioral abstraction level.
+Current status: Spring 2019. Working through a rough draft of the course. Just trying to get lots of working  (or not working to make a point) projects built. 
+
+Educational Philosophy: Don't talk about the code, focus on what it does. Look at the code of many examples, predict the output. Slowly introduce projects and build up to them one small piece at a time. (This is a mess right now .. the first big project is driving a 7seg display). Projects with names slowly start to emerge once control paths are introduced that include parity, mod math, CRC and Hamming error correction.  
+
+Prereq: A background in a programming language that included if/then, case, for loops .. preferably C and an elementary knowledge of binary and truth tables. 
+
+This course is focused on the Electronic Design Automation [EDA](https://en.wikipedia.org/wiki/Electronic_design_automation) industry. There are [indications](https://www.darpa.mil/work-with-us/electronics-resurgence-initiative) that analog design is going to be taken over by the same techniques. The goal of this course is to program in RTL SystemVerilog, close to the behavioral abstraction level. This means forgoing many of the non-ASIC/FGPA design techniques that were associated with minimizing gates or flip flops.The goals of this course are to:
+
+- test manually with an fpga trainer to focus on physically synthesizable/implementable rather than stopping at logically correct circuits
+- design focused on splitting a project up into many tiny code blocks that create circuits running in parallel
+- prepare for understanding clock domain rather than races and metastability
+- experiment with example test benches and integrating logic analyzers into circuits
+
+This will require looking at many examples of SystemVerilog projects implemented with Xilinix Vivado 2018.3, Nexys4DDR trainer and SystemVerilog 1800 2017, logisim, and fizzim.  All the software is free. All projects in this repository should be easily convertible to the latest Nexys trainer. 
+
+What is not in this course: Karnaugh, Quinn McClusky, Petrik Cover, Implicant Tables. 
+
+In the drawings folder are the design documents of port maps, state tables, finite state machines, algorithm state machines and algorithmic state machines with data. 
 
 ## Register Transfer Level (***RTL***). 
 
-A **Register** or **reg** is a programming concept that is thought of as a driver as in "driving" the output high or low.  A register can be though of as a memory element inking of a register as a programming element or a as a memory element storing a bit.         
+A **Register** or **reg** is type of programming variable that drives an output high or low.  A register is not a flip flop that remembers. A register is not a CPU concept like a [stack](https://en.wikipedia.org/wiki/Stack_register). **Reg** is a SystemVerilog programming abstraction that may or may not result in a flip flop when implemented. 
 
-**Transfer** means separating data circuits (we study first), from control circuits  (we study second). These concepts first appeared in the 1945 First Draft of a Report on the EDVAC by John von Neumann.     
+**Transfer** means separating data circuits (we study first), from control circuits  (we study second). These concepts first appeared in the 1945 First Draft of a Report on the EDVAC by John von Neumann. In RTL terms, **transfer** means learning to block code into chunks that run in parallel. **Transfer** means learning to identify which code blocks are async data paths (running at close to the speed of light) and which are control paths (slowed down by a synchronous, rhythmic clock). **Transfer** means keeping track of which varaibles are modified in which code block and predicting how the synthesizing process is going to string async data paths into one long async data path. 
 
-Verilog has various abstraction **Level**s starting with transistors, gates,  RTL and behavioral.  
+SystemVerilog has various abstraction **Level**s starting with transistors, tri-state buffers, gates, RTL and behavioral. Gate **level** abstractions are very hard to [sustain](https://www.amazon.com/Sustainable-Software-Development-Agile-Perspective/dp/0321286081) because they are so disconnected from the desired, digital circuit behavior. SystemVerilog was designed to work at both the RTL and behavioral abstraction boundaries. Some of the circuits in this course would take years to design and be almost impossible to manually build if students were only working at the gate **level**. 
 
-## Verilog is like C
+## SystemVerilog is like C
 
 ​	Verilog was intentionally designed to leverage experience with C.  
 ​	Verilog **gate level** abstractions can run in **parallel**, similar to playing four notes at once on a keyboard.   

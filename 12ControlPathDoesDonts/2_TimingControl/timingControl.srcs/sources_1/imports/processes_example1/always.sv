@@ -11,10 +11,9 @@ module always_example(
 reg b;
 
 always_comb //always statement can be used with procedural timing control
-b = a1 & a2;
+    b = a1 & a2;
 
-always_ff @(posedge clk) begin
-q <= b;
-end
-      
+always_ff @(posedge clk) 
+    q <= b;
+
 endmodule

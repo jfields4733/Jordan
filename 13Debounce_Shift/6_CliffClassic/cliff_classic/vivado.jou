@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 26 05:37:56 2019
+# Process ID: 12108
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/4_UniversalShiftRegister/project2/cliff_classic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7004 C:\Users\FoersterGame\Documents\GitHub\ENES246\13Debounce_Shift\4_UniversalShiftRegister\project2\cliff_classic\cliff_classic.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/4_UniversalShiftRegister/project2/cliff_classic/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/4_UniversalShiftRegister/project2/cliff_classic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/4_UniversalShiftRegister/project2/cliff_classic/cliff_classic.xpr
+update_compile_order -fileset sources_1
+import_files
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

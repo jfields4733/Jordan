@@ -1,3 +1,5 @@
+
+
 # Lab 12 Style and Flip Flops
 
 # 0 Style .. Begin End Labels
@@ -34,15 +36,7 @@ This project was not finished. It focuses on the utility of the Begin End Label
 
 *When do you envision using begin end labels?*
 
-#### Test
-
 Don't implement and physically test. Play around in the Vivado code editor.
-
-# Coding Rules
-
-The starting point of this lab was to look at good coding practice.  Searching the internet is not helpful. Here is [2013 good coding practice](https://www.xilinx.com/support/answers/51835.html).  Yet none of these 8 examples seems to be the current coding style consensus on the internet. We are walking up to the timing, clocking issue where Vivado evolves the fastest. 
-
-We need to start with small test examples, just like we did with data_path, asynchronuous. Lots of hopefully will expose problems,. From these we can make up rules. 
 
 ## 1 Multiple Assign_Comb
 
@@ -64,29 +58,22 @@ Suggested rules:
 
 ​	always have a default value for any reg
 ​	make assignments once within all data_paths in a circuit
-​	
+​	think parallel first
+​	change only one variable per always block
+​	look at any variable in any block
+​	start all comb blocks with an if (clocked_variable) statement 
 
 
-The first point was made in Lab The last is the same point that was made in Lab 1  Multiple Switches. 
-	
 
 ## 2 Timing Control
 
-This is driven by the 100Mhz clock. 
+The goal is a simple project involving the 100Mhz clock that follows best practice. *This violates which rule(s) above?*
 
-![1552416144856](assets/1552416144856.png)
+![1553433049962](assets/1553433049962.png)
 
 ![1552417221913](assets/1552417221913.png)
 
-This project follows best practice. 
-
-Where is combination logic done
-
-#### Testing
-
 *How can you tell if the clock was implemented?*
-
-#### Prompts
 
 *What screen shot proves that the flip flop was actually implemented?*
 
@@ -112,11 +99,13 @@ Where is combination logic done
 
 ## 3 Growth
 
+growth should occur in the asyn data_path, not in the control_path
+
 #### ![1552418907260](assets/1552418907260.png)
 
 ![1552418862854](assets/1552418862854.png)
 
-![1552681843404](1552681843404.png)
+![1552681843404](assets/1552681843404.png)
 
 *Why could begin end be eliminated in the control_path?*
 
@@ -138,9 +127,9 @@ Where is combination logic done
 
 *CE and SR are wired up in the device, but not in the RTL Schematic. What do these [inputs mean](https://www.xilinx.com/support/documentation/user_guides/ug474_7Series_CLB.pdf)? Is CE chip enable or clock enable?*
 
-![1552682322706](1552682322706.png)
+![1552682322706](assets/1552682322706.png)
 
-## 4 Reset
+## 4 Reset Clock
 
 The development of the anode clock in the 7seg display started off with this code (see Lab8 project 5):
 
@@ -158,7 +147,7 @@ Looking  the most simple clock that can be displayed on LEDs:
 
 This illustrates the problem with copying sample clock circuits from the internet. Most don't deal with the fact that the clocks on most trainers such as the Nexys4DDR are going at speeds of 100Mhz. This just causes the LED's to glow. To solve the problem there needs to be a clock divider that creates a separate, slower counter.  
 
-Many ways of implementing a slow counter from a fast counter have been tried. Most end up generating a bitstream that ends up displaying nothing.  Rather than review the failures, make the above code your starting point. 
+Many ways of implementing a slow counter from a fast counter have been tried. Most end up generating a bitstream that ends up displaying nothing.  
 
 The next step is to look carefully to see how reset is attached to the flip flops generated: 
 
@@ -188,9 +177,9 @@ On both sides of the tree, it goes into a SR set reset port of a flip flop.
 
 *Is this true on all flip flops?* 
 
-## 5 Reset Async
+## 5 Async Reset Clock
 
-This code actually works, but it will cause problems in larger projects.
+This code actually works, but it will cause problems in larger projects because it generates latches (despite having non assign_comb blocks!, Despite having all variables initialized!)
 
 ![1552854685928](assets/1552854685928.png)
 
@@ -224,25 +213,53 @@ The difference seems to be the CE. Groups of FlipFlops are tied together to a co
 
 
 
-Before trying to directly control the CE, let's try to re-write the code clear async and sync resets.
+## 6 Best Clock Divider
 
-## 6 Reset Async Module
+This clock divider was designed with these rules:
 
+- Only one variable (register or signal) changes within an always_ff block.
 
+- Control (clocked) variables are only looked at in other blocks
 
-![1552851612207](assets/1552853869767.png)
+- always_comb blocks have at least one control variable that controls the rest of the sequential chain
+
+  ![1553431942939](assets/1553431942939.png)
+
+This should result in a circuit with no latches:
+
+![1553432158388](assets/1553432158388.png)
+
+![1553432191058](assets/1553432191058.png)
+
+![1553432698788](assets/1553432698788.png)
+
+The goal is to follow these rules in the future.
+
+## 7 PUF Beauty
+
+This module illustrates the difference between nonblocking and counting limited by the speed of light. It suggests a do able research project into [PUF](https://en.wikipedia.org/wiki/Physical_unclonable_function) creation. This is an opportunity to get published and attract attention to yourself and HCC. 
+
+![1553428181621](assets/1553428181621.png)
 
 Can see a sync flip flop followed by a async latch:
 
-![1552854907223](assets/1552854907223.png)
+![1553428573526](assets/1553428573526.png)
 
-![1552854076992](assets/1552854076992.png)
+![1553428616016](assets/1553428616016.png)
+
+The RTL_LATCH counts as fast as possible while count_clk == divider_counter-1. The RTL_LATCH counts in between the setup of non-blocking and and assignment of non-blocking. On the FPGA being looked at now, it counts through 8 bits during this time. This is a decimal number of 256. But this can't yet be leveraged into meaningful information. There are other patterns that need to be explored first. 
+
+Repeatable oscillations occur when the divider_counter is set at 50,000,000. This indicates that the 8 bit decimal number above, while stable could be greater than the 32 bits of the RTL_Latch. This also indicates residual energy being stored in elements of the FPGA. Questions to explore are ... are all FPGAs displaying the exact same characteristics? Are we seeing an unintended designed feature of the FPGA manufacturing process or are we seeing  non-deal, random impurities  which can lead to individually, uniquely identifying each FPGA manufactured?
+
+*Make two modifications of your choice to the puf code above (fiddle with the divider_counter) and record the resulting patterns here:*
+
+*Why doesn't this code work? It generates a bitstream:*
+
+![1553426398513](assets/1553426398513.png)
+
+*Look up the [RDTSC](https://en.wikipedia.org/wiki/RDTSC) instruction for the Intel CPU. Could that instruction read the output of the above circuit?*
 
 
-
-But it looks like Vivado implements it the same way as the above project. 
-
-*This is confusing. They all work. They all appear to implement the same. The RTL language of sync, async and latch doesn't seem to matter in these cases. What is going to be your style, your starting point?*
 
 
 
