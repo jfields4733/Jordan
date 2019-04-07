@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Feb  6 16:11:36 2019
-# Process ID: 13860
-# Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.runs/impl_1
+# Start of session at: Sun Apr  7 16:15:14 2019
+# Process ID: 2060
+# Current directory: C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.runs/impl_1
 # Command line: vivado.exe -log vcb.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vcb.tcl -notrace
-# Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.runs/impl_1/vcb.vdi
-# Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.runs/impl_1\vivado.jou
+# Log file: C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.runs/impl_1/vcb.vdi
+# Journal file: C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source vcb.tcl -notrace
 Command: link_design -top vcb -part xc7a100tcsg324-1
@@ -16,16 +16,16 @@ Design is defaulting to constrset: constrs_1
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Parsing XDC File [C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-3AndNand/project_1/project_1.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 590.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 590.070 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 594.070 ; gain = 327.617
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 594.082 ; gain = 327.574
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -38,10 +38,10 @@ INFO: [Project 1-461] DRC finished with 1 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 594.070 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 594.082 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 10 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
 opt_design failed
 ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
 
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  6 16:11:47 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  7 16:15:25 2019...

@@ -2,25 +2,24 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr  7 15:24:12 2019
-# Process ID: 9740
-# Current directory: C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15156 C:\Users\SET165-03U\Documents\GitHub\Jordan-s-ENES246\-2VoltageControlledBuffer\project_1\project_1.xpr
-# Log file: C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/vivado.log
-# Journal file: C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1\vivado.jou
+# Start of session at: Wed Feb 27 15:29:24 2019
+# Process ID: 8916
+# Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9872 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\-2VoltageControlledBuffer\project_1\project_1.xpr
+# Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/vivado.log
+# Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.xpr
+open_project C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.xpr
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1'
-INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1' since last save.
+Current project path is 'C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1'
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.ip_user_files', nor could it be found using path 'C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.ip_user_files'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 720.145 ; gain = 155.809
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 749.309 ; gain = 158.215
 update_compile_order -fileset sources_1
 open_hw
 connect_hw_server
@@ -35,17 +34,17 @@ INFO: [Labtools 27-2221] Launch Output:
 
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B159A
-set_property PROGRAM.FILE {C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET165-03U/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/-2VoltageControlledBuffer/project_1/project_1.runs/impl_1/vcb.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 close_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Apr  7 15:29:59 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 27 15:31:25 2019...

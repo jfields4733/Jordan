@@ -40,6 +40,10 @@ endmodule
 
 #### Testing
 
+Both sw[1:0] should be able to turn on LED0. It should act as an OR gate.
+
+
+
 Here is the above different from the two state situation from the first lab.  When sw0 is 0, the tristate buffer doesn't try to ground the LED. It outputs nothing. *What is the difference between 0 (false) and nothing .. don't care .. high input impedance... etc?* 
 
 When the output is nothing, it makes it seem as though the wire has been removed from the circuit. This means that whatever other outputs are connected to the circuit will have sole decision-making power in the overall output of the circuit.
@@ -107,6 +111,10 @@ endmodule
 ![1549315901755](1549315901755.png)
 
 #### Testing
+
+LED0 should act as an OR gate for sw[1:0]. LED1 should act as an OR gate for sw[3:2].
+
+
 
 Many people are replacing light bulbs with LED's that last forever. Most are 12 volt DC.  They are being connected to AC through wall warts that waste energy. Some are running 12 volt systems in parallel with the AC. Some are using AC to switch the 12 volt. 
 

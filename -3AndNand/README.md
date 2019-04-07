@@ -33,9 +33,17 @@ Project_1 is playing with voltage controlled buffers just like the previous lab,
 
 #### Testing
 
+LED0 should act as an OR gate for sw[1:0]
+
+
+
 I will flip both the switches to see if they act as an OR gate for the LED
 
 *A logical 1 is visible in the verilog code (vcb.v) and yet the RTL analysis schematic gets rid of the logical constant and is identical to the previous lab. Why? Draw a diagram similar to the RTL analysis with containing the design intent of the verilog code.*
+
+It gets rid of the constant because it wastes the board's resources.
+
+![1554666659208](1554666659208.png)
 
 *What happens if the order of 1 and sw0  are switched (and the order of 1 and sw1) in the verilog code?*
 
@@ -58,7 +66,13 @@ The implementation causes failure.
 
 *Which starts complaining first about these two lines?*
 
+The synthesis starts complaining first.
+
 *What technology is in the Xilinx FPGA we are using TTL, CMOS, etc. ? Provide a link to the web site where you looked up the answer.*
+
+The FPGA uses a flexible logic type called gate array or uncommitted array (UCA) logic technology.
+
+Websites: https://en.wikipedia.org/wiki/Gate_array https://www.fpga4student.com/2016/12/what-is-fpga-five-reasons-why-i-love-fpga.html
 
 *What is w in the verilog code? Is it necessary?* 
 
@@ -114,13 +128,29 @@ The assign command is the most attractive way to code.
 
 *At what level of verilog code abstraction is the **assign** command?*
 
+This is at the gate and switch level. It is performed in gate level verification.
+
 *Does order of the verilog commands (sequence of commands) change anything?*
+
+The order of the commands does not change anything.
 
 *What are a1,b1,n1,n2 associated with the gate names called in Verilog?*
 
+a1 is associated with a1_i
+
+n1 is associated with n1_i
+
+n2 is associated with n2_i and n2_i_0
+
+b1 is associated with the tri state buffer.
+
 *In the language C, the names between () look like variables passing data to some kind of function, object or subroutine. What do the represent in verilog?* 
 
+They represent the inputs to a gate.
+
 *At what step (RTL, Synthesis, Implementation, BitFile) did Vivado figure out that most of the LED's were doing the same thing?* 
+
+The implementation stage.
 
 *Implement each and gate one at a time. List any differences between them at the RTL or Synthesis states here. Take screen shots if you want or describe them verbally.* 
 
@@ -177,6 +207,8 @@ Check to make sure that LED 0 is on for all possible switch combinations except 
 
 *XOR gates have evolved with [two different implementations](https://en.wikipedia.org/wiki/XOR_gate#More_than_two_inputs) with three or more inputs.  Which does the verilog assign command implement?*
 
+The assign command implements the odd detector.
+
 ## Ethics
 
 The ethics questions below are more important than your answers. The goal in answering them is to remember the question. So the best answers are a non-trivial, thoughtful, relevant hypothesis. 
@@ -185,7 +217,11 @@ The ethics questions below are more important than your answers. The goal in ans
 
 EDIF (Electric Design Interchange Format)  captures a battle between engineers trying to use tools like Vivado and engineers designing Vivado. They both have to make money. *Summarize this wikipedia article  on the death of [EDIF](https://en.wikipedia.org/wiki/EDIF) standards in less than 200 words:*
 
+There was an inherent challenge in coming up with a standard for naming netlists and schematics in order to offer the bests products from each of the EDA companies. The companies did not want to put forth the resources in order to standardize the practice because it would hurt their bottom line due to the fact that they would lose the forced loyalty and consistency of their longtime costumers. Customers were upset because they were unable to use the best features from each company, rather they were forced to prioritize the feature they wanted most and live with the mediocrity of the company's other features. Over time, the EDA companies worked with the consumers enough to create EDIF, but not enough to make it well. Most problems stemmed from the ambiguity in EDIF making it hard to either convert your designs into or out of EDIF. EDIF gave way to some descendants after it became too large to handle.
+
 This course is asking you to document circuits first with the port diagram and then screen shots of Vivado and finally a discussion of testing. You are in the role of an engineering using Vivado on a project. *Which verilog version of the project_1 circuit (simple or complex) should be entered into Vivado?  When is a more complex circuit a good thing and a simplified, reduced circuit a bad thing?*
+
+The simple version of the circuit should be entered into Vivado so that it can save resources. A complex circuit is a good thing when there is a specific way the circuit must be constructed that Vivado will not understand and potentially cut purposeful parts of the circuit design.
 
 
 
