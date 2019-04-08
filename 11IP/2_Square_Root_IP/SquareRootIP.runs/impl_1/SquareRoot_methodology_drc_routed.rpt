@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Mar  9 14:15:13 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Mon Apr  8 16:20:18 2019
+| Host         : SET253-04C running 64-bit major release  (build 9200)
 | Command      : report_methodology -file SquareRoot_methodology_drc_routed.rpt -pb SquareRoot_methodology_drc_routed.pb -rpx SquareRoot_methodology_drc_routed.rpx
 | Design       : SquareRoot
 | Device       : xc7a100tcsg324-1
@@ -670,197 +670,197 @@ Related violations: <none>
 
 TIMING-17#128 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[0]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#129 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[10]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#130 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[11]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#131 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[12]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#132 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[13]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#133 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[14]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#134 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[15]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#135 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[16]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#136 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[17]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#137 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[18]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#138 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[19]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#139 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[1]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#140 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[20]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#141 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[21]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#142 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[22]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#143 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[23]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#144 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[24]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#145 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[25]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#146 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[26]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#147 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[27]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#148 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[28]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#149 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[29]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#150 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[2]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#151 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[30]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#152 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[31]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#153 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[3]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#154 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[4]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#155 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[5]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#156 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[6]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#157 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[7]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#158 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[8]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#159 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/anode_clk_reg[9]/C is not reached by a timing clock
+The clock pin instantiation/anode_clk_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#160 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/segment_reg[0]/C is not reached by a timing clock
+The clock pin instantiation/segment_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#161 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/segment_reg[1]/C is not reached by a timing clock
+The clock pin instantiation/segment_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#162 Warning
 Non-clocked sequential cell  
-The clock pin instanciation/segment_reg[2]/C is not reached by a timing clock
+The clock pin instantiation/segment_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch instanciation/abc1_reg[0] cannot be properly analyzed as its control pin instanciation/abc1_reg[0]/G is not reached by a timing clock
+The latch instantiation/abc1_reg[0] cannot be properly analyzed as its control pin instantiation/abc1_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch instanciation/abc1_reg[1] cannot be properly analyzed as its control pin instanciation/abc1_reg[1]/G is not reached by a timing clock
+The latch instantiation/abc1_reg[1] cannot be properly analyzed as its control pin instantiation/abc1_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch instanciation/abc2_reg[0] cannot be properly analyzed as its control pin instanciation/abc2_reg[0]/G is not reached by a timing clock
+The latch instantiation/abc2_reg[0] cannot be properly analyzed as its control pin instantiation/abc2_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch instanciation/abc2_reg[1] cannot be properly analyzed as its control pin instanciation/abc2_reg[1]/G is not reached by a timing clock
+The latch instantiation/abc2_reg[1] cannot be properly analyzed as its control pin instantiation/abc2_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 

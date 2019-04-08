@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Mar  9 14:14:49 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Mon Apr  8 16:19:44 2019
+| Host         : SET253-04C running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file SquareRoot_control_sets_placed.rpt
 | Design       : SquareRoot
 | Device       : xc7a100t
@@ -61,10 +61,10 @@ Table of Contents
 +------------------------------------+---------------------------------------------------------------------+-------------------------------------+------------------+----------------+
 |            Clock Signal            |                            Enable Signal                            |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
 +------------------------------------+---------------------------------------------------------------------+-------------------------------------+------------------+----------------+
-|  instanciation/abc1_reg[1]_i_2_n_0 |                                                                     |                                     |                1 |              2 |
-|  instanciation/abc2_reg[1]_i_2_n_0 |                                                                     |                                     |                1 |              2 |
+|  instantiation/abc1_reg[1]_i_2_n_0 |                                                                     |                                     |                1 |              2 |
+|  instantiation/abc2_reg[1]_i_2_n_0 |                                                                     |                                     |                1 |              2 |
 |  clk_IBUF_BUFG                     | instan1/U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/rdy_int |                                     |                5 |              9 |
-|  clk_IBUF_BUFG                     |                                                                     | instanciation/anode_clk[31]_i_1_n_0 |                9 |             32 |
+|  clk_IBUF_BUFG                     |                                                                     | instantiation/anode_clk[31]_i_1_n_0 |                9 |             32 |
 |  clk_IBUF_BUFG                     |                                                                     |                                     |               39 |            121 |
 +------------------------------------+---------------------------------------------------------------------+-------------------------------------+------------------+----------------+
 
