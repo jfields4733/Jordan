@@ -1,0 +1,229 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 28 16:08:39 2019
+# Process ID: 8520
+# Current directory: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent528 C:\Users\SET253-17U.HCCMAIN\Documents\GitHub\ENES246\14Rings\Ring\Ring.xpr
+# Log file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/vivado.log
+# Journal file: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-09U.HCCMAIN/Desktop/LAB 8/Ring' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'Ring.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 731.367 ; gain = 131.602
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:10:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:10:31 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4022BA
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:18:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:18:53 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:20:33 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:20:33 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:28:55 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:28:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:41:59 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:41:59 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:43:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:43:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:47:57 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:47:57 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:48:22 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:48:22 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:50:29 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:50:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:51:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:51:52 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:55:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:55:18 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:55:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:55:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2597.367 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2597.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2597.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 2706.715 ; gain = 960.453
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 16:59:25 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 16:59:25 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 17:05:25 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 17:05:25 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 17:10:06 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 17:10:06 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 17:12:36 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 17:12:36 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Mar 28 17:15:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/synth_1/runme.log
+[Thu Mar 28 17:15:10 2019] Launched impl_1...
+Run output will be captured here: C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/Ring/Ring.runs/impl_1/simpleRing.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 28 17:31:59 2019...
