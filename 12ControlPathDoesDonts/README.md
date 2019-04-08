@@ -16,7 +16,11 @@ This project was not finished. It focuses on the utility of the Begin End Label
 
 *Why is statement 11 underlined in red above?*
 
+Because the corresponding end label does not say MUX, but instead it says Mux which means that one of these two statements is wrong. Vivado just chose to underline the begin label.
+
 *Why is it ok to not have an end label, but not ok to have a misspelled end label?*
+
+Because the end of the program will terminate all open loops while a misspelled end label is looking for a begin label that does not exist.
 
 ![1552419984204](assets/1552419984204.png)
 

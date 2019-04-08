@@ -12,3 +12,4 @@
 start_gui
 open_project C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/0_BeginEndLabels/BeginEndLabels.xpr
 update_compile_order -fileset sources_1
+close_project
