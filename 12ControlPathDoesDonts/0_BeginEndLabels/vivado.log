@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Apr  8 16:47:27 2019
-# Process ID: 5272
+# Start of session at: Wed Apr 10 15:50:03 2019
+# Process ID: 10696
 # Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/0_BeginEndLabels
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12152 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\12ControlPathDoesDonts\0_BeginEndLabels\BeginEndLabels.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10540 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\12ControlPathDoesDonts\0_BeginEndLabels\BeginEndLabels.xpr
 # Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/0_BeginEndLabels/vivado.log
 # Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/0_BeginEndLabels\vivado.jou
 #-----------------------------------------------------------
@@ -20,8 +20,55 @@ WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 731.652 ; gain = 140.422
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 732.793 ; gain = 142.191
 update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: always_comb_mux_example
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 841.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'always_comb_mux_example' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/0_BeginEndLabels/BeginEndLabels.srcs/sources_1/imports/3_Blocking/always_comb_mux.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'always_comb_mux_example' (1#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/0_BeginEndLabels/BeginEndLabels.srcs/sources_1/imports/3_Blocking/always_comb_mux.sv:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 883.055 ; gain = 41.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 883.055 ; gain = 41.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 883.055 ; gain = 41.301
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/0_BeginEndLabels/BeginEndLabels.srcs/constrs_1/imports/3_Blocking/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/0_BeginEndLabels/BeginEndLabels.srcs/constrs_1/imports/3_Blocking/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1115.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.234 ; gain = 403.480
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1245.234 ; gain = 403.480
 close_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 16:57:17 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 10 16:12:55 2019...

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 24 09:09:16 2019
+# Process ID: 16592
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/2_TimingControl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6684 C:\Users\FoersterGame\Documents\GitHub\ENES246\12ControlPathDoesDonts\2_TimingControl\timingControl.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/2_TimingControl/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/2_TimingControl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/2_TimingControl/timingControl.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

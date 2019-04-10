@@ -8,6 +8,17 @@ input  wire  sel        ,
 output reg   mux_out      
 );
 
+always_comb
+begin : MUX 
+    if (sel == 1'b0) begin
+        mux_out = din_0;
+    end else begin
+        mux_out = din_1;
+    end     
+end
+
+
+
 always_comb //a mux
   if (sel == 1'b0) mux_out = din_0;
   else mux_out = din_1;

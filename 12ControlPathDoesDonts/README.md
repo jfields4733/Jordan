@@ -10,35 +10,51 @@ This project was not finished. It focuses on the utility of the Begin End Label
 
 *Is this just another method of commenting?*
 
+No I cannot use begin and end labels to make comments in the code block between the two. But the labels themselves can be used to separate out code especially when given appropriate names. 
+
 *Is it a method of helping identify lots of Begin End pairs?*
+
+You can add an "end : ___" label to find where its counterpart is located. If there is no begin label to match it, it will be underlined in red. If there are too many begin labels, then the begin label will be underlined.
 
 ![1552419926389](assets/1552419926389.png)
 
 *Why is statement 11 underlined in red above?*
 
-Because the corresponding end label does not say MUX, but instead it says Mux which means that one of these two statements is wrong. Vivado just chose to underline the begin label.
+Because the corresponding end label does not say MUX, but instead it says Mux which means that one of these two statements is wrong. Vivado just chose to underline the begin label because end labels have more freedom. It reads the begin label and assumes there is an "end" to pair with it. Once it reads the "end : Mux" label, it goes back up to find the matching begin label and tells you the begin label is misspelled.
 
 *Why is it ok to not have an end label, but not ok to have a misspelled end label?*
 
-Because the end of the program will terminate all open loops while a misspelled end label is looking for a begin label that does not exist.
+Because the program pairs each begin label with its end pair, so by default the end pair is implied to have the same label as it begin counterpart. When the end label is misspelled, it makes the program think that the begin and end statements are not paired with each other.
 
 ![1552419984204](assets/1552419984204.png)
 
 *This looks useful, but why allow a begin to be labeled without forcing it's associated end to be labeled?*
 
+It makes for a way to save time when coding and time is money. The begin and end are paired through implication. It'd be similar to making a journalist write the same sentence twice for his introduction and conclusion. It is implied to be all related and practically useless.
+
 *Do begin-ends really clarify the code or just get in the way?*
+
+With proper spacing and labels, they can clarify the code. For very simple code and one-liners, they can get in the way.
 
 ![1552420111635](assets/1552420111635.png)
 
 *For one line of code, is white space and a comment good enough?*
 
+Yes.
+
 ![1552420322573](assets/1552420322573.png)
 
 *When are begin end's necessary?*
 
+When you need to block code and have it make several decisions
+
 *Why are many small, always_comb blocks good?*
 
+It easier to separate the different concepts that need to be implemented in the code.
+
 *When do you envision using begin end labels?*
+
+I envision using begin and end labels when I have a task that needs to be implemented in the code with 3+ lines of code. It would make the code block easier to discern what exactly its purpose is.
 
 Don't implement and physically test. Play around in the Vivado code editor.
 
@@ -50,11 +66,15 @@ Don't implement and physically test. Play around in the Vivado code editor.
 
 *Can you predict what is going to happen?*
 
+No you can't predict which happens first.
+
 
 
 ![1552825211195](assets/1552825211195.png)
 
 *In a complicated program, under what circumstances will you make this mistake?*
+
+When you are writing your verilog code like a more mainstream language like C, assuming it is default data path. Which makes the the coder think that the one written first will be executed first.
 
 *What is a rule you can make up that will prevent this from happening?* 
 
@@ -73,33 +93,71 @@ Suggested rules:
 
 The goal is a simple project involving the 100Mhz clock that follows best practice. *This violates which rule(s) above?*
 
+It violates the rule on assigning a default value to any reg. It doesn't start the comb block with an if (clocked_variable) statement.
+
 ![1553433049962](assets/1553433049962.png)
 
 ![1552417221913](assets/1552417221913.png)
 
 *How can you tell if the clock was implemented?*
 
+The implementation schematic shows the clock signal connected to the flip flop.
+
 *What screen shot proves that the flip flop was actually implemented?*
+
+The RTL Analysis shows the implementation of the flip flop
 
 *What is best practice in terms of blocking and non-blocking statements?*
 
+Suggested rules:
+
+​	always have a default value for any reg
+​	make assignments once within all data_paths in a circuit
+​	think parallel first
+​	change only one variable per always block
+​	look at any variable in any block
+​	start all comb blocks with an if (clocked_variable) statement 
+
 *Where is combination logic done?*
+
+Putting an AND gate on a1 and a2 to output b.
 
 *Which variables are changed in the data path?*
 
+variable b
+
 *Which variables are looked at in the data path?*
+
+variable a1 a2 and b
 
 *Which variables are changed in the control path?*
 
+variable q
+
 *Which variables are looked at in the control path?*
 
+variable b and q
+
 *Why is it wrong to change a variable in two different places?* 
+
+Assuming everything happens in parallel, it is impossible to determine which will happen first.
 
 *When visualizing data path circuits, there is a flow from input to output with no loops. What is the flow in this circuit?*
 
 *What is best practice in terms of blocking and non-blocking statements?*
 
+Suggested rules:
+
+​	always have a default value for any reg
+​	make assignments once within all data_paths in a circuit
+​	think parallel first
+​	change only one variable per always block
+​	look at any variable in any block
+​	start all comb blocks with an if (clocked_variable) statement 
+
 *Why not eliminate b by putting the a1& a2 in the control block?*
+
+Long story short, it wouldn't update as fast or as accurately
 
 ## 3 Growth
 
@@ -113,23 +171,43 @@ growth should occur in the asyn data_path, not in the control_path
 
 *Why could begin end be eliminated in the control_path?*
 
+No because it is not an if else statement. The begin end is necessary to confine those two statements to be executed in sequential order.
+
 *Why grow the data_path rather than the control_path?*
+
+Because the portion controlled by the clock has not changed. The data_path runs a lot faster in small chunks of code.
 
 *What is mux selecting between?* 
 
+It is selecting between a1+a2 or a3
+
 *Is it a  2 input, 1 select line mux or a 3 input, 2 select line mux?*
+
+It is a 2 input, 1 select line mux.
 
 *What is growing, the data_path or control_path?*
 
+data path is growing
+
 *Which goes at the speed of light, data_path or control_path?*
+
+The data path goes at the speed of light
 
 *What does the control_path control?*
 
+It controls how many times output q changes.
+
 *Could this data_path be split into two parallel data_paths?*
+
+No.
 
 *There isn't an else for the if command. Why didn't Vivado create a latch?*
 
+Because latches are evil. Also, there is a default state.
+
 *CE and SR are wired up in the device, but not in the RTL Schematic. What do these [inputs mean](https://www.xilinx.com/support/documentation/user_guides/ug474_7Series_CLB.pdf)? Is CE chip enable or clock enable?*
+
+CE is clock enable. CE is an active high allowing the clock to affect the flip flop. The SR is an active low, not allowing the flip flop to be reset.
 
 ![1552682322706](assets/1552682322706.png)
 
