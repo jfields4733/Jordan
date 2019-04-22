@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 24 18:27:15 2019
+# Process ID: 11608
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_BestClockDivider
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6304 C:\Users\FoersterGame\Documents\GitHub\ENES246\12ControlPathDoesDonts\6_BestClockDivider\reset.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_BestClockDivider/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_BestClockDivider\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_BestClockDivider/reset.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_BestClockDivider/reset.runs/impl_1/clkDivider.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_BestClockDivider/reset.runs/impl_1/clkDivider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

@@ -1,4 +1,4 @@
-# 14 Rings
+# 14 Parity Hamming CRC
 
 # 1 Rings
 
@@ -19,7 +19,64 @@ Here is the statemachine version:![1553876787138](assets/1553876787138.png)
 
 ![1553880787836](assets/1553880787836.png)
 
-## 3 CRC
+
+
+## 3 Hamming Codes
+
+Hamming Codes both **detect** errors like parity **and correct** the arrows without retransmitting the data. 
+
+## Design
+
+This is an outline of the [Hamming  7/4 algorithm](https://en.wikipedia.org/wiki/Hamming(7,4)) illustrating the sending and receiving circuits
+![1554654058987](assets/1554654058987.png)
+
+[Alternative to linear algebra Gp Encoding  (see wikipedia article)](https://en.wikipedia.org/wiki/Hamming(7,4)#Channel_coding)
+
+Error correcting is a linear algebra operation best done 
+
+Going to calculate the parity like this:
+
+R2 R1 D3 R0 D2 D1 D0  
+
+from least significant (on the right) to most significant (on the left)
+
+using odd parity in the equation such as R2 = odd (D0, D2, D3)
+making the entire contents of the blue circle (R2,D0,D2,D3) above even
+
+1 0 1 1   original data
+
+_ _ 1 _ 0 1 1  original data with Redundant Bits added as blanks  
+**?** _ **1** _ **0** 1 **1** calculating R2   
+0 **? 0** _ 0 **1 1** calculating R1   
+0 1 1 **? 0 1 1**  calculating R0  
+0 1 1 0 0 1 1 data sent  
+
+Both the sending circuit and receiving circuit compute R0, R1, and R2. 
+
+The receiving circuit knows that   
+	if only R0computed ne R0, then R0 is in error  
+	if only R1computed ne R1, then R1 is in error  
+	if only R2computed ne R2, then R2 is in error  
+	if only R0computed ne R0 and R1computed ne R1 then D1 is in error  
+	if only R2computed ne R2 and R0computed ne R0 then D2 is in error 
+	if only R2computed ne R2 and R1computed ne R1 then D3 is in error   
+	if all three R bits have toggled, then D0 is in error  
+
+The correction of the problem is to toggle the bit back into it's original version
+
+## Your Task
+
+Your task, expand this to cover four more bits like this: _ _ 1 _ 0 0 1 _ 1 0 1 0
+Calculate the parity for each parity bit (a ? represents the bit position being set) like this:
+
+**?** _ **1** _ **0** 0 **1** _ **1** 0 **1** 0  
+0 **? 1** _ 0 **0 1** _ 1 **0 1** 0  
+0 1 1 **? 0 0 1** _ 1 0 1 **0**  
+0 1 1 1 0 0 1 **? 1 0 1 0**  
+
+These are links to the files used to create the graphics above. You are probably going to have to add a bank switch and design the testing more than modifying the starting code. 
+
+## 4 CRC
 
 A **cyclic redundancy check** (**CRC**) is an [error-detecting code](https://en.wikipedia.org/wiki/Error_detection_and_correction) commonly used in digital [networks](https://en.wikipedia.org/wiki/Telecommunications_network) and storage devices to detect accidental changes to raw data. We are interested in its [computation](https://en.wikipedia.org/wiki/Computation_of_cyclic_redundancy_checks) as illustrated by these graphics:
 
@@ -32,6 +89,3 @@ Start at these graphics. The upper one is the sending circuit. Data is moving ri
 The lower one is the receiving circuit. The data enters first, then the CRC. If the final result is zero, the receiver is confident the data was stored, transmitted and received correctly.
 
 How would you go about [implementing this CRC](https://www.easics.com/webtools/crctool)? Would you start at the gate level like this diagram shows or would you by drawing a finite state machine? 
-
-## 4 Hamming Codes
-

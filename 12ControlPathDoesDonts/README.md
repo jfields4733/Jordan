@@ -249,15 +249,25 @@ On both sides of the tree, it goes into a SR set reset port of a flip flop.
 
 *Does it make sense that reset goes into the reset/set input of the FF?*
 
+Yes it makes sense.
+
 *What value is the FF reset to?* 
 
+It resets to zero
+
 *Does the physical testing of this circuit confirm this?*
+
+Yes it confirms this.
 
 ![1552836163508](assets/1552836163508.png)
 
 *Is CE tied high or low?*
 
+It is tied high
+
 *Is this true on all flip flops?* 
+
+All the flip flops in this circuit, yes. All the flip flops in existence, no.
 
 ## 5 Async Reset Clock
 
@@ -272,6 +282,8 @@ This code actually works, but it will cause problems in larger projects because 
 The first thing to notice is that the flip flops have different names: RTL_REG_SYNC and RTL_REG_ASYNC. Second that SR has been replaced by CLR. 
 
 *Why would putting posedge(rst) in the Always_ff sensitivity list cause asynchronous behavior?  We are after all trying to specify the timing.*
+
+The posedge(rst) is a switch therefore vivado would interpret the logic as similar to a data_path if-statement.
 
 There don't appear to be any error messages, other than the normal complaining about clock domains, no specified clock constraints, etc.  We have been ignoring these warnings for a while now. 
 

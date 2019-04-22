@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr  7 17:40:26 2019
+# Process ID: 7660
+# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9444 C:\Users\FoersterGame\Documents\GitHub\ENES246\14Rings\2_Mod\mod2.xpr
+# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/vivado.log
+# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/14Rings/2_Mod/mod2' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/FoersterGame/Documents/GitHub/Nexys4DDR_Master.xdc', nor could it be found using path 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES246/Nexys4DDR_Master.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 17:53:24 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/synth_1/runme.log
+[Sun Apr  7 17:53:24 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/FoersterGame/Documents/GitHub/Nexys4DDR_Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/FoersterGame/Documents/GitHub/Nexys4DDR_Master.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/Nexys4DDR_Master.xdc
+import_files -fileset constrs_1 C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/Nexys4DDR_Master.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 18:11:05 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/synth_1/runme.log
+[Sun Apr  7 18:11:05 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 18:12:44 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/synth_1/runme.log
+[Sun Apr  7 18:12:44 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 18:14:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/synth_1/runme.log
+[Sun Apr  7 18:14:45 2019] Launched impl_1...
+Run output will be captured here: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 04:20:48 2019...
