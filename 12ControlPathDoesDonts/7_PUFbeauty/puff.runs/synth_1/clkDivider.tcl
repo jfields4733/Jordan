@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/1_PushButtonDebounce/pushButtonDebounce/.Xil/Vivado-12528-DESKTOP-KB2R4MG/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/SET253-11U/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/7_PUFbeauty/.Xil/Vivado-11136-SET253-11C/incrSyn
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -26,14 +26,14 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_ResetAsyncModule/reset.cache/wt [current_project]
-set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_ResetAsyncModule/reset.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/SET253-11U/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/7_PUFbeauty/puff.cache/wt [current_project]
+set_property parent.project_path C:/Users/SET253-11U/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/7_PUFbeauty/puff.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_ResetAsyncModule/reset.cache/ip [current_project]
+set_property ip_output_repo c:/Users/SET253-11U/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/7_PUFbeauty/puff.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib -sv C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_ResetAsyncModule/reset.srcs/sources_1/imports/clockTest/ClkDivider.sv
+read_verilog -library xil_defaultlib -sv C:/Users/SET253-11U/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/7_PUFbeauty/puff.srcs/sources_1/imports/clockTest/ClkDivider.sv
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -42,8 +42,8 @@ read_verilog -library xil_defaultlib -sv C:/Users/FoersterGame/Documents/GitHub/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_ResetAsyncModule/reset.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/FoersterGame/Documents/GitHub/ENES246/12ControlPathDoesDonts/6_ResetAsyncModule/reset.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc]
+read_xdc C:/Users/SET253-11U/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/7_PUFbeauty/puff.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/SET253-11U/Documents/GitHub/Jordan-s-ENES246/12ControlPathDoesDonts/7_PUFbeauty/puff.srcs/constrs_1/imports/clockTest/Nexys4DDR_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

@@ -347,7 +347,11 @@ Repeatable oscillations occur when the divider_counter is set at 50,000,000. Thi
 
 *Make two modifications of your choice to the puf code above (fiddle with the divider_counter) and record the resulting patterns here:*
 
+I changed the divider_counter to 1000000 and it caused the LEDs to show numbers twice as often. I also changed the divider_counter to 100000 and it caused the LEDs to show numbers  10 times as often as 1000000 on the divider_counter. It also visibly counted faster during the second change. 
+
 *Why doesn't this code work? It generates a bitstream:*
+
+Because the clock doesn't count that fast (20 counts per second).
 
 ![1553426398513](assets/1553426398513.png)
 
@@ -355,5 +359,5 @@ Repeatable oscillations occur when the divider_counter is set at 50,000,000. Thi
 
 
 
-
+Yes
 

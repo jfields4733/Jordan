@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Mar 24 07:44:18 2019
-| Host             : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date             : Mon Apr 29 15:41:41 2019
+| Host             : SET253-11C running 64-bit major release  (build 9200)
 | Command          : report_power -file clkDivider_power_routed.rpt -pb clkDivider_power_summary_routed.pb -rpx clkDivider_power_routed.rpx
 | Design           : clkDivider
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 21.793 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 21.795 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 21.014                           |
+| Dynamic (W)              | 21.015                           |
 | Device Static (W)        | 0.779                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.140 |      114 |       --- |             --- |
-|   LUT as Logic |     0.088 |       21 |     63400 |            0.03 |
+| Slice Logic    |     0.143 |      114 |       --- |             --- |
+|   LUT as Logic |     0.091 |       21 |     63400 |            0.03 |
 |   CARRY4       |     0.034 |       16 |     15850 |            0.10 |
 |   Register     |     0.013 |       64 |    126800 |            0.05 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |        3 |       --- |             --- |
-| Signals        |     0.371 |      111 |       --- |             --- |
+| Signals        |     0.369 |      111 |       --- |             --- |
 | I/O            |    20.504 |       19 |       210 |            9.05 |
 | Static Power   |     0.779 |          |           |                 |
-| Total          |    21.793 |          |           |                 |
+| Total          |    21.795 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.067 |       0.518 |      0.549 |
+| Vccint    |       1.000 |     1.068 |       0.520 |      0.549 |
 | Vccaux    |       1.800 |     0.842 |       0.751 |      0.091 |
 | Vcco33    |       3.300 |     5.805 |       5.801 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -138,7 +138,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| clkDivider |    21.014 |
+| clkDivider |    21.015 |
 +------------+-----------+
 
 

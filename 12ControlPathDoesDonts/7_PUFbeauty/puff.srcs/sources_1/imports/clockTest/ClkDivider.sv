@@ -7,7 +7,7 @@ module clkDivider(
     output reg [15:0] LED
     );
      
-reg [31:0] divider_counter = 200000000; // 100,000,000/200,000,000 => 2 seconds per count 
+reg [31:0] divider_counter = 10000000; // 100,000,000/100,000,000 => 10 counts per second 
 
 integer count_up = 100000000; //this is a 32 but counter that add's 1, initialized to this large number so can see more LED's on 
 integer count_clk = 0;
