@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Apr  3 07:24:41 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Mon Apr 29 16:29:16 2019
+| Host         : SET253-11C running 64-bit major release  (build 9200)
 | Command      : report_utilization -file def_name_utilization_synth.rpt -pb def_name_utilization_synth.pb
 | Design       : def_name
 | Device       : 7a100tcsg324-1

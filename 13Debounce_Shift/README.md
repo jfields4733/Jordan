@@ -16,6 +16,8 @@ This is called a finite state machine that reflects in detail what is going on a
 
 *Does the test pass? Why or why not? Why are you having trouble wrapping your brain around the simple code above?* 
 
+I chose to record pattern from the circuit and the pattern was not easy to follow. For a test that I would've written, the circuit definitely would not have passed that test because the synchronous parts of the circuit are all getting their clock pulses at the same time, and not waiting for their previous variables to change. It is hard to wrap my brain around the code above because it looks fine if the code was asynchronous and all progressed under one "always @(posedge clk) begin end" statement.
+
 ## 2 deBounce FiZzim
 
 The above circuit was translated into this Finite State Machine (or FSM) following the steps outlined in the [drawings folder](..\drawings\README.md).
@@ -30,25 +32,43 @@ The above circuit was translated into this Finite State Machine (or FSM) followi
 
 *There is obvious symmetry or pattern that has been leveraged in the turning of this state machine into the verilog code above. Describe the symmetry or pattern:*
 
+The part where sw_0 = 0 looks like a mirror image of the part wher sw_0 = 1.
+
 The above finite state machine diagram was draw with FiZzim, which also generates system verilog code from the drawing. This is the code. 
 
 ![1554291425789](assets/1554291425789.png)
 
 *Which code (original or FiZzim) is easier to see what the circuit is about and how to test it:*
 
+The FiZzim
+
 *How would you improve either code so that it becomes more understandable at a glance?*
+
+Make it into an "if" statement. As in if sw_i does stays changed for 6 consecutive posedge clock pulses then sw_0 = !sw_0
 
 *Does this circuit test the exact same way?*
 
-*Does this work equally well for deboucing 0 to 1 transition and 1  to 0 transition?* 
+Yes
+
+*Does this work equally well for debouncing 0 to 1 transition and 1  to 0 transition?* 
+
+Yes
 
 *Does this work equally well for switches as well as push buttons?*
 
+Yes, assuming there is some way to keep the push button held for 6 posedge clock pulses.
+
 *What feature of this debouncer do PB_synch_0 and PB_synch_0 enable?*
+
+
 
 *How many clock transitions occur before this debouncer makes up it's mind that the switch is stable?*
 
+6 posedge clock strikes
+
 *Which circuit would be easier to modify if the switch bounces 22 times, or bounces for around a1 millisecond?*
+
+1 millisecond
 
 ## 3 Reusable deBounce Module
 

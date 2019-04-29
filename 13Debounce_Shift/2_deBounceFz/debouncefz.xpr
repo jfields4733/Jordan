@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/2_deBounceFz/debouncefz.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-11U/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/2_deBounceFz/debouncefz.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="8b6c3d55d2884300b73b272038e87554"/>
