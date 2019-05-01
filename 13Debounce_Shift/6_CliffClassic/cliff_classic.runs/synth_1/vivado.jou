@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Mar 26 05:39:17 2019
-# Process ID: 8180
-# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/4_UniversalShiftRegister/project2/cliff_classic/cliff_classic.runs/synth_1
+# Start of session at: Wed May  1 16:23:32 2019
+# Process ID: 11788
+# Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/6_CliffClassic/cliff_classic.runs/synth_1
 # Command line: vivado.exe -log cliff_classic.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cliff_classic.tcl
-# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/4_UniversalShiftRegister/project2/cliff_classic/cliff_classic.runs/synth_1/cliff_classic.vds
-# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/4_UniversalShiftRegister/project2/cliff_classic/cliff_classic.runs/synth_1\vivado.jou
+# Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/6_CliffClassic/cliff_classic.runs/synth_1/cliff_classic.vds
+# Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/6_CliffClassic/cliff_classic.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source cliff_classic.tcl -notrace

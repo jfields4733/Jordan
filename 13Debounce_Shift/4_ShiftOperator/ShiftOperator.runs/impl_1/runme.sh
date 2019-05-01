@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/3_ShiftOperator/ShiftOperator.runs/impl_1'
+HD_PWD='C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/4_ShiftOperator/ShiftOperator.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log universalShiftRegister.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source universalShiftRegister.tcl -notrace
 
 

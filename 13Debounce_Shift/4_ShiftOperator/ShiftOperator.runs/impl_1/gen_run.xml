@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553460508">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556739538">
+  <File Type="OPT-HWDEF" Name="universalShiftRegister.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="universalShiftRegister_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="universalShiftRegister.dcp"/>
   <File Type="BITSTR-BMM" Name="universalShiftRegister_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="universalShiftRegister_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="universalShiftRegister_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="universalShiftRegister_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="universalShiftRegister_reports.tcl"/>
   <File Type="OPT-DRC" Name="universalShiftRegister_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="universalShiftRegister.hwdef"/>
   <File Type="PWROPT-DCP" Name="universalShiftRegister_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="universalShiftRegister_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="universalShiftRegister_timing_summary_pwropted.rpt"/>
@@ -22,7 +24,6 @@
   <File Type="PLACE-CTRL" Name="universalShiftRegister_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="universalShiftRegister_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="universalShiftRegister_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="universalShiftRegister.bgn"/>
   <File Type="PLACE-TIMING" Name="universalShiftRegister_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="universalShiftRegister_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="universalShiftRegister.bin"/>
@@ -52,7 +53,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="universalShiftRegister_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="universalShiftRegister_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="universalShiftRegister_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="universalShiftRegister_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="universalShiftRegister_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="universalShiftRegister_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="universalShiftRegister_postroute_physopt.dcp"/>
@@ -66,6 +66,7 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="universalShiftRegister_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="universalShiftRegister.rbt"/>
   <File Type="BITSTR-NKY" Name="universalShiftRegister.nky"/>
+  <File Type="BG-BGN" Name="universalShiftRegister.bgn"/>
   <File Type="BG-DRC" Name="universalShiftRegister.drc"/>
   <File Type="RDI-RDI" Name="universalShiftRegister.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

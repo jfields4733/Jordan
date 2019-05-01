@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/3_ShiftOperator/ShiftOperator.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc rfile:../../../ShiftOperator.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/4_ShiftOperator/ShiftOperator.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc rfile:../../../ShiftOperator.srcs/constrs_1/imports/ENES246/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { In }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553460508">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556739482">
   <File Type="PA-TCL" Name="universalShiftRegister.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="universalShiftRegister_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="universalShiftRegister_reports.tcl"/>

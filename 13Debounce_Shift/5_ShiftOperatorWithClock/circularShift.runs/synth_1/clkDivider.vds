@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Apr  3 08:35:13 2019
-# Process ID: 13900
-# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.runs/synth_1
+# Start of session at: Wed May  1 16:14:13 2019
+# Process ID: 13892
+# Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.runs/synth_1
 # Command line: vivado.exe -log clkDivider.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clkDivider.tcl
-# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.runs/synth_1/clkDivider.vds
-# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.runs/synth_1\vivado.jou
+# Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.runs/synth_1/clkDivider.vds
+# Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source clkDivider.tcl -notrace
 Command: synth_design -top clkDivider -part xc7a100tcsg324-1
@@ -15,17 +15,17 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4648 
+INFO: Helper process launched with PID 8768 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 347.645 ; gain = 94.387
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 374.473 ; gain = 100.617
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'clkDivider' [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/universalShiftRegister.sv:3]
-INFO: [Synth 8-6157] synthesizing module 'shiftOperator' [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/shiftOperator.sv:3]
-INFO: [Synth 8-226] default block is never used [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/shiftOperator.sv:16]
-INFO: [Synth 8-6155] done synthesizing module 'shiftOperator' (1#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/shiftOperator.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'clkDivider' (2#1) [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/universalShiftRegister.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clkDivider' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/universalShiftRegister.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'shiftOperator' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/shiftOperator.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/shiftOperator.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'shiftOperator' (1#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/shiftOperator.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'clkDivider' (2#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.srcs/sources_1/imports/4_UniversalShiftRegister/universalShiftRegister.sv:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 403.469 ; gain = 150.211
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 430.336 ; gain = 156.480
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -38,48 +38,48 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 403.469 ; gain = 150.211
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 430.336 ; gain = 156.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 403.469 ; gain = 150.211
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 430.336 ; gain = 156.480
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.srcs/constrs_1/imports/4_UniversalShiftRegister/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.srcs/constrs_1/imports/4_UniversalShiftRegister/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.srcs/constrs_1/imports/4_UniversalShiftRegister/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clkDivider_propImpl.xdc].
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.srcs/constrs_1/imports/4_UniversalShiftRegister/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.srcs/constrs_1/imports/4_UniversalShiftRegister/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.srcs/constrs_1/imports/4_UniversalShiftRegister/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clkDivider_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/clkDivider_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 726.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 754.387 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 726.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 754.387 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 726.930 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 726.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 754.387 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 754.387 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 726.930 ; gain = 473.672
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 754.387 ; gain = 480.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 726.930 ; gain = 473.672
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 754.387 ; gain = 480.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 726.930 ; gain = 473.672
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 754.387 ; gain = 480.531
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 726.930 ; gain = 473.672
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 754.387 ; gain = 480.531
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -127,7 +127,7 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5545] ROM "count_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 726.930 ; gain = 473.672
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 754.387 ; gain = 480.531
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -139,13 +139,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 741.090 ; gain = 487.832
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 766.938 ; gain = 493.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 741.164 ; gain = 487.906
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 767.016 ; gain = 493.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -157,7 +157,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 751.203 ; gain = 497.945
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 777.188 ; gain = 503.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -181,7 +181,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 751.203 ; gain = 497.945
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 777.188 ; gain = 503.332
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -194,7 +194,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 751.203 ; gain = 497.945
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 777.188 ; gain = 503.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -206,25 +206,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 751.203 ; gain = 497.945
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 777.188 ; gain = 503.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 751.203 ; gain = 497.945
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 777.188 ; gain = 503.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 751.203 ; gain = 497.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 777.188 ; gain = 503.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 751.203 ; gain = 497.945
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 777.188 ; gain = 503.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -259,27 +259,27 @@ Report Instance Areas:
 |2     |  i1     |shiftOperator |     8|
 +------+---------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 751.203 ; gain = 497.945
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 777.188 ; gain = 503.332
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 751.203 ; gain = 174.484
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 751.203 ; gain = 497.945
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 777.188 ; gain = 179.281
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 777.188 ; gain = 503.332
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 759.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 790.570 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 759.883 ; gain = 506.625
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 759.883 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 790.570 ; gain = 528.602
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 790.570 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/FoersterGame/Documents/GitHub/ENES246/13Debounce_Shift/7_UniversalShiftRegister/project1_Shift_Operator_as_module/circularShift.runs/synth_1/clkDivider.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/13Debounce_Shift/5_ShiftOperatorWithClock/circularShift.runs/synth_1/clkDivider.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file clkDivider_utilization_synth.rpt -pb clkDivider_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr  3 08:35:31 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed May  1 16:14:42 2019...

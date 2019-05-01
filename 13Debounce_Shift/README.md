@@ -58,9 +58,9 @@ Yes
 
 Yes, assuming there is some way to keep the push button held for 6 posedge clock pulses.
 
-*What feature of this debouncer do PB_synch_0 and PB_synch_0 enable?*
+*What feature of this debouncer do PB_synch_0 and PB_synch_1 enable?*
 
-
+They allow the program to be used with multiple functions on the same board or in the same circuit.
 
 *How many clock transitions occur before this debouncer makes up it's mind that the switch is stable?*
 
@@ -82,19 +82,35 @@ The goal is to rewrite the debounce module iso it can be easily re-used.
 
 *How did the secret service push the switches?*
 
+They threw rules at the panels from across the room.
+
 *How much time did a "bad" switch continue to bounce?*
+
+157 milliseconds
 
 *What was the max time  a  "good" switch continued to bounce?*
 
+6200 microseconds
+
 *What was the average time a "good" switch bounced?*
+
+1557 microseconds
 
 *Are our Nexys4DDR board switches bouncing?*
 
+Yes
+
 *What does the clock rate have to do with switch deboucing?*
+
+If the clock rate is really fast, then the max number of bounces should be increased.
 
 *Does switch debouncing affect timed [Olympic races](<https://listosaur.com/sports/10-closest-finishes-olympics-history/>)?* 
 
+Yes switch debouncing affects timed Olympic Races because it limits the precision of the measurement, causing the time to only measure to the hundredth of a second when the race can realistically come down to milliseconds of a difference.
+
 *What is the difference between the resources used in debounce 1 and 2?*
+
+The second debounce add another slice LUT which reduced the amount of bonded IOBs.
 
 Original
 
@@ -106,7 +122,11 @@ FiZzim
 
 *Is the difference meaningful?*
 
+Yes, the second iteration makes the circuit easier to understand by the user but makes it harder to alter and reuse.
+
 *Which circuit was chosen to build the reUseable Debounce?*
+
+Debounce 1 was used.
 
 Circuits are being successfully generated (software creating verilog from design documents such as FSM) at a higher level than RTL now. When they fail (Vivado doesn't synthesize), the verilog code has to be edited. Circuits are being generated so successfully, that larger projects are possible in the same amount of design time. Software that does this is Xilinx [Vivado HLS](<https://www.xilinx.com/products/design-tools/vivado/integration/esl-design.html>), Intel has a version. The most exciting news is that the rest of the market seems united behind an open source standard that involves a soft cpu called [RSIC-V](https://riscv.org/), an HLS called [Clang](https://clang.llvm.org/) and a [LLVM](http://llvm.org/) to [generate Verilog code](https://llvm.org/devmtg/2010-11/Rotem-CToVerilog.pdf). *How much [does this remind](https://news.ycombinator.com/item?id=14235483) you of playing a video game where you climb levels of abstraction to get better at the game .. that perhaps can't be verbalized or shared?* 
 
@@ -124,7 +144,11 @@ Figure out what this circuit does and document it below.
 
 *How would you test this? Show your instructor.* 
 
+The parallelIn shows on the parallelOut. The numberOfBitsToShift will shift the output accordingly with the leftRightDirection determining the direction. The In switch determines whether the shift register ushers in 1s or 0s when it shifts the output.
+
 *What are the new bits going into the shiftRegister if the numberOfBitsToShift is 2 and In is set at 1?*
+
+00000011 would show on the shift register.
 
 ## 5 Shift Operator with Clock
 
@@ -134,7 +158,11 @@ This is a series of circuits that slowly build the Universal Shift Register.
 
 *What is this project adding to the previous project?* 
 
+It adds a counter to the circuit.
+
 *Does it work?* 
+
+Yes it all still works.
 
 ### 6 Cliff_classic
 
