@@ -3,7 +3,7 @@
 module clkDivider(
     input clk, //100Mhz clock
     input rst, //button labeled cpu reset on Nexys 4 DDR
-    input [7:0] parallelInSW, //sw[7]-sw[0]
+    input [7:0] parallelInSW, //sw[15]-sw[8]
     input go, //sw[0]
     input ws, //sw[1]
     input Load, //sw[2]

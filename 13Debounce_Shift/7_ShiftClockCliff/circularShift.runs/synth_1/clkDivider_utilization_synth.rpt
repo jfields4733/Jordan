@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Apr  3 08:45:27 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Fri May  3 12:47:57 2019
+| Host         : SET253-04C running 64-bit major release  (build 9200)
 | Command      : report_utilization -file clkDivider_utilization_synth.rpt -pb clkDivider_utilization_synth.pb
 | Design       : clkDivider
 | Device       : 7a100tcsg324-1
