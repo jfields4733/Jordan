@@ -286,17 +286,31 @@ Because the code is logical and Vivado sends to the board what it gathers from t
 
 *This works! With only a slight modification! Mostly. What doesn't work?*
 
+The reset button doesn't work
+
 *How would you go about troubleshooting the problem?* 
+
+Checking to make sure the code is correct pertaining to the reset button, then looking at the synthesis and implementation schematics to make sure the reset button to wired correctly in the FPGA. All just to realize the reset button pauses the output (sets the state to IDLE), but the clock pulse is fast enough where it corrects itself.
 
 *Would you have ever found the problem without a Nexys4DDR board to physically troubleshoot with?*
 
+No
+
 *What line of code replaced the shift operator?*
+
+Line 24 which is -->   always_comb if (leftRightDirection) shiftRegisterTemp = {shiftRegister[14:0],shiftRegister[15]}; else shiftRegisterTemp = {shiftRegister[0],shiftRegister[15:1]};
 
 *What feature of the shift operator was sacrificed?*
 
+Determining whether the bits shifted in would be 1s or 0s.
+
 *Which above is it most similar to?*
 
+It is most similar to the Cliff Classic.
+
 *Why does it work and the shift operator doesn't?*
+
+There's no statement assigning the output to !shiftRegisterTemp which would allow for 
 
 *What rule can we make for ourselves that explains what happened?*
 
