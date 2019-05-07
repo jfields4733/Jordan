@@ -2,29 +2,25 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr  7 17:40:26 2019
-# Process ID: 7660
-# Current directory: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9444 C:\Users\FoersterGame\Documents\GitHub\ENES246\14Rings\2_Mod\mod2.xpr
-# Log file: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/vivado.log
-# Journal file: C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod\vivado.jou
+# Start of session at: Tue May  7 11:56:03 2019
+# Process ID: 2932
+# Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/14Rings/2_Mod
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13012 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\14Rings\2_Mod\mod2.xpr
+# Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/14Rings/2_Mod/vivado.log
+# Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/14Rings/2_Mod\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.xpr
+open_project C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/14Rings/2_Mod/mod2.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-export_ip_user_files -of_objects  [get_files C:/Users/FoersterGame/Documents/GitHub/Nexys4DDR_Master.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 C:/Users/FoersterGame/Documents/GitHub/Nexys4DDR_Master.xdc
-add_files -fileset constrs_1 -norecurse C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/Nexys4DDR_Master.xdc
-import_files -fileset constrs_1 C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/Nexys4DDR_Master.xdc
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/14Rings/2_Mod/mod2.runs/impl_1/mod2.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/14Rings/2_Mod/mod2.runs/impl_1/mod2.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_project

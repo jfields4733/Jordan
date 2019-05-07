@@ -6,9 +6,15 @@ Ring circuits are those where the output is driven by the state. The only inputs
 
 *What was your initial hypothesis from reading the code?*
 
+My initial hypothesis was that the circuit would act like a shift register and move the LED to the left until it restarts. It would also show which inputs were on and show the current state. There would be 3 resets: a hard reset, a conditional reset, and a halfway reset.
+
 *What does the actual circuit do?* 
 
+It does exactly what I predicted
+
 *This project includes a more simple clock. It is not as flexible as the previous clocks you have seen. In what way is it "not as flexible?"*
+
+It is harder to determine the exact timing of the clock as it relates to seconds, therefore it is harder to change how often you would like to clock to count. Or simply, it is less precise.
 
 ## 2 Mod 
 Computer science algorithms include an integer math called Modular Arithmetic. Very simple circuits can be built that do this.  Read this [Khan Academy introduction to Modular Arithmetic](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic) and go through the first practice.  Then start inspecting these circuits. 
