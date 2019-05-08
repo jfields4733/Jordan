@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Apr  7 18:15:54 2019
-| Host             : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date             : Wed May  8 15:47:13 2019
+| Host             : SET253-04C running 64-bit major release  (build 9200)
 | Command          : report_power -file mod2_power_routed.rpt -pb mod2_power_summary_routed.pb -rpx mod2_power_routed.rpx
 | Design           : mod2
 | Device           : xc7a100tcsg324-1

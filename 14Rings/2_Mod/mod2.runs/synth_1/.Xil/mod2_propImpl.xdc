@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/FoersterGame/Documents/GitHub/ENES246/14Rings/2_Mod/mod2.srcs/constrs_1/imports/2_Mod/Nexys4DDR_Master.xdc rfile:../../../mod2.srcs/constrs_1/imports/2_Mod/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/14Rings/2_Mod/mod2.srcs/constrs_1/imports/2_Mod/Nexys4DDR_Master.xdc rfile:../../../mod2.srcs/constrs_1/imports/2_Mod/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF];
 set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]

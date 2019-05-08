@@ -25,7 +25,7 @@ Here is the statemachine version:![1553876787138](assets/1553876787138.png)
 
 ![1553880787836](assets/1553880787836.png)
 
-
+bitin is not hooked up to anything. 
 
 ## 3 Hamming Codes
 
