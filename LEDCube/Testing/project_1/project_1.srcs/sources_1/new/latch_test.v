@@ -25,8 +25,8 @@ input [7:0] pwm,
 input pwmLatch,
 input address,
 input clk,
-output reg LEDBlue,
-output [15:0] LED
+output reg LEDBlue
+//output [15:0] LED
 );
 
 wire gate1, gate3, gate4, gate5;
@@ -55,8 +55,8 @@ assign gate3 = gate2[7] & gate2[6] & gate2[5] & gate2[4] & gate2[3] & gate2[2] &
 assign gate4 = !(count_down[7] | count_down[6] | count_down[5] | count_down[4] | count_down[3] | count_down[2] | count_down[1] | count_down[0]);
 assign gate5 = gate1 | gate4;
 
-assign LED[7:0] = count_down;
-assign LED[15:8] = gate2;
+//assign LED[7:0] = count_down;
+//assign LED[15:8] = gate2;
 
 always @ (posedge clk) begin
     if(count_down == 0) begin
