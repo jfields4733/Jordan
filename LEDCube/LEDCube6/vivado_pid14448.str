@@ -115,3 +115,24 @@ collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sou
 // PAPropertyPanels.initPanels (DeMux.v) elapsed time: 0.3s
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v)]", 3, true); // B (D, cp) - Node
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v), latch2 : Latch (Latch.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 255 seconds
+selectCodeEditor("DeMux.v", 64, 132); // cl (w, cp)
+selectCodeEditor("DeMux.v", 318, 407); // cl (w, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ac (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectCodeEditor("DeMux.v", 332, 310); // cl (w, cp)
+// Elapsed time: 103 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v)]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v)]", 1); // B (D, cp)
+// [GUI Memory]: 110 MB (+5088kb) [00:06:43]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v), latch2 : Latch (Latch.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v), latch2 : Latch (Latch.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v), latch2 : Latch (Latch.v)]", 6, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v), latch2 : Latch (Latch.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v), latch2 : Latch (Latch.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, eightPlanes (main.v), onePlane : onePlane (onePlane.v), DeMux : DeMux (DeMux.v), latch2 : Latch (Latch.v)]", 6, false); // B (D, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 749 MB. GUI used memory: 53 MB. Current time: 5/13/19, 4:39:18 PM EDT

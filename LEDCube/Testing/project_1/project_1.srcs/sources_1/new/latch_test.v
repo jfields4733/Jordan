@@ -42,7 +42,7 @@ reg [7:0] count_down = 0;
 
 reg [31:0] clock_divider = 50000000; 
 
-assign gate1 = pwmLatch * address;
+assign gate1 = pwmLatch & address;
 assign gate2[7] = new_pwm[7] ~^ count_down[7];
 assign gate2[6] = new_pwm[6] ~^ count_down[6];
 assign gate2[5] = new_pwm[5] ~^ count_down[5];
@@ -51,9 +51,9 @@ assign gate2[3] = new_pwm[3] ~^ count_down[3];
 assign gate2[2] = new_pwm[2] ~^ count_down[2];
 assign gate2[1] = new_pwm[1] ~^ count_down[1];
 assign gate2[0] = new_pwm[0] ~^ count_down[0];
-assign gate3 = gate2[7] * gate2[6] * gate2[5] * gate2[4] * gate2[3] * gate2[2] * gate2[1] * gate2[0];
-assign gate4 = !(count_down[7] + count_down[6] + count_down[5] + count_down[4] + count_down[3] + count_down[2] + count_down[1] + count_down[0]);
-assign gate5 = gate1 + gate4;
+assign gate3 = gate2[7] & gate2[6] & gate2[5] & gate2[4] & gate2[3] & gate2[2] & gate2[1] & gate2[0];
+assign gate4 = !(count_down[7] | count_down[6] | count_down[5] | count_down[4] | count_down[3] | count_down[2] | count_down[1] | count_down[0]);
+assign gate5 = gate1 | gate4;
 
 assign LED[7:0] = count_down;
 assign LED[15:8] = gate2;

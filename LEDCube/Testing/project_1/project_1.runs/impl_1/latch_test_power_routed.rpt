@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon May 13 15:56:43 2019
+| Date             : Mon May 13 16:45:07 2019
 | Host             : SET253-04C running 64-bit major release  (build 9200)
 | Command          : report_power -file latch_test_power_routed.rpt -pb latch_test_power_summary_routed.pb -rpx latch_test_power_routed.rpx
 | Design           : latch_test
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 27.704 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 49.730 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 26.907                           |
+| Dynamic (W)              | 48.933                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,15 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.142 |       44 |       --- |             --- |
-|   LUT as Logic |     0.130 |       17 |     63400 |            0.03 |
-|   Register     |     0.007 |       16 |    126800 |            0.01 |
+| Slice Logic    |     0.288 |       96 |       --- |             --- |
+|   LUT as Logic |     0.224 |       29 |     63400 |            0.05 |
+|   CARRY4       |     0.031 |       10 |     15850 |            0.06 |
+|   Register     |     0.028 |       48 |    126800 |            0.04 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.346 |       47 |       --- |             --- |
-| I/O            |    26.419 |       28 |       210 |           13.33 |
+| Signals        |     0.655 |       93 |       --- |             --- |
+| I/O            |    47.989 |       28 |       210 |           13.33 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    27.704 |          |           |                 |
+| Total          |    49.730 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.095 |       0.532 |      0.563 |
-| Vccaux    |       1.800 |     1.059 |       0.966 |      0.093 |
-| Vcco33    |       3.300 |     7.469 |       7.465 |      0.004 |
+| Vccint    |       1.000 |     1.550 |       0.988 |      0.563 |
+| Vccaux    |       1.800 |     1.850 |       1.757 |      0.093 |
+| Vcco33    |       3.300 |    13.575 |      13.571 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -137,7 +138,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| latch_test |    26.907 |
+| latch_test |    48.933 |
 +------------+-----------+
 
 
