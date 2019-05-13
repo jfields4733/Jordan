@@ -4828,3 +4828,41 @@ dismissDialog("Program Device"); // bC (cp)
 dismissDialog("Program Device"); // bx (cp)
 // Elapsed time: 75 seconds
 selectCodeEditor("latch_test.v", 580, 327); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("latch_test.v", 796, 445); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4DDR_Master.xdc", 1); // k (j, cp)
+selectCodeEditor("Nexys4DDR_Master.xdc", 538, 245); // cl (w, cp)
+selectCodeEditor("Nexys4DDR_Master.xdc", 3, 242); // cl (w, cp)
+selectCodeEditor("Nexys4DDR_Master.xdc", 3, 149); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "latch_test.v", 0); // k (j, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("latch_test.v", 875, 341); // cl (w, cp)
+selectCodeEditor("latch_test.v", 4, 303); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectCodeEditor("latch_test.v", 177, 348); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("latch_test.v", 136, 281); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4DDR_Master.xdc", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "latch_test.v", 0); // k (j, cp)
+// Elapsed time: 119 seconds
+selectCodeEditor("latch_test.v", 864, 218); // cl (w, cp)
+// Elapsed time: 58 seconds
+closeMainWindow("project_1 - [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.xpr] - Vivado 2018.3"); // cp
+// A (cp): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Exit Vivado"); // A (cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("latch_test.v", 712, 91); // cl (w, cp)

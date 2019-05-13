@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557511973">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557780937">
   <File Type="PA-TCL" Name="eightPlanes.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="eightPlanes_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="eightPlanes_reports.tcl"/>
   <File Type="RDS-RDS" Name="eightPlanes.vds"/>
   <File Type="RDS-UTIL" Name="eightPlanes_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="eightPlanes_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="eightPlanes.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="eightPlanes_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="eightPlanes_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/DeMux.v">
@@ -43,7 +46,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../Nexys4DDR_Master.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/Nexys4DDR_Master.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

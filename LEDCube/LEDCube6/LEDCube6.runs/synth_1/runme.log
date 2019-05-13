@@ -14,55 +14,55 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11768 
+INFO: Helper process launched with PID 14504 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 375.246 ; gain = 101.047
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 375.738 ; gain = 100.875
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'eightPlanes' [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/main.v:23]
-INFO: [Synth 8-6157] synthesizing module 'onePlane' [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:23]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-INFO: [Synth 8-6157] synthesizing module 'DeMux' [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:1]
-INFO: [Synth 8-226] default block is never used [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:13]
-INFO: [Synth 8-6157] synthesizing module 'Latch' [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/Latch.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'Latch' (1#1) [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/Latch.v:1]
-WARNING: [Synth 8-350] instance 'latch0' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:49]
-WARNING: [Synth 8-350] instance 'latch1' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:56]
-WARNING: [Synth 8-350] instance 'latch2' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:63]
-WARNING: [Synth 8-350] instance 'latch3' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:70]
-WARNING: [Synth 8-350] instance 'latch4' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:77]
-WARNING: [Synth 8-350] instance 'latch5' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:84]
-WARNING: [Synth 8-350] instance 'latch6' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:91]
-WARNING: [Synth 8-350] instance 'latch7' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:98]
-WARNING: [Synth 8-350] instance 'latch8' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:105]
-WARNING: [Synth 8-350] instance 'latch9' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:112]
-WARNING: [Synth 8-350] instance 'latch10' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:119]
-WARNING: [Synth 8-350] instance 'latch11' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:126]
-WARNING: [Synth 8-350] instance 'latch12' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:133]
-WARNING: [Synth 8-350] instance 'latch13' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:140]
-WARNING: [Synth 8-350] instance 'latch14' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:147]
-WARNING: [Synth 8-350] instance 'latch15' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:154]
-WARNING: [Synth 8-350] instance 'latch16' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:161]
-WARNING: [Synth 8-350] instance 'latch17' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:168]
-WARNING: [Synth 8-350] instance 'latch18' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:175]
-WARNING: [Synth 8-350] instance 'latch19' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:182]
-WARNING: [Synth 8-350] instance 'latch20' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:189]
-WARNING: [Synth 8-350] instance 'latch21' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:196]
-WARNING: [Synth 8-350] instance 'latch22' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:203]
-WARNING: [Synth 8-350] instance 'latch23' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:210]
-WARNING: [Synth 8-350] instance 'latch24' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:217]
-WARNING: [Synth 8-350] instance 'latch25' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:224]
-WARNING: [Synth 8-350] instance 'latch26' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:231]
-WARNING: [Synth 8-350] instance 'latch27' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:238]
-WARNING: [Synth 8-350] instance 'latch28' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:245]
-WARNING: [Synth 8-350] instance 'latch29' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:252]
-WARNING: [Synth 8-350] instance 'latch30' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:259]
-WARNING: [Synth 8-350] instance 'latch31' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:266]
-INFO: [Synth 8-6155] done synthesizing module 'DeMux' (2#1) [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:1]
-WARNING: [Synth 8-350] instance 'nolabel_line27' of module 'DeMux' requires 6 connections, but only 0 given [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-INFO: [Synth 8-6155] done synthesizing module 'onePlane' (3#1) [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'eightPlanes' (4#1) [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'eightPlanes' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'onePlane' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+INFO: [Synth 8-6157] synthesizing module 'DeMux' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Latch' [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/Latch.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Latch' (1#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/Latch.v:1]
+WARNING: [Synth 8-350] instance 'latch0' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:49]
+WARNING: [Synth 8-350] instance 'latch1' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:56]
+WARNING: [Synth 8-350] instance 'latch2' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:63]
+WARNING: [Synth 8-350] instance 'latch3' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:70]
+WARNING: [Synth 8-350] instance 'latch4' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:77]
+WARNING: [Synth 8-350] instance 'latch5' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:84]
+WARNING: [Synth 8-350] instance 'latch6' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:91]
+WARNING: [Synth 8-350] instance 'latch7' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:98]
+WARNING: [Synth 8-350] instance 'latch8' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:105]
+WARNING: [Synth 8-350] instance 'latch9' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:112]
+WARNING: [Synth 8-350] instance 'latch10' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:119]
+WARNING: [Synth 8-350] instance 'latch11' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:126]
+WARNING: [Synth 8-350] instance 'latch12' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:133]
+WARNING: [Synth 8-350] instance 'latch13' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:140]
+WARNING: [Synth 8-350] instance 'latch14' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:147]
+WARNING: [Synth 8-350] instance 'latch15' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:154]
+WARNING: [Synth 8-350] instance 'latch16' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:161]
+WARNING: [Synth 8-350] instance 'latch17' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:168]
+WARNING: [Synth 8-350] instance 'latch18' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:175]
+WARNING: [Synth 8-350] instance 'latch19' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:182]
+WARNING: [Synth 8-350] instance 'latch20' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:189]
+WARNING: [Synth 8-350] instance 'latch21' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:196]
+WARNING: [Synth 8-350] instance 'latch22' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:203]
+WARNING: [Synth 8-350] instance 'latch23' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:210]
+WARNING: [Synth 8-350] instance 'latch24' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:217]
+WARNING: [Synth 8-350] instance 'latch25' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:224]
+WARNING: [Synth 8-350] instance 'latch26' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:231]
+WARNING: [Synth 8-350] instance 'latch27' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:238]
+WARNING: [Synth 8-350] instance 'latch28' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:245]
+WARNING: [Synth 8-350] instance 'latch29' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:252]
+WARNING: [Synth 8-350] instance 'latch30' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:259]
+WARNING: [Synth 8-350] instance 'latch31' of module 'Latch' requires 5 connections, but only 4 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:266]
+INFO: [Synth 8-6155] done synthesizing module 'DeMux' (2#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:1]
+WARNING: [Synth 8-350] instance 'nolabel_line27' of module 'DeMux' requires 6 connections, but only 0 given [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'onePlane' (3#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'eightPlanes' (4#1) [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/main.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.129 ; gain = 156.930
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.707 ; gain = 156.844
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -71,98 +71,182 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin latch0:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:49]
-WARNING: [Synth 8-3295] tying undriven pin latch1:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:56]
-WARNING: [Synth 8-3295] tying undriven pin latch2:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:63]
-WARNING: [Synth 8-3295] tying undriven pin latch3:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:70]
-WARNING: [Synth 8-3295] tying undriven pin latch4:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:77]
-WARNING: [Synth 8-3295] tying undriven pin latch5:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:84]
-WARNING: [Synth 8-3295] tying undriven pin latch6:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:91]
-WARNING: [Synth 8-3295] tying undriven pin latch7:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:98]
-WARNING: [Synth 8-3295] tying undriven pin latch8:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:105]
-WARNING: [Synth 8-3295] tying undriven pin latch9:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:112]
-WARNING: [Synth 8-3295] tying undriven pin latch10:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:119]
-WARNING: [Synth 8-3295] tying undriven pin latch11:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:126]
-WARNING: [Synth 8-3295] tying undriven pin latch12:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:133]
-WARNING: [Synth 8-3295] tying undriven pin latch13:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:140]
-WARNING: [Synth 8-3295] tying undriven pin latch14:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:147]
-WARNING: [Synth 8-3295] tying undriven pin latch15:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:154]
-WARNING: [Synth 8-3295] tying undriven pin latch16:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:161]
-WARNING: [Synth 8-3295] tying undriven pin latch17:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:168]
-WARNING: [Synth 8-3295] tying undriven pin latch18:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:175]
-WARNING: [Synth 8-3295] tying undriven pin latch19:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:182]
-WARNING: [Synth 8-3295] tying undriven pin latch20:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:189]
-WARNING: [Synth 8-3295] tying undriven pin latch21:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:196]
-WARNING: [Synth 8-3295] tying undriven pin latch22:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:203]
-WARNING: [Synth 8-3295] tying undriven pin latch23:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:210]
-WARNING: [Synth 8-3295] tying undriven pin latch24:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:217]
-WARNING: [Synth 8-3295] tying undriven pin latch25:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:224]
-WARNING: [Synth 8-3295] tying undriven pin latch26:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:231]
-WARNING: [Synth 8-3295] tying undriven pin latch27:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:238]
-WARNING: [Synth 8-3295] tying undriven pin latch28:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:245]
-WARNING: [Synth 8-3295] tying undriven pin latch29:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:252]
-WARNING: [Synth 8-3295] tying undriven pin latch30:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:259]
-WARNING: [Synth 8-3295] tying undriven pin latch31:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:266]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwmLatch to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:select to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[4] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[3] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[2] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[1] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[0] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[7] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[6] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[5] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[4] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[3] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[2] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[1] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
-WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[0] to constant 0 [C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin latch0:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:49]
+WARNING: [Synth 8-3295] tying undriven pin latch1:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:56]
+WARNING: [Synth 8-3295] tying undriven pin latch2:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:63]
+WARNING: [Synth 8-3295] tying undriven pin latch3:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:70]
+WARNING: [Synth 8-3295] tying undriven pin latch4:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:77]
+WARNING: [Synth 8-3295] tying undriven pin latch5:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:84]
+WARNING: [Synth 8-3295] tying undriven pin latch6:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:91]
+WARNING: [Synth 8-3295] tying undriven pin latch7:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:98]
+WARNING: [Synth 8-3295] tying undriven pin latch8:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:105]
+WARNING: [Synth 8-3295] tying undriven pin latch9:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:112]
+WARNING: [Synth 8-3295] tying undriven pin latch10:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:119]
+WARNING: [Synth 8-3295] tying undriven pin latch11:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:126]
+WARNING: [Synth 8-3295] tying undriven pin latch12:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:133]
+WARNING: [Synth 8-3295] tying undriven pin latch13:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:140]
+WARNING: [Synth 8-3295] tying undriven pin latch14:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:147]
+WARNING: [Synth 8-3295] tying undriven pin latch15:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:154]
+WARNING: [Synth 8-3295] tying undriven pin latch16:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:161]
+WARNING: [Synth 8-3295] tying undriven pin latch17:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:168]
+WARNING: [Synth 8-3295] tying undriven pin latch18:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:175]
+WARNING: [Synth 8-3295] tying undriven pin latch19:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:182]
+WARNING: [Synth 8-3295] tying undriven pin latch20:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:189]
+WARNING: [Synth 8-3295] tying undriven pin latch21:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:196]
+WARNING: [Synth 8-3295] tying undriven pin latch22:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:203]
+WARNING: [Synth 8-3295] tying undriven pin latch23:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:210]
+WARNING: [Synth 8-3295] tying undriven pin latch24:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:217]
+WARNING: [Synth 8-3295] tying undriven pin latch25:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:224]
+WARNING: [Synth 8-3295] tying undriven pin latch26:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:231]
+WARNING: [Synth 8-3295] tying undriven pin latch27:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:238]
+WARNING: [Synth 8-3295] tying undriven pin latch28:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:245]
+WARNING: [Synth 8-3295] tying undriven pin latch29:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:252]
+WARNING: [Synth 8-3295] tying undriven pin latch30:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:259]
+WARNING: [Synth 8-3295] tying undriven pin latch31:clk to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/DeMux.v:266]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwmLatch to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:select to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[4] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[3] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[2] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[1] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:address[0] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[7] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[6] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[5] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[4] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[3] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[2] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[1] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
+WARNING: [Synth 8-3295] tying undriven pin nolabel_line27:pwm[0] to constant 0 [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/sources_1/new/onePlane.v:27]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.129 ; gain = 156.930
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 431.707 ; gain = 156.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.129 ; gain = 156.930
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 431.707 ; gain = 156.844
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/Nexys4DDR_Master.xdc]
+Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'pwmLatch'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'address'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm[0]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm[1]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm[2]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm[3]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm[4]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm[5]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm[6]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm[7]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDBlue'. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 772.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 777.785 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 772.297 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 772.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 777.785 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 777.785 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "clock_counter" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -330,7 +414,7 @@ INFO: [Synth 8-5546] ROM "nolabel_line27/nolabel_line27/latch31/clock_counter" w
 INFO: [Synth 8-5545] ROM "nolabel_line27/nolabel_line27/latch31/clock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "nolabel_line27/nolabel_line27/latch31/count_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -342,13 +426,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -360,7 +444,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -384,7 +468,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -397,7 +481,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -409,25 +493,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -452,25 +536,25 @@ Report Instance Areas:
 |1     |top      |       |     0|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 772.297 ; gain = 498.098
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 777.785 ; gain = 502.922
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 772.297 ; gain = 156.930
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 772.297 ; gain = 498.098
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 777.785 ; gain = 156.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 777.785 ; gain = 502.922
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 785.836 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 784.383 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-117 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
+117 Infos, 109 Warnings, 28 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 785.855 ; gain = 524.551
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 785.855 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 784.395 ; gain = 521.410
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 784.395 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/SET253-04U.HCCMAIN/LEDCube6/LEDCube6.runs/synth_1/eightPlanes.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/LEDCube6/LEDCube6.runs/synth_1/eightPlanes.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file eightPlanes_utilization_synth.rpt -pb eightPlanes_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May 10 14:13:32 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 16:56:16 2019...
