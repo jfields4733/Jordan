@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon May 13 13:14:56 2019
-# Process ID: 1308
+# Start of session at: Mon May 20 14:22:15 2019
+# Process ID: 9784
 # Current directory: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9920 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\LEDCube\Testing\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1560 C:\Users\SET253-04U.HCCMAIN\Documents\GitHub\Jordan-s-ENES246\LEDCube\Testing\project_1\project_1.xpr
 # Log file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/vivado.log
 # Journal file: C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1\vivado.jou
 #-----------------------------------------------------------
@@ -15,66 +15,20 @@ update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-open_run synth_1 -name synth_1
-file mkdir C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1
-file mkdir C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new
-close [ open C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new/Nexys4DDR_Master.xdc w ]
-add_files -fileset constrs_1 C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new/Nexys4DDR_Master.xdc
-refresh_design
-export_ip_user_files -of_objects  [get_files C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/Nexys4DDR_Master.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/Nexys4DDR_Master.xdc
-refresh_design
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
-close_design
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-open_run synth_1 -name synth_1
-set_property target_constrs_file C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new/Nexys4DDR_Master.xdc [current_fileset -constrset]
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-close_design
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-open_run synth_1 -name synth_1
-set_property used_in_synthesis false [get_files  C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
-set_property used_in_implementation false [get_files  C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
-refresh_design
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-close_design
 launch_runs impl_1 -jobs 2
 wait_on_run impl_1
 open_run impl_1
-set_property used_in_synthesis true [get_files  C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
-set_property used_in_implementation true [get_files  C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
-set_property is_enabled false [get_files  C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
-set_property is_enabled true [get_files  C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.srcs/constrs_1/new/Nexys4DDR_Master.xdc]
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
 close_design
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
+synth_design -rtl -name rtl_1
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
+refresh_design
 launch_runs impl_1 -jobs 2
 wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-close_design
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 open_hw
@@ -83,78 +37,6 @@ open_hw_target
 set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-open_run synth_1 -name synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-close_design
-close_design
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-close_design
-open_run synth_1 -name synth_1
-close_design
-synth_design -rtl -name rtl_1
-refresh_design
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
@@ -167,6 +49,8 @@ launch_runs synth_1 -jobs 2
 wait_on_run synth_1
 launch_runs impl_1 -jobs 2
 wait_on_run impl_1
+close_design
+open_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 open_hw
@@ -175,12 +59,6 @@ open_hw_target
 set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-refresh_design
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
@@ -193,17 +71,7 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-refresh_design
+synth_design -rtl -name rtl_1
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
@@ -217,6 +85,77 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+refresh_design
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+refresh_design
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+refresh_design
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
 refresh_design
 refresh_design
 reset_run synth_1
@@ -231,13 +170,6 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-refresh_design
-refresh_design
 reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
@@ -250,4 +182,12 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-04U.HCCMAIN/Documents/GitHub/Jordan-s-ENES246/LEDCube/Testing/project_1/project_1.runs/impl_1/latch_test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_design
+refresh_design
 close_project

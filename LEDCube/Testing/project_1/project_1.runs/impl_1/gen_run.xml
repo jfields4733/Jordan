@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557780230">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1558382604">
   <File Type="BITSTR-BMM" Name="latch_test_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="latch_test_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="latch_test_timing_summary_init.rpt"/>

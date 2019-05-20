@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon May 13 16:45:07 2019
+| Date         : Mon May 20 16:04:35 2019
 | Host         : SET253-04C running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file latch_test_timing_summary_routed.rpt -pb latch_test_timing_summary_routed.pb -rpx latch_test_timing_summary_routed.rpx -warn_on_violation
 | Design       : latch_test
@@ -58,6 +58,38 @@ Table of Contents
 
  There are 8 register/latch pins with no clock driven by root clock pin: pwmLatch (HIGH)
 
+ There is 1 register/latch pin with no clock driven by root clock pin: count_down_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: count_down_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: count_down_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: count_down_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: count_down_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: count_down_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: count_down_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: count_down_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: new_pwm_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: new_pwm_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: new_pwm_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: new_pwm_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: new_pwm_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: new_pwm_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: new_pwm_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: new_pwm_reg[7]/Q (HIGH)
+
 
 2. checking constant_clock
 --------------------------
@@ -71,14 +103,14 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 117 pins that are not constrained for maximum delay. (HIGH)
+ There are 125 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 8 input ports with no input delay specified. (HIGH)
+ There are 10 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
